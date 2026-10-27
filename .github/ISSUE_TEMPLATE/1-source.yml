@@ -1,0 +1,59 @@
+name: Proposer une source
+description: Une source publiée depuis le 25 septembre 2023 qui nourrirait le débat sur les risques, l'éthique et les choix de société liés à l'IA.
+title: "[Source] <titre> (<date>)"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de contribuer à Agora IA. Chaque proposition est relue avant intégration ; la planète, les courants et la fiabilité sont choisis à la revue.
+        - Uniquement des sources publiées **depuis le 25 septembre 2023**.
+        - Une source primaire et publique (article, rapport, étude, entretien, texte officiel…), jamais une personne privée.
+        - Une citation éventuelle doit être recopiée **mot pour mot**, dans sa langue d'origine.
+        - Tout est public : cette issue comme le corpus (licence CC BY 4.0).
+  - type: input
+    id: url
+    attributes:
+      label: Lien vers la source
+      placeholder: https://…
+    validations: { required: true }
+  - type: input
+    id: titre
+    attributes:
+      label: Titre exact
+    validations: { required: true }
+  - type: input
+    id: date
+    attributes:
+      label: Date de publication
+      placeholder: AAAA-MM-JJ
+    validations: { required: true }
+  - type: input
+    id: famille
+    attributes:
+      label: Famille de thématiques
+      description: "Science et technique, Guerre et pouvoir, Société et écologie, ou Je ne sais pas."
+    validations: { required: true }
+  - type: textarea
+    id: apport
+    attributes:
+      label: Qu'apporte cette source au débat ?
+      description: Un angle manquant, une voix absente, un fait nouveau…
+    validations: { required: true }
+  - type: textarea
+    id: complements
+    attributes:
+      label: Compléments (facultatif)
+      description: Auteurs, média, citation éventuelle mot pour mot avec sa page ou son minutage.
+  - type: checkboxes
+    id: engagements
+    attributes:
+      label: Engagements
+      options:
+        - label: "La source est publique et accessible ; une citation éventuelle est recopiée mot pour mot ; j'accepte que ma contribution soit publiée sous licence CC BY 4.0."
+          required: true
+  - type: textarea
+    id: brouillon
+    attributes:
+      label: Brouillon pour le corpus
+      description: Généré par le site, à compléter à la revue (les « ? » restent à renseigner).
+      render: json

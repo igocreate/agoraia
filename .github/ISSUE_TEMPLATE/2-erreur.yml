@@ -1,0 +1,33 @@
+name: Signaler une erreur
+description: Une citation inexacte, une mauvaise attribution, une date ou un chiffre faux, un lien mort…
+title: "[Erreur] <élément concerné>"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de signaler l'erreur. Chaque correction est vérifiée dans la source primaire avant d'être appliquée : indique le lien qui la justifie.
+  - type: input
+    id: element
+    attributes:
+      label: Élément concerné
+      description: Identifiant et titre de la source (affichés sur le site), numéro de la citation le cas échéant.
+      placeholder: src-… — titre
+    validations: { required: true }
+  - type: input
+    id: nature
+    attributes:
+      label: Nature de l'erreur
+      description: "Citation inexacte, Attribution, Date ou chiffre, Statut juridique, Lien mort, Classement (planète ou courant), Autre."
+    validations: { required: true }
+  - type: textarea
+    id: description
+    attributes:
+      label: Ce qui est faux, et ce qui serait juste
+    validations: { required: true }
+  - type: input
+    id: preuve
+    attributes:
+      label: Lien qui justifie la correction
+      description: De préférence la source primaire.
+      placeholder: https://…
+    validations: { required: true }

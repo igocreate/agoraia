@@ -107,7 +107,7 @@ function showHome(){
     el('p',{text:'Hébergeur : GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.'}),
     el('p',{text:'Données personnelles : ni cookie, ni mesure d\'audience, ni service tiers. Tes préférences d\'affichage restent dans ton navigateur. L\'hébergeur peut journaliser les adresses IP pour la sécurité du service.'}),
     el('p',{text:'Licences : code sous licence MIT, corpus sous licence CC BY 4.0. Les citations restent la propriété de leurs auteurs et sont reproduites au titre du droit de courte citation, avec leur source.'})));
-  panel.append(el('p',{class:'foot'}, el('a',{href:'https://github.com/igocreate/agoraia',target:'_blank',rel:'noopener'},'Code et données sur GitHub'), ' · ', el('a',{href:'https://github.com/igocreate/agoraia/issues/new',target:'_blank',rel:'noopener'},'Signaler une erreur ou une source')));
+  panel.append(el('p',{class:'foot'}, el('a',{href:REPO,target:'_blank',rel:'noopener'},'Code et données sur GitHub'), ' · ', el('button',{class:'linklike',onclick:()=>openContrib('source')},'Proposer une source'), ' · ', el('button',{class:'linklike',onclick:()=>openContrib('erreur')},'Signaler une erreur')));
 }
 function showPlanet(id){
   const p=P[id]; panel.textContent=''; panel.append(panelHead()); panel.append(miniBtn());
@@ -191,6 +191,7 @@ function showSource(id){
   const rl=relList([s.id, ...s.a]); if(rl){ panel.append(el('h4',{text:'Dialogue avec d\'autres voix'})); panel.append(rl); }
   if(s.u) panel.append(el('a',{class:'link-out',href:s.u,target:'_blank',rel:'noopener'},s.k==='outil'?'Ouvrir l\'outil ↗':'Lire la source ↗'));
   if(s.n) panel.append(el('details',{},el('summary',{text:'Notes et limites'}),el('p',{text:s.n})));
+  panel.append(el('p',{class:'foot'}, el('button',{class:'linklike',onclick:()=>openContrib('erreur',{element:`${s.id} — ${s.t}`})},'Signaler une erreur sur cette source')));
 }
 function showCurrent(id){
   const c=CU[id]; panel.textContent=''; panel.append(panelHead()); panel.append(miniBtn());
@@ -339,7 +340,7 @@ const U = (function(){
     el('button',{title:'Rotation automatique','aria-label':'Rotation automatique',onclick:()=>{ ctl.autoRotate=!ctl.autoRotate; }},'◎'),
     el('button',{title:'Vue d\'ensemble','aria-label':'Vue d\'ensemble',onclick:()=>{ select(null); }},'⌂'));
   host.append(tools);
-  document.addEventListener('keydown',e=>{ if(e.target.matches('input,textarea,select')||tourI>=0||!$('#posModal').hidden||state.view!=='v3d') return; const k=e.key; let used=true;
+  document.addEventListener('keydown',e=>{ if(e.target.matches('input,textarea,select')||tourI>=0||!$('#posModal').hidden||!$('#contribModal').hidden||state.view!=='v3d') return; const k=e.key; let used=true;
     if(k==='ArrowLeft') orbit(-0.3,0); else if(k==='ArrowRight') orbit(0.3,0); else if(k==='ArrowUp') orbit(0,-0.2); else if(k==='ArrowDown') orbit(0,0.2); else if(k==='+'||k==='=') zoom(0.8); else if(k==='-'||k==='_') zoom(1.25); else used=false;
     if(used){ ctl.autoRotate=false; e.preventDefault(); } });
   let active=true; api.setActive=v=>{ active=v; if(v) resize(); };
@@ -435,8 +436,76 @@ function renderPos(){
 }
 $('#posBtn').onclick=openPos;
 
+// ---------- contribuer ----------
+// Rien n'est envoyé depuis le site : on ouvre un formulaire d'issue GitHub pré-rempli par l'URL.
+// Chaque clé de fields doit correspondre à un id de champ de .github/ISSUE_TEMPLATE/*.yml.
+const REPO='https://github.com/igocreate/agoraia';
+function issueUrl(template,title,fields){ const p=new URLSearchParams({template,title}); for(const [k,v] of Object.entries(fields)) if(v&&v.trim()) p.set(k,v.trim()); return `${REPO}/issues/new?${p}`; }
+const ERR_KINDS=['Citation inexacte','Attribution','Date ou chiffre','Statut juridique','Lien mort','Classement (planète ou courant)','Autre'];
+const slug=t=>t.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').split('-').slice(0,5).join('-');
+const contribModal=$('#contribModal');
+let contribMode='source', contribCtx=null;
+function openContrib(mode='source',ctx=null){ contribMode=mode; contribCtx=ctx; contribModal.hidden=false; renderContrib(); }
+function closeContrib(){ contribModal.hidden=true; }
+contribModal.addEventListener('click',e=>{ if(e.target===contribModal) closeContrib(); });
+contribModal.addEventListener('keydown',e=>{ if(e.key==='Escape') closeContrib(); });
+function sourceDraft(v){
+  return JSON.stringify({ id:`src-${slug(v.titre)}-${v.date.slice(0,4)}`, title:v.titre, authors:['p-?'], publisher:'?', date:v.date, url:v.url, lang:'?', kind:'?',
+    planets:['?'], currents:[], thesis:'', key_facts:[], quotes:[], reliability:'?', notes:`Proposée via l'issue #? (famille indiquée : ${v.famille}).` }, null, 2);
+}
+function renderContrib(){
+  contribModal.textContent=''; const sh=el('div',{class:'sheet contrib'});
+  sh.append(el('header',{}, el('div',{}, el('h2',{id:'contribTitle',text:'Contribuer'}), el('p',{text:'Rien n\'est envoyé depuis ce site : tu relis et soumets l\'issue toi-même sur GitHub (compte gratuit nécessaire). Chaque contribution est relue avant publication.'})), el('button',{class:'btn',onclick:closeContrib},'Fermer')));
+  const tabs=el('div',{class:'seg',role:'group','aria-label':'Type de contribution'});
+  [['source','Proposer une source'],['erreur','Signaler une erreur']].forEach(([m,l])=>tabs.append(el('button',{'aria-pressed':String(contribMode===m),onclick:()=>{ contribMode=m; renderContrib(); }},l)));
+  sh.append(tabs);
+  const drafts=store.get('contrib',{}); const v=Object.assign({}, drafts[contribMode]||{}, contribCtx||{});
+  const form=el('form',{novalidate:''}); const msg=el('p',{class:'hint','aria-live':'polite'});
+  const field=(name,label,input,hint)=>{ input.name=name; input.id='ct-'+name; if(v[name]!=null) input.value=v[name]; return el('div',{class:'field'}, el('label',{for:input.id,text:label}), input, hint||null); };
+  if(contribMode==='source'){
+    const dateHint=el('p',{class:'hint'});
+    const date=el('input',{type:'date',required:''});
+    const upd=()=>{ dateHint.textContent=date.value&&date.value<D.meta.cutoff?`Le corpus ne retient que les sources publiées depuis le ${fmtDate(D.meta.cutoff)}. Tu peux la proposer, mais elle a peu de chances d'être intégrée.`:''; dateHint.classList.toggle('warn',!!dateHint.textContent); };
+    date.addEventListener('input',upd);
+    const fam=el('fieldset',{class:'field'}, el('legend',{text:'Famille de thématiques'})); const ch=el('div',{class:'choices'});
+    [...D.families.map(f=>f.label),'Je ne sais pas'].forEach(l=>ch.append(el('label',{}, el('input',{type:'radio',name:'famille',value:l,required:'',checked:v.famille===l?'':null}), ' '+l)));
+    fam.append(ch, el('p',{class:'hint',text:'La planète précise est choisie à la revue.'}));
+    form.append(
+      field('url','Lien vers la source',el('input',{type:'url',required:'',placeholder:'https://…'})),
+      field('titre','Titre exact',el('input',{type:'text',required:'',maxlength:'300'})),
+      field('date','Date de publication',date,dateHint), fam,
+      field('apport','Qu\'apporte cette source au débat ?',el('textarea',{required:'',maxlength:'1000',rows:'4',placeholder:'Un angle manquant, une voix absente, un fait nouveau…'})),
+      field('complements','Compléments (facultatif)',el('textarea',{maxlength:'1500',rows:'4',placeholder:'Auteurs, média, citation éventuelle mot pour mot avec sa page ou son minutage…'})),
+      el('label',{class:'check'}, el('input',{type:'checkbox',name:'engagements',required:'',checked:v.engagements?'':null}), ' La source est publique et accessible ; une citation éventuelle est recopiée mot pour mot ; j\'accepte que ma contribution soit publiée sous licence CC BY 4.0.'));
+    upd();
+  } else {
+    const nat=el('select',{required:''}, el('option',{value:'',text:'Choisir…'}), ...ERR_KINDS.map(k=>el('option',{value:k,text:k})));
+    form.append(
+      field('element','Élément concerné',el('input',{type:'text',required:'',maxlength:'300',placeholder:'Identifiant et titre de la source, numéro de la citation…'})),
+      field('nature','Nature de l\'erreur',nat),
+      field('description','Ce qui est faux, et ce qui serait juste',el('textarea',{required:'',maxlength:'1500',rows:'5'})),
+      field('preuve','Lien qui justifie la correction',el('input',{type:'url',required:'',placeholder:'https://… (de préférence la source primaire)'})));
+  }
+  const values=()=>{ const o={}; new FormData(form).forEach((x,k)=>{ o[k]=String(x); }); if(contribMode==='source') o.engagements=form.engagements.checked; return o; };
+  form.addEventListener('input',()=>{ const d=store.get('contrib',{}); d[contribMode]=values(); store.set('contrib',d); });
+  form.append(el('div',{class:'tags'}, el('button',{class:'btn primary',type:'submit'},'Continuer sur GitHub ↗')), msg);
+  form.addEventListener('submit',e=>{
+    e.preventDefault(); if(!form.reportValidity()) return;
+    const o=values(); let url;
+    if(contribMode==='source') url=issueUrl('1-source.yml',`[Source] ${o.titre} (${o.date})`,{url:o.url,titre:o.titre,date:o.date,famille:o.famille,apport:o.apport,complements:o.complements,brouillon:sourceDraft(o)});
+    else url=issueUrl('2-erreur.yml',`[Erreur] ${o.element.slice(0,120)}`,{element:o.element,nature:o.nature,description:o.description,preuve:o.preuve});
+    if(url.length>8000){ msg.textContent='Le texte est trop long pour être transmis à GitHub : raccourcis les champs libres.'; return; }
+    window.open(url,'_blank','noopener');
+    const d=store.get('contrib',{}); delete d[contribMode]; store.set('contrib',d); contribCtx=null;
+    msg.textContent=''; msg.append('Le formulaire GitHub s\'est ouvert dans un nouvel onglet. Rien ne s\'est ouvert ? ', el('a',{href:url,target:'_blank',rel:'noopener'},'Ouvrir le lien'), '.');
+  });
+  sh.append(form); contribModal.append(sh);
+  setTimeout(()=>{ const f=form.querySelector('input:not([type=radio]):not([type=checkbox]),select,textarea'); f&&f.focus(); },30);
+}
+$('#contribBtn').onclick=()=>openContrib('source');
+
 // ---------- démarrage ----------
 buildControls(); updateHorizonHint(); showHome(); if(window.innerWidth<=820) panel.classList.add('min');
 const v0=store.get('view', window.innerWidth<600?'vlist':'v3d'); setView(U.ok?v0:'vlist');
-if(location.hash==='#visite') startTour('intro',0); else if(location.hash==='#productivite') startTour('productivite',0);
+if(location.hash==='#visite') startTour('intro',0); else if(location.hash==='#productivite') startTour('productivite',0); else if(location.hash==='#contribuer') openContrib('source');
 })();

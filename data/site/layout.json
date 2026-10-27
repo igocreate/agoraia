@@ -3,15 +3,15 @@
   "families": [
     {
       "id": "futurs",
-      "label": "Futurs de la machine"
+      "label": "Science et technique"
     },
     {
       "id": "pouvoirs",
-      "label": "Pouvoirs et conflits"
+      "label": "Guerre et pouvoir"
     },
     {
       "id": "societes",
-      "label": "Sociétés et planète"
+      "label": "Société et écologie"
     }
   ],
   "planets": {

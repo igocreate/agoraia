@@ -28,6 +28,7 @@ vendor/three-r128/      three.js r128 + OrbitControls + CSS2DRenderer (licence M
 vendor/fonts/           Polices auto-hébergées (woff2 variables, OFL) et fonts.css
 scripts/build.py        Validation et build (Python 3.9+, bibliothèque standard uniquement)
 .github/workflows/      pages.yml : validation sur les PR, build et déploiement GitHub Pages sur main
+.github/ISSUE_TEMPLATE/ formulaires d'issue « Proposer une source » et « Signaler une erreur »
 LICENSE, data/LICENSE   MIT pour le code, CC BY 4.0 pour le corpus (citations exclues)
 dist/                   Sortie du build (non versionnée)
 ```
@@ -82,6 +83,16 @@ Les erreurs bloquent le build : id inconnu, planète sans position, citation de 
 - Tout auteur ou locuteur doit exister dans `people[]` (`id` en `p-…`, `country` en ISO-2).
 - Les citations des parcours se référencent par `[id_source, index_citation]`. Insérer une citation au milieu d'une liste décale les index : ajouter en fin de liste, ou mettre à jour `tours.json`.
 
+### Intégrer une contribution (issues GitHub)
+
+Le bouton « Contribuer » (`openContrib` dans app.js, ancre `#contribuer`) ouvre `issues/new?template=…` pré-rempli par l'URL. Il n'y a ni backend ni appel réseau depuis le site. Il existe deux formulaires, dans `.github/ISSUE_TEMPLATE/` : `1-source.yml` (URL, titre, date, famille, apport, compléments et un brouillon JSON) et `2-erreur.yml` (élément, nature, description, preuve). Les `id` des champs YAML doivent rester identiques aux clés passées à `issueUrl()` dans app.js. Les champs pré-remplis sont des `input`/`textarea`, car GitHub ne pré-remplit pas de façon fiable les listes ni les cases à cocher.
+
+Pour intégrer une proposition de source :
+1. relire la source primaire et appliquer les règles ci-dessous (date, verbatim, sites bloqués) ;
+2. coller le brouillon JSON dans `sources[]` et compléter les `?` : planète(s), auteurs (`p-…` à créer dans `people[]` si besoin), `lang`, `kind`, `reliability`, `thesis` ;
+3. une citation proposée dans les compléments entre en `a_verifier` tant qu'elle n'a pas été relue mot pour mot ;
+4. lancer `build.py --check`, puis committer avec `Closes #n`.
+
 ## Règles éditoriales (à respecter strictement)
 
 1. **Règle des 3 ans.** Pas de source antérieure au 25/09/2023, date de constitution du corpus (`meta.cutoff`). Les sources plus anciennes (Ellul, Stochastic Parrots, Crawford 2021…) en ont été retirées. Quelques sources de début octobre 2023 dépassent aujourd'hui 3 ans : on ne fait pas glisser la règle sans décision de Clément.
@@ -104,6 +115,7 @@ Le code est organisé en sections commentées `// ---------- … ----------` :
 - **univers 3D** : module `U`.
 - **visite guidée** : `startTour(id, step)`.
 - **où te situes-tu** : `openPos` et les 8 axes.
+- **contribuer** : `openContrib(mode, ctx)`, `issueUrl` (formulaires d'issue GitHub pré-remplis).
 - **démarrage** : les ancres `#visite` et `#productivite` lancent un parcours.
 
 Points techniques à ne pas casser (bugs déjà rencontrés) :

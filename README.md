@@ -20,7 +20,9 @@ Une citation n'est marquée « vérifiée » que si elle a été retrouvée mot 
 
 Le corpus a été constitué avec l'aide de Claude (Anthropic). Anthropic figure aussi parmi les acteurs cartographiés, d'où une vigilance particulière sur l'équilibre.
 
-Une erreur, une citation mal attribuée, une source à proposer ? [Ouvre une issue](https://github.com/igocreate/agoraia/issues/new).
+## Contribuer
+
+Une source à proposer, une erreur à signaler ? Utilise le bouton « Contribuer » du site ([lien direct](https://igocreate.github.io/agoraia/#contribuer)), ou ouvre directement [une proposition de source](https://github.com/igocreate/agoraia/issues/new?template=1-source.yml) ou [un signalement d'erreur](https://github.com/igocreate/agoraia/issues/new?template=2-erreur.yml). Le site ne transmet rien lui-même : il ouvre un formulaire GitHub pré-rempli que tu relis puis soumets. Chaque contribution est relue avant d'être intégrée.
 
 ## Construire le site
 
