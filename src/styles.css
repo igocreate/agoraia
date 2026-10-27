@@ -3,6 +3,7 @@
   --line:#C6CEDB; --line-2:#DCE1E9; --star:#A55F00; --star-glow:#E5A53A; --focus:#2a78d6;
   --f-futurs:#2a78d6; --f-pouvoirs:#eb6834; --f-societes:#1a9e6f; --f-centre:#A55F00;
   --ok:#0d7a0d; --warn:#9a5b00; --space-dust:#8C95AA; --shadow:0 8px 30px rgba(20,27,45,.12);
+  --primary:#141B2D; --primary-hover:#2A3550; --primary-ink:#F8F9FB; --primary-dot:#F2B544;
   --display:"Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
   --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
   --mono:"JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
@@ -15,6 +16,7 @@
     --line:#2A3450; --line-2:#1B2338; --star:#F2B544; --star-glow:#F7C96B; --focus:#6da7ec;
     --f-futurs:#3987e5; --f-pouvoirs:#d95926; --f-societes:#199e70; --f-centre:#F2B544;
     --ok:#4cc24c; --warn:#f0b24a; --space-dust:#5E6A88; --shadow:0 10px 40px rgba(0,0,0,.45);
+    --primary:#F2B544; --primary-hover:#F7C96B; --primary-ink:#0B0F1A; --primary-dot:#0B0F1A;
   }
 }
 :root[data-theme="dark"]{
@@ -23,6 +25,7 @@
   --line:#2A3450; --line-2:#1B2338; --star:#F2B544; --star-glow:#F7C96B; --focus:#6da7ec;
   --f-futurs:#3987e5; --f-pouvoirs:#d95926; --f-societes:#199e70; --f-centre:#F2B544;
   --ok:#4cc24c; --warn:#f0b24a; --space-dust:#5E6A88; --shadow:0 10px 40px rgba(0,0,0,.45);
+  --primary:#F2B544; --primary-hover:#F7C96B; --primary-ink:#0B0F1A; --primary-dot:#0B0F1A;
 }
 [hidden]{display:none!important}
 html,body{height:100%}
@@ -46,7 +49,9 @@ a{color:inherit;text-underline-offset:3px}
 .seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
 .btn{border:1px solid var(--line);background:var(--surface);padding:6px 13px;border-radius:999px;font-family:var(--display);font-size:13px;font-weight:500;display:inline-flex;align-items:center;gap:6px}
 .btn:hover{border-color:var(--ink-2)}
-.btn.primary{background:var(--star);border-color:var(--star);color:#0B0F1A}
+.btn.primary{background:var(--primary);border-color:var(--primary);color:var(--primary-ink);font-weight:600}
+.btn.primary:hover{background:var(--primary-hover);border-color:var(--primary-hover)}
+.btn.primary .dot{background:var(--primary-dot)}
 .btn .dot{width:8px;height:8px;border-radius:50%;background:currentColor}
 
 .stage{position:relative;min-height:0;overflow:hidden}
