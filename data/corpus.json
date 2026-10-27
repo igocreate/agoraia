@@ -2,7 +2,7 @@
  "meta": {
   "built": "2026-10-20",
   "cutoff": "2023-09-25",
-  "n_sources": 177
+  "n_sources": 178
  },
  "planets": [
   {
@@ -8101,6 +8101,72 @@
    "reliability": "secondaire",
    "notes": "Transcription automatique de la vidéo. Entretien militant : plusieurs affirmations sont à ne pas reprendre telles quelles. (1) Roumanie : l'élection de 2024 a été annulée par la Cour constitutionnelle roumaine (6 décembre 2024), pas par la Commission européenne ; le candidat d'extrême droite était arrivé en tête du premier tour. (2) Le « marché de 30 trillions » attribué à Anthropic est mal converti (30 000 milliards de dollars, pas 300 milliards) et n'a pas été vérifié. (3) Non vérifiés : les « 63 data centers » et « 28 GW » en France, le passage de 50 % à 75 % d'Américains opposés aux data centers.",
    "lot": "VIDEOS"
+  },
+  {
+   "id": "src-agmai-yang-mills-2026",
+   "title": "Recommendation for Immediate Release of Yang–Mills AI Output",
+   "authors": [
+    "p-agmai"
+   ],
+   "publisher": "AGMAI (Institute for Advanced Study)",
+   "date": "2026-10-26",
+   "url": "https://agmai.org/#request-immediate-release",
+   "lang": "en",
+   "kind": "déclaration",
+   "planets": [
+    "recherche",
+    "pouvoir"
+   ],
+   "currents": [
+    "gouvernance"
+   ],
+   "thesis": "OpenAI annonce que ses modèles ont produit des preuves d'existence pour la théorie de Yang–Mills, la chromodynamique quantique et une complétion du Modèle standard. Elle confie les sorties de l'IA à un groupe de physiciens qu'elle a sollicité, et ce groupe a choisi de les rédiger lui-même avant toute publication. Le groupe consultatif de mathématiciens AGMAI demande leur publication immédiate : la compréhension doit se construire en public, avec le même accès pour tous. La question posée au débat : qui contrôle l'accès à un résultat scientifique produit par une IA privée ?",
+   "key_facts": [
+    "26 oct. 2026 : annonce d'OpenAI (preuve en langage naturel pour Yang–Mills le 9 sept., pour la QCD le 18 sept., formalisation Lean de l'existence de Yang–Mills achevée le 16 oct.).",
+    "Les sorties ne sont pas publiées : selon OpenAI, le groupe mené par David Gross (avec Jaffe, Douglas, Klebanov, Nekrasov) a décidé de différer leur publication pour rédiger lui-même les résultats. OpenAI dit ne pas imposer d'accord de confidentialité aux participants et ne pas revendiquer de crédit académique.",
+    "Même annonce, trois modes de publication : le résultat de mathématiques est publié tel quel, celui d'informatique est publié et accompagné d'un groupe externe, celui de physique est confié à un groupe externe qui décide de la publication.",
+    "L'annonce ne mentionne pas le « mass gap » : même confirmé, le résultat ne résoudrait pas à lui seul le problème du millénaire sur Yang–Mills.",
+    "Aucune vérification indépendante à ce jour : il s'agit d'une revendication d'OpenAI, pas d'un résultat établi."
+   ],
+   "quotes": [
+    {
+     "text": "We call on OpenAI to make public without delay the natural-language and Lean outputs behind its announced existence proofs for Yang–Mills theory, quantum chromodynamics, and a completion of the Standard Model.",
+     "fr": "Nous appelons OpenAI à rendre publiques sans délai les sorties en langage naturel et en Lean sur lesquelles reposent ses preuves d'existence annoncées pour la théorie de Yang–Mills, la chromodynamique quantique et une complétion du Modèle standard.",
+     "speaker": "p-agmai",
+     "status": "verifiee",
+     "checked_at": "https://agmai.org/#request-immediate-release"
+    },
+    {
+     "text": "understanding should develop in the open, with everyone given the same access.",
+     "fr": "la compréhension doit se développer en public, chacun ayant le même accès.",
+     "speaker": "p-agmai",
+     "status": "verifiee",
+     "checked_at": "https://agmai.org/#request-immediate-release"
+    },
+    {
+     "text": "By their own account this is now complete, so there is no scientific reason for delaying the release any further.",
+     "fr": "De leur propre aveu, c'est désormais chose faite, il n'y a donc plus aucune raison scientifique de retarder davantage la publication.",
+     "speaker": "p-agmai",
+     "status": "verifiee",
+     "checked_at": "https://agmai.org/#request-immediate-release"
+    },
+    {
+     "text": "For the physics collaboration, the group has decided to hold off on releasing the AI-produced artifacts and instead work on writing it up themselves.",
+     "fr": "Pour la collaboration en physique, le groupe a décidé de différer la publication des productions de l'IA et de travailler plutôt à leur rédaction lui-même.",
+     "speaker": "p-openai-org",
+     "status": "verifiee",
+     "checked_at": "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
+    },
+    {
+     "text": "All of these approaches involve tradeoffs. On the one hand, the collaborations empower experts to foster unpacking the results and contextualizing them in the broader academic community. On the other hand, choosing initial shepherds necessarily shapes who gets involved first and creates asymmetry of information.",
+     "fr": "Toutes ces approches impliquent des compromis. D'un côté, les collaborations donnent aux experts les moyens de décortiquer les résultats et de les situer dans la communauté académique au sens large. De l'autre, choisir les premiers « bergers » détermine nécessairement qui s'implique en premier et crée une asymétrie d'information.",
+     "speaker": "p-openai-org",
+     "status": "verifiee",
+     "checked_at": "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Proposée via l'issue #1, qui pointait vers un article de numerama.com (site bloqué, non consulté). Annonce d'OpenAI : https://openai.com/index/building-scientific-understanding-with-academic-communities/ (page bloquée pour les outils automatisés, erreur 403). Citations 4 et 5 (OpenAI) : texte copié directement depuis cette page dans un navigateur, faits datés recoupés via la citation du communiqué par Peter Woit.. Lecture critique : Peter Woit (Columbia), « Secret Unified Physics Slop », 26/10/2026, https://www.math.columbia.edu/~woit/wordpress/?p=15948, qui juge l'annonce imprécise sur ce qui est prouvé. L'AGMAI s'est constitué après qu'OpenAI a sollicité certains de ses membres pour un comité consultatif ; ils ont préféré un groupe indépendant. Voir aussi sa note du 25/10/2026 contre la désignation de mathématiciens par les labos. Suite de l'épisode Navier-Stokes (src-quanta-navier-stokes). Ne pas présenter comme « prouvé »."
   }
  ],
  "people": [
@@ -10583,6 +10649,15 @@
     "technocritique-fr"
    ],
    "country": "FR"
+  },
+  {
+   "id": "p-agmai",
+   "name": "Advisory Group on Mathematics and Artificial Intelligence (AGMAI)",
+   "role": "Organisation — groupe consultatif indépendant de mathématiciens (Charles, De Lellis, Gowers, Hairer, Srivastava, Tillmann, Vakil, Witten, Wood), hébergé par l'Institute for Advanced Study, bénévole et sans pouvoir de décision sur les labos",
+   "currents": [
+    "gouvernance"
+   ],
+   "country": "INT"
   }
  ],
  "relations": [

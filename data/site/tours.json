@@ -322,6 +322,22 @@
           "question": "Contrôle concentré, ouverture, mésusage : lequel sacrifies-tu ?"
         },
         {
+          "planet": "recherche",
+          "title": "À qui appartient une découverte ?",
+          "text": "En octobre 2026, OpenAI annonce que ses modèles ont prouvé l'existence de théories centrales de la physique, sans vérification indépendante à ce jour. Les preuves ne sont confiées qu'à des physiciens sollicités par l'entreprise, qui ont choisi de les rédiger eux-mêmes avant toute publication. OpenAI reconnaît que ce choix crée une asymétrie d'information. Un groupe de mathématiciens indépendants, dont Timothy Gowers et Edward Witten, demande la publication immédiate : la science doit se faire en public, avec le même accès pour tous.",
+          "quotes": [
+            [
+              "src-agmai-yang-mills-2026",
+              0
+            ],
+            [
+              "src-agmai-yang-mills-2026",
+              4
+            ]
+          ],
+          "question": "Un résultat scientifique produit par une IA privée appartient-il à l'entreprise qui l'a obtenu ?"
+        },
+        {
           "planet": "pouvoir",
           "title": "Et si les limites venaient d'en bas ?",
           "text": "Audrey Tang, ancienne ministre du numérique de Taïwan, défend un alignement construit par les citoyens plutôt que dicté par quelques labos. Asma Mhalla revendique le droit de chacun à dire non. Data for Good cartographie les refus, les syndicats et les recours locaux comme autant de contre-pouvoirs.",
