@@ -1,0 +1,198 @@
+{
+  "_doc": "Une étape par planète pour les parcours à la carte. from = [id de parcours, index d'étape] reprend une étape existante (variantes comprises) ; sinon l'étape est écrite ici, au même format que dans tours.json.",
+  "stops": {
+    "centre": {
+      "from": [
+        "intro",
+        1
+      ]
+    },
+    "trajectoires": {
+      "from": [
+        "intro",
+        2
+      ]
+    },
+    "alignement": {
+      "from": [
+        "intro",
+        3
+      ]
+    },
+    "pouvoir": {
+      "from": [
+        "intro",
+        4
+      ]
+    },
+    "militaire": {
+      "from": [
+        "limites",
+        2
+      ]
+    },
+    "ethique": {
+      "from": [
+        "facture",
+        4
+      ]
+    },
+    "travail": {
+      "from": [
+        "productivite",
+        5
+      ]
+    },
+    "jeunesse": {
+      "planet": "jeunesse",
+      "title": "Apprendre avec l'IA, ou à sa place ?",
+      "text": "Au MIT Media Lab, l'équipe de Nataliya Kosmyna fait rédiger des essais sous EEG : avec un LLM, les participants montrent la connectivité cérébrale la plus faible et peinent à citer leur propre texte. C'est une prépublication sur un petit échantillon, contestée sur sa méthode. En Turquie, des lycéens progressent nettement en mathématiques avec GPT-4, puis font moins bien que les autres une fois l'accès retiré ; un tuteur conçu avec des garde-fous pédagogiques neutralise en grande partie cet effet. L'OCDE le résume : réussir une tâche avec l'IA n'est pas apprendre. Candice Odgers, elle, rappelle qu'à propos des réseaux sociaux les effets massifs annoncés n'ont pas été retrouvés.",
+      "quotes": [
+        [
+          "src-bastani-guardrails-pnas",
+          0
+        ],
+        [
+          "src-ocde-digital-education-2026",
+          0
+        ],
+        [
+          "src-odgers-great-rewiring",
+          0
+        ]
+      ],
+      "question": "Faut-il encadrer l'usage de l'IA pour apprendre, ou apprendre à s'en servir sans s'y perdre ? Et l'alerte est-elle fondée, ou rejoue-t-elle une panique morale ?",
+      "variants": {
+        "scolaire": {
+          "question": "Quand vous faites un devoir avec l'IA, apprenez-vous quelque chose ? Comment le savoir ?"
+        },
+        "tech": {
+          "question": "Comment un junior apprend-il à coder s'il ne galère plus jamais ?"
+        }
+      }
+    },
+    "recherche": {
+      "from": [
+        "limites",
+        5
+      ]
+    },
+    "ecologie": {
+      "from": [
+        "facture",
+        0
+      ]
+    },
+    "regulation": {
+      "from": [
+        "intro",
+        5
+      ]
+    },
+    "creation": {
+      "from": [
+        "creation",
+        0
+      ]
+    },
+    "devs": {
+      "from": [
+        "intro",
+        6
+      ]
+    },
+    "information": {
+      "planet": "information",
+      "title": "Désinformation : une panique mal mesurée ?",
+      "text": "En 2024, plus de deux milliards de personnes ont voté. Les bilans disponibles trouvent peu d'effet mesurable des contenus générés par IA sur les résultats : environ 1 % des messages viraux étudiés en Inde, et aucune preuve d'un résultat modifié selon l'Alan Turing Institute, qui souligne toutefois le manque de données. Le cas le plus grave, l'annulation de la présidentielle roumaine, tient surtout à des comptes coordonnés et à des influenceurs payés sur TikTok. Le risque se déplace peut-être ailleurs : des IA qui persuadent davantage qu'une publicité vidéo, et des assistants qui commettent une erreur significative dans près d'une réponse sur deux quand on les interroge sur l'actualité.",
+      "quotes": [
+        [
+          "src-cetas-elections-2024",
+          0
+        ],
+        [
+          "src-garimella-india-whatsapp-2024",
+          1
+        ],
+        [
+          "src-ebu-bbc-news-integrity-2025",
+          1
+        ]
+      ],
+      "question": "La désinformation générée par IA est-elle surestimée, ou mesure-t-on mal un danger qui se déplace vers la persuasion et les assistants ?",
+      "variants": {
+        "scolaire": {
+          "question": "Comment vérifiez-vous une image, une vidéo ou une réponse d'IA avant de la croire ou de la partager ?"
+        },
+        "elus": {
+          "question": "Qui doit protéger la sincérité d'une élection face aux plateformes et aux IA : l'État, les régulateurs européens, ou les plateformes elles-mêmes ?"
+        },
+        "tech": {
+          "question": "Un assistant IA devrait-il refuser de répondre sur l'actualité ou les élections plutôt que de risquer l'erreur ?"
+        }
+      }
+    },
+    "services": {
+      "planet": "services",
+      "title": "Le guichet automatisé",
+      "text": "En France, l'algorithme de la CAF attribue un score de risque à plus de 32 millions de personnes : La Quadrature du Net y voit un ciblage des plus précaires, la Cnaf affirme qu'il ne déclenche qu'une faible part des contrôles, et un recours est en cours devant le Conseil d'État. En Suède, un modèle de détection de la fraude qui, selon une enquête, sur-sélectionnait les femmes et les migrants a été retiré. Le Défenseur des droits s'inquiète d'agents qui valident tout ce que propose la machine. Dans la police et la justice, la vidéosurveillance algorithmique des JO est prolongée jusqu'en 2030, et des tribunaux encadrent l'usage de l'IA par les juges et les avocats. Les administrations, elles, promettent une IA qui assiste sans décider.",
+      "quotes": [
+        [
+          "src-defenseur-algorithmes-2024",
+          1
+        ],
+        [
+          "src-cnaf-dmde-2026",
+          0
+        ],
+        [
+          "src-comite-vsa-2025",
+          0
+        ]
+      ],
+      "question": "Une décision administrative préparée par un algorithme reste-t-elle une décision humaine, et que faut-il pour pouvoir la contester ?",
+      "variants": {
+        "elus": {
+          "question": "Quelles garanties exigeriez-vous avant d'utiliser un algorithme pour attribuer ou contrôler une aide dans votre collectivité ?"
+        },
+        "scolaire": {
+          "question": "Affelnet, qui affecte les élèves au lycée, repose sur un algorithme : savez-vous comment il fonctionne, et à qui demander des explications ?"
+        },
+        "tech": {
+          "question": "Si vous développiez un algorithme de décision pour une administration, que publieriez-vous pour qu'il puisse être contesté ?"
+        }
+      }
+    },
+    "sante": {
+      "planet": "sante",
+      "title": "Soigner avec la machine",
+      "text": "En Allemagne, le dépistage du cancer du sein assisté par IA détecte davantage de cancers sans plus de rappels, dans une étude financée par l'éditeur du logiciel. Mais des médecins équipés de GPT-4 ne raisonnent pas mieux que les autres, et des endoscopistes habitués à l'IA détectent moins de lésions sans elle : la Haute Autorité de santé recommande de garder une part de pratique sans IA. Au Kenya, un copilote clinique réduit les erreurs dans des cliniques de soins primaires. Derrière les outils, une autre bataille porte sur les données de santé : où elles sont hébergées, et qui peut s'en servir.",
+      "quotes": [
+        [
+          "src-goh-llm-diagnostic-2024",
+          0
+        ],
+        [
+          "src-has-ia-generative-2025",
+          1
+        ],
+        [
+          "src-praim-mammographie-2025",
+          1
+        ]
+      ],
+      "question": "Jusqu'où confier le soin à l'IA : relire, conseiller, décider ? Et comment garder des soignants capables de s'en passer ?",
+      "variants": {
+        "citoyens": {
+          "question": "Voudriez-vous savoir si une IA a participé à votre diagnostic, et pourriez-vous refuser ?"
+        },
+        "scolaire": {
+          "question": "Si vous deveniez médecin ou infirmier, voudriez-vous apprendre votre métier avec ou sans IA ?"
+        },
+        "tech": {
+          "question": "Des médecins équipés d'un LLM ne raisonnent pas mieux que les autres : qu'est-ce que cela dit de la façon dont on conçoit les outils d'assistance ?"
+        }
+      }
+    }
+  }
+}

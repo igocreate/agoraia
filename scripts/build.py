@@ -7,6 +7,9 @@ Entrées
   data/site/layout.json   familles et disposition 3D des planètes
   data/site/tours.json    parcours guidés
   data/site/thread.json   fil transversal « Productivité »
+  data/site/publics.json  publics (questions et parcours adaptés)
+  data/site/stops.json    une étape par planète, pour les parcours à la carte
+                          (étapes par référence : voir resolve_refs)
   src/                    index.html, body.html, styles.css, app.js
   vendor/three-r128/      three.js r128 (MIT), servi localement
   vendor/fonts/           polices auto-hébergées (OFL)
@@ -44,8 +47,8 @@ DIST = ROOT / "dist"
 
 SITE_TITLE = "Agora IA"
 SITE_URL = "https://igocreate.github.io/agoraia/"
-SITE_DESC = ("Un univers à explorer pour débattre des risques, de l'éthique et des choix de société "
-             "liés à l'IA : thématiques, courants de pensée, citations vérifiées et parcours guidés.")
+SITE_DESC = ("Un outil ouvert pour débattre, seul ou en groupe, des enjeux sociétaux, scientifiques et politiques "
+             "de l'IA : thématiques, courants de pensée, citations vérifiées et parcours adaptés à chaque public.")
 
 CDN_SCRIPTS = [
     "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js",
@@ -64,15 +67,20 @@ GOOGLE_FONTS = (
 )
 
 # Région d'une source = région majoritaire de ses auteurs (pays ISO-2 dans corpus.people[].country).
-# Égalité : International > Amérique du Nord > Asie > Océanie > Europe. Pays absent : International.
+# Égalité : International > Afrique > Amérique latine > Amérique du Nord > Asie > Océanie > Europe.
+# Pays absent : International.
 REGION = {
     **{c: "Amérique du Nord" for c in ("US", "CA")},
     **{c: "Europe" for c in ("FR", "GB", "DE", "CH", "ES", "IT", "NL", "BE", "IE", "AT", "DK", "FI",
-                             "SE", "NO", "PT", "PL", "VA", "EU")},
-    **{c: "Asie" for c in ("CN", "TW", "HK", "JP", "KR", "IN", "SG", "MY", "IL", "TR")},
+                             "SE", "NO", "PT", "PL", "VA", "EU", "RO", "MD", "GR", "CZ", "HU", "UA")},
+    **{c: "Asie" for c in ("CN", "TW", "HK", "JP", "KR", "IN", "SG", "MY", "IL", "TR", "PH", "ID", "PK",
+                           "BD", "TH", "VN")},
+    **{c: "Afrique" for c in ("ZA", "NG", "KE", "RW", "SN", "CI", "BJ", "GH", "UG", "ZW", "EG", "MA",
+                              "TN", "ET")},
+    **{c: "Amérique latine" for c in ("BR", "MX", "AR", "CL", "CO", "VE", "PE")},
     "AU": "Océanie",
 }
-REGION_TIEBREAK = ["International", "Amérique du Nord", "Asie", "Océanie", "Europe"]
+REGION_TIEBREAK = ["International", "Afrique", "Amérique latine", "Amérique du Nord", "Asie", "Océanie", "Europe"]
 
 QUOTE_STATUS = {"verifiee", "a_verifier", "transcription"}
 # « fiction » s'affiche comme un miroir, pas comme une preuve ; « outil » a sa propre carte et un octaèdre en 3D.
@@ -110,8 +118,43 @@ class Report:
         self.warnings.append(msg)
 
 
-def validate(corpus, layout, tours, thread) -> Report:
-    r = Report()
+def resolve_refs(tours, stops, r: Report):
+    """Étapes par référence, résolues avant la validation.
+    {"from": [parcours, index]} reprend une étape de parcours ; dans tours.json, {"stop": planète} reprend
+    l'étape à la carte de cette planète. Les autres champs complètent ou remplacent ceux de l'étape d'origine ;
+    une étape qui redéfinit un champ abandonne les variantes de l'étape d'origine (ses propres variantes s'appliquent).
+    On ne référence que des étapes écrites en entier, pas une autre référence."""
+    T_by = {t["id"]: t for t in tours}
+
+    def deref(where, st, allow_stop):
+        if "from" in st:
+            tid, k = st["from"]
+            if tid not in T_by or k >= len(T_by[tid]["steps"]):
+                r.err(f"{where}: étape introuvable {st['from']}")
+                return st
+            base = T_by[tid]["steps"][k]
+        elif allow_stop and "stop" in st:
+            if st["stop"] not in stops_full:
+                r.err(f"{where}: étape à la carte introuvable « {st['stop']} »")
+                return st
+            base = stops_full[st["stop"]]
+        else:
+            return st
+        if "from" in base or "stop" in base:
+            r.err(f"{where}: référence vers une autre référence")
+            return st
+        over = {k: v for k, v in st.items() if k not in ("from", "stop")}
+        out = {k: v for k, v in base.items() if not (over and k == "variants")}
+        out.update(over)
+        return out
+
+    stops_full = {p: deref(f"stops.json, {p}", st, False) for p, st in stops.items()}
+    tours_full = [{**t, "steps": [deref(f"parcours {t['id']} étape {k + 1}", st, True)
+                                  for k, st in enumerate(t["steps"])]} for t in tours]
+    return tours_full, stops_full
+
+
+def validate(corpus, layout, tours, thread, publics, stops, r: Report) -> Report:
     ids = {}
     for key in ("planets", "currents", "sources", "people"):
         seen = Counter(x["id"] for x in corpus[key])
@@ -158,9 +201,29 @@ def validate(corpus, layout, tours, thread) -> Report:
         for end in ("from", "to"):
             if rel[end] not in nodes:
                 r.err(f"relation {rel['from']}→{rel['to']}: extrémité inconnue « {rel[end]} »")
-    for q in corpus["questions"]:
+    PU = {x["id"] for x in publics}
+    if "tous" not in PU:
+        r.err("publics.json: le public « tous » est obligatoire")
+    T_ids = {t["id"] for t in tours}
+    for x in publics:
+        if x.get("intro") not in T_ids:
+            r.err(f"public {x['id']}: parcours d'introduction inconnu « {x.get('intro')} »")
+        for pid in x.get("start", []):
+            if pid not in P:
+                r.err(f"public {x['id']}: planète inconnue « {pid} »")
+
+    def check_publics(where, obj):
+        for pu in obj.get("publics", []):
+            if pu not in PU:
+                r.err(f"{where}: public inconnu « {pu} »")
+        for pu in obj.get("variants", {}):
+            if pu not in PU:
+                r.err(f"{where}: variante pour un public inconnu « {pu} »")
+
+    for k, q in enumerate(corpus["questions"]):
         if q["planet"] not in P:
             r.err(f"question: planète inconnue « {q['planet']} »")
+        check_publics(f"question {k}", q)
     for p in corpus["people"]:
         for c in p.get("currents", []):
             if c not in CU:
@@ -179,18 +242,37 @@ def validate(corpus, layout, tours, thread) -> Report:
         if v["fam"] not in fams:
             r.err(f"layout.json: famille inconnue « {v['fam']} » pour {p}")
 
-    for t in tours:
-        for k, st in enumerate(t["steps"]):
-            where = f"parcours {t['id']} étape {k + 1}"
-            if st.get("planet") and st["planet"] not in P:
-                r.err(f"{where}: planète inconnue « {st['planet']} »")
-            for sid, qi in st.get("quotes", []):
+    def check_step(where, st):
+        for key in ("planet", "title", "text", "question"):
+            if not st.get(key):
+                r.err(f"{where}: champ {key} manquant")
+        if st.get("planet") and st["planet"] not in P:
+            r.err(f"{where}: planète inconnue « {st['planet']} »")
+        check_publics(where, st)
+        for v in [st, *st.get("variants", {}).values()]:
+            for sid, qi in v.get("quotes", []):
                 if sid not in S_by:
                     r.err(f"{where}: source inconnue « {sid} »")
                 elif qi >= len(S_by[sid]["quotes"]):
                     r.err(f"{where}: citation {qi} absente de {sid}")
                 elif S_by[sid]["quotes"][qi]["status"] != "verifiee":
                     r.warn(f"{where}: cite une citation non vérifiée ({sid}#{qi})")
+
+    for t in tours:
+        check_publics(f"parcours {t['id']}", t)
+        for k, st in enumerate(t["steps"]):
+            check_step(f"parcours {t['id']} étape {k + 1}", st)
+
+    for p in P - set(stops):
+        r.err(f"stops.json: planète « {p} » sans étape")
+    for p, st in stops.items():
+        where = f"stops.json, {p}"
+        if p not in P:
+            r.err(f"{where}: planète inconnue")
+        elif st.get("planet") != p:
+            r.err(f"{where}: l'étape porte sur une autre planète (« {st.get('planet')} »)")
+        else:
+            check_step(where, st)
 
     branches = {b["id"] for b in thread["branches"]}
     for p in thread["planets"]:
@@ -207,7 +289,7 @@ def validate(corpus, layout, tours, thread) -> Report:
 
 
 # ------------------------------------------------------------------ transformation
-def compact(corpus, layout, tours, thread, built: str) -> dict:
+def compact(corpus, layout, tours, thread, publics, stops, built: str) -> dict:
     people = {p["id"]: p for p in corpus["people"]}
 
     def quote(q):
@@ -251,6 +333,8 @@ def compact(corpus, layout, tours, thread, built: str) -> dict:
         "rels": [{"f": x["from"], "t": x["to"], "ty": x["type"], "w": x.get("why", "")} for x in corpus["relations"]],
         "questions": corpus["questions"],
         "tours": tours,
+        "publics": publics,
+        "stops": stops,
         "thread": th,
         "occupations": corpus.get("occupations", []),
     }
@@ -315,8 +399,12 @@ def main(argv=None):
     layout = load(DATA / "site" / "layout.json")
     tours = load(DATA / "site" / "tours.json")["tours"]
     thread = load(DATA / "site" / "thread.json")["thread"]
+    publics = load(DATA / "site" / "publics.json")["publics"]
+    stops = load(DATA / "site" / "stops.json")["stops"]
 
-    rep = validate(corpus, layout, tours, thread)
+    rep = Report()
+    tours, stops = resolve_refs(tours, stops, rep)
+    validate(corpus, layout, tours, thread, publics, stops, rep)
     if rep.warnings and not args.quiet:
         print(f"{len(rep.warnings)} avertissement(s) :")
         for w in rep.warnings:
@@ -330,11 +418,11 @@ def main(argv=None):
     nq = sum(len(s["quotes"]) for s in corpus["sources"])
     nv = sum(q["status"] == "verifiee" for s in corpus["sources"] for q in s["quotes"])
     print(f"Données valides : {len(corpus['sources'])} sources, {nq} citations ({nv} vérifiées), "
-          f"{len(corpus['people'])} personnes, {len(tours)} parcours.")
+          f"{len(corpus['people'])} personnes, {len(tours)} parcours, {len(publics)} publics.")
     if args.check:
         return 0
 
-    data = compact(corpus, layout, tours, thread, args.date)
+    data = compact(corpus, layout, tours, thread, publics, stops, args.date)
     html, artifact = build(data)
     print(f"dist/index.html ({len(html.encode()) // 1024} Ko + assets) · dist/artifact.html ({len(artifact.encode()) // 1024} Ko)")
     return 0

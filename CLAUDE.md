@@ -2,7 +2,7 @@
 
 ## Le projet en bref
 
-Agora IA est un site statique qui sert de support à une séance de débat entre ingénieurs logiciel utilisateurs d'IA générative (novembre 2026). Il porte sur les risques, l'éthique et les choix de société liés à l'IA et à l'AGI. Le site présente un « univers » 3D : 12 thématiques (planètes) autour d'une question centrale, « Survie et contrôle : qui garde la main sur l'IA ? ». On y trouve aussi des courants de pensée, des sources primaires avec citations vérifiées, 8 parcours guidés, un fil transversal sur la productivité, une cartographie des métiers exposés et un module « Où te situes-tu ? ».
+Agora IA est un site statique, outil ouvert pour débattre, seul ou en groupe, des enjeux sociétaux, scientifiques et politiques de l'IA et de l'AGI. Il a d'abord servi de support à une séance entre ingénieurs logiciel (5 novembre 2026, tag git `seance-2026-11-05`) ; cette formulation reste disponible en choisissant le public « Ingénieurs et tech ». Le site présente un « univers » 3D : 15 thématiques (planètes) autour d'une question centrale, « Survie et contrôle : qui garde la main sur l'IA ? ». On y trouve aussi des courants de pensée, des sources primaires avec citations vérifiées, 6 publics (questions et parcours adaptés), 8 parcours guidés, des parcours « à la carte » composés par l'animateur, un fil transversal sur la productivité, une cartographie des métiers exposés et un module « Où te situes-tu ? ».
 
 Le projet s'appelait auparavant « Orbites de l'IA ». Ce nom peut encore apparaître dans de vieux documents.
 
@@ -10,7 +10,7 @@ Ce qui compte pour le projet (et qui doit guider toute modification) :
 
 - **Rigueur des sources.** Chaque citation affichée est sourcée (URL et date) et porte un statut de vérification. On n'invente jamais une citation et on ne paraphrase jamais entre guillemets.
 - **Équilibre.** Chaque courant est présenté par ses meilleurs arguments, puis par ses critiques. Les voix non occidentales (Chine, Japon, Inde, Corée…) sont représentées.
-- **Utilité en séance.** Un participant doit pouvoir situer sa position sur au moins 3 lignes de fracture. L'introduction tient en 15 minutes avec le parcours « intro ».
+- **Utilité en séance.** Un participant doit pouvoir situer sa position sur au moins 3 lignes de fracture. L'introduction tient en 15 minutes avec le parcours « intro ». Un animateur doit pouvoir composer une séance pour n'importe quel public à partir des thématiques choisies par son groupe.
 
 ## Structure du dépôt
 
@@ -20,6 +20,8 @@ data/corpus.json        Corpus de recherche, source de vérité : sources, perso
 data/site/layout.json   Familles de planètes, position 3D [x,y,z] et poids [court, long terme]
 data/site/tours.json    Parcours guidés (étapes, planète, texte, citations, question)
 data/site/thread.json   Fil « Productivité : pour qui, pour quoi ? » (trilemme et branches)
+data/site/publics.json Publics (tous, citoyens, scolaire, entreprises, elus, tech) : intro et planètes conseillées
+data/site/stops.json   Une étape par planète pour les parcours à la carte (reprise d'une étape de parcours ou écrite)
 src/index.html          Gabarit HTML du site autonome (placeholders {{…}})
 src/body.html           Balisage de l'application (header, scène, panneaux, modale)
 src/styles.css          Styles et tokens de thème clair/sombre
@@ -59,7 +61,9 @@ Il n'y a ni npm ni bundler. Ne pas en introduire sans en discuter.
 - Personnes : `id, n, r, c (pays ISO-2), cu`.
 - Relations : `f, t, ty, w`. Les clés `cpos` et `rels` correspondent à `current_pos` et `relations` dans le corpus.
 - Le champ `branch` d'une source l'ajoute automatiquement à la branche du même id dans le fil Productivité.
-- Région = région majoritaire des pays des auteurs (table `REGION` dans build.py). En cas d'égalité, l'ordre est International > Amérique du Nord > Asie > Océanie > Europe.
+- Publics : une question de débat, un parcours ou une étape sans `publics` vaut pour tous. `variants: {public: …}` remplace la formulation pour un public : un texte pour une question du corpus, un objet de champs (`title`, `text`, `question`, `quotes`) pour une étape. La formulation par défaut doit rester valable pour tout public ; la variante `tech` conserve celle de la séance de novembre 2026. Une variante ne change que le cadrage, jamais les faits.
+- Étapes par référence (`resolve_refs` dans build.py) : dans `stops.json` comme dans `tours.json`, `{"from": [parcours, index]}` reprend une étape de parcours ; dans `tours.json`, `{"stop": planète}` reprend l'étape à la carte de cette planète. Les autres champs (souvent `question`) remplacent ceux de l'origine, et une étape qui redéfinit un champ abandonne les variantes d'origine. Toute planète doit avoir un stop. Les parcours d'introduction par public (`intro-citoyens`, `intro-scolaire`, `intro-entreprises`, `intro-elus`) sont faits ainsi : pour changer un texte, modifier l'étape d'origine.
+- Région = région majoritaire des pays des auteurs (table `REGION` dans build.py). En cas d'égalité, l'ordre est International > Afrique > Amérique latine > Amérique du Nord > Asie > Océanie > Europe.
 
 Les erreurs bloquent le build : id inconnu, planète sans position, citation de parcours inexistante, etc. Les avertissements ne le bloquent pas : source antérieure à la date limite, citation non vérifiée dans un parcours, type de source non répertorié.
 
@@ -115,8 +119,10 @@ Le code est organisé en sections commentées `// ---------- … ----------` :
 - **univers 3D** : module `U`.
 - **visite guidée** : `startTour(id, step)`.
 - **où te situes-tu** : `openPos` et les 8 axes.
+- **composer une séance** : `openSeance`, `buildCarte` (parcours `carte` généré : question centrale + stops choisis, `more` questions supplémentaires selon la durée), `launchCarte`.
 - **contribuer** : `openContrib(mode, ctx)`, `issueUrl` (formulaires d'issue GitHub pré-remplis).
-- **démarrage** : les ancres `#visite` et `#productivite` lancent un parcours.
+- **démarrage** : les ancres `#visite` et `#productivite` lancent un parcours ; `#public=scolaire` choisit le public ; `#seance=elus:ecologie,regulation[:120]` lance un parcours à la carte.
+- **publics** : `state.public` (persisté sous `agoraia:public`), `setPublic`, `qText`, `stepFor`, `planetQuestions`, `visibleTours`.
 
 Points techniques à ne pas casser (bugs déjà rencontrés) :
 

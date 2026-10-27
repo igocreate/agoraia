@@ -1,5 +1,5 @@
 {
-  "_doc": "Parcours guidés. quotes = [id de source, index de la citation dans source.quotes].",
+  "_doc": "Parcours guidés. quotes = [id de source, index de la citation dans source.quotes]. publics = ids de data/site/publics.json pour lesquels le parcours est proposé (absent : tous). variants = {public: {champs de l'étape à remplacer}} (title, text, question, quotes). Une étape peut aussi être une référence : {\"from\": [parcours, index]} ou {\"stop\": planète}, avec des champs qui remplacent ceux de l'étape d'origine (voir resolve_refs dans build.py).",
   "tours": [
     {
       "id": "intro",
@@ -103,8 +103,8 @@
         },
         {
           "planet": "devs",
-          "title": "Nous, les devs",
-          "text": "Les données de paie de Stanford montrent un décrochage de l'emploi des 22-25 ans dans les métiers exposés, surtout par des embauches en moins. En 2025, un essai randomisé de METR trouvait des développeurs expérimentés 19 % plus lents avec l'IA, persuadés d'avoir gagné 20 %. En Inde, TCS supprime 12 000 postes en assurant que ce n'est « pas à cause de l'IA ».",
+          "title": "Les métiers en première ligne",
+          "text": "Les données de paie de Stanford montrent un décrochage de l'emploi des 22-25 ans dans les métiers exposés, surtout par des embauches en moins. Chez les développeurs, METR mesurait en 2025 un ralentissement de 19 % avec l'IA ; début 2026, il les juge probablement accélérés, sans pouvoir le mesurer, car trop d'entre eux refusent désormais de travailler sans IA. En Inde, TCS supprime 12 000 postes en assurant que ce n'est « pas à cause de l'IA ».",
           "quotes": [
             [
               "src-brynjolfsson-canaries",
@@ -112,10 +112,22 @@
             ],
             [
               "src-metr-dev-productivity",
-              1
+              0
             ]
           ],
-          "question": "Si l'IA fait le travail des juniors, qui deviendra senior dans dix ans ?"
+          "question": "Si l'IA fait le travail des débutants, qui deviendra expert dans dix ans ?",
+          "variants": {
+            "tech": {
+              "title": "Nous, les devs",
+              "question": "Si l'IA fait le travail des juniors, qui deviendra senior dans dix ans ?"
+            },
+            "scolaire": {
+              "question": "Si l'IA fait le travail des débutants, comment apprendrez-vous votre futur métier ?"
+            },
+            "entreprises": {
+              "question": "Si l'IA fait le travail des débutants, comment votre entreprise formera-t-elle ses experts de demain ?"
+            }
+          }
         },
         {
           "planet": "ecologie",
@@ -131,7 +143,245 @@
               0
             ]
           ],
-          "question": "Accepterais-tu un quota d'usage de l'IA, comme un budget carbone, pour ton équipe ?"
+          "question": "Accepterais-tu un quota d'usage de l'IA, comme un budget carbone, pour toi ou ton organisation ?",
+          "variants": {
+            "tech": {
+              "question": "Accepterais-tu un quota d'usage de l'IA, comme un budget carbone, pour ton équipe ?"
+            },
+            "elus": {
+              "question": "Faut-il fixer un budget carbone de l'IA pour les services publics, et qui le contrôlerait ?"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "intro-citoyens",
+      "title": "L'IA et moi, au quotidien",
+      "publics": [
+        "citoyens"
+      ],
+      "steps": [
+        {
+          "from": [
+            "intro",
+            1
+          ],
+          "question": "Le récit d'une IA qui pourrait nous détruire est-il à prendre au sérieux, ou détourne-t-il l'attention des problèmes d'aujourd'hui ?"
+        },
+        {
+          "stop": "information",
+          "question": "Comment vérifiez-vous une image, une vidéo ou une réponse d'IA avant de la croire ou de la partager ?"
+        },
+        {
+          "stop": "sante",
+          "question": "Voudriez-vous savoir si une IA a participé à votre diagnostic, et pourriez-vous refuser ?"
+        },
+        {
+          "stop": "jeunesse",
+          "question": "Faut-il encadrer l'usage de l'IA par les enfants et les adolescents, et qui doit le faire : les parents, l'école, les plateformes ?"
+        },
+        {
+          "from": [
+            "productivite",
+            0
+          ],
+          "question": "Quand un dirigeant promet la semaine de trois jours grâce à l'IA, qu'est-ce qui garantirait que ce temps nous revienne ?"
+        },
+        {
+          "from": [
+            "facture",
+            0
+          ],
+          "question": "Saviez-vous ce que consomme votre usage quotidien de l'IA ? Est-ce que ça changerait quelque chose ?"
+        },
+        {
+          "stop": "services",
+          "question": "Si une décision vous concernant (une aide, un contrôle, une orientation) était préparée par un algorithme, voudriez-vous le savoir, et comment la contester ?"
+        },
+        {
+          "from": [
+            "fondateurs",
+            0
+          ],
+          "question": "Quelques entreprises de la tech pèsent autant que des États : comment, en tant que citoyens, leur demander des comptes ?"
+        }
+      ]
+    },
+    {
+      "id": "intro-scolaire",
+      "title": "Grandir avec l'IA",
+      "publics": [
+        "scolaire"
+      ],
+      "steps": [
+        {
+          "stop": "jeunesse",
+          "question": "Quand vous faites un devoir avec l'IA, apprenez-vous quelque chose ? Comment le savoir ?"
+        },
+        {
+          "from": [
+            "creation",
+            0
+          ],
+          "question": "Publier un dessin, un texte ou une vidéo en ligne, est-ce accepter qu'une IA s'en nourrisse ?"
+        },
+        {
+          "stop": "information",
+          "question": "Comment vérifiez-vous une image, une vidéo ou une réponse d'IA avant de la croire ou de la partager ?"
+        },
+        {
+          "from": [
+            "intro",
+            6
+          ],
+          "question": "Si l'IA fait le travail des débutants, comment apprendrez-vous votre futur métier ?"
+        },
+        {
+          "from": [
+            "facture",
+            0
+          ],
+          "question": "Saviez-vous ce que consomme votre usage quotidien de l'IA ? Est-ce que ça changerait quelque chose ?"
+        },
+        {
+          "from": [
+            "intro",
+            2
+          ],
+          "question": "Dans dix ans, l'IA sera-t-elle un outil parmi d'autres, ou aura-t-elle changé votre vie plus qu'Internet ?"
+        },
+        {
+          "stop": "services",
+          "question": "Affelnet, qui affecte les élèves au lycée, repose sur un algorithme : savez-vous comment il fonctionne, et à qui demander des explications ?"
+        }
+      ]
+    },
+    {
+      "id": "intro-entreprises",
+      "title": "L'IA au travail : promesses et arbitrages",
+      "publics": [
+        "entreprises"
+      ],
+      "steps": [
+        {
+          "from": [
+            "productivite",
+            0
+          ]
+        },
+        {
+          "from": [
+            "productivite",
+            1
+          ],
+          "question": "Dans votre organisation, qui mesure le gain réel de l'IA, et comment ?"
+        },
+        {
+          "from": [
+            "productivite",
+            2
+          ],
+          "question": "Dans votre organisation, quels métiers changent déjà, et pour qui est-ce une aide ou une menace ?"
+        },
+        {
+          "from": [
+            "intro",
+            6
+          ],
+          "question": "Si l'IA fait le travail des débutants, comment votre entreprise formera-t-elle ses experts de demain ?"
+        },
+        {
+          "from": [
+            "creation",
+            5
+          ],
+          "question": "Quand vos équipes confient à un assistant IA des documents internes ou des données clients, quelles garanties exigez-vous avant ?"
+        },
+        {
+          "from": [
+            "monde",
+            1
+          ],
+          "question": "Pour votre organisation, la régulation européenne de l'IA est-elle une contrainte, une protection, ou un avantage face à la concurrence ?"
+        },
+        {
+          "from": [
+            "facture",
+            5
+          ],
+          "question": "Accepteriez-vous un budget carbone de l'IA pour votre organisation, et qui l'arbitrerait ?",
+          "quotes": [
+            [
+              "src-marquet-numerique-immateriel",
+              0
+            ]
+          ]
+        },
+        {
+          "from": [
+            "productivite",
+            5
+          ],
+          "question": "Si l'IA fait gagner une journée par semaine à une équipe, à qui revient-elle : à l'entreprise, aux salariés, ou à la planète ? Et le dialogue social a-t-il son mot à dire ?"
+        }
+      ]
+    },
+    {
+      "id": "intro-elus",
+      "title": "Décider pour un territoire",
+      "publics": [
+        "elus"
+      ],
+      "steps": [
+        {
+          "stop": "services",
+          "question": "Quelles garanties exigeriez-vous avant d'utiliser un algorithme pour attribuer ou contrôler une aide dans votre collectivité ?"
+        },
+        {
+          "from": [
+            "facture",
+            3
+          ],
+          "question": "Qui devrait décider de l'implantation d'un data center sur votre territoire : l'État, la commune, les habitants ? Et à quelles conditions dire oui ?"
+        },
+        {
+          "stop": "information",
+          "question": "Qui doit protéger la sincérité d'une élection face aux plateformes et aux IA : l'État, les régulateurs européens, ou les plateformes elles-mêmes ?"
+        },
+        {
+          "from": [
+            "productivite",
+            2
+          ],
+          "question": "Quels métiers de votre territoire sont les plus exposés, et que peuvent faire les politiques locales de formation et d'emploi ?"
+        },
+        {
+          "from": [
+            "monde",
+            1
+          ],
+          "question": "Réguler, est-ce protéger les citoyens ou condamner l'Europe au décrochage ? Et quelle marge d'action reste-t-il aux collectivités ?"
+        },
+        {
+          "from": [
+            "fondateurs",
+            3
+          ],
+          "question": "Le lobbying des labos d'IA est-il une menace démocratique, ou une participation normale au débat public ? Comment s'en garder quand on décide ?"
+        },
+        {
+          "from": [
+            "limites",
+            6
+          ],
+          "question": "Quel contre-pouvoir une collectivité ou une administration peut-elle exercer, par exemple par ses achats publics ?"
+        },
+        {
+          "from": [
+            "fondateurs",
+            4
+          ]
         }
       ]
     },
@@ -351,7 +601,15 @@
               2
             ]
           ],
-          "question": "Quel contre-pouvoir pouvons-nous exercer, nous, en tant qu'ingénieurs ?"
+          "question": "Quel contre-pouvoir pouvons-nous exercer, nous, en tant que citoyens, salariés ou clients ?",
+          "variants": {
+            "tech": {
+              "question": "Quel contre-pouvoir pouvons-nous exercer, nous, en tant qu'ingénieurs ?"
+            },
+            "elus": {
+              "question": "Quel contre-pouvoir une collectivité ou une administration peut-elle exercer, par exemple par ses achats publics ?"
+            }
+          }
         }
       ]
     },
@@ -378,14 +636,14 @@
         {
           "planet": "devs",
           "title": "Plus rapides, vraiment ?",
-          "text": "En 2025, l'essai randomisé de METR trouvait des développeurs open source expérimentés 19 % plus lents avec l'IA, alors qu'ils se croyaient 20 % plus rapides. Le rapport DORA voit l'IA comme un amplificateur : elle renforce les bonnes équipes, aggrave les dysfonctionnements des autres, et reste associée à moins de stabilité des livraisons.",
+          "text": "En 2025, l'essai randomisé de METR trouvait des développeurs open source expérimentés 19 % plus lents avec l'IA, alors qu'ils se croyaient 20 % plus rapides. Début 2026, METR les juge probablement accélérés, sans pouvoir dire de combien. Sur plus de 500 000 développeurs GitHub, une étude du NBER trouve que les agents font exploser les commits, mais que les versions publiées n'augmentent que de 30 % : revue, contrôle qualité et publication restent humains. Le rapport DORA voit l'IA comme un amplificateur, associé à moins de stabilité des livraisons.",
           "quotes": [
             [
               "src-metr-dev-productivity",
-              1
+              0
             ],
             [
-              "src-dora-2025",
+              "src-nber-shipping-code-2026",
               0
             ]
           ],
@@ -471,6 +729,9 @@
           ],
           "question": "Changerais-tu d'outil pour des raisons politiques ? À quel coût pour ton équipe ou ton client, et selon quels critères en plus de ceux de Follow the Stack ?"
         }
+      ],
+      "publics": [
+        "tech"
       ]
     },
     {
@@ -571,7 +832,15 @@
               0
             ]
           ],
-          "question": "Accepterais-tu un quota d'usage de l'IA, comme un budget carbone, pour ton équipe ?"
+          "question": "Accepterais-tu un quota d'usage de l'IA, comme un budget carbone, pour toi ou ton organisation ?",
+          "variants": {
+            "tech": {
+              "question": "Accepterais-tu un quota d'usage de l'IA, comme un budget carbone, pour ton équipe ?"
+            },
+            "elus": {
+              "question": "Faut-il fixer un budget carbone de l'IA pour les services publics, et qui le contrôlerait ?"
+            }
+          }
         }
       ]
     },
@@ -841,7 +1110,12 @@
               0
             ]
           ],
-          "question": "Qui doit porter la charge de la preuve : le créateur qui soupçonne, ou le fournisseur qui sait ce qu'il a ingéré ? Accepterions-nous la même règle pour le code que nous publions sur GitHub ?"
+          "question": "Qui doit porter la charge de la preuve : le créateur qui soupçonne, ou le fournisseur qui sait ce qu'il a ingéré ? Accepterions-nous la même règle pour ce que nous publions nous-mêmes en ligne ?",
+          "variants": {
+            "tech": {
+              "question": "Qui doit porter la charge de la preuve : le créateur qui soupçonne, ou le fournisseur qui sait ce qu'il a ingéré ? Accepterions-nous la même règle pour le code que nous publions sur GitHub ?"
+            }
+          }
         },
         {
           "planet": "creation",
@@ -873,7 +1147,15 @@
               0
             ]
           ],
-          "question": "Dans nos propres produits, réutiliserions-nous les données de nos utilisateurs pour entraîner un modèle avec un simple opt-out ? Qu'est-ce qui nous retiendrait : le droit, l'image ou nos convictions ?"
+          "question": "Une entreprise qui réutilise les données de ses utilisateurs pour entraîner un modèle avec un simple opt-out : qu'est-ce qui devrait la retenir, le droit, l'image ou des convictions ?",
+          "variants": {
+            "tech": {
+              "question": "Dans nos propres produits, réutiliserions-nous les données de nos utilisateurs pour entraîner un modèle avec un simple opt-out ? Qu'est-ce qui nous retiendrait : le droit, l'image ou nos convictions ?"
+            },
+            "scolaire": {
+              "question": "Savez-vous si vos messages, vos photos ou vos devoirs servent à entraîner une IA ? Un simple opt-out vous suffit-il ?"
+            }
+          }
         },
         {
           "planet": "creation",
@@ -889,7 +1171,12 @@
               1
             ]
           ],
-          "question": "Quand nous branchons un assistant sur notre code, nos tickets ou nos données clients, qu'exigeons-nous avant d'y verser quoi que ce soit ?"
+          "question": "Quand nous confions à un assistant IA nos documents ou des données sur d'autres personnes, qu'exigeons-nous avant d'y verser quoi que ce soit ?",
+          "variants": {
+            "tech": {
+              "question": "Quand nous branchons un assistant sur notre code, nos tickets ou nos données clients, qu'exigeons-nous avant d'y verser quoi que ce soit ?"
+            }
+          }
         }
       ]
     }

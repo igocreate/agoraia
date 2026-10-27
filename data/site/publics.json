@@ -1,0 +1,71 @@
+{
+  "_doc": "Publics proposés à l'accueil. intro = parcours d'introduction du public (environ 15 minutes) ; start = planètes conseillées pour « Par où commencer ». Le public « tous » est le défaut.",
+  "publics": [
+    {
+      "id": "tous",
+      "label": "Tout public",
+      "desc": "Les questions dans leur formulation générale, pour une première exploration.",
+      "intro": "intro",
+      "start": [
+        "centre",
+        "travail",
+        "ecologie"
+      ]
+    },
+    {
+      "id": "citoyens",
+      "label": "Grand public",
+      "desc": "Cafés-débats, médiathèques, associations.",
+      "intro": "intro-citoyens",
+      "start": [
+        "centre",
+        "sante",
+        "information"
+      ]
+    },
+    {
+      "id": "scolaire",
+      "label": "Élèves et étudiants",
+      "desc": "Lycées, universités, écoles.",
+      "intro": "intro-scolaire",
+      "start": [
+        "jeunesse",
+        "creation",
+        "ecologie"
+      ]
+    },
+    {
+      "id": "entreprises",
+      "label": "Entreprises et équipes",
+      "desc": "Séminaires, CSE, directions, métiers non techniques.",
+      "intro": "intro-entreprises",
+      "start": [
+        "travail",
+        "devs",
+        "regulation"
+      ]
+    },
+    {
+      "id": "elus",
+      "label": "Élus et décideurs publics",
+      "desc": "Collectivités, administrations.",
+      "intro": "intro-elus",
+      "start": [
+        "services",
+        "information",
+        "ecologie"
+      ]
+    },
+    {
+      "id": "tech",
+      "label": "Ingénieurs et tech",
+      "desc": "Développeurs, équipes produit, data : la formulation de la première séance (novembre 2026).",
+      "intro": "intro",
+      "start": [
+        "devs",
+        "alignement",
+        "trajectoires"
+      ]
+    }
+  ]
+}

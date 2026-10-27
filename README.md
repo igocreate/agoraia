@@ -1,14 +1,15 @@
 # Agora IA
 
-Une carte des débats sur les risques, l'éthique et les choix de société liés à l'IA, conçue comme support d'une séance de discussion entre ingénieurs logiciel (novembre 2026).
+Une carte des débats sur les enjeux sociétaux, scientifiques et politiques de l'IA, à explorer seul ou à utiliser pour animer un groupe, quel que soit son horizon. Le site a d'abord servi de support à une séance entre ingénieurs logiciel (novembre 2026).
 
 **Site : https://igocreate.github.io/agoraia/**
 
-Le site présente un univers 3D : 12 thématiques en orbite autour d'une question centrale, « Survie et contrôle : qui garde la main sur l'IA ? ». On y trouve aussi :
+Le site présente un univers 3D : 15 thématiques en orbite autour d'une question centrale, « Survie et contrôle : qui garde la main sur l'IA ? ». On y trouve aussi :
 
-- des courants de pensée, présentés par leurs meilleurs arguments puis par leurs critiques, avec des voix d'Europe, d'Amérique du Nord et d'Asie ;
-- plus de 170 sources publiées depuis septembre 2023, avec des citations dans leur langue d'origine, traduites, et marquées « vérifiée », « à vérifier » ou « transcription » ;
-- 8 parcours guidés, dont une introduction de 15 minutes ;
+- des courants de pensée, présentés par leurs meilleurs arguments puis par leurs critiques, avec des voix d'Europe, d'Amérique du Nord, d'Asie, d'Afrique et d'Amérique latine ;
+- plus de 200 sources publiées depuis septembre 2023, avec des citations dans leur langue d'origine, traduites, et marquées « vérifiée », « à vérifier » ou « transcription » ;
+- 6 publics (tout public, grand public, élèves et étudiants, entreprises, élus, ingénieurs), qui adaptent les questions de débat et les parcours ;
+- 8 parcours guidés, dont une introduction de 15 minutes, et un outil pour composer une séance à partir des thématiques choisies, avec un lien à partager au groupe ;
 - un fil transversal « Productivité : pour qui, pour quoi ? » et une cartographie des métiers exposés ;
 - le module « Où te situes-tu ? », pour se positionner sur les lignes de fracture du débat.
 

@@ -12,7 +12,8 @@ const S = Object.fromEntries(D.sources.map(s=>[s.id,s]));
 const PE = Object.fromEntries(D.people.map(p=>[p.id,p]));
 const CU = Object.fromEntries(D.currents.map(c=>[c.id,c]));
 const FAM = Object.fromEntries(D.families.map(f=>[f.id,f]));
-const REGIONS = ['Europe','Amérique du Nord','Asie','International','Océanie'];
+const PUB = Object.fromEntries(D.publics.map(p=>[p.id,p]));
+const REGIONS = ['Europe','Amérique du Nord','Asie','Afrique','Amérique latine','International','Océanie'];
 const REL_LABEL = { critique:'critique', prolonge:'prolonge', s_oppose:"s'oppose à", repond_a:'répond à', s_inspire_de:"s'inspire de" };
 const REL_LABEL_IN = { critique:'critiqué par', prolonge:'prolongé par', s_oppose:'contesté par', repond_a:'réponse de', s_inspire_de:'inspire' };
 const KIND = k => k;
@@ -27,7 +28,14 @@ const nQuotes = D.sources.reduce((a,s)=>a+s.q.length,0), nVer = D.sources.reduce
 $('#stats').textContent = `${D.sources.length} sources · ${nQuotes} citations (${nVer} vérifiées) · publiées depuis sept. 2023 · mise à jour le ${D.meta.built.split('-').reverse().join('/')}`;
 
 // ---------- état ----------
-const state = { currents:new Set(), regions:new Set(), q:'', horizon: store.get('horizon',50), selected:null, focusPlanet:null, view: 'v3d' };
+const hashPub=(location.hash.match(/^#public=([\w-]+)/)||[])[1];
+const state = { currents:new Set(), regions:new Set(), q:'', horizon: store.get('horizon',50), selected:null, focusPlanet:null, view: 'v3d', public: PUB[hashPub]?hashPub:(PUB[store.get('public','tous')]?store.get('public','tous'):'tous') };
+// Publics : un élément sans « publics » vaut pour tous ; « variants » remplace la formulation pour un public.
+const forPublic = x => !x.publics || x.publics.includes(state.public);
+const ownVariant = x => !!((x.variants && x.variants[state.public]) || (x.publics && x.publics.includes(state.public)));
+const qText = q => (q.variants && q.variants[state.public]) || q.question;
+const stepFor = st => Object.assign({}, st, st.variants && st.variants[state.public]);
+const planetQuestions = pid => { const qs=D.questions.filter(q=>q.planet===pid && forPublic(q)); return [...qs.filter(ownVariant), ...qs.filter(q=>!ownVariant(q))]; };
 function matches(s){
   if (state.currents.size && !s.cu.some(c=>state.currents.has(c))) return false;
   if (state.regions.size && !state.regions.has(s.rg)) return false;
@@ -43,7 +51,13 @@ readTokens();
 const famColor = f => T[f] || T.ink;
 
 // ---------- contrôles ----------
+function pubChips(){ return el('div',{class:'chips',role:'group','aria-label':'Public'}, ...D.publics.map(p=>el('button',{class:'chip','aria-pressed':String(p.id===state.public),title:p.desc,onclick:()=>setPublic(p.id)},p.label))); }
+function setPublic(id){
+  state.public=id; store.set('public',id); buildControls();
+  if(tourI>=0) renderTour(); else if(!state.selected) showHome(); else if(state.selected.type==='planet') showPlanet(state.selected.id);
+}
 function buildControls(){
+  const pc=$('#pubChips'); pc.textContent=''; pc.append(pubChips());
   const cc=$('#curChips'); cc.textContent='';
   const count={}; D.sources.forEach(s=>s.cu.forEach(c=>count[c]=(count[c]||0)+1));
   D.currents.forEach(c=>{ const b=el('button',{class:'chip','aria-pressed':String(state.currents.has(c.id)),title:c.desc,onclick:()=>{ state.currents.has(c.id)?state.currents.delete(c.id):state.currents.add(c.id); b.setAttribute('aria-pressed',String(state.currents.has(c.id))); applyFilters(); if(state.currents.size===1) showCurrent(c.id); }}, c.label, el('small',{text:count[c.id]||0})); cc.append(b); });
@@ -87,18 +101,26 @@ function quoteBlock(q,src){
 }
 function showHome(){
   panel.textContent=''; panel.append(miniBtn());
-  panel.append(el('div',{class:'eyebrow',text:'Séance « Éthique et risques de l\'IA » · novembre 2026'}));
+  panel.append(el('div',{class:'eyebrow',text:'Outil de débat ouvert · sources publiées depuis sept. 2023'}));
   panel.append(el('h2',{text:'Une carte des débats, pas une réponse'}));
   panel.append(el('p',{class:'lead',text:'Au centre, la question qui relie tout : qui garde la main sur l\'IA ? Autour, '+(D.planets.length-1)+' thématiques en orbite, et autour de chacune, les sources qui les nourrissent : chercheurs, textes officiels, entreprises, critiques, d\'Europe, d\'Amérique et d\'Asie.'}));
   const ns=D.sources.length, asia=D.sources.filter(s=>s.rg==='Asie').length;
   panel.append(el('div',{class:'intro-grid'}, el('div',{class:'stat'},el('b',{text:ns}),el('span',{text:'sources'})), el('div',{class:'stat'},el('b',{text:nVer}),el('span',{text:'citations vérifiées'})), el('div',{class:'stat'},el('b',{text:asia}),el('span',{text:'voix asiatiques'}))));
-  panel.append(el('h4',{text:'Comment lire'}));
-  panel.append(el('ul',{class:'facts'}, el('li',{text:'Pour tourner : clique (appui franc sur le trackpad) et glisse, ou utilise les boutons en bas à droite et les flèches du clavier. Deux doigts ou la molette zooment ; un clic droit glissé déplace la vue.'}), el('li',{text:'Clique une planète pour ses questions de débat et ses sources, un point pour lire une source et ses citations.'}), el('li',{text:'Filtre par courant de pensée : les sources concernées s\'allument et se relient en constellation.'}), el('li',{text:'Le curseur « Horizon de l\'AGI » grossit les thématiques qui deviennent prioritaires selon qu\'on croit l\'AGI proche ou lointaine.'})));
-  panel.append(el('h4',{text:'Parcours guidés'}));
-  panel.append(el('ul',{class:'list'}, ...D.tours.map(t=>el('li',{},el('button',{onclick:()=>startTour(t.id,0)}, el('span',{class:'t',text:'▸ '+t.title}), el('span',{class:'m',text:`Parcours guidé · ${t.steps.length} étapes`}))))));
-  panel.append(el('div',{class:'tags',style:'margin-top:8px'}, el('button',{class:'btn primary',onclick:()=>startTour('intro',0)},'Lancer l\'introduction'), el('button',{class:'btn',onclick:openPos},'Où te situes-tu ?')));
+  const pu=PUB[state.public];
+  panel.append(el('h4',{text:'Pour quel public ?'}));
+  panel.append(pubChips()); panel.append(el('p',{class:'hint',text:pu.desc+' Les questions de débat et les parcours s\'adaptent à ce choix.'}));
+  panel.append(el('h4',{text:'Explorer seul'}));
+  panel.append(el('p',{class:'lead-sm',text:'Clique une planète pour ses questions de débat et ses sources, puis un point pour lire une source et ses citations. Pour commencer :'}));
+  panel.append(el('ul',{class:'list'}, ...pu.start.map(id=>el('li',{},el('button',{onclick:()=>select({type:'planet',id})}, el('span',{class:'t',text:P[id].label}), el('span',{class:'m',text:`${planetQuestions(id).length} questions · ${planetSources(id).length} sources`}))))));
+  panel.append(el('div',{class:'tags',style:'margin-top:8px'}, el('button',{class:'btn',onclick:openPos},'Où te situes-tu ?')));
+  panel.append(el('h4',{text:'Animer un groupe'}));
+  panel.append(el('p',{class:'lead-sm',text:'Un parcours enchaîne des étapes courtes : un contexte, des citations sourcées, une question à poser au groupe. Lance l\'introduction, choisis un parcours, ou compose ta séance à partir des thématiques que ton groupe veut aborder.'}));
+  panel.append(el('div',{class:'tags'}, el('button',{class:'btn primary',onclick:()=>startTour(pu.intro,0)},'Lancer l\'introduction'), el('button',{class:'btn',onclick:openSeance},'Composer une séance')));
+  panel.append(el('ul',{class:'list',style:'margin-top:8px'}, ...visibleTours().map(t=>el('li',{},el('button',{onclick:()=>startTour(t.id,0)}, el('span',{class:'t',text:'▸ '+t.title}), el('span',{class:'m',text:`Parcours guidé · ${t.steps.length} étapes`}))))));
+  panel.append(el('h4',{text:'Naviguer dans l\'univers'}));
+  panel.append(el('ul',{class:'facts'}, el('li',{text:'Pour tourner : clique (appui franc sur le trackpad) et glisse, ou utilise les boutons en bas à droite et les flèches du clavier. Deux doigts ou la molette zooment ; un clic droit glissé déplace la vue.'}), el('li',{text:'Filtre par courant de pensée : les sources concernées s\'allument et se relient en constellation.'}), el('li',{text:'Le curseur « Horizon de l\'AGI » grossit les thématiques qui deviennent prioritaires selon qu\'on croit l\'AGI proche ou lointaine.'})));
   panel.append(el('h4',{text:'Fil transversal'}));
-  panel.append(el('ul',{class:'list'}, el('li',{},el('button',{onclick:()=>select({type:'thread',id:D.thread.id})}, el('span',{class:'t',text:D.thread.label}), el('span',{class:'m',text:'Relie Nos métiers, Travail et Écologie · trilemme produire plus / employer moins / travailler moins'})))));
+  panel.append(el('ul',{class:'list'}, el('li',{},el('button',{onclick:()=>select({type:'thread',id:D.thread.id})}, el('span',{class:'t',text:D.thread.label}), el('span',{class:'m',text:`Relie ${threadPlanets()} · trilemme produire plus / employer moins / travailler moins`})))));
   panel.append(el('h4',{text:'Thématiques'}));
   const ul=el('ul',{class:'list'}); D.planets.forEach(p=>ul.append(el('li',{},el('button',{onclick:()=>select({type:'planet',id:p.id})}, el('span',{class:'t',text:p.label}), el('span',{class:'m',text:`${planetSources(p.id).length} sources · ${p.id==='centre'?'question centrale':FAM[p.fam].label}`}))))); panel.append(ul);
   panel.append(el('details',{},el('summary',{text:'Méthode et limites'}), el('p',{text:'Corpus constitué le 25 septembre 2026 : uniquement des sources publiées depuis septembre 2023. Chaque citation marquée « vérifiée » a été confirmée mot pour mot par deux lectures indépendantes de la page source, puis un échantillon a été contre-vérifié. Les citations « à vérifier » viennent de pages que nos outils ne pouvaient pas lire directement ; les citations « transcription vidéo » sont tirées de transcriptions automatiques, nettoyées de leurs coquilles. Le classement des sources en courants et le positionnement des courants sont des choix éditoriaux, discutables par nature. Corpus produit avec Claude (Anthropic), acteur cité dans la carte.'})));
@@ -117,12 +139,13 @@ function showPlanet(id){
   if(tools.length){ panel.append(el('h4',{text:'Outils pour agir'})); tools.forEach(t=>{ panel.append(el('button',{class:'card tool-card',onclick:()=>select({type:'source',id:t.id})}, el('span',{class:'tags'}, el('span',{class:'badge info',text:'outil'}), el('span',{class:'m',text:t.pub})), el('span',{class:'t',text:t.t}), el('span',{class:'q',text:t.th}), el('span',{class:'m',text:'Une grille de lecture parmi d\'autres, pas un verdict · voir la fiche →'}))); }); }
   if(id==='devs' && D.occupations.length){ panel.append(el('h4',{text:'Métiers les plus exposés à l\'IA'})); panel.append(occBlock()); }
   if(['devs','travail','ecologie'].includes(id)) panel.append(el('button',{class:'btn',style:'margin-top:12px',onclick:()=>select({type:'thread',id:D.thread.id})},'Fil transversal : '+D.thread.label));
-  const qs=D.questions.filter(q=>q.planet===id); if(qs.length){ panel.append(el('h4',{text:'Questions pour le débat'})); const ol=el('ol',{class:'qs'}); qs.forEach(q=>ol.append(el('li',{text:q.question}))); panel.append(ol); }
+  const qs=planetQuestions(id); if(qs.length){ panel.append(el('h4',{text:'Questions pour le débat'})); const ol=el('ol',{class:'qs'}); qs.forEach(q=>ol.append(el('li',{text:qText(q)}))); panel.append(ol); if(state.public!=='tous') panel.append(el('p',{class:'hint',text:'Formulées pour : '+PUB[state.public].label+'.'})); }
   const ss=planetSources(id).filter(matches).filter(x=>x.k!=='outil'); panel.append(el('h4',{text:`Sources (${ss.length}${anyFilter()?' filtrées':''})`}));
   const byCur={}; ss.forEach(s=>{ const c=s.cu[0]; (byCur[c] ||= []).push(s); });
   Object.entries(byCur).sort((a,b)=>b[1].length-a[1].length).forEach(([c,list])=>{ panel.append(el('div',{class:'eyebrow',style:'margin:12px 0 2px',text:CU[c]?CU[c].label:c})); const ul=el('ul',{class:'list'}); list.sort((a,b)=>b.d.localeCompare(a.d)).forEach(s=>ul.append(srcItem(s))); panel.append(ul); });
 }
 const THS=new Set(D.thread.branches.flatMap(b=>b.sources));
+const threadPlanets = () => D.thread.planets.map(id=>P[id].label).join(' · ');
 function trilemmeSVG(){
   const NS='http://www.w3.org/2000/svg'; const sv=document.createElementNS(NS,'svg'); sv.setAttribute('viewBox','0 0 400 262'); sv.setAttribute('class','trilemme'); sv.setAttribute('role','img'); sv.setAttribute('aria-label','Trilemme de la productivité : un gain de productivité peut servir à produire plus, employer moins ou travailler moins ; en amont la promesse et la mesure, autour la question de la répartition.');
   const mk=(t,a)=>{ const e=document.createElementNS(NS,t); for(const[k,v] of Object.entries(a)) e.setAttribute(k,v); sv.append(e); return e; };
@@ -142,7 +165,7 @@ function trilemmeSVG(){
 }
 function showThread(){
   const T0=D.thread; panel.textContent=''; panel.append(panelHead()); panel.append(miniBtn());
-  panel.append(el('div',{class:'eyebrow',text:'Fil transversal · Nos métiers · Travail · Écologie'}));
+  panel.append(el('div',{class:'eyebrow',text:'Fil transversal · '+threadPlanets()}));
   panel.append(el('h2',{text:T0.label})); panel.append(el('p',{class:'lead',text:T0.desc}));
   panel.append(trilemmeSVG());
   panel.append(el('div',{class:'tags'}, el('button',{class:'btn primary',onclick:()=>startTour('productivite',0)},`Lancer le parcours (${TOURS.productivite.steps.length} étapes)`), el('button',{class:'btn',onclick:()=>select({type:'planet',id:'devs'})},'Voir les métiers exposés')));
@@ -340,7 +363,7 @@ const U = (function(){
     el('button',{title:'Rotation automatique','aria-label':'Rotation automatique',onclick:()=>{ ctl.autoRotate=!ctl.autoRotate; }},'◎'),
     el('button',{title:'Vue d\'ensemble','aria-label':'Vue d\'ensemble',onclick:()=>{ select(null); }},'⌂'));
   host.append(tools);
-  document.addEventListener('keydown',e=>{ if(e.target.matches('input,textarea,select')||tourI>=0||!$('#posModal').hidden||!$('#contribModal').hidden||state.view!=='v3d') return; const k=e.key; let used=true;
+  document.addEventListener('keydown',e=>{ if(e.target.matches('input,textarea,select')||tourI>=0||!$('#posModal').hidden||!$('#contribModal').hidden||!$('#seanceModal').hidden||state.view!=='v3d') return; const k=e.key; let used=true;
     if(k==='ArrowLeft') orbit(-0.3,0); else if(k==='ArrowRight') orbit(0.3,0); else if(k==='ArrowUp') orbit(0,-0.2); else if(k==='ArrowDown') orbit(0,0.2); else if(k==='+'||k==='=') zoom(0.8); else if(k==='-'||k==='_') zoom(1.25); else used=false;
     if(used){ ctl.autoRotate=false; e.preventDefault(); } });
   let active=true; api.setActive=v=>{ active=v; if(v) resize(); };
@@ -378,14 +401,16 @@ if(window.matchMedia) matchMedia('(prefers-color-scheme: dark)').addEventListene
 // ---------- visite guidée ----------
 const tourEl=$('#tour'); let tourI=-1; let tourId='intro';
 const TOURS=Object.fromEntries(D.tours.map(t=>[t.id,t])); const curSteps=()=>TOURS[tourId].steps;
+const visibleTours = () => D.tours.filter(forPublic);
 function startTour(id,i){ tourId=id||'intro'; tourI=i||0; closeTourMenu(); tourEl.hidden=false; $('#controls').hidden=true; $('#ctlShow').hidden=false; if(state.view!=='v3d') setView('v3d'); renderTour(); }
 function endTour(){ tourI=-1; tourEl.hidden=true; if(store.get('ctl', window.innerWidth>820)!==false){ $('#controls').hidden=false; $('#ctlShow').hidden=true; } }
 function renderTour(){
-  const st=curSteps()[tourI]; tourEl.textContent='';
+  const st=stepFor(curSteps()[tourI]); tourEl.textContent='';
   tourEl.append(el('div',{class:'step',text:`${TOURS[tourId].title.toUpperCase()} · ÉTAPE ${tourI+1} / ${curSteps().length}`}));
   tourEl.append(el('h2',{text:st.title})); tourEl.append(el('p',{text:st.text}));
   const qb=el('div',{class:'tour-quotes'}); st.quotes.forEach(([sid,i])=>{ const q=S[sid].q[i]; const b=quoteBlock(q,S[sid]); b.style.cursor='pointer'; b.title='Ouvrir la source'; b.addEventListener('click',()=>select({type:'source',id:sid})); qb.append(b); }); tourEl.append(qb);
   tourEl.append(el('div',{class:'ask',text:st.question}));
+  if(st.more) planetQuestions(st.planet).map(qText).filter(t=>t!==st.question).slice(0,st.more).forEach(t=>tourEl.append(el('div',{class:'ask more',text:t})));
   const dots=el('div',{class:'dots'}); curSteps().forEach((_,k)=>dots.append(el('button',{'aria-label':`Étape ${k+1}`,'aria-current':k===tourI?'step':null,onclick:()=>{ tourI=k; renderTour(); }})));
   const nav=el('nav',{}, dots, el('button',{class:'btn',onclick:endTour},'Quitter'), tourI>0?el('button',{class:'btn',onclick:()=>{ tourI--; renderTour(); }},'← Précédent'):null, tourI<curSteps().length-1?el('button',{class:'btn primary',onclick:()=>{ tourI++; renderTour(); }},'Suivant →'):el('button',{class:'btn primary',onclick:()=>{ endTour(); openPos(); }},'À toi : où te situes-tu ?'));
   if(tourId==='productivite'){ const tb=el('button',{class:'btn',onclick:()=>select({type:'thread',id:D.thread.id})},'Voir le trilemme'); nav.insertBefore(tb, nav.children[1]); }
@@ -394,7 +419,7 @@ function renderTour(){
 }
 let tourMenu=null;
 function closeTourMenu(){ if(tourMenu){ tourMenu.remove(); tourMenu=null; } }
-function tourButtons(){ return D.tours.map(t=>el('button',{onclick:()=>startTour(t.id,0)}, el('b',{text:t.title}), el('span',{text:`${t.steps.length} étapes`}))); }
+function tourButtons(){ return [...visibleTours().map(t=>el('button',{onclick:()=>startTour(t.id,0)}, el('b',{text:t.title}), el('span',{text:`${t.steps.length} étapes`}))), el('button',{onclick:()=>{ closeTourMenu(); openSeance(); }}, el('b',{text:'Composer une séance…'}), el('span',{text:'public, thématiques, durée'}))]; }
 $('#tourBtn').onclick=e=>{ e.stopPropagation(); if(tourMenu){ closeTourMenu(); return; } tourMenu=el('div',{class:'tour-menu',role:'menu'}, ...tourButtons()); $('#app').append(tourMenu); };
 document.addEventListener('click',e=>{ if(tourMenu && !tourMenu.contains(e.target)) closeTourMenu(); });
 document.addEventListener('keydown',e=>{
@@ -435,6 +460,52 @@ function renderPos(){
   grid.append(left,right); sh.append(grid); posModal.append(sh);
 }
 $('#posBtn').onclick=openPos;
+
+// ---------- composer une séance ----------
+// Parcours à la carte : la question centrale, puis l'étape de chaque thématique choisie (data/site/stops.json).
+const DURATIONS=[{id:'45',label:'45 min',more:0,hint:'une question par étape'},{id:'90',label:'1 h 30',more:1,hint:'deux questions par étape'},{id:'120',label:'2 h',more:2,hint:'trois questions par étape'}];
+const seanceModal=$('#seanceModal');
+let seance=store.get('seance',{planets:[],dur:'90'});
+function seanceHash(pub,pids,dur){ return `#seance=${pub}:${pids.join(',')}${dur&&dur!=='90'?':'+dur:''}`; }
+function buildCarte(pub,pids,dur){
+  const more=(DURATIONS.find(d=>d.id===dur)||DURATIONS[1]).more;
+  const ids=['centre',...D.planets.map(p=>p.id).filter(id=>id!=='centre' && pids.includes(id))];
+  TOURS.carte={id:'carte',title:'Séance à la carte · '+PUB[pub].label,steps:ids.map(id=>Object.assign({},D.stops[id],{more}))};
+}
+function launchCarte(pub,pids,dur){
+  if(pub!==state.public) setPublic(pub);
+  buildCarte(pub,pids,dur);
+  try{ history.replaceState(null,'',seanceHash(pub,pids,dur)); }catch(e){}
+  closeSeance(); startTour('carte',0);
+}
+function openSeance(){ seanceModal.hidden=false; renderSeance(); setTimeout(()=>{ const f=seanceModal.querySelector('input'); f&&f.focus(); },30); }
+function closeSeance(){ seanceModal.hidden=true; }
+seanceModal.addEventListener('click',e=>{ if(e.target===seanceModal) closeSeance(); });
+seanceModal.addEventListener('keydown',e=>{ if(e.key==='Escape') closeSeance(); });
+function renderSeance(){
+  seanceModal.textContent=''; const sh=el('div',{class:'sheet contrib seance'});
+  sh.append(el('header',{}, el('div',{}, el('h2',{id:'seanceTitle',text:'Composer une séance'}), el('p',{text:'Choisis le public et les thématiques que ton groupe veut aborder. Le parcours part de la question centrale, puis consacre une étape à chaque thématique : un contexte, des citations sourcées, des questions à débattre.'})), el('button',{class:'btn',onclick:closeSeance},'Fermer')));
+  const form=el('form',{novalidate:''}); const msg=el('p',{class:'hint','aria-live':'polite'});
+  const pubF=el('fieldset',{class:'field'}, el('legend',{text:'Public'})); const pch=el('div',{class:'choices'});
+  D.publics.forEach(p=>pch.append(el('label',{title:p.desc}, el('input',{type:'radio',name:'public',value:p.id,checked:p.id===state.public?'':null}), ' '+p.label)));
+  pubF.append(pch);
+  const plF=el('fieldset',{class:'field'}, el('legend',{text:'Thématiques (2 à 6)'})); const plc=el('div',{class:'choices'});
+  D.planets.filter(p=>p.id!=='centre').forEach(p=>plc.append(el('label',{}, el('input',{type:'checkbox',name:'planet',value:p.id,checked:seance.planets.includes(p.id)?'':null}), ' '+p.label)));
+  plF.append(plc);
+  const duF=el('fieldset',{class:'field'}, el('legend',{text:'Durée indicative'})); const duc=el('div',{class:'choices'});
+  DURATIONS.forEach(d=>duc.append(el('label',{}, el('input',{type:'radio',name:'dur',value:d.id,checked:d.id===seance.dur?'':null}), ` ${d.label} (${d.hint})`)));
+  duF.append(duc);
+  const link=el('input',{type:'text',readonly:'','aria-label':'Lien de la séance',placeholder:'Choisis au moins 2 thématiques'});
+  const copy=el('button',{class:'btn',type:'button',onclick:()=>{ link.select(); try{ navigator.clipboard.writeText(link.value).then(()=>{ msg.textContent='Lien copié.'; },()=>{ msg.textContent='Copie impossible : sélectionne le lien à la main.'; }); }catch(e){ msg.textContent='Copie impossible : sélectionne le lien à la main.'; } }},'Copier');
+  const read=()=>({pub:form.querySelector('input[name=public]:checked').value, pids:[...form.querySelectorAll('input[name=planet]:checked')].map(i=>i.value), dur:form.querySelector('input[name=dur]:checked').value});
+  const upd=()=>{ const v=read(); seance={planets:v.pids,dur:v.dur}; store.set('seance',seance); link.value=v.pids.length>=2?location.href.split('#')[0]+seanceHash(v.pub,v.pids,v.dur):''; msg.textContent=v.pids.length?`${v.pids.length+1} étapes, question centrale comprise.`:''; };
+  form.addEventListener('change',upd);
+  form.append(pubF, plF, duF, el('div',{class:'field'}, el('label',{for:'ct-link',text:'Lien à partager avec le groupe'}), el('div',{class:'tags',style:'flex-wrap:nowrap'}, link, copy)));
+  link.id='ct-link';
+  form.append(el('div',{class:'tags'}, el('button',{class:'btn primary',type:'submit'},'Lancer la séance')), msg);
+  form.addEventListener('submit',e=>{ e.preventDefault(); const v=read(); if(v.pids.length<2||v.pids.length>6){ msg.textContent='Choisis entre 2 et 6 thématiques.'; return; } launchCarte(v.pub,v.pids,v.dur); });
+  upd(); sh.append(form); seanceModal.append(sh);
+}
 
 // ---------- contribuer ----------
 // Rien n'est envoyé depuis le site : on ouvre un formulaire d'issue GitHub pré-rempli par l'URL.
@@ -507,5 +578,7 @@ $('#contribBtn').onclick=()=>openContrib('source');
 // ---------- démarrage ----------
 buildControls(); updateHorizonHint(); showHome(); if(window.innerWidth<=820) panel.classList.add('min');
 const v0=store.get('view', window.innerWidth<600?'vlist':'v3d'); setView(U.ok?v0:'vlist');
-if(location.hash==='#visite') startTour('intro',0); else if(location.hash==='#productivite') startTour('productivite',0); else if(location.hash==='#contribuer') openContrib('source');
+const hashSeance=location.hash.match(/^#seance=([\w-]+):([\w,-]+)(?::(\d+))?$/);
+if(location.hash==='#visite') startTour(PUB[state.public].intro,0); else if(location.hash==='#productivite') startTour('productivite',0); else if(location.hash==='#contribuer') openContrib('source');
+else if(hashSeance && PUB[hashSeance[1]]){ const pids=hashSeance[2].split(',').filter(id=>P[id]&&id!=='centre'); if(pids.length) launchCarte(hashSeance[1],pids,hashSeance[3]||'90'); }
 })();
