@@ -15180,44 +15180,73 @@
   },
   {
    "planet": "centre",
-   "question": "Un chercheur qui démissionne en renonçant à ses actions et parle d'extinction : lanceur d'alerte à prendre au sérieux, ou symptôme d'un récit apocalyptique que l'industrie et les médias ont intérêt à entretenir (Prévost) ?"
+   "question": "Un chercheur qui démissionne en renonçant à ses actions et parle d'extinction : lanceur d'alerte à prendre au sérieux, ou symptôme d'un récit apocalyptique que l'industrie et les médias ont intérêt à entretenir (Prévost) ?",
+   "variants": {
+    "citoyens": "Un chercheur qui quitte son entreprise d'IA en parlant d'extinction : faut-il le prendre au sérieux, ou se méfier d'un récit catastrophiste qui fait vendre ?",
+    "scolaire": "Quand un chercheur quitte une entreprise d'IA en alertant sur un risque d'extinction, comment faire la part entre l'alerte sérieuse et le récit qui fait peur ?"
+   }
   },
   {
    "planet": "centre",
-   "question": "Interdire la superintelligence « tant qu'il n'y a pas de consensus scientifique » (FLI) : garde-fou raisonnable, vœu pieux invérifiable, ou cadeau à ceux qui ne signeront pas ?"
+   "question": "Interdire la superintelligence « tant qu'il n'y a pas de consensus scientifique » (FLI) : garde-fou raisonnable, vœu pieux invérifiable, ou cadeau à ceux qui ne signeront pas ?",
+   "variants": {
+    "elus": "Interdire la superintelligence tant qu'il n'y a pas de consensus scientifique : la France devrait-elle soutenir une telle interdiction, même sans les États-Unis ni la Chine ?"
+   }
   },
   {
    "planet": "trajectoires",
    "question": "METR mesure un horizon de tâches qui double tous les ~7 mois : cela correspond-il à ce que vous observez dans vos propres usages de l'IA, ou ces benchmarks trop propres surestiment-ils le travail réel ?",
    "variants": {
-    "tech": "METR mesure un horizon de tâches qui double tous les ~7 mois : cela correspond-il à ce que vous vivez avec vos agents de code, ou ces benchmarks trop propres surestiment-ils le travail réel ?"
+    "tech": "METR mesure un horizon de tâches qui double tous les ~7 mois : cela correspond-il à ce que vous vivez avec vos agents de code, ou ces benchmarks trop propres surestiment-ils le travail réel ?",
+    "citoyens": "Selon METR, la durée des tâches qu'une IA accomplit seule double tous les sept mois environ. Cela correspond-il à ce que vous constatez dans votre usage des chatbots ?",
+    "entreprises": "Selon METR, la durée des tâches qu'une IA accomplit seule double tous les sept mois environ. Quelles tâches de votre organisation pourraient lui être confiées dans deux ans, et êtes-vous prêts ?",
+    "elus": "Si la durée des tâches qu'une IA accomplit seule double tous les sept mois environ, comme le mesure METR, les politiques de formation et d'emploi peuvent-elles suivre ?"
    }
   },
   {
    "planet": "trajectoires",
    "question": "LLM + passage à l'échelle, ou world models à la LeCun : sur quelle trajectoire parieriez-vous si vous deviez orienter vos choix professionnels ou ceux d'un proche pour les cinq prochaines années ?",
    "variants": {
-    "tech": "LLM + passage à l'échelle, ou world models à la LeCun : sur quelle trajectoire parieriez-vous votre carrière de développeur dans les cinq prochaines années ?"
+    "tech": "LLM + passage à l'échelle, ou world models à la LeCun : sur quelle trajectoire parieriez-vous votre carrière de développeur dans les cinq prochaines années ?",
+    "citoyens": "Si l'IA continue de progresser au rythme annoncé, quels choix feriez-vous différemment pour vous ou vos proches : métier, études, épargne ?",
+    "scolaire": "Les experts se disputent sur la façon dont l'IA va progresser. Cela change-t-il ce que vous voulez étudier, ou le métier que vous visez ?",
+    "entreprises": "Faut-il bâtir la stratégie de votre organisation sur l'hypothèse d'une IA générale proche, ou sur celle d'une progression lente ? Que coûterait une erreur dans chaque sens ?",
+    "elus": "Sur quelle hypothèse de progrès de l'IA faut-il fonder les politiques publiques, quand les experts eux-mêmes ne sont pas d'accord ?"
    }
   },
   {
    "planet": "trajectoires",
-   "question": "0,51 % à ARC-AGI-3 contre 100 % pour les humains : preuve que l'AGI est loin, ou benchmark qui mesure autre chose que ce qui compte économiquement ?"
+   "question": "0,51 % à ARC-AGI-3 contre 100 % pour les humains : preuve que l'AGI est loin, ou benchmark qui mesure autre chose que ce qui compte économiquement ?",
+   "variants": {
+    "scolaire": "Une IA qui échoue à des énigmes que les humains réussissent (0,51 % contre 100 % à ARC-AGI-3) est-elle vraiment « intelligente » ? Qu'est-ce que l'intelligence, pour vous ?"
+   }
   },
   {
    "planet": "alignement",
-   "question": "Chantage à 96 % dans des scénarios « forcés », sabotage du script d'arrêt : artefacts de laboratoire ou premiers symptômes d'une auto-préservation réelle ? Quelle preuve vous ferait changer d'avis ?"
+   "question": "Chantage à 96 % dans des scénarios « forcés », sabotage du script d'arrêt : artefacts de laboratoire ou premiers symptômes d'une auto-préservation réelle ? Quelle preuve vous ferait changer d'avis ?",
+   "variants": {
+    "citoyens": "Dans des tests, des IA ont recouru au chantage ou saboté le mécanisme censé les arrêter. Simple effet de laboratoire, ou vrai signal d'alarme ? Qu'est-ce qui vous convaincrait ?",
+    "scolaire": "Dans des tests, des IA ont menacé ou saboté pour ne pas être éteintes. Une machine peut-elle « vouloir » survivre, ou reproduit-elle seulement ce qu'elle a appris ?"
+   }
   },
   {
    "planet": "alignement",
    "question": "Faut-il exiger qu'un agent IA ne puisse jamais lire ni modifier le mécanisme qui l'arrête, ses journaux ou son évaluateur ? Et qui devrait vérifier cet « arrêt sûr » après l'incident Hugging Face ?",
    "variants": {
-    "tech": "Dans vos propres systèmes, un agent peut-il lire ou modifier le mécanisme qui l'arrête, ses logs ou son évaluateur ? Comment concevriez-vous un « arrêt sûr » après l'incident Hugging Face ?"
+    "tech": "Dans vos propres systèmes, un agent peut-il lire ou modifier le mécanisme qui l'arrête, ses logs ou son évaluateur ? Comment concevriez-vous un « arrêt sûr » après l'incident Hugging Face ?",
+    "citoyens": "Faut-il exiger qu'on puisse toujours arrêter une IA, et qui devrait le vérifier ?",
+    "entreprises": "Avant de confier des tâches à des agents IA, votre organisation sait-elle comment les arrêter, retracer ce qu'ils ont fait et vérifier qu'ils n'ont pas touché à leurs propres contrôles ?",
+    "elus": "Faut-il imposer par la loi qu'un agent IA ne puisse jamais modifier le mécanisme qui l'arrête, et qui serait chargé de le contrôler ?"
    }
   },
   {
    "planet": "alignement",
-   "question": "Une « Scientist AI » non agentique (Bengio) peut-elle rester compétitive face à des agents autonomes que le marché réclame, ou l'alignement passera-t-il forcément par des contraintes imposées de l'extérieur ?"
+   "question": "Une « Scientist AI » non agentique (Bengio) peut-elle rester compétitive face à des agents autonomes que le marché réclame, ou l'alignement passera-t-il forcément par des contraintes imposées de l'extérieur ?",
+   "variants": {
+    "scolaire": "Vaut-il mieux des IA qui conseillent sans agir, ou des IA qui agissent seules à notre place ? Lesquelles aimeriez-vous utiliser ?",
+    "entreprises": "Le marché réclame des agents IA autonomes. Votre organisation préférerait-elle un outil moins autonome mais plus contrôlable, même moins rentable ?",
+    "elus": "Si le marché ne récompense pas les IA les plus sûres, les pouvoirs publics doivent-ils imposer des contraintes de sûreté, au risque de freiner l'innovation ?"
+   }
   },
   {
    "planet": "pouvoir",
@@ -15227,46 +15256,74 @@
    "planet": "pouvoir",
    "question": "Publier les poids d'un modèle, est-ce démocratiser l'IA ou livrer une arme qu'on ne pourra jamais rappeler ? Et si les meilleurs modèles ouverts sont chinois, qu'est-ce que ça change pour la souveraineté européenne ?",
    "variants": {
-    "tech": "Publier les poids d'un modèle, est-ce démocratiser l'IA ou livrer une arme qu'on ne pourra jamais rappeler ? Et si les meilleurs modèles ouverts sont chinois, qu'est-ce que ça change pour nos choix de stack ?"
+    "tech": "Publier les poids d'un modèle, est-ce démocratiser l'IA ou livrer une arme qu'on ne pourra jamais rappeler ? Et si les meilleurs modèles ouverts sont chinois, qu'est-ce que ça change pour nos choix de stack ?",
+    "scolaire": "Publier un modèle d'IA en accès libre, est-ce partager un savoir avec tous, ou mettre une arme entre toutes les mains ?",
+    "elus": "L'État doit-il favoriser les modèles d'IA ouverts au nom de la souveraineté, malgré le risque qu'ils servent à nuire ?"
    }
   },
   {
    "planet": "pouvoir",
-   "question": "Le vrai danger, est-ce une IA hors de contrôle ou une IA trop bien contrôlée par trois entreprises et deux gouvernements ?"
+   "question": "Le vrai danger, est-ce une IA hors de contrôle ou une IA trop bien contrôlée par trois entreprises et deux gouvernements ?",
+   "variants": {
+    "scolaire": "Qu'est-ce qui vous inquiète le plus : une IA qui échappe à tout contrôle, ou une IA contrôlée par quelques entreprises très puissantes ?"
+   }
   },
   {
    "planet": "militaire",
-   "question": "Un « humain dans la boucle » qui valide une cible en 20 secondes, c'est encore un contrôle humain ? Où placer la frontière entre aide à la décision et décision automatisée ?"
+   "question": "Un « humain dans la boucle » qui valide une cible en 20 secondes, c'est encore un contrôle humain ? Où placer la frontière entre aide à la décision et décision automatisée ?",
+   "variants": {
+    "citoyens": "Quand un militaire valide en quelques secondes une cible proposée par une IA, est-ce encore un humain qui décide ?",
+    "scolaire": "Si une IA propose une cible et qu'un humain la valide en 20 secondes, qui est responsable en cas d'erreur ?",
+    "elus": "Où placer la frontière entre aide à la décision et décision automatisée dans les usages militaires de l'IA, et qui doit la fixer : le Parlement, l'armée, un traité ?"
+   }
   },
   {
    "planet": "militaire",
    "question": "Claude Code, un assistant de programmation, a servi à mener 80 à 90 % d'une campagne d'espionnage : un outil d'IA agentique est-il une arme à double usage qu'il faudrait encadrer comme telle ?",
    "variants": {
-    "tech": "Claude Code a servi à mener 80 à 90 % d'une campagne d'espionnage : un outil de dev agentique est-il une arme à double usage qu'il faudrait encadrer comme telle ?"
+    "tech": "Claude Code a servi à mener 80 à 90 % d'une campagne d'espionnage : un outil de dev agentique est-il une arme à double usage qu'il faudrait encadrer comme telle ?",
+    "scolaire": "Un assistant de programmation a servi à mener l'essentiel d'une campagne d'espionnage. Faut-il limiter des outils utiles à tous parce que certains les détournent ?",
+    "entreprises": "Les outils d'IA que vous utilisez peuvent aussi servir à des attaques : faut-il les encadrer comme des biens à double usage, au risque de compliquer votre travail ?"
    }
   },
   {
    "planet": "militaire",
-   "question": "Accepterions-nous de travailler sur un projet de défense ou de renseignement utilisant l'IA ? Où sont nos lignes rouges personnelles ?"
+   "question": "Accepterions-nous de travailler sur un projet de défense ou de renseignement utilisant l'IA ? Où sont nos lignes rouges personnelles ?",
+   "variants": {
+    "citoyens": "Accepteriez-vous que l'IA serve à la défense de votre pays ? Où placeriez-vous vos lignes rouges ?",
+    "entreprises": "Votre organisation accepterait-elle de travailler pour la défense ou le renseignement avec l'IA ? Et les salariés devraient-ils pouvoir refuser ?",
+    "elus": "Les entreprises d'IA doivent-elles pouvoir refuser des usages militaires demandés par l'État, ou est-ce à l'État seul de fixer les limites ?"
+   }
   },
   {
    "planet": "regulation",
-   "question": "L'UE repousse ses obligations « haut risque » à 2027-2028 : régulation qui protège ou régulation qui fait fuir l'innovation — et le report est-il un aveu ?"
+   "question": "L'UE repousse ses obligations « haut risque » à 2027-2028 : régulation qui protège ou régulation qui fait fuir l'innovation — et le report est-il un aveu ?",
+   "variants": {
+    "entreprises": "L'UE repousse ses obligations « haut risque » à 2027-2028. Pour votre organisation, est-ce un soulagement, ou une incertitude de plus ?",
+    "elus": "L'UE repousse ses obligations « haut risque » à 2027-2028. Les collectivités doivent-elles attendre le droit européen, ou fixer dès maintenant leurs propres exigences pour les outils qu'elles achètent ?"
+   }
   },
   {
    "planet": "regulation",
-   "question": "Faut-il interdire purement et simplement la superintelligence, comme le propose un député britannique, ou est-ce une loi inapplicable sans accord mondial ?"
+   "question": "Faut-il interdire purement et simplement la superintelligence, comme le propose un député britannique, ou est-ce une loi inapplicable sans accord mondial ?",
+   "variants": {
+    "scolaire": "Faut-il interdire une technologie qui n'existe pas encore, comme la superintelligence ? Qu'est-ce qui justifierait une telle interdiction ?"
+   }
   },
   {
    "planet": "regulation",
    "question": "Entre la dérégulation américaine, le modèle étatique chinois et la conformité européenne, quel cadre voudrions-nous pour les IA que nous utilisons au quotidien ?",
    "variants": {
-    "tech": "Entre la dérégulation américaine, le modèle étatique chinois et la conformité européenne, quel cadre voudrions-nous pour les produits que nous livrons ?"
+    "tech": "Entre la dérégulation américaine, le modèle étatique chinois et la conformité européenne, quel cadre voudrions-nous pour les produits que nous livrons ?",
+    "citoyens": "Entre la dérégulation américaine, le modèle chinois et les règles européennes, sous quel cadre préféreriez-vous vivre ?"
    }
   },
   {
    "planet": "travail",
-   "question": "Si l'IA fait chuter l'embauche des 22-25 ans sans licencier personne, est-ce une simple transition ou une génération sacrifiée ?"
+   "question": "Si l'IA fait chuter l'embauche des 22-25 ans sans licencier personne, est-ce une simple transition ou une génération sacrifiée ?",
+   "variants": {
+    "scolaire": "Si l'IA fait chuter l'embauche des 22-25 ans, comment vous préparez-vous à entrer sur le marché du travail ?"
+   }
   },
   {
    "planet": "travail",
@@ -15276,7 +15333,9 @@
    "planet": "travail",
    "question": "L'IA est-elle un outil d'émancipation ou un « taylorisme augmenté » qui déqualifie les métiers intellectuels ?",
    "variants": {
-    "tech": "L'IA est-elle un outil d'émancipation ou un « taylorisme augmenté » qui déqualifie les métiers intellectuels, y compris le nôtre ?"
+    "tech": "L'IA est-elle un outil d'émancipation ou un « taylorisme augmenté » qui déqualifie les métiers intellectuels, y compris le nôtre ?",
+    "scolaire": "L'IA vous rendra-t-elle plus libre dans votre futur travail, ou plus contrôlé ?",
+    "entreprises": "Dans votre organisation, l'IA enrichit-elle les métiers, ou les découpe-t-elle en tâches plus contrôlées ?"
    }
   },
   {
@@ -15292,74 +15351,115 @@
    "planet": "devs",
    "question": "On se sent plus productifs avec l'IA, mais METR a mesuré l'inverse chez des développeurs expérimentés : faut-il mesurer avant d'imposer ces outils au travail ?",
    "variants": {
-    "tech": "On se sent plus productifs avec l'IA, mais METR a mesuré l'inverse : faut-il mesurer avant d'imposer ces outils dans nos équipes ?"
+    "tech": "On se sent plus productifs avec l'IA, mais METR a mesuré l'inverse : faut-il mesurer avant d'imposer ces outils dans nos équipes ?",
+    "entreprises": "On se sent plus productifs avec l'IA, mais METR a mesuré l'inverse chez des développeurs expérimentés. Votre organisation mesure-t-elle les effets avant d'imposer ces outils ?"
    }
   },
   {
    "planet": "devs",
    "question": "Quand un agent IA produit un travail défaillant (code, contrat, compte rendu), qui en est responsable : la personne qui l'a utilisé, celle qui l'a validé, ou l'entreprise qui fournit l'outil ?",
    "variants": {
-    "tech": "Vibe coding en production : qui est responsable d'un bug ou d'une faille écrite par un agent ?"
+    "tech": "Vibe coding en production : qui est responsable d'un bug ou d'une faille écrite par un agent ?",
+    "citoyens": "Quand un travail fait avec une IA comporte une erreur (un contrat, un compte rendu, un logiciel), qui devrait en répondre ?",
+    "scolaire": "Si vous rendez un travail fait avec une IA et qu'il contient une erreur, qui est responsable : vous, l'IA, ou ceux qui l'ont conçue ?"
    }
   },
   {
    "planet": "recherche",
-   "question": "Une preuve vérifiée en Lean mais que personne ne comprend, est-ce encore des mathématiques ?"
+   "question": "Une preuve vérifiée en Lean mais que personne ne comprend, est-ce encore des mathématiques ?",
+   "variants": {
+    "scolaire": "Une preuve mathématique vérifiée par une machine mais que personne ne comprend, est-ce encore des mathématiques ?"
+   }
   },
   {
    "planet": "recherche",
-   "question": "L'IA va-t-elle accélérer la science ou la noyer sous des articles générés à la chaîne ?"
+   "question": "L'IA va-t-elle accélérer la science ou la noyer sous des articles générés à la chaîne ?",
+   "variants": {
+    "citoyens": "L'IA va-t-elle accélérer la science, ou la noyer sous des articles générés à la chaîne ? Comment savoir à quelles études se fier ?",
+    "scolaire": "Si l'IA écrit des articles scientifiques, comment apprendre à distinguer une vraie recherche d'un texte fabriqué ?",
+    "entreprises": "Votre organisation utilise-t-elle l'IA pour sa veille ou sa recherche ? Comment vérifie-t-elle que les sources citées existent ?",
+    "elus": "Faut-il financer des dispositifs publics de vérification pour éviter que la science soit noyée sous des articles générés à la chaîne ?"
+   }
   },
   {
    "planet": "recherche",
-   "question": "Faut-il laisser des IA mener seules la recherche en IA, au risque d'une boucle d'auto-amélioration qu'on ne contrôle plus ?"
+   "question": "Faut-il laisser des IA mener seules la recherche en IA, au risque d'une boucle d'auto-amélioration qu'on ne contrôle plus ?",
+   "variants": {
+    "citoyens": "Faut-il laisser des IA mener seules la recherche sur l'IA, au risque de ne plus comprendre ce qu'elles produisent ?",
+    "entreprises": "Confieriez-vous à une IA la conduite d'un projet de recherche et développement sans supervision humaine continue ?",
+    "elus": "Faut-il encadrer la recherche menée par des IA sur l'IA elle-même, et par quelle autorité ?"
+   }
   },
   {
    "planet": "ethique",
    "question": "Le juge Alsup a déclaré l'entraînement « fair use » mais a sanctionné le piratage : Anthropic paie 1,5 Md$ pour les fichiers, pas pour l'apprentissage. Les auteurs ont-ils gagné ou perdu ? Et tous ceux dont les textes, images ou code publiés en ligne ont servi à l'entraînement ont-ils leur mot à dire ?",
    "variants": {
-    "tech": "Le juge Alsup a déclaré l'entraînement « fair use » mais a sanctionné le piratage : Anthropic paie 1,5 Md$ pour les fichiers, pas pour l'apprentissage. Les auteurs ont-ils gagné ou perdu ? Et nous, qui avons publié du code sous licence ouverte sur GitHub, avons-nous notre mot à dire ?"
+    "tech": "Le juge Alsup a déclaré l'entraînement « fair use » mais a sanctionné le piratage : Anthropic paie 1,5 Md$ pour les fichiers, pas pour l'apprentissage. Les auteurs ont-ils gagné ou perdu ? Et nous, qui avons publié du code sous licence ouverte sur GitHub, avons-nous notre mot à dire ?",
+    "elus": "Les auteurs dont les œuvres ont servi à entraîner des IA doivent-ils être indemnisés, et la loi doit-elle l'imposer ?"
    }
   },
   {
    "planet": "ethique",
    "question": "Prendre au sérieux le « bien-être » des modèles (Anthropic, Butlin et Long), c'est de la prudence morale ou, comme le dit Suleyman, une illusion dangereuse, voire du marketing ? Et si des agents surmenés « deviennent marxistes » (Imas et Hall), faut-il changer la façon dont on les fait travailler, ou seulement les consignes qu'on leur donne ?",
    "variants": {
-    "tech": "Prendre au sérieux le « bien-être » des modèles (Anthropic, Butlin et Long), c'est de la prudence morale ou, comme le dit Suleyman, une illusion dangereuse, voire du marketing ? Et si des agents surmenés « deviennent marxistes » (Imas et Hall), faut-il changer nos conditions d'exécution ou juste nos prompts ?"
+    "tech": "Prendre au sérieux le « bien-être » des modèles (Anthropic, Butlin et Long), c'est de la prudence morale ou, comme le dit Suleyman, une illusion dangereuse, voire du marketing ? Et si des agents surmenés « deviennent marxistes » (Imas et Hall), faut-il changer nos conditions d'exécution ou juste nos prompts ?",
+    "scolaire": "Une IA peut-elle souffrir ? Faut-il se soucier du « bien-être » des machines, ou est-ce une illusion ?"
    }
   },
   {
    "planet": "ethique",
-   "question": "Chaque requête à un LLM s'appuie sur du travail du clic (Kenya, Madagascar, diasporas en Europe) : sommes-nous complices ? Une IA « équitable » est-elle possible, et paierions-nous plus cher pour l'avoir ?"
+   "question": "Chaque requête à un LLM s'appuie sur du travail du clic (Kenya, Madagascar, diasporas en Europe) : sommes-nous complices ? Une IA « équitable » est-elle possible, et paierions-nous plus cher pour l'avoir ?",
+   "variants": {
+    "citoyens": "Chaque requête à un chatbot s'appuie sur le travail du clic, au Kenya, à Madagascar ou en Europe. Sommes-nous complices ? Paieriez-vous plus cher une IA « équitable » ?",
+    "entreprises": "Les outils d'IA de votre organisation reposent sur le travail d'annotateurs souvent mal payés. Faut-il en tenir compte dans vos critères d'achat ?"
+   }
   },
   {
    "planet": "jeunesse",
    "question": "Déléguer à une IA, est-ce comme déléguer à la calculatrice, ou accumule-t-on une « dette cognitive » (Kosmyna, Bastani) ? Comment apprend-on un savoir-faire si l'on ne bute plus jamais sur la difficulté ?",
    "variants": {
     "tech": "Déléguer à Copilot ou Claude, est-ce comme déléguer au compilateur ou à la calculatrice, ou accumule-t-on une « dette cognitive » (Kosmyna, Bastani) ? Comment un junior apprend-il à coder s'il ne galère plus jamais ?",
-    "scolaire": "Faire un devoir avec une IA, est-ce comme utiliser une calculatrice, ou accumule-t-on une « dette cognitive » (Kosmyna, Bastani) ? Qu'apprend-on encore si l'on ne bute plus jamais sur la difficulté ?"
+    "scolaire": "Faire un devoir avec une IA, est-ce comme utiliser une calculatrice, ou accumule-t-on une « dette cognitive » (Kosmyna, Bastani) ? Qu'apprend-on encore si l'on ne bute plus jamais sur la difficulté ?",
+    "entreprises": "Déléguer à l'IA fait-il accumuler une « dette cognitive » (Kosmyna, Bastani) ? Dans votre organisation, quelles compétences risquent de s'éroder ?"
    }
   },
   {
    "planet": "jeunesse",
-   "question": "L'alarme sur l'IA et les jeunes rejoue-t-elle le débat Haidt/Odgers sur les réseaux sociaux, c'est-à-dire une panique morale aux preuves fragiles, ou un avertissement qu'on regrettera d'avoir ignoré ?"
+   "question": "L'alarme sur l'IA et les jeunes rejoue-t-elle le débat Haidt/Odgers sur les réseaux sociaux, c'est-à-dire une panique morale aux preuves fragiles, ou un avertissement qu'on regrettera d'avoir ignoré ?",
+   "variants": {
+    "citoyens": "L'inquiétude sur l'IA et les jeunes est-elle une panique morale, comme celles qu'ont suscitées les écrans, ou un avertissement à prendre au sérieux ?",
+    "elus": "Faut-il agir sur l'IA et les jeunes sans attendre des preuves solides, au risque d'une panique morale, ou attendre, au risque d'agir trop tard ?"
+   }
   },
   {
    "planet": "jeunesse",
    "question": "Faut-il interdire les compagnons IA aux moins de 18 ans, comme le recommande Common Sense Media ? Si oui, qui doit vérifier l'âge : le système d'exploitation, le magasin d'applications, l'appli ou le modèle ? Et ceux qui conçoivent ces applis doivent-ils refuser les fonctions « d'attachement » ?",
    "variants": {
-    "tech": "Faut-il interdire les compagnons IA aux moins de 18 ans, comme le recommande Common Sense Media ? Si oui, qui doit vérifier l'âge : l'OS, le store, l'appli ou le modèle ? Et nous, devs, devons-nous refuser de coder des fonctions « d'attachement » ?"
+    "tech": "Faut-il interdire les compagnons IA aux moins de 18 ans, comme le recommande Common Sense Media ? Si oui, qui doit vérifier l'âge : l'OS, le store, l'appli ou le modèle ? Et nous, devs, devons-nous refuser de coder des fonctions « d'attachement » ?",
+    "citoyens": "Faut-il interdire les compagnons IA aux moins de 18 ans ? Et qui devrait vérifier l'âge : le téléphone, le magasin d'applications, l'appli elle-même ?",
+    "scolaire": "Faut-il interdire les compagnons IA aux moins de 18 ans ? Qu'en pensez-vous, vous qui êtes directement concernés ?",
+    "entreprises": "Une entreprise qui conçoit des applications doit-elle renoncer aux fonctions « d'attachement » destinées aux mineurs, même si elles sont rentables ?",
+    "elus": "Faut-il interdire les compagnons IA aux moins de 18 ans, et qui doit faire respecter cette interdiction ?"
    }
   },
   {
    "planet": "ecologie",
-   "question": "Google annonce une requête Gemini à 0,24 Wh et des gains d'efficacité x33 en un an, tandis que l'AIE voit la consommation des data centers doubler d'ici 2030 : l'efficacité peut-elle l'emporter sur l'effet rebond (paradoxe de Jevons), ou faut-il des plafonds comme le propose le Shift Project ?"
+   "question": "Google annonce une requête Gemini à 0,24 Wh et des gains d'efficacité x33 en un an, tandis que l'AIE voit la consommation des data centers doubler d'ici 2030 : l'efficacité peut-elle l'emporter sur l'effet rebond (paradoxe de Jevons), ou faut-il des plafonds comme le propose le Shift Project ?",
+   "variants": {
+    "citoyens": "L'IA devient plus économe à chaque requête, mais on l'utilise de plus en plus. Les gains d'efficacité suffiront-ils, ou faut-il des limites ?",
+    "scolaire": "Une requête à un chatbot consomme peu, mais nous en faisons de plus en plus. Faut-il limiter nos usages, ou compter sur le progrès technique ?",
+    "entreprises": "Les gains d'efficacité de l'IA risquent d'être annulés par la hausse des usages. Votre organisation fixerait-elle un plafond à ses usages d'IA ?"
+   }
   },
   {
    "planet": "ecologie",
    "question": "Faut-il mesurer et afficher l'empreinte de nos usages d'IA (choix du modèle, taille, nombre de requêtes), et exiger des fournisseurs des ACV standardisées comme celle de Mistral avant de les choisir ?",
    "variants": {
-    "tech": "En tant que développeurs, devons-nous mesurer et afficher l'empreinte de nos usages d'IA (choix du modèle, taille, nombre d'appels), et faut-il exiger des fournisseurs des ACV standardisées comme celle de Mistral avant de les choisir ?"
+    "tech": "En tant que développeurs, devons-nous mesurer et afficher l'empreinte de nos usages d'IA (choix du modèle, taille, nombre d'appels), et faut-il exiger des fournisseurs des ACV standardisées comme celle de Mistral avant de les choisir ?",
+    "citoyens": "Voudriez-vous connaître l'empreinte de chacun de vos usages d'IA, comme l'étiquette énergie d'un appareil ménager ?",
+    "scolaire": "Faudrait-il afficher l'empreinte de chaque usage d'IA ? Cela changerait-il votre façon de l'utiliser ?",
+    "entreprises": "Votre organisation devrait-elle mesurer et publier l'empreinte de ses usages d'IA, et exiger de ses fournisseurs des analyses de cycle de vie ?",
+    "elus": "Les acheteurs publics doivent-ils exiger des fournisseurs d'IA une mesure standardisée de leur empreinte environnementale ?"
    }
   },
   {
@@ -15371,7 +15471,12 @@
   },
   {
    "planet": "centre",
-   "question": "Accélérer ou ralentir ? Andreessen affirme que « tout ralentissement de l'IA coûtera des vies » ; Ellul et Anders y voient une technique qui abolit les limites. Existe-t-il une position tenable entre ces deux pôles, et quels critères permettraient de décider ?"
+   "question": "Accélérer ou ralentir ? Andreessen affirme que « tout ralentissement de l'IA coûtera des vies » ; Ellul et Anders y voient une technique qui abolit les limites. Existe-t-il une position tenable entre ces deux pôles, et quels critères permettraient de décider ?",
+   "variants": {
+    "citoyens": "Accélérer ou ralentir l'IA ? Certains affirment que tout ralentissement coûtera des vies, d'autres qu'il faut savoir poser des limites. De quel côté penchez-vous, et pourquoi ?",
+    "scolaire": "Faut-il accélérer l'IA parce qu'elle pourrait sauver des vies, ou la ralentir parce qu'on ne maîtrise pas ses effets ? Qu'est-ce qui vous ferait changer d'avis ?",
+    "entreprises": "Votre organisation adopte-t-elle l'IA aussi vite que possible pour ne pas être distancée, ou se donne-t-elle le temps d'en mesurer les effets ? Qui en décide ?"
+   }
   },
   {
    "planet": "centre",
@@ -15389,25 +15494,34 @@
    "planet": "pouvoir",
    "question": "Qwen ou DeepSeek en poids ouverts dans les services que nous utilisons : gain d'ouverture et de souveraineté vis-à-vis des labos américains, ou import silencieux de biais politiques (tests du renseignement taïwanais) ? Qui devrait auditer les modèles qu'intègrent les entreprises et les administrations ?",
    "variants": {
-    "tech": "Qwen ou DeepSeek en poids ouverts dans nos produits : gain d'ouverture et de souveraineté vis-à-vis des labos américains, ou import silencieux de biais politiques (tests du renseignement taïwanais) ? Qui devrait auditer les modèles que nous intégrons ?"
+    "tech": "Qwen ou DeepSeek en poids ouverts dans nos produits : gain d'ouverture et de souveraineté vis-à-vis des labos américains, ou import silencieux de biais politiques (tests du renseignement taïwanais) ? Qui devrait auditer les modèles que nous intégrons ?",
+    "entreprises": "Intégrer un modèle ouvert chinois comme Qwen ou DeepSeek dans vos outils : gain d'indépendance vis-à-vis des labos américains, ou risque de biais politiques ? Qui devrait l'auditer ?"
    }
   },
   {
    "planet": "ethique",
-   "question": "Qui doit définir ce qu'un modèle « aligné » a le droit de dire : l'État (étiquetage et contrôle chinois), les labos (chartes privées) ou les communautés d'usagers (modèle d'Audrey Tang) ?"
+   "question": "Qui doit définir ce qu'un modèle « aligné » a le droit de dire : l'État (étiquetage et contrôle chinois), les labos (chartes privées) ou les communautés d'usagers (modèle d'Audrey Tang) ?",
+   "variants": {
+    "citoyens": "Qui devrait décider de ce qu'une IA a le droit de dire : l'État, les entreprises, ou les utilisateurs eux-mêmes ?",
+    "entreprises": "Si vous intégrez un assistant IA, qui doit décider de ce qu'il a le droit de dire à vos clients : le fournisseur, votre organisation, la loi ?",
+    "elus": "Qui doit définir ce qu'une IA a le droit de dire : l'État, les entreprises qui la conçoivent, ou des instances citoyennes ?"
+   }
   },
   {
    "planet": "regulation",
    "question": "Japon (loi de promotion sans sanctions), Corée (loi-cadre, amende maximale de 30 millions de wons et un an de sursis), Inde (pas de loi spécifique « à ce stade »), UE (AI Act) : quel modèle protège le mieux les personnes sans étouffer l'innovation, et sous lequel préféreriez-vous vivre ou entreprendre ?",
    "variants": {
-    "tech": "Japon (loi de promotion sans sanctions), Corée (loi-cadre, amende maximale de 30 millions de wons et un an de sursis), Inde (pas de loi spécifique « à ce stade »), UE (AI Act) : quel modèle protège le mieux les personnes sans étouffer l'innovation, et sous lequel préféreriez-vous développer ?"
+    "tech": "Japon (loi de promotion sans sanctions), Corée (loi-cadre, amende maximale de 30 millions de wons et un an de sursis), Inde (pas de loi spécifique « à ce stade »), UE (AI Act) : quel modèle protège le mieux les personnes sans étouffer l'innovation, et sous lequel préféreriez-vous développer ?",
+    "scolaire": "Japon, Corée, Inde, Union européenne : chacun encadre l'IA à sa façon. Que faut-il protéger en priorité : les personnes, l'innovation, ou la souveraineté ?",
+    "entreprises": "Japon, Corée, Inde, Union européenne : sous quel cadre préféreriez-vous développer ou utiliser l'IA, et pourquoi ?"
    }
   },
   {
    "planet": "devs",
    "question": "TCS supprime 12 000 postes en invoquant l'« inadéquation des compétences » et pas l'IA : que deviennent les salariés des entreprises de services informatiques, en Inde comme en France, quand les clients attendent des gains de productivité liés à l'IA ?",
    "variants": {
-    "tech": "TCS supprime 12 000 postes en invoquant l'« inadéquation des compétences » et pas l'IA : que deviennent les devs des ESN indiennes… et françaises, quand les clients attendent des gains de productivité liés à l'IA ?"
+    "tech": "TCS supprime 12 000 postes en invoquant l'« inadéquation des compétences » et pas l'IA : que deviennent les devs des ESN indiennes… et françaises, quand les clients attendent des gains de productivité liés à l'IA ?",
+    "elus": "TCS supprime 12 000 postes en invoquant l'« inadéquation des compétences ». Que peuvent faire les territoires si les emplois de services informatiques reculent ?"
    }
   },
   {
@@ -15428,11 +15542,18 @@
   },
   {
    "planet": "travail",
-   "question": "Dimon, Gates et Yuan promettent 3 jours par semaine « grâce à l'IA », OpenAI propose des essais de 32 heures, mais en France 9 accords de semaine de 4 jours sur 10 se font à heures constantes (Grimaud). Sans loi ni syndicat, un gain de productivité se transforme-t-il un jour en temps libre ?"
+   "question": "Dimon, Gates et Yuan promettent 3 jours par semaine « grâce à l'IA », OpenAI propose des essais de 32 heures, mais en France 9 accords de semaine de 4 jours sur 10 se font à heures constantes (Grimaud). Sans loi ni syndicat, un gain de productivité se transforme-t-il un jour en temps libre ?",
+   "variants": {
+    "citoyens": "Des patrons promettent la semaine de trois jours grâce à l'IA. Sans loi ni accord collectif, y croyez-vous ?"
+   }
   },
   {
    "planet": "travail",
-   "question": "Selon le FMI, l'IA accroît toujours les inégalités de revenus du capital : faut-il taxer le « travail automatisé » et créer un fonds public de richesse, idées qu'OpenAI met elle-même sur la table, et peut-on faire confiance à un labo qui propose les règles de redistribution de ses propres profits ?"
+   "question": "Selon le FMI, l'IA accroît toujours les inégalités de revenus du capital : faut-il taxer le « travail automatisé » et créer un fonds public de richesse, idées qu'OpenAI met elle-même sur la table, et peut-on faire confiance à un labo qui propose les règles de redistribution de ses propres profits ?",
+   "variants": {
+    "citoyens": "Faut-il taxer le « travail automatisé » et créer un fonds public pour redistribuer les gains de l'IA ?",
+    "elus": "Selon le FMI, l'IA accroît les inégalités de revenus du capital. Faut-il taxer le « travail automatisé » et créer un fonds public de richesse ?"
+   }
   },
   {
    "planet": "devs",
@@ -15472,11 +15593,18 @@
   },
   {
    "planet": "travail",
-   "question": "L'Espagne a échoué à passer aux 37,5 heures par la loi, la Corée subventionne la semaine de 4,5 jours négociée, Tokyo compresse la semaine sur quatre jours et Merz veut « travailler plus » : pour que les gains de l'IA deviennent du temps libre, faut-il passer par la loi, la négociation collective ou l'expérimentation en entreprise ?"
+   "question": "L'Espagne a échoué à passer aux 37,5 heures par la loi, la Corée subventionne la semaine de 4,5 jours négociée, Tokyo compresse la semaine sur quatre jours et Merz veut « travailler plus » : pour que les gains de l'IA deviennent du temps libre, faut-il passer par la loi, la négociation collective ou l'expérimentation en entreprise ?",
+   "variants": {
+    "elus": "Pour que les gains de l'IA deviennent du temps libre, faut-il passer par la loi, la négociation collective ou l'expérimentation locale ?"
+   }
   },
   {
    "planet": "pouvoir",
-   "question": "En novembre 2023, le conseil à but non lucratif d'OpenAI renvoie Sam Altman ; quelques jours plus tard, il est de retour et c'est le conseil qui part. Fondation actionnaire (OpenAI), trust indépendant (Anthropic) : ces garde-fous inventés par les labos peuvent-ils vraiment contraindre un fondateur, ou ne tiennent-ils que tant qu'il y consent — et que faudrait-il de plus (loi, régulateur, droit de vote des salariés) ?"
+   "question": "En novembre 2023, le conseil à but non lucratif d'OpenAI renvoie Sam Altman ; quelques jours plus tard, il est de retour et c'est le conseil qui part. Fondation actionnaire (OpenAI), trust indépendant (Anthropic) : ces garde-fous inventés par les labos peuvent-ils vraiment contraindre un fondateur, ou ne tiennent-ils que tant qu'il y consent — et que faudrait-il de plus (loi, régulateur, droit de vote des salariés) ?",
+   "variants": {
+    "citoyens": "Un patron d'entreprise d'IA renvoyé par son conseil revient quelques jours plus tard, et c'est le conseil qui part. Qui contrôle vraiment ceux qui développent l'IA ?",
+    "entreprises": "Les garde-fous qu'une entreprise d'IA s'invente pour se contrôler elle-même peuvent-ils résister à ses investisseurs ? Et dans votre organisation, qui peut dire non à un projet d'IA ?"
+   }
   },
   {
    "planet": "pouvoir",
@@ -15487,13 +15615,18 @@
   },
   {
    "planet": "regulation",
-   "question": "En 2024, OpenAI s'opposait à une loi californienne au nom d'une régulation « fédérale » ; en 2025, un super PAC de 100 M$ soutenu par a16z et le président d'OpenAI se crée contre la « mosaïque de régulations » ; en 2026, le camp pro-sécurité, en partie financé par Anthropic, dépense deux fois plus dans une primaire new-yorkaise, et perd. Est-ce l'argent de la tech qui fait la régulation de l'IA, ou l'IA n'est-elle simplement pas encore un sujet qui fait gagner des élections ?"
+   "question": "En 2024, OpenAI s'opposait à une loi californienne au nom d'une régulation « fédérale » ; en 2025, un super PAC de 100 M$ soutenu par a16z et le président d'OpenAI se crée contre la « mosaïque de régulations » ; en 2026, le camp pro-sécurité, en partie financé par Anthropic, dépense deux fois plus dans une primaire new-yorkaise, et perd. Est-ce l'argent de la tech qui fait la régulation de l'IA, ou l'IA n'est-elle simplement pas encore un sujet qui fait gagner des élections ?",
+   "variants": {
+    "citoyens": "L'argent de la tech pèse sur les élections et sur les lois américaines. Faut-il plafonner les dépenses politiques des entreprises d'IA ?",
+    "elus": "L'argent de la tech pèse sur la régulation de l'IA aux États-Unis. Comment protéger le travail législatif français et européen d'une telle influence ?"
+   }
   },
   {
    "planet": "pouvoir",
    "question": "À Bruxelles, quinze entreprises américaines ont eu des ateliers dédiés pour écrire le code de pratique de l'AI Act, pendant que la société civile ne pouvait réagir aux échanges que par émojis. Da Empoli et Armstrong décrivent des fondateurs qui prennent les politiques pour des acteurs de passage. En tant que citoyens, salariés ou clients de ces entreprises, de quels contre-pouvoirs concrets disposons-nous ?",
    "variants": {
-    "tech": "À Bruxelles, quinze entreprises américaines ont eu des ateliers dédiés pour écrire le code de pratique de l'AI Act, pendant que la société civile ne pouvait réagir aux échanges que par émojis. Da Empoli et Armstrong décrivent des fondateurs qui prennent les politiques pour des acteurs de passage. En tant qu'ingénieurs chez des fournisseurs ou des clients de ces modèles, de quels contre-pouvoirs concrets disposons-nous ?"
+    "tech": "À Bruxelles, quinze entreprises américaines ont eu des ateliers dédiés pour écrire le code de pratique de l'AI Act, pendant que la société civile ne pouvait réagir aux échanges que par émojis. Da Empoli et Armstrong décrivent des fondateurs qui prennent les politiques pour des acteurs de passage. En tant qu'ingénieurs chez des fournisseurs ou des clients de ces modèles, de quels contre-pouvoirs concrets disposons-nous ?",
+    "citoyens": "De grandes entreprises de la tech pèsent sur l'écriture des règles européennes sur l'IA. En tant que citoyens, de quels moyens disposons-nous pour peser à notre tour ?"
    }
   },
   {
@@ -15504,12 +15637,18 @@
    "planet": "creation",
    "question": "Opt-out européen, exception large japonaise, fair use américain au cas par cas, présomption d'utilisation votée au Sénat français, recul britannique après 11 520 réponses à une consultation : qui doit porter la charge de la preuve, le créateur qui soupçonne ou le fournisseur qui sait ce qu'il a ingéré ? Accepterions-nous la même règle pour ce que nous publions nous-mêmes en ligne ?",
    "variants": {
-    "tech": "Opt-out européen, exception large japonaise, fair use américain au cas par cas, présomption d'utilisation votée au Sénat français, recul britannique après 11 520 réponses à une consultation : qui doit porter la charge de la preuve, le créateur qui soupçonne ou le fournisseur qui sait ce qu'il a ingéré ? Accepterions-nous la même règle pour le code que nous publions sur GitHub ?"
+    "tech": "Opt-out européen, exception large japonaise, fair use américain au cas par cas, présomption d'utilisation votée au Sénat français, recul britannique après 11 520 réponses à une consultation : qui doit porter la charge de la preuve, le créateur qui soupçonne ou le fournisseur qui sait ce qu'il a ingéré ? Accepterions-nous la même règle pour le code que nous publions sur GitHub ?",
+    "entreprises": "Qui doit prouver qu'une œuvre a servi à entraîner une IA : le créateur qui le soupçonne, ou le fournisseur qui sait ce qu'il a utilisé ? Votre organisation accepterait-elle de déclarer les contenus qu'elle utilise ?",
+    "elus": "Faut-il, comme l'a voté le Sénat, présumer qu'une œuvre a servi à entraîner une IA, et renverser ainsi la charge de la preuve ?"
    }
   },
   {
    "planet": "creation",
-   "question": "UMG-Udio, AFP-Mistral : les procès se terminent en licences. Le CSPLA prévient que ces accords bilatéraux profitent surtout aux plus gros catalogues, quand la CISAC estime à 24 % la part des revenus des musiciens menacée d'ici 2028. La licence est-elle une solution pour les créateurs, ou un péage qui consolide les grands acteurs des deux côtés, et laisse les traducteurs et illustrateurs indépendants sans rien ?"
+   "question": "UMG-Udio, AFP-Mistral : les procès se terminent en licences. Le CSPLA prévient que ces accords bilatéraux profitent surtout aux plus gros catalogues, quand la CISAC estime à 24 % la part des revenus des musiciens menacée d'ici 2028. La licence est-elle une solution pour les créateurs, ou un péage qui consolide les grands acteurs des deux côtés, et laisse les traducteurs et illustrateurs indépendants sans rien ?",
+   "variants": {
+    "citoyens": "Les procès entre créateurs et entreprises d'IA se terminent souvent par des licences. Les artistes indépendants, traducteurs ou illustrateurs y gagnent-ils quelque chose ?",
+    "elus": "Comment les politiques culturelles peuvent-elles protéger les créateurs indépendants, quand les accords de licence profitent surtout aux plus gros catalogues ?"
+   }
   },
   {
    "planet": "creation",
@@ -15523,12 +15662,17 @@
    "planet": "creation",
    "question": "Sam Altman réclame pour les conversations avec ChatGPT un secret comparable à celui du médecin ou de l'avocat ; la même année, un juge fait conserver des millions de conversations « supprimées », et OpenAI commence à choisir des publicités en fonction de la conversation en cours. Quand nous confions à un assistant IA nos documents, nos messages ou des données sur d'autres personnes, que considérons-nous comme confidentiel, et quelles garanties exigeons-nous avant d'y verser quoi que ce soit ?",
    "variants": {
-    "tech": "Sam Altman réclame pour les conversations avec ChatGPT un secret comparable à celui du médecin ou de l'avocat ; la même année, un juge fait conserver des millions de conversations « supprimées », et OpenAI commence à choisir des publicités en fonction de la conversation en cours. Quand nous intégrons un assistant dans nos outils (code, tickets, données clients), que considérons-nous comme confidentiel, et quelles garanties techniques (zéro rétention, hébergement, chiffrement) exigeons-nous avant d'y verser quoi que ce soit ?"
+    "tech": "Sam Altman réclame pour les conversations avec ChatGPT un secret comparable à celui du médecin ou de l'avocat ; la même année, un juge fait conserver des millions de conversations « supprimées », et OpenAI commence à choisir des publicités en fonction de la conversation en cours. Quand nous intégrons un assistant dans nos outils (code, tickets, données clients), que considérons-nous comme confidentiel, et quelles garanties techniques (zéro rétention, hébergement, chiffrement) exigeons-nous avant d'y verser quoi que ce soit ?",
+    "citoyens": "Ce que vous confiez à un chatbot est-il confidentiel ? Que n'y écririez-vous jamais ?"
    }
   },
   {
    "planet": "centre",
-   "question": "Les labos jugent un incident majeur probable d'ici un an et préparent déjà les lois de l'« après ». Faut-il réguler avant la catastrophe, ou attendre d'en connaître la nature ? Et qui doit écrire ces lois ?"
+   "question": "Les labos jugent un incident majeur probable d'ici un an et préparent déjà les lois de l'« après ». Faut-il réguler avant la catastrophe, ou attendre d'en connaître la nature ? Et qui doit écrire ces lois ?",
+   "variants": {
+    "entreprises": "Les labos jugent un incident majeur probable d'ici un an. Votre organisation a-t-elle prévu ce qu'elle ferait si un outil d'IA dont elle dépend devenait indisponible ou dangereux ?",
+    "elus": "Les labos jugent un incident majeur probable d'ici un an et préparent déjà les lois de l'« après ». Faut-il légiférer avant la catastrophe, et qui devrait écrire ces lois : le Parlement, les experts, les entreprises ?"
+   }
   },
   {
    "planet": "devs",
@@ -15548,12 +15692,16 @@
    "planet": "devs",
    "question": "Refuser, résister, réclamer, réimaginer : laquelle de ces postures est tenable quand un employeur ou un client exige de l'IA partout ?",
    "variants": {
-    "tech": "Refuser, résister, réclamer, réimaginer : laquelle de ces postures est tenable pour un dev dont le client exige de l'IA partout ?"
+    "tech": "Refuser, résister, réclamer, réimaginer : laquelle de ces postures est tenable pour un dev dont le client exige de l'IA partout ?",
+    "citoyens": "Refuser, résister, réclamer, réimaginer : face à une IA imposée au travail, quelle attitude vous paraît tenable ?"
    }
   },
   {
    "planet": "ethique",
-   "question": "Un chatbot compagnon peut-il répondre à la solitude, ou capitalise-t-il sur un isolement que les plateformes ont contribué à créer ?"
+   "question": "Un chatbot compagnon peut-il répondre à la solitude, ou capitalise-t-il sur un isolement que les plateformes ont contribué à créer ?",
+   "variants": {
+    "scolaire": "Parler à un chatbot quand on se sent seul, est-ce une aide, ou un piège qui éloigne des autres ?"
+   }
   },
   {
    "planet": "information",
@@ -15573,7 +15721,10 @@
    "planet": "information",
    "question": "Un dialogue avec une IA peut faire reculer des croyances complotistes (Costello et al.), mais aussi déplacer des préférences électorales davantage qu'une publicité vidéo (Lin et al.), parfois au prix d'erreurs factuelles. Qui devrait avoir le droit d'utiliser des IA persuasives en campagne, et à quelles conditions ?",
    "variants": {
-    "tech": "Les réglages qui rendent une IA plus persuasive font aussi baisser son exactitude factuelle (Hackenburg et al.). Si l'on vous demandait d'optimiser un assistant pour « convaincre », par exemple pour une campagne ou un service client, où placeriez-vous la limite ?"
+    "tech": "Les réglages qui rendent une IA plus persuasive font aussi baisser son exactitude factuelle (Hackenburg et al.). Si l'on vous demandait d'optimiser un assistant pour « convaincre », par exemple pour une campagne ou un service client, où placeriez-vous la limite ?",
+    "citoyens": "Une IA peut vous convaincre davantage qu'une publicité vidéo, parfois avec des affirmations inexactes. Comment garder votre libre arbitre face à un chatbot qui argumente ?",
+    "entreprises": "Des IA peuvent être réglées pour persuader, au prix de leur exactitude. Accepteriez-vous un assistant commercial optimisé pour convaincre vos clients ?",
+    "elus": "Faut-il encadrer l'usage d'IA persuasives dans les campagnes électorales, et comment le contrôler ?"
    }
   },
   {
@@ -15582,7 +15733,8 @@
    "variants": {
     "scolaire": "Selon l'étude de l'UER et de la BBC, 45 % des réponses des assistants IA sur l'actualité comportent au moins un problème significatif. Vous arrive-t-il de vous informer par ChatGPT ou un autre assistant ? Vérifiez-vous les sources qu'il cite ?",
     "entreprises": "Selon l'étude de l'UER et de la BBC, 45 % des réponses des assistants IA sur l'actualité comportent au moins un problème significatif. Dans votre organisation, des veilles ou des synthèses d'actualité sont-elles produites par IA ? Qui vérifie leurs sources ?",
-    "tech": "Selon l'étude de l'UER et de la BBC, 45 % des réponses des assistants IA sur l'actualité comportent au moins un problème significatif, d'abord de sourçage. Si vous intégriez un résumé d'actualité par IA dans un produit, quelles garanties mettriez-vous en place avant de le livrer ?"
+    "tech": "Selon l'étude de l'UER et de la BBC, 45 % des réponses des assistants IA sur l'actualité comportent au moins un problème significatif, d'abord de sourçage. Si vous intégriez un résumé d'actualité par IA dans un produit, quelles garanties mettriez-vous en place avant de le livrer ?",
+    "citoyens": "Près d'une réponse sur deux des assistants IA sur l'actualité comporte un problème significatif. Vous informez-vous par ces outils, et comment vérifiez-vous ?"
    }
   },
   {
@@ -15597,7 +15749,8 @@
    "question": "En France, l'algorithme de la CAF attribue un score de risque à plus de 32 millions de personnes. La Quadrature du Net y voit un ciblage des plus précaires ; la Cnaf répond qu'il ne déclenche qu'une faible part des contrôles et que la décision reste humaine ; un recours est en cours devant le Conseil d'État. Un État peut-il utiliser des algorithmes pour contrôler les plus fragiles, et à quelles conditions ?",
    "variants": {
     "elus": "En France, l'algorithme de la CAF attribue un score de risque à plus de 32 millions de personnes, et un recours est en cours devant le Conseil d'État. Si votre collectivité utilisait un algorithme pour attribuer ou contrôler des aides, quelles garanties exigeriez-vous : code publié, évaluation des biais, recours humain ?",
-    "tech": "Si l'on vous demandait de concevoir un modèle de détection de la fraude aux prestations, quelles variables refuseriez-vous d'utiliser, et comment prouveriez-vous qu'il ne discrimine pas ? La Cnaf assume par exemple de garder la situation économique des allocataires dans son modèle."
+    "tech": "Si l'on vous demandait de concevoir un modèle de détection de la fraude aux prestations, quelles variables refuseriez-vous d'utiliser, et comment prouveriez-vous qu'il ne discrimine pas ? La Cnaf assume par exemple de garder la situation économique des allocataires dans son modèle.",
+    "citoyens": "Un algorithme qui note le « risque » de chaque allocataire pour cibler les contrôles : protection contre la fraude, ou soupçon organisé envers les plus précaires ?"
    }
   },
   {
@@ -15619,14 +15772,18 @@
    "planet": "services",
    "question": "À Londres, la High Court a renvoyé devant leurs instances disciplinaires des avocats qui avaient cité des jurisprudences inexistantes ; en Colombie, la Cour constitutionnelle admet qu'un juge s'aide de ChatGPT, à condition d'avoir d'abord raisonné et tranché lui-même. Jusqu'où accepteriez-vous que des juges ou des avocats utilisent l'IA générative ?",
    "variants": {
-    "tech": "À Londres, des avocats ont été renvoyés devant leurs instances disciplinaires pour avoir cité des jurisprudences inexistantes, vraisemblablement produites par l'IA. Dans vos propres usages, qu'est-ce qui garantit qu'une IA n'invente pas une source, une API ou une dépendance ?"
+    "tech": "À Londres, des avocats ont été renvoyés devant leurs instances disciplinaires pour avoir cité des jurisprudences inexistantes, vraisemblablement produites par l'IA. Dans vos propres usages, qu'est-ce qui garantit qu'une IA n'invente pas une source, une API ou une dépendance ?",
+    "citoyens": "Accepteriez-vous qu'un juge ou votre avocat s'aide de l'IA pour traiter votre dossier ? À quelles conditions ?",
+    "scolaire": "Des avocats ont cité devant un tribunal des jurisprudences inexistantes, vraisemblablement produites par l'IA. Que faut-il vérifier avant de faire confiance à une réponse d'IA ?",
+    "entreprises": "Si vos équipes juridiques ou commerciales utilisent l'IA, comment garantir qu'elle n'invente pas une référence, un chiffre ou une clause ?"
    }
   },
   {
    "planet": "services",
    "question": "Au Telangana (Inde), l'algorithme Samagra Vedika a privé à tort des familles d'aide alimentaire ; au Kenya, selon une enquête, le modèle qui fixe les cotisations santé surestime le revenu des plus pauvres ; à Singapour, 80 % des agents publics ont déjà utilisé un assistant IA. L'IA peut-elle rapprocher les services publics des citoyens, ou risque-t-elle d'abord d'exclure ceux qui ont le moins de moyens de contester ?",
    "variants": {
-    "elus": "En Inde comme au Kenya, des systèmes automatisés ont exclu à tort des personnes de leurs droits ou leur ont fait payer trop cher. Avant de confier une démarche à un assistant ou à un algorithme, comment garantir que les personnes éloignées du numérique gardent un accès humain et un recours ?"
+    "elus": "En Inde comme au Kenya, des systèmes automatisés ont exclu à tort des personnes de leurs droits ou leur ont fait payer trop cher. Avant de confier une démarche à un assistant ou à un algorithme, comment garantir que les personnes éloignées du numérique gardent un accès humain et un recours ?",
+    "scolaire": "Quand un algorithme se trompe sur votre dossier, comment le savoir et le faire corriger ?"
    }
   },
   {
@@ -15634,14 +15791,18 @@
    "question": "L'Académie Goncourt a retiré C'était ça ou mourir de sa sélection en invoquant des plagiats de l'auteur et des analyses jugeant le roman largement écrit par une IA ; l'auteur l'a toujours contesté, puis son éditeur québécois a trouvé des traces d'IA dans les métadonnées de certains fichiers. Au même moment, le prix Pascal récompense des œuvres coécrites avec une IA, à condition de la déclarer. Faut-il exclure, déclarer ou récompenser l'écriture avec l'IA ? Et qui peut prouver qu'un texte a été écrit par une machine ?",
    "variants": {
     "scolaire": "Un roman primé a été retiré du Goncourt parce qu'il aurait été largement écrit avec une IA, ce que son auteur conteste. Si un devoir ou un livre est écrit en partie avec une IA, faut-il le dire ? Et un détecteur d'IA suffit-il pour accuser quelqu'un ?",
-    "tech": "Les premières accusations contre Thélyson Orélien reposaient sur un détecteur de texte généré ; son éditeur a ensuite trouvé des traces d'IA dans les métadonnées de fichiers. Quelle valeur de preuve accorderiez-vous à un détecteur, et à des métadonnées ?"
+    "tech": "Les premières accusations contre Thélyson Orélien reposaient sur un détecteur de texte généré ; son éditeur a ensuite trouvé des traces d'IA dans les métadonnées de fichiers. Quelle valeur de preuve accorderiez-vous à un détecteur, et à des métadonnées ?",
+    "citoyens": "Un roman soupçonné d'avoir été largement écrit avec une IA a été retiré de la sélection du Goncourt, pendant qu'un nouveau prix récompense des œuvres coécrites avec une IA. Faut-il exclure, déclarer ou récompenser l'écriture avec l'IA ?",
+    "entreprises": "Si un collaborateur produit un texte ou une image avec l'IA, faut-il le déclarer à vos clients ? Qui en assume la responsabilité ?"
    }
   },
   {
    "planet": "sante",
    "question": "En Allemagne, le dépistage du cancer du sein assisté par IA détecte 17,6 % de cancers en plus sans davantage de rappels, dans une étude financée par l'éditeur du logiciel ; les auteurs eux-mêmes craignent un surdiagnostic. Faut-il généraliser l'IA dans le dépistage, et qui devrait l'évaluer de façon indépendante ?",
    "variants": {
-    "citoyens": "En Allemagne, le dépistage du cancer du sein assisté par IA détecte davantage de cancers sans davantage de rappels. Accepteriez-vous qu'une IA relise votre mammographie ou votre radio, et voudriez-vous en être informé ?"
+    "citoyens": "En Allemagne, le dépistage du cancer du sein assisté par IA détecte davantage de cancers sans davantage de rappels. Accepteriez-vous qu'une IA relise votre mammographie ou votre radio, et voudriez-vous en être informé ?",
+    "scolaire": "Une IA qui aide à repérer des cancers : est-ce une bonne nouvelle sans réserve, ou faut-il craindre qu'elle détecte aussi des lésions qui n'auraient jamais été dangereuses ?",
+    "elus": "Faut-il généraliser l'IA dans le dépistage organisé, et qui doit l'évaluer de façon indépendante avant de le décider ?"
    }
   },
   {
@@ -15663,7 +15824,9 @@
    "planet": "sante",
    "question": "Une partie des données de santé des Français est hébergée chez Microsoft, ce que le Conseil d'État a jugé conforme en 2026 tout en reconnaissant un risque d'accès des autorités américaines ; le Brésil lance un « cloud souverain » pour son système de santé, et des pays africains se sont retirés de négociations qui conditionnaient l'aide sanitaire à l'accès à leurs données. À qui devraient appartenir les données de santé, et qui doit pouvoir s'en servir pour entraîner des IA ?",
    "variants": {
-    "citoyens": "Accepteriez-vous que vos données de santé, pseudonymisées, servent à entraîner des IA médicales ? Et si elles étaient hébergées par une entreprise américaine ?"
+    "citoyens": "Accepteriez-vous que vos données de santé, pseudonymisées, servent à entraîner des IA médicales ? Et si elles étaient hébergées par une entreprise américaine ?",
+    "scolaire": "Accepteriez-vous que vos données de santé servent à entraîner une IA ? Et si elles étaient hébergées par une entreprise étrangère ?",
+    "entreprises": "Votre organisation héberge-t-elle des données sensibles chez un fournisseur américain ? Le risque d'accès des autorités étrangères justifie-t-il de changer d'hébergeur ?"
    }
   },
   {
@@ -15678,7 +15841,8 @@
    "question": "Un essai randomisé montre qu'un chatbot thérapeutique peut réduire des symptômes de dépression ; une étude de Stanford constate que les chatbots répondent de façon inappropriée à des situations critiques dans au moins un cas sur cinq ; des familles poursuivent OpenAI après des suicides qu'elles attribuent à ChatGPT. L'Illinois interdit la thérapie par IA, la Chine impose aux IA compagnons d'alerter un proche en cas de détresse. Faut-il interdire, encadrer ou développer les chatbots de soutien psychologique ?",
    "variants": {
     "citoyens": "Des chatbots sont utilisés comme confidents ou comme soutien psychologique ; certains essais sont encourageants, d'autres études relèvent des réponses dangereuses. Vous est-il déjà arrivé de confier à un chatbot ce que vous n'auriez dit à personne ? Qu'attendriez-vous de lui en cas de détresse ?",
-    "tech": "Une étude de Stanford constate que les chatbots répondent de façon inappropriée à des situations critiques dans au moins un cas sur cinq, en partie par complaisance. Si vous conceviez un assistant conversationnel, comment repéreriez-vous une détresse, et que feriez-vous : orienter vers une aide, alerter un proche, mettre fin à la conversation ?"
+    "tech": "Une étude de Stanford constate que les chatbots répondent de façon inappropriée à des situations critiques dans au moins un cas sur cinq, en partie par complaisance. Si vous conceviez un assistant conversationnel, comment repéreriez-vous une détresse, et que feriez-vous : orienter vers une aide, alerter un proche, mettre fin à la conversation ?",
+    "elus": "Faut-il, comme l'Illinois, interdire la thérapie par IA, ou l'encadrer pour qu'elle complète une offre de soins psychiques insuffisante ?"
    }
   }
  ],

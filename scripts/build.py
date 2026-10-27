@@ -121,8 +121,8 @@ class Report:
 def resolve_refs(tours, stops, r: Report):
     """Étapes par référence, résolues avant la validation.
     {"from": [parcours, index]} reprend une étape de parcours ; dans tours.json, {"stop": planète} reprend
-    l'étape à la carte de cette planète. Les autres champs complètent ou remplacent ceux de l'étape d'origine ;
-    une étape qui redéfinit un champ abandonne les variantes de l'étape d'origine (ses propres variantes s'appliquent).
+    l'étape à la carte de cette planète. Les autres champs remplacent ceux de l'étape d'origine ; une étape qui
+    redéfinit un champ abandonne les variantes de l'étape d'origine, sinon ses propres variantes s'y ajoutent.
     On ne référence que des étapes écrites en entier, pas une autre référence."""
     T_by = {t["id"]: t for t in tours}
 
@@ -143,9 +143,13 @@ def resolve_refs(tours, stops, r: Report):
         if "from" in base or "stop" in base:
             r.err(f"{where}: référence vers une autre référence")
             return st
-        over = {k: v for k, v in st.items() if k not in ("from", "stop")}
-        out = {k: v for k, v in base.items() if not (over and k == "variants")}
+        over = {k: v for k, v in st.items() if k not in ("from", "stop", "variants")}
+        out = {k: v for k, v in base.items() if k != "variants"}
         out.update(over)
+        variants = {} if over else dict(base.get("variants", {}))
+        variants.update(st.get("variants", {}))
+        if variants:
+            out["variants"] = variants
         return out
 
     stops_full = {p: deref(f"stops.json, {p}", st, False) for p, st in stops.items()}

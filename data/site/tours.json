@@ -279,17 +279,17 @@
         },
         {
           "from": [
+            "monde",
+            1
+          ],
+          "question": "Pour votre organisation, la régulation européenne de l'IA est-elle une contrainte, une protection, ou un avantage face à la concurrence ?"
+        },
+        {
+          "from": [
             "productivite",
             2
           ],
           "question": "Dans votre organisation, quels métiers changent déjà, et pour qui est-ce une aide ou une menace ?"
-        },
-        {
-          "from": [
-            "intro",
-            6
-          ],
-          "question": "Si l'IA fait le travail des débutants, comment votre entreprise formera-t-elle ses experts de demain ?"
         },
         {
           "from": [
@@ -300,10 +300,10 @@
         },
         {
           "from": [
-            "monde",
-            1
+            "intro",
+            6
           ],
-          "question": "Pour votre organisation, la régulation européenne de l'IA est-elle une contrainte, une protection, ou un avantage face à la concurrence ?"
+          "question": "Si l'IA fait le travail des débutants, comment votre entreprise formera-t-elle ses experts de demain ?"
         },
         {
           "from": [
@@ -365,17 +365,17 @@
         },
         {
           "from": [
-            "fondateurs",
-            3
-          ],
-          "question": "Le lobbying des labos d'IA est-il une menace démocratique, ou une participation normale au débat public ? Comment s'en garder quand on décide ?"
-        },
-        {
-          "from": [
             "limites",
             6
           ],
           "question": "Quel contre-pouvoir une collectivité ou une administration peut-elle exercer, par exemple par ses achats publics ?"
+        },
+        {
+          "from": [
+            "fondateurs",
+            3
+          ],
+          "question": "Le lobbying des labos d'IA est-il une menace démocratique, ou une participation normale au débat public ? Comment s'en garder quand on décide ?"
         },
         {
           "from": [

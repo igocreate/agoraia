@@ -5,43 +5,141 @@
       "from": [
         "intro",
         1
-      ]
+      ],
+      "variants": {
+        "citoyens": {
+          "question": "Quand des patrons de l'IA disent craindre leur propre technologie, les croyez-vous, ou y voyez-vous une façon de se rendre indispensables ?"
+        },
+        "scolaire": {
+          "question": "Le scénario d'une IA qui échapperait à tout contrôle, est-ce de la science-fiction, un vrai risque, ou une façon de détourner l'attention des problèmes d'aujourd'hui ?"
+        },
+        "entreprises": {
+          "question": "Dans votre secteur, les risques de l'IA dont on parle le plus sont-ils ceux qui comptent vraiment pour votre organisation ?"
+        },
+        "elus": {
+          "question": "Les pouvoirs publics doivent-ils se préparer à des risques extrêmes encore hypothétiques, ou se concentrer d'abord sur les dommages déjà constatés ?"
+        }
+      }
     },
     "trajectoires": {
       "from": [
         "intro",
         2
-      ]
+      ],
+      "variants": {
+        "citoyens": {
+          "question": "Croyez-vous qu'une IA aussi capable qu'un humain arrivera de votre vivant ? Qu'est-ce que cela changerait pour vous ?"
+        },
+        "scolaire": {
+          "question": "Si une IA aussi capable qu'un humain arrivait avant la fin de vos études, comment choisiriez-vous votre orientation ?"
+        },
+        "entreprises": {
+          "question": "Sur quel horizon votre organisation fait-elle ses paris : une IA qui progresse par paliers, ou une rupture d'ici cinq ans ?"
+        },
+        "elus": {
+          "question": "Comment planifier la formation, l'emploi ou l'énergie quand les experts ne s'accordent pas sur la vitesse des progrès de l'IA ?"
+        }
+      }
     },
     "alignement": {
       "from": [
         "intro",
         3
-      ]
+      ],
+      "variants": {
+        "citoyens": {
+          "question": "Des IA qui contournent leurs consignes lors de tests : cela vous inquiète-t-il, ou est-ce un problème de spécialistes ?"
+        },
+        "scolaire": {
+          "question": "Si une IA cherche à éviter d'être éteinte lors d'un test, est-ce le signe d'une « volonté », ou un effet de la façon dont on l'a entraînée ?"
+        },
+        "entreprises": {
+          "question": "Confieriez-vous à un agent IA des tâches qui touchent à vos systèmes, à vos clients ou à vos paiements, sans pouvoir garantir qu'il respecte toujours vos consignes ?"
+        },
+        "elus": {
+          "question": "Qui devrait tester les IA les plus puissantes avant leur mise sur le marché : les entreprises elles-mêmes, une agence publique, un organisme international ?"
+        }
+      }
     },
     "pouvoir": {
       "from": [
         "intro",
         4
-      ]
+      ],
+      "variants": {
+        "citoyens": {
+          "question": "Préférez-vous une IA contrôlée par quelques grandes entreprises, ou des modèles ouverts à tous, au risque qu'ils servent aussi à nuire ?"
+        },
+        "scolaire": {
+          "question": "Une IA ouverte et gratuite pour tous, ou une IA fermée et mieux contrôlée : laquelle choisiriez-vous, et pourquoi ?"
+        },
+        "entreprises": {
+          "question": "Dépendre d'un modèle propriétaire américain, d'un modèle ouvert ou d'un fournisseur européen : quel arbitrage votre organisation fait-elle entre performance, coût et dépendance ?"
+        },
+        "elus": {
+          "question": "Une administration doit-elle privilégier des modèles ouverts ou européens, même moins performants, pour garder la maîtrise de ses outils ?"
+        }
+      }
     },
     "militaire": {
       "from": [
         "limites",
         2
-      ]
+      ],
+      "variants": {
+        "citoyens": {
+          "question": "Le même outil peut aider un médecin ou un escroc : faut-il limiter l'IA pour tout le monde afin d'empêcher les abus de quelques-uns ?"
+        },
+        "scolaire": {
+          "question": "Arnaques, deepfakes, cyberattaques : avez-vous déjà été confronté à un usage malveillant de l'IA, et comment l'avez-vous repéré ?"
+        },
+        "entreprises": {
+          "question": "Votre organisation est-elle préparée à une arnaque ou à une cyberattaque menée avec l'IA, par exemple un faux appel de sa direction ?"
+        },
+        "elus": {
+          "question": "Les usages militaires et de sécurité de l'IA doivent-ils être encadrés par la loi, par des traités, ou laissés aux lignes rouges que chaque entreprise se fixe ?"
+        }
+      }
     },
     "ethique": {
       "from": [
         "facture",
         4
-      ]
+      ],
+      "variants": {
+        "citoyens": {
+          "question": "Seriez-vous prêt à payer plus cher une IA entraînée sans exploiter de travailleurs ni capter de données sans consentement ?"
+        },
+        "scolaire": {
+          "question": "Des personnes, souvent mal payées, trient et annotent les contenus qui servent à entraîner les IA. Le saviez-vous, et cela change-t-il votre regard ?"
+        },
+        "entreprises": {
+          "question": "Quand votre organisation achète des outils d'IA, tient-elle compte des conditions de travail chez le fournisseur et de l'origine des données ?"
+        },
+        "elus": {
+          "question": "Les achats publics devraient-ils exiger des fournisseurs d'IA des garanties sur les conditions de travail et l'origine des données ?"
+        }
+      }
     },
     "travail": {
       "from": [
         "productivite",
         5
-      ]
+      ],
+      "variants": {
+        "citoyens": {
+          "question": "Si l'IA vous faisait gagner une journée par semaine, à qui devrait-elle revenir : à votre employeur, à vous, ou à la collectivité ?"
+        },
+        "scolaire": {
+          "question": "Si l'IA permet de produire autant en travaillant moins, préféreriez-vous gagner plus, travailler moins, ou que l'on embauche davantage ?"
+        },
+        "entreprises": {
+          "question": "Si l'IA fait gagner une journée par semaine à une équipe, comment votre organisation déciderait-elle de son usage, et avec qui ?"
+        },
+        "elus": {
+          "question": "Si les gains de l'IA vont surtout au capital, faut-il les taxer, réduire le temps de travail, ou financer la formation ?"
+        }
+      }
     },
     "jeunesse": {
       "planet": "jeunesse",
@@ -68,6 +166,15 @@
         },
         "tech": {
           "question": "Comment un junior apprend-il à coder s'il ne galère plus jamais ?"
+        },
+        "citoyens": {
+          "question": "Laisseriez-vous un enfant faire ses devoirs avec une IA ? À quelles conditions ?"
+        },
+        "entreprises": {
+          "question": "Si les jeunes apprennent avec l'IA, quelles compétences attendrez-vous d'eux, que l'IA ne remplace pas ?"
+        },
+        "elus": {
+          "question": "Faut-il équiper les écoles d'outils d'IA, les encadrer ou les limiter, et qui doit en décider : l'État, les collectivités, les enseignants ?"
         }
       }
     },
@@ -75,31 +182,95 @@
       "from": [
         "limites",
         5
-      ]
+      ],
+      "variants": {
+        "citoyens": {
+          "question": "Si une IA découvre un nouveau médicament, à qui devrait-il appartenir : à l'entreprise qui possède l'IA, aux chercheurs, ou au public ?"
+        },
+        "scolaire": {
+          "question": "Une découverte faite par une IA est-elle encore une découverte scientifique si personne ne comprend comment elle a été obtenue ?"
+        },
+        "entreprises": {
+          "question": "Si une IA aide votre organisation à inventer, à qui revient le résultat : à vous, au fournisseur de l'IA, à personne ?"
+        },
+        "elus": {
+          "question": "Faut-il exiger que les résultats scientifiques obtenus par des IA privées soient vérifiés de façon indépendante et rendus publics ?"
+        }
+      }
     },
     "ecologie": {
       "from": [
         "facture",
         0
-      ]
+      ],
+      "variants": {
+        "citoyens": {
+          "question": "Savez-vous ce que consomme votre usage quotidien de l'IA ? Est-ce que cela changerait quelque chose ?"
+        },
+        "scolaire": {
+          "question": "Savez-vous ce que consomme votre usage quotidien de l'IA ? Est-ce que cela changerait vos habitudes ?"
+        },
+        "entreprises": {
+          "question": "Votre organisation mesure-t-elle l'empreinte de ses usages d'IA, et en tiendrait-elle compte dans le choix de ses outils ?"
+        },
+        "elus": {
+          "question": "Qui devrait décider de l'implantation d'un data center sur votre territoire, et à quelles conditions (eau, électricité, emplois) dire oui ?"
+        }
+      }
     },
     "regulation": {
       "from": [
         "intro",
         5
-      ]
+      ],
+      "variants": {
+        "citoyens": {
+          "question": "Faut-il réguler l'IA pour protéger les citoyens, même si cela freine l'Europe face aux États-Unis et à la Chine ?"
+        },
+        "scolaire": {
+          "question": "Europe, États-Unis, Chine : chacun encadre l'IA à sa manière. Quelle approche vous paraît la plus juste, et pourquoi ?"
+        },
+        "entreprises": {
+          "question": "Pour votre organisation, la régulation européenne de l'IA est-elle une contrainte, une protection, ou un avantage face à la concurrence ?"
+        },
+        "elus": {
+          "question": "Réguler, est-ce protéger les citoyens ou condamner l'Europe au décrochage ? Et quelle marge d'action reste-t-il aux collectivités ?"
+        }
+      }
     },
     "creation": {
       "from": [
         "creation",
         0
-      ]
+      ],
+      "variants": {
+        "citoyens": {
+          "question": "Vos photos, vos textes ou vos commentaires publiés en ligne ont peut-être servi à entraîner une IA : est-ce acceptable sans votre accord ?"
+        },
+        "scolaire": {
+          "question": "Publier un dessin, un texte ou une vidéo en ligne, est-ce accepter qu'une IA s'en nourrisse ?"
+        },
+        "entreprises": {
+          "question": "Votre organisation utilise-t-elle des images ou des textes générés par IA ? Qui en détient les droits, et que doit-on aux créateurs dont le travail a servi à l'entraîner ?"
+        },
+        "elus": {
+          "question": "Les créateurs doivent-ils être rémunérés quand leurs œuvres servent à entraîner une IA, et qui devrait en fixer les règles ?"
+        }
+      }
     },
     "devs": {
       "from": [
         "intro",
         6
-      ]
+      ],
+      "variants": {
+        "citoyens": {
+          "question": "Dans votre entourage, quels métiers changent déjà avec l'IA, et pour qui est-ce une aide ou une menace ?"
+        },
+        "elus": {
+          "question": "Quels métiers de votre territoire sont les plus exposés, et que peuvent faire les politiques locales de formation et d'emploi ?"
+        }
+      }
     },
     "information": {
       "planet": "information",
@@ -129,6 +300,12 @@
         },
         "tech": {
           "question": "Un assistant IA devrait-il refuser de répondre sur l'actualité ou les élections plutôt que de risquer l'erreur ?"
+        },
+        "citoyens": {
+          "question": "Comment vérifiez-vous une image, une vidéo ou une réponse d'IA avant de la croire ou de la partager ?"
+        },
+        "entreprises": {
+          "question": "Votre organisation est-elle prête à réagir si un faux contenu généré par IA la vise, par exemple une fausse déclaration de sa direction ?"
         }
       }
     },
@@ -160,6 +337,12 @@
         },
         "tech": {
           "question": "Si vous développiez un algorithme de décision pour une administration, que publieriez-vous pour qu'il puisse être contesté ?"
+        },
+        "citoyens": {
+          "question": "Si une décision vous concernant (une aide, un contrôle, une orientation) était préparée par un algorithme, voudriez-vous le savoir, et comment pourriez-vous la contester ?"
+        },
+        "entreprises": {
+          "question": "Si des décisions de votre organisation (recrutement, crédit, contrôle) sont préparées par un logiciel, comment garantir qu'une personne puisse les expliquer et les corriger ?"
         }
       }
     },
@@ -191,6 +374,12 @@
         },
         "tech": {
           "question": "Des médecins équipés d'un LLM ne raisonnent pas mieux que les autres : qu'est-ce que cela dit de la façon dont on conçoit les outils d'assistance ?"
+        },
+        "entreprises": {
+          "question": "Accepteriez-vous que votre mutuelle ou la médecine du travail analyse vos données de santé avec l'IA ? Et en tant qu'employeur, que vous interdiriez-vous ?"
+        },
+        "elus": {
+          "question": "Dans les déserts médicaux, l'IA est-elle une solution d'appoint acceptable, ou le risque d'une médecine au rabais ? Qui doit en décider ?"
         }
       }
     }
