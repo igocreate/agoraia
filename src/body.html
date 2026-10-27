@@ -1,0 +1,49 @@
+<div class="app" id="app">
+  <header class="top">
+    <div class="brand">
+      <h1>Agora <i>IA</i></h1>
+      <span class="stats" id="stats"></span>
+    </div>
+    <div class="seg" role="group" aria-label="Mode d'affichage">
+      <button id="v3d" aria-pressed="true">Univers 3D</button>
+      <button id="vlist" aria-pressed="false">Vue liste</button>
+    </div>
+    <button class="btn primary" id="tourBtn"><span class="dot"></span>Visite guidée</button>
+    <button class="btn" id="posBtn">Où te situes-tu ?</button>
+  </header>
+  <main class="stage" id="stage">
+    <div id="scene" aria-label="Univers 3D des thématiques et des sources. Glisser pour tourner, molette pour zoomer, cliquer sur une planète ou un point."></div>
+    <button class="btn ctl-toggle" id="ctlShow" hidden>Filtres</button>
+    <aside class="controls" id="controls" aria-label="Filtres">
+      <div class="ctl" style="display:flex;justify-content:space-between;align-items:center">
+        <h3 style="margin:0">Explorer</h3>
+        <button class="btn" id="ctlHide" style="padding:3px 10px">Masquer</button>
+      </div>
+      <div class="ctl">
+        <input class="search" id="q" type="search" placeholder="Chercher un auteur, un titre, une citation…" aria-label="Rechercher">
+      </div>
+      <div class="ctl">
+        <h3>Courants de pensée</h3>
+        <div class="chips" id="curChips"></div>
+      </div>
+      <div class="ctl">
+        <h3>Origine des voix</h3>
+        <div class="chips" id="regChips"></div>
+      </div>
+      <div class="ctl">
+        <h3>Horizon de l'AGI</h3>
+        <input class="range" id="horizon" type="range" min="0" max="100" value="50" aria-describedby="horizonHint">
+        <div class="range-legend"><span>Délais courts</span><span>Délais longs</span></div>
+        <p class="hint" id="horizonHint"></p>
+      </div>
+      <div class="ctl">
+        <h3>Légende</h3>
+        <div class="legend" id="legend"></div>
+      </div>
+    </aside>
+    <div class="listview" id="listview" hidden><div class="listview-inner" id="lvInner"></div></div>
+    <aside class="panel" id="panel" aria-live="polite"></aside>
+    <section class="tour" id="tour" hidden aria-label="Visite guidée"></section>
+    <div class="modal" id="posModal" hidden role="dialog" aria-modal="true" aria-labelledby="posTitle"></div>
+  </main>
+</div>

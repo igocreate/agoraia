@@ -1,0 +1,108 @@
+{
+  "_doc": "Fil transversal. Les sources dont le champ « branch » vaut l'id d'une branche y sont ajoutées automatiquement au build.",
+  "thread": {
+    "id": "productivite",
+    "label": "Productivité : pour qui, pour quoi ?",
+    "planets": [
+      "devs",
+      "travail",
+      "ecologie"
+    ],
+    "desc": "Un gain de productivité ne peut aller qu'à trois endroits : produire plus, employer moins ou travailler moins. Le débat porte sur la répartition entre les trois, et sur qui la décide. Cette grille est une lecture, pas une mesure : personne ne sait encore dire où vont les gains de l'IA à l'échelle d'une économie.",
+    "branches": [
+      {
+        "id": "promesse",
+        "label": "La promesse",
+        "desc": "Abondance, semaine de trois jours, croissance : ce que les dirigeants annoncent.",
+        "sources": [
+          "src-altman-gentle-singularity",
+          "src-amodei-machines-loving-grace",
+          "src-commission-ia-2024",
+          "src-dimon-bloomberg-2023",
+          "src-fortune-yuan-gates-3j",
+          "src-expleo-ai-pulse-4j",
+          "src-ferguson-ts-sens-travail",
+          "src-tokyo-koike-teodori-jikan"
+        ]
+      },
+      {
+        "id": "mesure",
+        "label": "La mesure",
+        "desc": "Ce que les études observent vraiment : des gains modestes, incertains, parfois négatifs.",
+        "sources": [
+          "src-acemoglu-simple-macro",
+          "src-metr-dev-productivity",
+          "src-dora-2025",
+          "src-anthropic-aei-jan2026",
+          "src-msr-working-with-ai",
+          "src-anthropic-labor-market-2026",
+          "src-bdf-ia-entreprises-2026",
+          "src-humlum-llm-small-effects",
+          "src-fed-stlouis-time-saved-2026"
+        ]
+      },
+      {
+        "id": "produire_plus",
+        "label": "Produire plus",
+        "desc": "Le gain d'efficacité relance la consommation : effet rebond et limites planétaires.",
+        "sources": [
+          "src-npr-jevons-ia",
+          "src-luccioni-jevons",
+          "src-parrique-susskind",
+          "src-aie-key-questions-2026",
+          "src-shift-ia-2025",
+          "src-aghion-diffusion-ia-france",
+          "src-medef-ref-2025-travailler-plus",
+          "src-hbr-ai-intensifies-work",
+          "src-merz-regierungserklaerung-2025"
+        ]
+      },
+      {
+        "id": "employer_moins",
+        "label": "Employer moins",
+        "desc": "Moins d'embauches, métiers exposés, déqualification et intensification.",
+        "sources": [
+          "src-brynjolfsson-canaries",
+          "src-arquie-nvo",
+          "src-oem-coface-2026",
+          "src-carbonell-taylorisme",
+          "src-oit-genai-2025",
+          "src-tcs-layoffs-medianama",
+          "src-tresor-eco-391-ia-emploi"
+        ]
+      },
+      {
+        "id": "travailler_moins",
+        "label": "Travailler moins",
+        "desc": "Réduire le temps de travail : essais de semaine de quatre jours, projets de loi, réalité des accords.",
+        "sources": [
+          "src-fan-schor-4j-nhb",
+          "src-schor-four-days-bigthink",
+          "src-sanders-32h-2026",
+          "src-options-temps-libere",
+          "src-lemonde-gorz-2026",
+          "src-grimaud-cfdt-4j-marginal",
+          "src-novethic-pilote-4j-ia",
+          "src-espagne-37h5-2025",
+          "src-coree-4j5-roadmap-2026",
+          "src-muenster-4tw-2024",
+          "src-scambs-4dw-permanent-2025"
+        ]
+      },
+      {
+        "id": "repartition",
+        "label": "La répartition",
+        "desc": "Qui capte les gains : capital, salariés, État par l'impôt, citoyens par un fonds commun.",
+        "sources": [
+          "src-fmi-genai-2024",
+          "src-korinek-suh-agi",
+          "src-openai-industrial-policy",
+          "src-lemonde-arquie-2026",
+          "src-blast-grand-enfumage",
+          "src-cese-controverses-ia-travail",
+          "src-oit-moment-of-choice-2026"
+        ]
+      }
+    ]
+  }
+}

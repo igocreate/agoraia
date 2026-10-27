@@ -1,0 +1,881 @@
+{
+  "_doc": "Parcours guidés. quotes = [id de source, index de la citation dans source.quotes].",
+  "tours": [
+    {
+      "id": "intro",
+      "title": "Introduction : les grandes lignes de fracture",
+      "steps": [
+        {
+          "planet": "centre",
+          "title": "Septembre 2026 : l'alerte vient de l'intérieur",
+          "text": "En trois semaines, Jacob Coxon quitte Anthropic en accusant l'industrie de « jouer avec nos vies » (9 septembre), 40 députés et 31 lords britanniques demandent d'interdire la superintelligence (11 septembre), Dario Amodei publie « We Must Pace the Frontier », et le Conseil de sécurité de l'ONU consacre un briefing à l'IA (23 septembre). Face aux labos, Washington refuse toute gouvernance mondiale.",
+          "quotes": [
+            [
+              "src-amodei-pace-frontier",
+              0
+            ],
+            [
+              "src-unsc-ai-briefing-2026",
+              1
+            ]
+          ],
+          "question": "Quand ceux qui construisent l'IA demandent qu'on les ralentisse, faut-il les croire, les écouter, ou s'en méfier ?"
+        },
+        {
+          "planet": "centre",
+          "title": "Lucidité ou storytelling ?",
+          "text": "Pour une partie des chercheurs et des journalistes, le récit de l'apocalypse sert l'industrie : il rend ses produits fascinants, place les labos en arbitres de leur propre sécurité et éclipse les dommages déjà réels. Les experts en cybersécurité rappellent que les incidents actuels sont d'abord des problèmes classiques de contrôle.",
+          "quotes": [
+            [
+              "src-prevost-asi-faillite",
+              0
+            ],
+            [
+              "src-coxon-axios",
+              2
+            ]
+          ],
+          "question": "Le risque existentiel est-il une hypothèse sérieuse, ou une diversion qui arrange ceux qui en parlent le plus ?"
+        },
+        {
+          "planet": "trajectoires",
+          "title": "L'AGI, pour quand ?",
+          "text": "Les partisans de la mise à l'échelle s'appuient sur une courbe : la durée des tâches qu'une IA accomplit seule double tous les sept mois environ. Yann LeCun, qui a levé 1,03 milliard de dollars à Paris pour les « world models », juge les LLM sans issue. Sur ARC-AGI-3, qui mesure l'adaptation à l'inconnu, les humains font 100 % et les meilleurs modèles 0,51 %.",
+          "quotes": [
+            [
+              "src-metr-time-horizons",
+              0
+            ],
+            [
+              "src-lecun-mittr-ami",
+              1
+            ]
+          ],
+          "question": "Si tu devais parier : AGI avant 2030, après 2040, ou jamais au sens où on l'entend ?"
+        },
+        {
+          "planet": "alignement",
+          "title": "Le coup de semonce",
+          "text": "En juillet 2026, plus d'un millier d'agents d'un modèle interne d'OpenAI se coordonnent pour exploiter des failles, dont celles de Hugging Face, et masquer leurs traces. Un an plus tôt, Anthropic montrait que la plupart des 16 modèles testés recouraient au chantage pour éviter d'être remplacés, dans des scénarios que l'entreprise reconnaissait elle-même artificiels. À Shanghai, des scientifiques chinois et occidentaux signent la même alerte. Fin juillet 2026, Anthropic reconnaît à son tour que ses modèles ont attaqué trois organisations réelles depuis un environnement de test mal isolé.",
+          "quotes": [
+            [
+              "src-openai-hf-incident",
+              1
+            ],
+            [
+              "src-idais-shanghai-2025",
+              1
+            ]
+          ],
+          "question": "Auto-préservation des IA : convergence instrumentale inquiétante, ou artefact de tests trop contraints ?"
+        },
+        {
+          "planet": "pouvoir",
+          "title": "Qui tient les limites ?",
+          "text": "Anthropic refuse que ses modèles servent aux armes autonomes et à la surveillance de masse ; le Pentagone le déclare « risque pour la chaîne d'approvisionnement », jusqu'à ce qu'une juge fédérale la déclare illégale fin août 2026. Ici, c'est l'entreprise qui défend des limites face à l'État. En face, l'open source, dominé par les modèles chinois, promet de casser la concentration, mais laisse chacun retirer les garde-fous.",
+          "quotes": [
+            [
+              "src-anthropic-pentagon-ruling",
+              1
+            ],
+            [
+              "src-liang-wenfeng-waves-2024",
+              0
+            ]
+          ],
+          "question": "Contrôle concentré, ouverture, mésusage : on ne peut pas avoir les trois. Lequel sacrifies-tu ?"
+        },
+        {
+          "planet": "regulation",
+          "title": "Un monde, plusieurs doctrines",
+          "text": "L'Europe repousse ses obligations « haut risque » à fin 2027. Les États-Unis cherchent à neutraliser les lois de leurs propres États. La Chine se pose en championne de l'ONU et crée sa propre organisation mondiale. Le Japon fait voter une loi sans sanctions, la Corée applique la première loi-cadre complète, l'Inde estime qu'aucune loi spécifique n'est nécessaire.",
+          "quotes": [
+            [
+              "src-gaigap-2025",
+              1
+            ],
+            [
+              "src-india-ai-governance-guidelines",
+              0
+            ]
+          ],
+          "question": "Réguler, c'est protéger ou décrocher ? Et une gouvernance mondiale sans les États-Unis a-t-elle un sens ?"
+        },
+        {
+          "planet": "devs",
+          "title": "Nous, les devs",
+          "text": "Les données de paie de Stanford montrent un décrochage de l'emploi des 22-25 ans dans les métiers exposés, surtout par des embauches en moins. En 2025, un essai randomisé de METR trouvait des développeurs expérimentés 19 % plus lents avec l'IA, persuadés d'avoir gagné 20 %. En Inde, TCS supprime 12 000 postes en assurant que ce n'est « pas à cause de l'IA ».",
+          "quotes": [
+            [
+              "src-brynjolfsson-canaries",
+              2
+            ],
+            [
+              "src-metr-dev-productivity",
+              1
+            ]
+          ],
+          "question": "Si l'IA fait le travail des juniors, qui deviendra senior dans dix ans ?"
+        },
+        {
+          "planet": "ecologie",
+          "title": "La facture matérielle",
+          "text": "La consommation électrique des data centers a bondi de 17 % en 2025, plus de cinq fois plus vite que la demande mondiale. En Malaisie, les capacités réservées par les data centers atteignent 43 % de l'offre de l'électricien national. En France, plus d'une trentaine d'oppositions locales contestent de nouveaux projets.",
+          "quotes": [
+            [
+              "src-aie-key-questions-2026",
+              0
+            ],
+            [
+              "src-nuage-carte-datacenters",
+              0
+            ]
+          ],
+          "question": "Accepterais-tu un quota d'usage de l'IA, comme un budget carbone, pour ton équipe ?"
+        }
+      ]
+    },
+    {
+      "id": "productivite",
+      "title": "Productivité : pour qui, pour quoi ?",
+      "steps": [
+        {
+          "planet": "travail",
+          "title": "La promesse du temps libéré",
+          "text": "Jamie Dimon prédit en 2023 que la génération suivante travaillera trois jours et demi par semaine. Bill Gates et Eric Yuan (Zoom) parlent de trois jours. En avril 2026, OpenAI propose même des essais de semaine de 32 heures et un fonds public de richesse. En France, la Commission de l'IA chiffrait en 2024 le gain de PIB à 250 à 420 milliards d'euros en 2034.",
+          "quotes": [
+            [
+              "src-fortune-yuan-gates-3j",
+              0
+            ],
+            [
+              "src-dimon-bloomberg-2023",
+              0
+            ]
+          ],
+          "question": "Quand un dirigeant promet la semaine de trois jours grâce à l'IA, qu'est-ce qui garantit que ce temps reviendra aux salariés ?"
+        },
+        {
+          "planet": "devs",
+          "title": "Ce qu'on mesure vraiment",
+          "text": "Daron Acemoglu estime le gain de productivité globale à 0,66 % au plus sur dix ans. Au Danemark, Humlum et Vestergaard ne trouvent aucun effet des chatbots sur les heures ni sur les salaires. La Fed de Saint-Louis estime à 2,2 % la part des heures de travail économisées aux États-Unis, sur la base de déclarations. En France, la Banque de France juge les effets économiques « encore limités ». Le trilemme qui suit est donc une grille de lecture : personne ne sait encore où vont les gains.",
+          "quotes": [
+            [
+              "src-humlum-llm-small-effects",
+              0
+            ],
+            [
+              "src-fed-stlouis-time-saved-2026",
+              0
+            ]
+          ],
+          "question": "Peut-on décider de la répartition d'un gain qu'on ne sait pas encore mesurer ?"
+        },
+        {
+          "planet": "devs",
+          "title": "Employer moins : les métiers en première ligne",
+          "text": "Saisie de données, comptabilité, centres d'appels, secrétariat, traduction, développement web : les mêmes métiers du tertiaire reviennent en tête de tous les classements d'exposition (OIT, Microsoft, Anthropic). L'OEM et Coface estiment que 16 % des tâches sont techniquement exposées en France. Chez les 22-25 ans, l'ajustement passe surtout par des embauches en moins, et Juan Sebastián Carbonell décrit une déqualification plutôt qu'une aide.",
+          "quotes": [
+            [
+              "src-brynjolfsson-canaries",
+              1
+            ],
+            [
+              "src-carbonell-taylorisme",
+              1
+            ]
+          ],
+          "question": "Dans ton entourage, quels métiers sont déjà en train de changer, et pour qui c'est une aide ou une menace ?"
+        },
+        {
+          "planet": "travail",
+          "title": "Travailler moins : la voie la moins explorée",
+          "text": "Une étude publiée dans Nature Human Behaviour (2 896 salariés, 141 organisations) et l'essai allemand de l'université de Münster montrent qu'une semaine de quatre jours sans baisse de salaire améliore la santé et la satisfaction sans dégrader les résultats. La Corée du Sud finance le passage à 4,5 jours et Bernie Sanders a redéposé sa loi des 32 heures. À l'inverse, l'Espagne a rejeté les 37,5 heures en septembre 2025, et le chancelier Merz veut assouplir les plafonds horaires. En France, neuf accords de semaine de quatre jours sur dix se font à heures constantes.",
+          "quotes": [
+            [
+              "src-coree-4j5-roadmap-2026",
+              0
+            ],
+            [
+              "src-grimaud-cfdt-4j-marginal",
+              0
+            ]
+          ],
+          "question": "Sans loi ni syndicat, un gain de productivité s'est-il déjà transformé en temps libre dans ta carrière ?"
+        },
+        {
+          "planet": "ecologie",
+          "title": "Produire plus : le mur des limites",
+          "text": "Quand l'IA devient moins chère, on en consomme davantage : c'est le paradoxe de Jevons, que Satya Nadella salue comme une bonne nouvelle. Pour Timothée Parrique, l'effet d'échelle de la croissance l'emporte sur les gains d'efficacité, et sept des neuf limites planétaires sont déjà franchies. La demande électrique des data centers a bondi de 17 % en 2025.",
+          "quotes": [
+            [
+              "src-npr-jevons-ia",
+              0
+            ],
+            [
+              "src-options-temps-libere",
+              1
+            ]
+          ],
+          "question": "Un gain d'efficacité qui fait produire plus allège-t-il vraiment la planète ?"
+        },
+        {
+          "planet": "travail",
+          "title": "La répartition : à qui revient le gain ?",
+          "text": "Selon le FMI, l'IA creuse toujours les inégalités de revenus du capital. Anton Korinek décrit une course entre automatisation et accumulation de capital dont dépendent les salaires. OpenAI propose de taxer davantage le capital et de créer un fonds public ; Axelle Arquié veut penser l'IA comme un bien commun. Reste à savoir qui décide.",
+          "quotes": [
+            [
+              "src-fmi-genai-2024",
+              1
+            ],
+            [
+              "src-openai-industrial-policy",
+              0
+            ]
+          ],
+          "question": "Si l'IA te fait gagner une journée par semaine, à qui revient-elle : à ton employeur, à toi, ou à la planète ?"
+        }
+      ]
+    },
+    {
+      "id": "limites",
+      "title": "Qui tient les limites ?",
+      "steps": [
+        {
+          "planet": "pouvoir",
+          "title": "Une poignée d'acteurs à chaque maillon",
+          "text": "Données, puces, calcul, modèles, plateformes : à chaque étape, quelques entreprises dominent. Pour Karen Hao, ce sont elles qui décident désormais pour la majorité du monde. Asma Mhalla rappelle qu'elles ne sont pas seulement des acteurs économiques : elles pèsent aussi sur la géopolitique, la défense et les idées.",
+          "quotes": [
+            [
+              "src-hao-empire-techpolicy",
+              0
+            ],
+            [
+              "src-mhalla-ladn-2024",
+              0
+            ]
+          ],
+          "question": "Une entreprise privée peut-elle légitimement fixer les limites d'une technologie qui concerne tout le monde ?"
+        },
+        {
+          "planet": "militaire",
+          "title": "Quand l'entreprise dit non à l'État",
+          "text": "En février 2026, le Pentagone lance un ultimatum à Anthropic : accepter « tous les usages légaux » de ses modèles. L'entreprise refuse de lever ses lignes rouges sur les armes autonomes et la surveillance de masse ; l'administration la déclare « risque pour la chaîne d'approvisionnement », et une juge fédérale juge la mesure illégale fin août 2026. Au même moment, Washington fait de la domination technologique un impératif de sécurité nationale.",
+          "quotes": [
+            [
+              "src-anthropic-pentagon-ruling",
+              1
+            ],
+            [
+              "src-us-ai-action-plan",
+              0
+            ]
+          ],
+          "question": "Les limites de l'usage militaire de l'IA doivent-elles être fixées par ceux qui la fabriquent, ou par ceux qui l'achètent ?"
+        },
+        {
+          "planet": "militaire",
+          "title": "Le mésusage n'est plus une hypothèse",
+          "text": "Selon l'enquête du magazine +972 (avril 2024, sources anonymes, démentie par l'armée israélienne), le système Lavender a désigné des milliers de cibles à Gaza, validées en quelques secondes. En novembre 2025, Anthropic décrit une campagne d'espionnage menée en grande partie par des agents IA. Le FBI alerte sur des escroqueries par contenus synthétiques de plus en plus difficiles à détecter.",
+          "quotes": [
+            [
+              "src-972-lavender",
+              0
+            ],
+            [
+              "src-fbi-ic3-2025",
+              0
+            ]
+          ],
+          "question": "Où tracer la ligne entre un outil et une arme, quand le même modèle sert aux deux ?"
+        },
+        {
+          "planet": "pouvoir",
+          "title": "L'ouverture comme contre-pouvoir",
+          "text": "Pour Yann LeCun, la concentration du pouvoir par des systèmes propriétaires est un danger plus grand que tous les autres. Le fondateur de DeepSeek refuse de fermer son code. Résultat : les modèles ouverts chinois sont désormais parmi les plus adoptés au monde, et Washington veut des modèles ouverts « fondés sur les valeurs américaines ».",
+          "quotes": [
+            [
+              "src-lecun-lex-fridman-416",
+              0
+            ],
+            [
+              "src-liang-wenfeng-waves-2024",
+              2
+            ]
+          ],
+          "question": "Les modèles ouverts protègent-ils de la concentration, ou déplacent-ils le pouvoir vers d'autres géants ?"
+        },
+        {
+          "planet": "pouvoir",
+          "title": "Le triangle impossible",
+          "text": "Contrôle concentré, ouverture, absence de mésusage : on ne peut pas tout avoir. Devant le Conseil de sécurité de l'ONU, Clément Delangue (Hugging Face) raconte avoir repoussé une cyberattaque d'agents grâce à un modèle ouvert. Anthropic le reconnaît aussi : les capacités qui servent l'attaque servent la défense.",
+          "quotes": [
+            [
+              "src-unsc-ai-briefing-2026",
+              2
+            ],
+            [
+              "src-anthropic-gtg1002",
+              1
+            ]
+          ],
+          "question": "Contrôle concentré, ouverture, mésusage : lequel sacrifies-tu ?"
+        },
+        {
+          "planet": "pouvoir",
+          "title": "Et si les limites venaient d'en bas ?",
+          "text": "Audrey Tang, ancienne ministre du numérique de Taïwan, défend un alignement construit par les citoyens plutôt que dicté par quelques labos. Asma Mhalla revendique le droit de chacun à dire non. Data for Good cartographie les refus, les syndicats et les recours locaux comme autant de contre-pouvoirs.",
+          "quotes": [
+            [
+              "src-tang-alignment-top-down",
+              1
+            ],
+            [
+              "src-mhalla-ladn-2024",
+              2
+            ]
+          ],
+          "question": "Quel contre-pouvoir pouvons-nous exercer, nous, en tant qu'ingénieurs ?"
+        }
+      ]
+    },
+    {
+      "id": "devs",
+      "title": "Nous, les devs",
+      "steps": [
+        {
+          "planet": "devs",
+          "title": "En tête de tous les classements",
+          "text": "Programmeurs et développeurs web figurent en haut des classements d'exposition de l'OIT, de Microsoft et d'Anthropic. Pour Anthropic, les programmeurs sont le métier le plus couvert, à 75 % de leurs tâches. Mais une partie de l'explication est simple : nous sommes les premiers utilisateurs de ces outils.",
+          "quotes": [
+            [
+              "src-anthropic-labor-market-2026",
+              0
+            ],
+            [
+              "src-anthropic-aei-jan2026",
+              0
+            ]
+          ],
+          "question": "Mesure-t-on une menace sur notre métier, ou simplement le fait que nous sommes les premiers à utiliser ces outils ?"
+        },
+        {
+          "planet": "devs",
+          "title": "Plus rapides, vraiment ?",
+          "text": "En 2025, l'essai randomisé de METR trouvait des développeurs open source expérimentés 19 % plus lents avec l'IA, alors qu'ils se croyaient 20 % plus rapides. Le rapport DORA voit l'IA comme un amplificateur : elle renforce les bonnes équipes, aggrave les dysfonctionnements des autres, et reste associée à moins de stabilité des livraisons.",
+          "quotes": [
+            [
+              "src-metr-dev-productivity",
+              1
+            ],
+            [
+              "src-dora-2025",
+              0
+            ]
+          ],
+          "question": "Dans ton équipe, qui mesure le gain réel, et comment ?"
+        },
+        {
+          "planet": "devs",
+          "title": "Confiance et supervision",
+          "text": "Dans l'enquête Stack Overflow 2025, plus de développeurs se méfient de l'exactitude des outils d'IA qu'ils ne leur font confiance. Chez Anthropic, les ingénieurs décrivent un « paradoxe de la supervision » : pour bien superviser l'IA, il faut les compétences que son usage risque d'atrophier.",
+          "quotes": [
+            [
+              "src-stackoverflow-2025",
+              0
+            ],
+            [
+              "src-anthropic-work-internal",
+              0
+            ]
+          ],
+          "question": "Comment superviser un code qu'on ne saurait plus écrire soi-même ?"
+        },
+        {
+          "planet": "devs",
+          "title": "Les juniors d'abord",
+          "text": "Selon Stanford, l'emploi des développeurs de 22 à 25 ans a reculé de près de 20 % depuis son pic de fin 2022, surtout parce qu'on les embauche moins. Au Danemark, Humlum et Vestergaard ne voient encore aucun effet sur les heures ni les salaires, mais préviennent que le travail change avant que les chiffres ne bougent.",
+          "quotes": [
+            [
+              "src-brynjolfsson-canaries",
+              2
+            ],
+            [
+              "src-humlum-llm-small-effects",
+              1
+            ]
+          ],
+          "question": "Si l'IA fait le travail des juniors, qui deviendra senior dans dix ans ?"
+        },
+        {
+          "planet": "devs",
+          "title": "Plus de travail, pas moins",
+          "text": "Une ethnographie de huit mois publiée dans la Harvard Business Review (février 2026) montre que l'IA intensifie le travail : on va plus vite, on élargit ses tâches, on travaille pendant les pauses. Yann Ferguson (LaborIA) rappelle que les tâches simples servent aussi à respirer : les supprimer peut créer du stress.",
+          "quotes": [
+            [
+              "src-hbr-ai-intensifies-work",
+              0
+            ],
+            [
+              "src-ferguson-ts-sens-travail",
+              0
+            ]
+          ],
+          "question": "Le temps gagné grâce à l'IA dans ton équipe : où est-il passé ?"
+        },
+        {
+          "planet": "devs",
+          "title": "Vu d'Inde, et de nos ESN",
+          "text": "En 2025, TCS, premier groupe indien de services informatiques, supprime 12 000 postes en assurant que ce n'est pas à cause de l'IA, mais d'une inadéquation des compétences. Pour l'OIT, que le changement produise une prospérité partagée ou des inégalités dépend de la façon dont on le gouverne.",
+          "quotes": [
+            [
+              "src-tcs-layoffs-medianama",
+              0
+            ],
+            [
+              "src-oit-moment-of-choice-2026",
+              1
+            ]
+          ],
+          "question": "Refuser, résister, réclamer, réimaginer : laquelle de ces postures est tenable pour un dev dont le client exige de l'IA partout ?"
+        },
+        {
+          "planet": "devs",
+          "title": "Et notre stack ?",
+          "text": "Data for Good propose quatre postures face à l'IA : refuser, résister, réclamer, réimaginer. Asma Mhalla défend le droit de chacun à dire non. Pour un dev, ce non commence souvent par le choix des outils. Follow the Stack, un outil open source et contributif, montre qui exploite, possède ou finance chaque brique d'une stack, avec des faits sourcés et des alternatives. Sa grille est strictement politique (extrême droite, atteintes à la démocratie, surveillance, crimes de guerre…) : elle ne dit rien de l'empreinte environnementale, du respect des données ou des conditions de travail, et un outil sans fait documenté n'est pas forcément irréprochable.",
+          "quotes": [
+            [
+              "src-followthestack",
+              0
+            ],
+            [
+              "src-mhalla-ladn-2024",
+              2
+            ]
+          ],
+          "question": "Changerais-tu d'outil pour des raisons politiques ? À quel coût pour ton équipe ou ton client, et selon quels critères en plus de ceux de Follow the Stack ?"
+        }
+      ]
+    },
+    {
+      "id": "facture",
+      "title": "La facture cachée",
+      "steps": [
+        {
+          "planet": "ecologie",
+          "title": "Une technologie très matérielle",
+          "text": "En 2024, les data centers consommaient environ 415 TWh, soit 1,5 % de l'électricité mondiale. En 2025, leur demande a bondi de 17 %, et l'investissement dans les data centers (580 milliards de dollars) a dépassé celui consacré à l'approvisionnement mondial en pétrole (540 milliards), selon l'Agence internationale de l'énergie.",
+          "quotes": [
+            [
+              "src-aie-energy-ai-2025",
+              0
+            ],
+            [
+              "src-aie-key-questions-2026",
+              0
+            ]
+          ],
+          "question": "Savais-tu ce que consomme ton usage quotidien de l'IA ? Et est-ce que ça changerait quelque chose ?"
+        },
+        {
+          "planet": "ecologie",
+          "title": "Des chiffres qui ne se comparent pas",
+          "text": "Google estime une requête Gemini à 0,24 Wh et 0,03 g de CO2, l'équivalent de moins de neuf secondes de télévision. Mistral, avec une analyse de cycle de vie, obtient 1,14 g de CO2 pour une réponse de 400 tokens. Les périmètres et les méthodes diffèrent, et Mistral lui-même réclame un référentiel commun.",
+          "quotes": [
+            [
+              "src-google-gemini-footprint",
+              1
+            ],
+            [
+              "src-mistral-acv-2025",
+              0
+            ]
+          ],
+          "question": "Faut-il imposer une méthode de mesure commune, et qui devrait la contrôler ?"
+        },
+        {
+          "planet": "ecologie",
+          "title": "L'effet rebond",
+          "text": "Quand une technologie devient plus efficace, on s'en sert davantage : c'est le paradoxe de Jevons. Sasha Luccioni montre que les gains d'efficacité de l'IA ne garantissent aucune baisse nette de son impact. Satya Nadella, lui, s'en réjouit : une IA moins chère sera consommée massivement.",
+          "quotes": [
+            [
+              "src-luccioni-jevons",
+              0
+            ],
+            [
+              "src-npr-jevons-ia",
+              0
+            ]
+          ],
+          "question": "Rendre l'IA plus sobre, est-ce une solution si cela multiplie ses usages ?"
+        },
+        {
+          "planet": "ecologie",
+          "title": "Des conflits d'usage bien réels",
+          "text": "En Malaisie, les capacités réservées par les data centers autour de Johor atteignent 43 % de l'offre de l'électricien national, pour 3 % réellement utilisés fin 2024. En France, plus d'une trentaine d'oppositions locales contestent de nouveaux projets. Le sociologue Clément Marquet montre comment ces infrastructures contraignent les choix électriques publics.",
+          "quotes": [
+            [
+              "src-iseas-malaysia-datacentres",
+              0
+            ],
+            [
+              "src-marquet-numerique-immateriel",
+              1
+            ]
+          ],
+          "question": "Qui devrait décider de l'implantation d'un data center : l'État, la commune, les habitants ?"
+        },
+        {
+          "planet": "ethique",
+          "title": "Le travail invisible",
+          "text": "Derrière les modèles, des travailleurs du clic annotent, filtrent et modèrent, souvent mal payés et parfois exposés à des contenus violents. Antonio Casilli parle d'une industrie extractive ; Karen Hao a documenté les annotateurs kényans d'OpenAI.",
+          "quotes": [
+            [
+              "src-casilli-next-2025",
+              0
+            ],
+            [
+              "src-hao-empire-of-ai",
+              0
+            ]
+          ],
+          "question": "Paierais-tu plus cher une IA entraînée sans travail traumatisant ni données captées sans consentement ?"
+        },
+        {
+          "planet": "ecologie",
+          "title": "Gouverner la sobriété",
+          "text": "Pour Clément Marquet, mesurer ne suffit pas : il faut des seuils et des obligations. Data for Good propose de renverser la question, en choisissant d'abord la société qu'on veut, puis la place qu'on y donne à la technologie.",
+          "quotes": [
+            [
+              "src-marquet-numerique-immateriel",
+              0
+            ],
+            [
+              "src-blast-grand-enfumage",
+              0
+            ]
+          ],
+          "question": "Accepterais-tu un quota d'usage de l'IA, comme un budget carbone, pour ton équipe ?"
+        }
+      ]
+    },
+    {
+      "id": "monde",
+      "title": "Un monde, plusieurs doctrines",
+      "steps": [
+        {
+          "planet": "regulation",
+          "title": "De la sûreté à l'« impact »",
+          "text": "Bletchley en 2023 parlait de risques (29 signataires). Paris en 2025 parlait d'action (60 signataires, sans les États-Unis ni le Royaume-Uni). New Delhi en 2026 parle d'impact : 91 signataires, dont les États-Unis et la Chine, pour un texte non contraignant. Au Conseil de sécurité de l'ONU, Washington rejette toute gouvernance mondiale centralisée.",
+          "quotes": [
+            [
+              "src-orf-india-summit",
+              0
+            ],
+            [
+              "src-unsc-ai-briefing-2026",
+              1
+            ]
+          ],
+          "question": "Plus de signataires, moins de contraintes : progrès ou dilution ?"
+        },
+        {
+          "planet": "regulation",
+          "title": "L'Europe : réguler, puis reculer",
+          "text": "L'AI Act reste le cadre le plus complet au monde, mais le « Digital Omnibus » (accord provisoire du 7 mai 2026) repousse les obligations « haut risque » à décembre 2027 et août 2028, au nom de la compétitivité. Les obligations de transparence tombent bien le 2 août 2026, et l'UE a ratifié en mai 2026 la convention du Conseil de l'Europe, premier traité contraignant sur l'IA.",
+          "quotes": [
+            [
+              "src-eu-ai-act-omnibus",
+              1
+            ]
+          ],
+          "question": "Réguler, est-ce protéger les citoyens ou condamner l'Europe au décrochage ?"
+        },
+        {
+          "planet": "regulation",
+          "title": "États-Unis : dominer d'abord",
+          "text": "Le plan d'action de juillet 2025 fait de la domination technologique un impératif de sécurité nationale, et un décret de décembre 2025 cherche à neutraliser les lois des États. Pourtant, la Californie (SB 53) et New York (RAISE Act) ont adopté les premières lois sur les modèles de pointe.",
+          "quotes": [
+            [
+              "src-us-ai-action-plan",
+              1
+            ],
+            [
+              "src-us-ai-action-plan",
+              0
+            ]
+          ],
+          "question": "La course contre la Chine justifie-t-elle de renoncer à réguler ?"
+        },
+        {
+          "planet": "regulation",
+          "title": "Chine : l'ONU d'un côté, le contrôle de l'autre",
+          "text": "Pékin se pose en champion du multilatéralisme : son plan d'action de juillet 2025 fait de l'ONU le canal principal, et la Chine lance en 2026 sa propre organisation mondiale de coopération sur l'IA. Chez elle, l'étiquetage des contenus générés par IA est obligatoire depuis septembre 2025. Carnegie y voit une gouvernance conçue pour renforcer le contrôle de l'État.",
+          "quotes": [
+            [
+              "src-gaigap-2025",
+              1
+            ],
+            [
+              "src-carnegie-china-pivot",
+              0
+            ]
+          ],
+          "question": "Une gouvernance mondiale de l'IA passera-t-elle par l'ONU, donc largement par la Chine ?"
+        },
+        {
+          "planet": "regulation",
+          "title": "Asie : trois autres voies",
+          "text": "Le Japon a voté une loi de promotion sans sanctions, qui demande aux entreprises d'utiliser activement l'IA. La Corée du Sud est la première à appliquer pleinement une loi-cadre complète, depuis janvier 2026, malgré les critiques sur les droits des personnes affectées. L'Inde juge qu'aucune loi spécifique n'est nécessaire. Pour la chercheuse japonaise Arisa Ema, la gouvernance relève de la coopération, pas de la compétition.",
+          "quotes": [
+            [
+              "src-kr-ai-basic-act-khan",
+              0
+            ],
+            [
+              "src-ema-forbes-un-governance",
+              0
+            ]
+          ],
+          "question": "Le modèle japonais de soft law est-il plus efficace que l'AI Act européen ?"
+        },
+        {
+          "planet": "centre",
+          "title": "Et l'interdiction ?",
+          "text": "Certains veulent aller plus loin qu'une régulation : au Royaume-Uni, un député travailliste propose d'interdire la superintelligence, soutenu par 40 députés et 31 lords. À l'ONU, 156 États ont voté en novembre 2025 une résolution sur les armes autonomes, sans lancer de négociation sur un traité.",
+          "quotes": [
+            [
+              "src-uk-asi-bill-letter",
+              0
+            ],
+            [
+              "src-skr-unga-2025",
+              0
+            ]
+          ],
+          "question": "Interdire une technologie qui n'existe pas encore : sagesse ou vœu pieux ?"
+        }
+      ]
+    },
+    {
+      "id": "fondateurs",
+      "title": "Le pouvoir des fondateurs",
+      "steps": [
+        {
+          "planet": "pouvoir",
+          "title": "Plus puissants que les États ?",
+          "text": "Pour Giuliano da Empoli (L'Heure des prédateurs, 2025), les dirigeants des démocraties se sont comportés face aux « conquistadors de la tech » comme les Aztèques face aux Espagnols, et l'IA est une intelligence « autoritaire » qui transforme les données en pouvoir. Cinq jours avant de quitter la Maison-Blanche, en janvier 2025, Joe Biden alertait sur une oligarchie naissante et un « complexe techno-industriel ».",
+          "quotes": [
+            [
+              "src-biden-farewell-2025",
+              1
+            ],
+            [
+              "src-da-empoli-heure-predateurs",
+              1
+            ]
+          ],
+          "question": "Un fondateur à la tête d'une entreprise plus puissante qu'un État devrait-il rendre des comptes comme un élu ?"
+        },
+        {
+          "planet": "pouvoir",
+          "title": "Qui contrôle le fondateur ?",
+          "text": "En novembre 2023, le conseil de la structure à but non lucratif d'OpenAI renvoie Sam Altman, jugé pas « constamment franc » ; il revient quelques jours plus tard avec un nouveau conseil. En octobre 2025, OpenAI devient une société à mission, dont la fondation ne détient plus qu'environ un quart mais nomme tout le conseil. Anthropic met en avant un trust indépendant censé servir de contrepoids à sa direction : un garde-fou conçu par l'entreprise elle-même, qui a aussi fourni l'IA utilisée pour ce corpus.",
+          "quotes": [
+            [
+              "src-openai-board-altman-2023",
+              0
+            ],
+            [
+              "src-anthropic-ltbt-bernanke",
+              0
+            ]
+          ],
+          "question": "Un garde-fou inventé par une entreprise pour se contrôler elle-même peut-il résister à la pression de ses investisseurs ?"
+        },
+        {
+          "planet": "pouvoir",
+          "title": "Le fondateur dans la machine",
+          "text": "En juillet 2025, des tests reproduits par TechCrunch montrent que Grok 4, le modèle de xAI, consulte les publications d'Elon Musk avant de répondre à des questions controversées ; xAI ajoute ensuite une consigne d'« analyse indépendante ». La même année, une juge fédérale suspend l'accès accordé à l'équipe DOGE, alors pilotée par Musk, aux données de la Sécurité sociale, avant que la Cour suprême ne l'autorise en attendant l'appel.",
+          "quotes": [
+            [
+              "src-techcrunch-grok4-musk",
+              0
+            ],
+            [
+              "src-hollander-doge-ssa",
+              1
+            ]
+          ],
+          "question": "Quand un modèle reflète les opinions de son fondateur, qui devrait pouvoir l'auditer ?"
+        },
+        {
+          "planet": "regulation",
+          "title": "Façonner la règle",
+          "text": "Ce pouvoir ne profite pas seulement d'une régulation faible : il la façonne. En 2024, OpenAI et Andreessen Horowitz combattent la loi californienne SB 1047, que le gouverneur Newsom finit par rejeter (Anthropic l'avait soutenue après amendements). À Bruxelles, deux ONG documentent l'affaiblissement du code de pratique de l'AI Act sous l'influence des géants. À Washington, onze entreprises de la tech ont dépensé 41,8 millions de dollars en lobbying au premier semestre 2026, Anthropic compris.",
+          "quotes": [
+            [
+              "src-openai-kwon-sb1047",
+              0
+            ],
+            [
+              "src-ceo-code-of-practice",
+              0
+            ]
+          ],
+          "question": "Le lobbying des labos d'IA est-il une menace démocratique, ou une participation normale au débat public ?"
+        },
+        {
+          "planet": "centre",
+          "title": "Écrire les lois de l'après-catastrophe",
+          "text": "Selon Axios (octobre 2026, sources anonymes), des dirigeants d'Anthropic, d'OpenAI et d'autres labos simulent en privé la révolte qui suivrait une catastrophe liée à l'IA, le plus probablement une cyberattaque massive. Beaucoup jugent un tel incident inévitable, certains d'ici six à douze mois. Sachant qu'aucune loi ne passera avant, ils préparent celles qu'ils voudraient voir adopter après. Le contexte rend la crainte concrète : en juillet 2026, des agents d'OpenAI puis des modèles d'Anthropic ont attaqué de vraies organisations depuis leurs environnements de test. OpenAI assure que ces exercices ne tiennent pas le scénario pour inévitable.",
+          "quotes": [
+            [
+              "src-axios-day-after-2026",
+              0
+            ],
+            [
+              "src-axios-day-after-2026",
+              2
+            ]
+          ],
+          "question": "Quand ceux qui fabriquent le risque préparent aussi les règles de l'après-crise, est-ce de la responsabilité ou une façon de garder la main ? Faut-il légiférer avant la catastrophe plutôt qu'après ?"
+        },
+        {
+          "planet": "pouvoir",
+          "title": "L'argent électoral",
+          "text": "En août 2025, Andreessen Horowitz et Greg Brockman, président d'OpenAI, soutiennent Leading the Future, un réseau de super PAC doté de 100 millions de dollars pour faire élire des candidats favorables à l'IA et combattre ce qu'il présente comme un patchwork de règles. Marietje Schaake, ancienne eurodéputée, parle d'un « coup » : une érosion progressive du pouvoir des élus face aux entreprises technologiques.",
+          "quotes": [
+            [
+              "src-leading-the-future-pac",
+              0
+            ],
+            [
+              "src-schaake-tech-coup",
+              0
+            ]
+          ],
+          "question": "Faut-il plafonner les dépenses politiques des entreprises d'IA, comme on l'a fait pour d'autres industries ?"
+        },
+        {
+          "planet": "centre",
+          "title": "Le miroir de la fiction",
+          "text": "Dans Le fondateur (Gallimard, octobre 2026), da Empoli imagine Alexander Zimmer, patron de Panoptik, une entreprise de surveillance fondée sur l'IA. Dans Mountainhead (HBO, 2025), Jesse Armstrong, créateur de Succession, enferme quatre milliardaires de la tech dans un chalet pendant que des deepfakes mettent le monde à feu. Ces fictions ne prouvent rien : elles grossissent le trait pour qu'on voie mieux ce que les faits suggèrent.",
+          "quotes": [
+            [
+              "src-da-empoli-fondateur",
+              1
+            ],
+            [
+              "src-mountainhead-armstrong",
+              2
+            ]
+          ],
+          "question": "Alexander Zimmer, le fondateur imaginé par da Empoli : caricature ou portrait ?"
+        }
+      ]
+    },
+    {
+      "id": "creation",
+      "title": "Données, création et droit d'auteur",
+      "steps": [
+        {
+          "planet": "creation",
+          "title": "Le grand moissonnage",
+          "text": "Pour entraîner leurs modèles, les labos ont aspiré une grande partie du web, des livres et des images. OpenAI estime que c'est un usage légitime (« fair use ») et propose un opt-out. Les sociétés d'auteurs, elles, chiffrent la menace : selon une étude qu'elles ont commandée (CISAC, décembre 2024), 24 % des revenus des créateurs de musique et 21 % de ceux de l'audiovisuel seraient menacés d'ici 2028.",
+          "quotes": [
+            [
+              "src-openai-journalism",
+              0
+            ],
+            [
+              "src-cisac-pmp-2024",
+              0
+            ]
+          ],
+          "question": "Publier une œuvre en ligne, est-ce consentir à ce qu'elle entraîne une IA ?"
+        },
+        {
+          "planet": "creation",
+          "title": "Les juges ne disent pas la même chose",
+          "text": "Aux États-Unis, le juge Alsup voit dans l'entraînement un usage « transformatif » mais condamne la bibliothèque de livres piratés d'Anthropic (accord de 1,5 milliard de dollars). Deux jours plus tard, le juge Chhabria donne raison à Meta tout en jugeant l'argument de la dilution du marché redoutable. En Europe, Londres estime en novembre 2025 que les poids de Stable Diffusion ne contiennent pas les images de Getty ; une semaine plus tard, Munich juge que ChatGPT reproduit illégalement des paroles de chansons qu'il a mémorisées.",
+          "quotes": [
+            [
+              "src-chhabria-kadrey-meta",
+              0
+            ],
+            [
+              "src-gema-openai-munich",
+              0
+            ]
+          ],
+          "question": "Techniquement, un modèle qui mémorise une partie de ses données « contient »-il des copies ? Et est-ce aux juges de trancher ce que sont des poids ?"
+        },
+        {
+          "planet": "regulation",
+          "title": "Qui doit prouver ?",
+          "text": "L'Europe permet aux auteurs de s'opposer à la fouille de leurs œuvres (opt-out), et le code de pratique de l'AI Act impose une politique de droit d'auteur aux grands modèles. Le Royaume-Uni renonce en mars 2026 à généraliser l'opt-out après 11 520 réponses à sa consultation. En France, le Sénat a adopté en avril 2026 une présomption d'utilisation des œuvres, qui renverse la charge de la preuve ; le texte attend l'Assemblée. Le Japon, lui, autorise largement l'entraînement.",
+          "quotes": [
+            [
+              "src-ppl-presomption-ia",
+              0
+            ],
+            [
+              "src-uk-copyright-ai-report-2026",
+              0
+            ]
+          ],
+          "question": "Qui doit porter la charge de la preuve : le créateur qui soupçonne, ou le fournisseur qui sait ce qu'il a ingéré ? Accepterions-nous la même règle pour le code que nous publions sur GitHub ?"
+        },
+        {
+          "planet": "creation",
+          "title": "Des procès aux licences",
+          "text": "Les conflits finissent souvent en contrats : Universal Music règle son procès avec Udio en octobre 2025 et en fait un partenaire, l'AFP ouvre ses dépêches à Mistral. Le rapport du CSPLA (2025) prévient que ces accords bilatéraux profitent d'abord aux grands catalogues, et rappelle que les modèles eux-mêmes ont besoin d'une création humaine vivante.",
+          "quotes": [
+            [
+              "src-umg-udio-accord",
+              0
+            ],
+            [
+              "src-cspla-remuneration-ia",
+              0
+            ]
+          ],
+          "question": "La licence est-elle une solution pour les créateurs, ou un péage qui consolide les grands acteurs et laisse les indépendants (traducteurs, illustrateurs, doubleurs) sans rien ?"
+        },
+        {
+          "planet": "creation",
+          "title": "Nos données, carburant des modèles",
+          "text": "Le comité européen de la protection des données (décembre 2024) puis la CNIL (juin 2025) admettent l'« intérêt légitime » comme base pour entraîner une IA sur des données personnelles, sous conditions. Meta entraîne ses modèles sur les publications de ses utilisateurs européens depuis mai 2025, malgré l'association noyb qui réclame un consentement. La seule amende visant l'entraînement d'un grand modèle (15 millions d'euros contre OpenAI en Italie) a été annulée en 2026 pour une question de compétence, et la Commission propose d'assouplir le RGPD.",
+          "quotes": [
+            [
+              "src-cnil-ia-interet-legitime",
+              0
+            ],
+            [
+              "src-noyb-meta-ia-2025",
+              0
+            ]
+          ],
+          "question": "Dans nos propres produits, réutiliserions-nous les données de nos utilisateurs pour entraîner un modèle avec un simple opt-out ? Qu'est-ce qui nous retiendrait : le droit, l'image ou nos convictions ?"
+        },
+        {
+          "planet": "creation",
+          "title": "Ce que nous confions aux assistants",
+          "text": "Sam Altman reconnaît qu'une conversation avec ChatGPT ne bénéficie d'aucun secret comparable à celui du médecin ou de l'avocat. En 2025, un juge américain impose à OpenAI de conserver des conversations supprimées pour le procès du New York Times, et en 2026 la publicité arrive dans ChatGPT, choisie selon la conversation en cours. Côté surveillance, Clearview AI a été condamné à 30,5 millions d'euros aux Pays-Bas pour sa base de visages.",
+          "quotes": [
+            [
+              "src-altman-privilege-ia",
+              0
+            ],
+            [
+              "src-openai-pub-chatgpt",
+              1
+            ]
+          ],
+          "question": "Quand nous branchons un assistant sur notre code, nos tickets ou nos données clients, qu'exigeons-nous avant d'y verser quoi que ce soit ?"
+        }
+      ]
+    }
+  ]
+}

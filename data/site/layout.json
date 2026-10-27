@@ -1,0 +1,175 @@
+{
+  "_doc": "Disposition de l'univers 3D : familles de planètes (couleurs), position [x,y,z] et poids [court terme, long terme] de chaque planète. Les libellés et descriptions des planètes sont dans data/corpus.json.",
+  "families": [
+    {
+      "id": "futurs",
+      "label": "Futurs de la machine"
+    },
+    {
+      "id": "pouvoirs",
+      "label": "Pouvoirs et conflits"
+    },
+    {
+      "id": "societes",
+      "label": "Sociétés et planète"
+    }
+  ],
+  "planets": {
+    "centre": {
+      "fam": "centre",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "w": [
+        1.45,
+        0.9
+      ]
+    },
+    "trajectoires": {
+      "fam": "futurs",
+      "pos": [
+        -150,
+        150,
+        60
+      ],
+      "w": [
+        1.3,
+        1.0
+      ]
+    },
+    "alignement": {
+      "fam": "futurs",
+      "pos": [
+        60,
+        175,
+        -90
+      ],
+      "w": [
+        1.6,
+        0.7
+      ]
+    },
+    "pouvoir": {
+      "fam": "pouvoirs",
+      "pos": [
+        205,
+        25,
+        95
+      ],
+      "w": [
+        1.35,
+        1.15
+      ]
+    },
+    "militaire": {
+      "fam": "pouvoirs",
+      "pos": [
+        215,
+        -70,
+        -130
+      ],
+      "w": [
+        1.45,
+        1.0
+      ]
+    },
+    "ethique": {
+      "fam": "societes",
+      "pos": [
+        -230,
+        70,
+        -170
+      ],
+      "w": [
+        0.8,
+        1.45
+      ]
+    },
+    "travail": {
+      "fam": "societes",
+      "pos": [
+        -150,
+        -150,
+        30
+      ],
+      "w": [
+        1.15,
+        1.5
+      ]
+    },
+    "jeunesse": {
+      "fam": "societes",
+      "pos": [
+        30,
+        -150,
+        -245
+      ],
+      "w": [
+        0.8,
+        1.35
+      ]
+    },
+    "recherche": {
+      "fam": "futurs",
+      "pos": [
+        -40,
+        110,
+        210
+      ],
+      "w": [
+        1.25,
+        0.95
+      ]
+    },
+    "ecologie": {
+      "fam": "societes",
+      "pos": [
+        -30,
+        -215,
+        125
+      ],
+      "w": [
+        0.8,
+        1.45
+      ]
+    },
+    "regulation": {
+      "fam": "pouvoirs",
+      "pos": [
+        120,
+        -150,
+        190
+      ],
+      "w": [
+        1.2,
+        1.3
+      ]
+    },
+    "creation": {
+      "fam": "societes",
+      "pos": [
+        -110,
+        40,
+        -250
+      ],
+      "w": [
+        0.9,
+        1.35
+      ]
+    },
+    "devs": {
+      "fam": "societes",
+      "pos": [
+        -235,
+        -100,
+        170
+      ],
+      "w": [
+        1.3,
+        1.3
+      ]
+    }
+  }
+}

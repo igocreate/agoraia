@@ -1,0 +1,49 @@
+name: Déploiement GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # pour dater le build du dernier commit qui touche data/
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Valider les données
+        run: python3 scripts/build.py --check
+      - name: Construire le site
+        run: |
+          python3 scripts/build.py -q --date "$(git log -1 --format=%cs -- data/)"
+          rm dist/artifact.html  # version claude.ai, inutile sur Pages
+      - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request'
+        with:
+          path: dist
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
