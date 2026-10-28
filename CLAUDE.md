@@ -114,15 +114,16 @@ Le code est organisé en sections commentées `// ---------- … ----------` :
 - **index** : tables `P` (planètes), `S` (sources), `PE` (personnes), `CU` (courants), `FAM` (familles).
 - **état** : filtres (recherche, courants, régions, horizon court/long terme).
 - **contrôles**.
-- **panneau** : `showHome`, `showPlanet`, `showSource`, `showCurrent`, `showPerson`, `showThread` et le SVG du trilemme. `select({type,id})` sert de point d'entrée unique.
+- **panneau** : `showHome` (onglets Explorer, Animer un groupe, À propos : `homeTab`, `setHomeTab`), `showPlanet`, `showSource`, `showCurrent`, `showPerson`, `showThread` et le SVG du trilemme. `select({type,id})` sert de point d'entrée unique et empile l'écran précédent dans `hist` (bouton « ← Retour », `goBack`) ; `goHome` vide l'historique.
 - **vue liste**.
 - **univers 3D** : module `U`.
 - **visite guidée** : `startTour(id, step)`.
 - **où te situes-tu** : `openPos` et les 8 axes.
 - **composer une séance** : `openSeance`, `buildCarte` (parcours `carte` généré : question centrale + stops choisis, `more` questions supplémentaires selon la durée), `launchCarte`.
 - **contribuer** : `openContrib(mode, ctx)`, `issueUrl` (formulaires d'issue GitHub pré-remplis).
-- **démarrage** : les ancres `#visite` et `#productivite` lancent un parcours ; `#public=scolaire` choisit le public ; `#seance=elus:ecologie,regulation[:120]` lance un parcours à la carte.
-- **publics** : `state.public` (persisté sous `agoraia:public`), `setPublic`, `qText`, `stepFor`, `planetQuestions`, `visibleTours`.
+- **démarrage** : les ancres `#visite` et `#productivite` lancent un parcours ; `#explorer`, `#animer` et `#a-propos` ouvrent l'onglet correspondant de l'accueil ; `#public=scolaire` choisit le public ; `#seance=elus:ecologie,regulation[:120]` lance un parcours à la carte.
+- **publics** : `state.public` (persisté sous `agoraia:public`), choisi dans l'en-tête ou le menu mobile (`pubSelect`) ; à la première visite, la modale `openPubChoice` le demande, sauf si l'ancre lance déjà quelque chose (`#public=`, `#seance=`, `#visite`…) ; `setPublic`, `qText`, `stepFor`, `planetQuestions`, `visibleTours`.
+- **mode lecture** (`mobile()`, 820 px et moins) : vue liste forcée sans la mémoriser (`fitView`), en-tête réduit à un bouton « Menu », panneau, parcours, filtres et modales en plein écran. La liste (`openList`, classe `m-list` sur `#stage`) et le parcours (classe `away` quand on lit une source) sont des écrans de l'historique.
 
 Points techniques à ne pas casser (bugs déjà rencontrés) :
 
@@ -130,10 +131,10 @@ Points techniques à ne pas casser (bugs déjà rencontrés) :
 - **OrbitControls.** Ils sont attachés à `#scene`, pas à la couche de labels CSS2D, qui est en `pointer-events:none`. Sinon, la rotation au trackpad ne marche plus. Le clic ne sélectionne que si le pointeur n'a pas glissé. Les boutons caméra et les flèches/+/- du clavier doublent la souris.
 - **Labels CSS2D.** On les masque via `obj.visible`, jamais via `style.display`. `#scene` a `isolation:isolate; z-index:0`, faute de quoi les labels passent au-dessus des panneaux. Les labels de sources ne s'affichent que sur une planète focalisée qui compte 12 sources ou moins.
 - **Attribut hidden.** La règle `[hidden]{display:none!important}` est indispensable : sans elle, les modales cachées interceptent les clics.
-- **Mise en page.** Sur desktop, la scène s'arrête à `right: var(--panel-w)`. La vue liste se décale quand le panneau de filtres est ouvert.
+- **Mise en page.** Sur desktop, la scène s'arrête à `right: var(--panel-w)` (40 % de la largeur, entre 360 et 680 px). La vue liste se décale quand le panneau de filtres est ouvert ; celui-ci est masqué par défaut sous 1200 px. `.app` a `grid-template-columns:minmax(0,1fr)`, sinon l'en-tête sur une ligne élargit toute la page. Les éléments `sticky` du panneau (`.phead`, `.tabs`) ont `top: calc(-1 * var(--pad-t))`, car un `sticky` se cale sous le padding du conteneur.
 - **Thèmes.** Les couleurs viennent des tokens CSS (`--f-futurs`, `--f-pouvoirs`, `--f-societes`, `--f-centre`…), lus par `readTokens()` pour la 3D. Tout changement de couleur se fait dans `:root` et dans ses deux variantes sombres.
 - **Stockage.** Le `localStorage` est préfixé `agoraia:` et toujours appelé dans un try/catch.
-- **Accessibilité.** Les citations portent l'attribut `lang` de leur source. Le site respecte `prefers-reduced-motion`. Sans WebGL, il bascule sur la vue liste. Sous 600 px de large, la vue liste est la vue par défaut.
+- **Accessibilité.** Les citations portent l'attribut `lang` de leur source. Le site respecte `prefers-reduced-motion`. Sans WebGL, il bascule sur la vue liste. À 820 px et moins, c'est le mode lecture (voir plus haut). Les onglets de l'accueil se parcourent aux flèches.
 
 ## Vérifier une modification
 
@@ -145,7 +146,7 @@ Points techniques à ne pas casser (bugs déjà rencontrés) :
 
 - Hébergement : dépôt public `igocreate/agoraia`, publié sur GitHub Pages. Pour passer au domaine d'Igocreate, changer `SITE_URL` dans build.py et déclarer le domaine dans Settings → Pages.
 - Licences : MIT pour le code, CC BY 4.0 pour le corpus. Les citations en sont exclues : ce sont des extraits courts, attribués et sourcés (droit de courte citation).
-- Mentions légales : dans `showHome` (app.js), section « Mentions légales ». Éditeur Igocreate (SAS, siège et RCS repris du registre national des entreprises), directeur de la publication Clément Le Tétour, hébergeur GitHub. À mettre à jour si l'hébergement ou la société change.
+- Mentions légales : dans `showHome` (app.js), onglet « À propos ». Éditeur Igocreate (SAS, siège et RCS repris du registre national des entreprises), directeur de la publication Clément Le Tétour, hébergeur GitHub. À mettre à jour si l'hébergement ou la société change.
 - Le corpus a été constitué avec Claude (Anthropic), alors qu'Anthropic est aussi l'un des acteurs cartographiés. Il faut le dire et rester vigilant sur l'équilibre.
 - Pistes non lancées (ne pas démarrer sans accord) :
   - parcours « L'AGI arrive-t-elle ? » ;
