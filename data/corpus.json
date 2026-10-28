@@ -2,7 +2,7 @@
  "meta": {
   "built": "2026-10-20",
   "cutoff": "2023-09-25",
-  "n_sources": 236
+  "n_sources": 237
  },
  "planets": [
   {
@@ -2175,6 +2175,46 @@
    ],
    "reliability": "primaire",
    "notes": "Étude observationnelle (event study apparié : chaque adoptant est comparé à un utilisateur aussi actif, la même semaine un an plus tôt), pas un essai randomisé. Working paper non relu par les pairs (mai 2026, révisé en septembre 2026). Mert Demirer et Leon Musolff sont consultants rémunérés de Microsoft, qui fournit la télémétrie (GitHub Copilot, Claude, Codex). Porte sur l'open source ; les auteurs citent Chen et Stratton (2026) pour un résultat voisin en entreprise. Citations tirées du résumé, attribuées au premier auteur.",
+   "branch": "mesure"
+  },
+  {
+   "id": "src-chen-stratton-bottlenecks-2026",
+   "title": "Artificial Intelligence in the Firm: Bottlenecks in Software Production",
+   "authors": [
+    "p-chen-fiona",
+    "p-stratton"
+   ],
+   "publisher": "Harvard University (job market paper)",
+   "date": "2026-08-04",
+   "url": "https://fion.ac/jellyfish.pdf",
+   "lang": "en",
+   "kind": "étude",
+   "planets": [
+    "devs"
+   ],
+   "currents": [
+    "economistes",
+    "techno-normale"
+   ],
+   "thesis": "À partir des données de la plateforme d'analyse Jellyfish (300 millions d'événements de travail dans 718 entreprises : GitHub, Jira, agendas), l'étude compare les entreprises selon la date à laquelle elles adoptent assistants et agents de code. Les agents augmentent nettement la production de code, mais pas le travail effectivement livré ni l'emploi. Les auteurs l'expliquent par un goulot dans la revue de code : plus de code à relire, de moins bonne qualité, qui ralentit l'ensemble de la chaîne.",
+   "key_facts": [
+    "Avec les agents : +30 % de lignes de code, +20 % de commits, +23 % de pull requests. Avec les assistants, les effets sont faibles et seul celui sur les commits est significatif.",
+    "Aucun effet significatif sur les tickets et les epics Jira résolus : l'estimation exclut, pour les agents, une hausse du travail livré supérieure à 12 %.",
+    "Le délai de revue d'une pull request augmente de 49 %, la part des pull requests à reprendre double presque, les commentaires par pull request augmentent de 35 %, la part des salariés qui font de la revue de 14 %.",
+    "Les ingénieurs ne passent que 30 à 40 % de leur temps à écrire du code. Le goulot persiste après l'adoption d'outils d'IA pour la revue.",
+    "Pas d'effet mesurable sur l'emploi : pour les agents, une baisse de l'emploi total supérieure à 2,9 % est exclue."
+   ],
+   "quotes": [
+    {
+     "text": "For AI agents, this incomplete pass-through reflects a bottleneck from code review: review times increase, a larger share of code updates require revisions, and reviews involve more comments.",
+     "fr": "Pour les agents d'IA, cette transmission incomplète des gains s'explique par un goulot d'étranglement dans la revue de code : les délais de revue s'allongent, une plus grande part des modifications de code doit être reprise, et les revues comportent davantage de commentaires.",
+     "speaker": "p-chen-fiona",
+     "status": "verifiee",
+     "checked_at": "https://fion.ac/jellyfish.pdf"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Étude observationnelle (doubles différences échelonnées), pas un essai randomisé. Document de travail non relu par les pairs (première version le 7 janvier 2026, version citée du 4 août 2026), hébergé sur le site de Fiona Chen. Données de Jellyfish, entreprises clientes ayant accepté l'usage pour la recherche ; Jellyfish a relu le texte uniquement pour vérifier l'absence d'informations confidentielles. Financements : Stripe Economics of AI Fellowship, Schmidt Sciences, Harvard Kennedy School. Les données s'arrêtent en mars 2026 et ne couvrent donc pas les modèles sortis ensuite. Certains comptes rendus de presse donnent +53 % de commentaires par pull request ; le papier indique +35 %. Citation tirée du résumé, attribuée à la première autrice.",
    "branch": "mesure"
   },
   {
@@ -14147,6 +14187,24 @@
     "gouvernance"
    ],
    "country": "US"
+  },
+  {
+   "id": "p-chen-fiona",
+   "name": "Fiona Chen",
+   "role": "Économiste, doctorat en économie d'entreprise à Harvard",
+   "currents": [
+    "economistes"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-stratton",
+   "name": "James Stratton",
+   "role": "Économiste, doctorat en économie d'entreprise à Harvard",
+   "currents": [
+    "economistes"
+   ],
+   "country": "US"
   }
  ],
  "relations": [
@@ -14352,6 +14410,13 @@
    "type": "prolonge",
    "why": "Là où l'essai de METR ne parvient plus à mesurer le gain par tâche, l'étude du NBER observe plus de 500 000 développeurs : les commits explosent avec les agents, les versions publiées beaucoup moins.",
    "evidence_url": "https://www.nber.org/papers/w35275"
+  },
+  {
+   "from": "src-chen-stratton-bottlenecks-2026",
+   "to": "src-nber-shipping-code-2026",
+   "type": "prolonge",
+   "why": "Même constat en entreprise plutôt qu'en open source : les agents font produire plus de code sans hausse mesurable du travail livré, et l'étude localise le goulot dans la revue de code.",
+   "evidence_url": "https://fion.ac/jellyfish.pdf"
   },
   {
    "from": "p-tao",
