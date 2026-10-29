@@ -321,7 +321,7 @@
         {
           "from": [
             "productivite",
-            5
+            6
           ],
           "question": "Si l'IA fait gagner une journée par semaine à une équipe, à qui revient-elle : à l'entreprise, aux salariés, ou à la planète ? Et le dialogue social a-t-il son mot à dire ?"
         }
@@ -468,6 +468,22 @@
             ]
           ],
           "question": "Un gain d'efficacité qui fait produire plus allège-t-il vraiment la planète ?"
+        },
+        {
+          "planet": "travail",
+          "title": "La Reine Rouge : quand la vitesse devient la norme",
+          "text": "Un gain de productivité ne va pas toujours là où quelqu'un l'a décidé : souvent, il est absorbé. Chacun surestime son propre gain : de 40 points dans l'essai de METR. Et la vitesse des uns se paie chez les autres : 40 % des salariés de bureau américains interrogés par BetterUp Labs et Stanford disent avoir reçu, le mois précédent, des contenus générés qui ont l'air aboutis mais qu'il faut reprendre, en moyenne deux heures par cas. Une enquête du BCG décrit aussi une fatigue mentale liée à la supervision constante des outils d'IA.",
+          "quotes": [
+            [
+              "src-metr-survey-2026",
+              1
+            ],
+            [
+              "src-betterup-workslop-2025",
+              1
+            ]
+          ],
+          "question": "Le temps que l'IA te fait gagner, l'as-tu réinvesti dans la qualité, sur le même périmètre, ou a-t-il servi à l'élargir à de nouvelles tâches ? Et si tout le monde produit plus, qui a encore le temps de relire ?"
         },
         {
           "planet": "travail",

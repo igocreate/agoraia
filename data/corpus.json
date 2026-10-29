@@ -2,7 +2,7 @@
  "meta": {
   "built": "2026-10-20",
   "cutoff": "2023-09-25",
-  "n_sources": 237
+  "n_sources": 240
  },
  "planets": [
   {
@@ -10937,6 +10937,129 @@
    ],
    "reliability": "primaire",
    "notes": "Vise les IA compagnons et de soutien émotionnel, pas la thérapie en tant que telle. Traductions de travail."
+  },
+  {
+   "id": "src-betterup-workslop-2025",
+   "title": "Workslop: The Hidden Cost of AI-Generated Busywork",
+   "authors": [
+    "p-betterup-labs",
+    "p-stanford-sml"
+   ],
+   "publisher": "BetterUp Labs et Stanford Social Media Lab",
+   "date": "2025-09",
+   "url": "https://www.betterup.com/workslop",
+   "lang": "en",
+   "kind": "étude",
+   "planets": [
+    "travail",
+    "devs"
+   ],
+   "currents": [
+    "economistes"
+   ],
+   "thesis": "Une enquête auprès de 1 150 salariés de bureau américains décrit le « workslop » : des contenus générés par l'IA qui ont l'air aboutis mais manquent de fond (diapositives, rapports, résumés, code). Le temps gagné par celui qui les produit est reporté sur ceux qui les reçoivent, qui doivent interpréter, corriger ou refaire le travail. Les auteurs y voient un coût caché, financier et relationnel.",
+   "key_facts": [
+    "Enquête en ligne auprès de 1 150 salariés de bureau américains à temps plein, menée en septembre 2025.",
+    "40 % disent avoir reçu du workslop le mois précédent ; il faut en moyenne deux heures pour régler chaque cas.",
+    "Coût estimé à 186 dollars par salarié et par mois, soit 9 millions de dollars par an pour une entreprise de 10 000 personnes."
+   ],
+   "quotes": [
+    {
+     "text": "Workslop is AI-generated content that looks good, but lacks substance.",
+     "fr": "Le workslop, ce sont des contenus générés par l'IA qui ont l'air bons, mais qui manquent de fond.",
+     "speaker": "p-betterup-labs",
+     "status": "verifiee",
+     "checked_at": "https://www.betterup.com/workslop"
+    },
+    {
+     "text": "Rather than saving time, it leaves colleagues to do the real thinking and clean-up.",
+     "fr": "Au lieu de faire gagner du temps, il laisse aux collègues le vrai travail de réflexion et de remise en ordre.",
+     "speaker": "p-betterup-labs",
+     "status": "verifiee",
+     "checked_at": "https://www.betterup.com/workslop"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Page de synthèse de BetterUp, entreprise de coaching professionnel qui a mené l'étude avec le Stanford Social Media Lab ; les résultats détaillés ont été publiés dans la Harvard Business Review (septembre 2025), en partie derrière paywall et non consultée. Enquête déclarative ; le coût est un calcul indicatif fondé sur les salaires et le temps déclarés. Page non datée : date de l'enquête retenue. Citations attribuées à l'auteur collectif."
+  },
+  {
+   "id": "src-lee-critical-thinking-2025",
+   "title": "The Impact of Generative AI on Critical Thinking: Self-Reported Reductions in Cognitive Effort and Confidence Effects From a Survey of Knowledge Workers",
+   "authors": [
+    "p-lee-haoping",
+    "p-sarkar-advait"
+   ],
+   "publisher": "CHI 2025 (ACM), Carnegie Mellon University et Microsoft Research",
+   "date": "2025-04-26",
+   "url": "https://advait.org/files/lee_2025_ai_critical_thinking_survey.pdf",
+   "lang": "en",
+   "kind": "étude",
+   "planets": [
+    "travail",
+    "devs"
+   ],
+   "currents": [
+    "techno-normale"
+   ],
+   "thesis": "Enquête auprès de 319 travailleurs du savoir, qui ont décrit 936 usages de l'IA générative au travail. Plus on fait confiance à l'IA, moins on exerce son esprit critique ; plus on a confiance en ses propres compétences, plus on l'exerce. Le travail intellectuel se déplace de la production vers la vérification, l'intégration des réponses et la supervision de la tâche.",
+   "key_facts": [
+    "319 travailleurs du savoir interrogés, 936 exemples d'usage de l'IA générative dans des tâches professionnelles.",
+    "La confiance dans l'IA est associée à moins d'esprit critique, la confiance en soi à davantage.",
+    "Présenté à la conférence CHI 2025 (Yokohama, 26 avril – 1er mai 2025)."
+   ],
+   "quotes": [
+    {
+     "text": "Qualitatively, GenAI shifts the nature of critical thinking toward information verification, response integration, and task stewardship.",
+     "fr": "Qualitativement, l'IA générative déplace la nature de l'esprit critique vers la vérification de l'information, l'intégration des réponses et la supervision de la tâche.",
+     "speaker": "p-lee-haoping",
+     "status": "verifiee",
+     "checked_at": "https://advait.org/files/lee_2025_ai_critical_thinking_survey.pdf"
+    },
+    {
+     "text": "higher confidence in GenAI is associated with less critical thinking, while higher self-confidence is associated with more critical thinking.",
+     "fr": "une plus grande confiance dans l'IA générative est associée à moins d'esprit critique, tandis qu'une plus grande confiance en soi est associée à davantage d'esprit critique.",
+     "speaker": "p-lee-haoping",
+     "status": "verifiee",
+     "checked_at": "https://advait.org/files/lee_2025_ai_critical_thinking_survey.pdf"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Article évalué par les pairs (CHI 2025, licence CC BY 4.0), PDF hébergé sur le site d'Advait Sarkar ; DOI 10.1145/3706598.3713778. Six des sept auteurs travaillent chez Microsoft Research, acteur de l'IA générative. Enquête déclarative et corrélationnelle : elle ne montre pas que l'IA réduit l'esprit critique. Citations tirées du résumé, attribuées au premier auteur."
+  },
+  {
+   "id": "src-bcg-brain-fry-2026",
+   "title": "When Using AI Leads to \"Brain Fry\"",
+   "authors": [
+    "p-bedard",
+    "p-kropp"
+   ],
+   "publisher": "BCG (étude publiée dans la Harvard Business Review)",
+   "date": "2026-03-05",
+   "url": "https://www.bcg.com/news/5march2026-when-using-ai-leads-brain-fry",
+   "lang": "en",
+   "kind": "étude",
+   "planets": [
+    "travail"
+   ],
+   "currents": [
+    "economistes"
+   ],
+   "thesis": "Des chercheurs du BCG décrivent une « surchauffe cérébrale » : une fatigue mentale causée par l'usage excessif ou la supervision constante d'outils d'IA, au-delà de ce que l'on peut absorber. Selon leur enquête auprès de 1 488 salariés américains de grandes entreprises, elle s'accompagne de plus d'erreurs, d'une surcharge de décisions et d'une plus forte intention de démissionner.",
+   "key_facts": [
+    "Enquête auprès de 1 488 salariés américains de grandes entreprises, publiée dans la Harvard Business Review le 5 mars 2026.",
+    "Auteurs : Julie Bedard, Matthew Kropp, Megan Hsu, Olivia Karaman, Jason Hawes et Gabriella Kellerman."
+   ],
+   "quotes": [
+    {
+     "text": "they found that AI brain fry can increase employee errors, decision overload, and, ultimately, intent to quit.",
+     "fr": "ils ont constaté que la surchauffe cérébrale liée à l'IA peut augmenter les erreurs des salariés, la surcharge de décisions et, au bout du compte, l'intention de démissionner.",
+     "speaker": "p-bedard",
+     "status": "verifiee",
+     "checked_at": "https://www.bcg.com/news/5march2026-when-using-ai-leads-brain-fry"
+    }
+   ],
+   "reliability": "secondaire",
+   "notes": "Page de présentation du BCG ; l'article de la Harvard Business Review n'a pas été consulté (paywall). Les chiffres détaillés repris par la presse (14 % des répondants concernés, davantage d'effort mental et de surcharge d'information chez ceux qui supervisent beaucoup d'outils ou d'agents) sont à vérifier dans l'article avant d'être cités. Le BCG vend du conseil en transformation par l'IA. Enquête déclarative et corrélationnelle. Citation attribuée à la première autrice."
   }
  ],
  "people": [
@@ -14201,6 +14324,60 @@
    "id": "p-stratton",
    "name": "James Stratton",
    "role": "Économiste, doctorat en économie d'entreprise à Harvard",
+   "currents": [
+    "economistes"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-betterup-labs",
+   "name": "BetterUp Labs",
+   "role": "Laboratoire de recherche de BetterUp, entreprise de coaching professionnel (auteur collectif)",
+   "currents": [
+    "economistes"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-stanford-sml",
+   "name": "Stanford Social Media Lab",
+   "role": "Laboratoire de l'université Stanford sur les usages des technologies de communication (auteur collectif)",
+   "currents": [
+    "economistes"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-lee-haoping",
+   "name": "Hao-Ping (Hank) Lee",
+   "role": "Doctorat en interaction humain-machine, Carnegie Mellon University",
+   "currents": [
+    "techno-normale"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-sarkar-advait",
+   "name": "Advait Sarkar",
+   "role": "Chercheur à Microsoft Research Cambridge",
+   "currents": [
+    "techno-normale"
+   ],
+   "country": "GB"
+  },
+  {
+   "id": "p-bedard",
+   "name": "Julie Bedard",
+   "role": "Associée au Boston Consulting Group (BCG)",
+   "currents": [
+    "economistes"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-kropp",
+   "name": "Matthew Kropp",
+   "role": "Associé au Boston Consulting Group (BCG)",
    "currents": [
     "economistes"
    ],

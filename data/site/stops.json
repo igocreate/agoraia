@@ -124,7 +124,7 @@
     "travail": {
       "from": [
         "productivite",
-        5
+        6
       ],
       "variants": {
         "citoyens": {
