@@ -117,8 +117,8 @@ function setHomeTab(id){
 function showHome(){
   panel.textContent='';
   panel.append(el('div',{class:'eyebrow',text:'Outil de débat ouvert · sources publiées depuis sept. 2023'}));
-  panel.append(el('h2',{text:'Une carte des débats, pas une réponse'}));
-  panel.append(el('p',{class:'lead',text:'Au centre, la question qui relie tout : qui garde la main sur l\'IA ? Autour, '+(D.planets.length-1)+' thématiques en orbite, et autour de chacune, les sources qui les nourrissent : chercheurs, textes officiels, entreprises, critiques, d\'Europe, d\'Amérique et d\'Asie.'}));
+  panel.append(el('h2',{text:'Débattre de l\'IA, sources à l\'appui'}));
+  panel.append(el('p',{class:'lead',text:'Seul pour se faire une idée, ou en groupe pour animer un débat : cet outil rassemble des sources qualifiées sur les enjeux de l\'IA (travail, démocratie, santé, écologie, contrôle…), réparties en '+(D.planets.length-1)+' thématiques. Recherches, textes officiels, études et prises de position y sont présentés avec leurs meilleurs arguments et leurs critiques.'}));
   const ns=D.sources.length, asia=D.sources.filter(s=>s.rg==='Asie').length;
   panel.append(el('div',{class:'intro-grid'}, el('div',{class:'stat'},el('b',{text:ns}),el('span',{text:'sources'})), el('div',{class:'stat'},el('b',{text:nVer}),el('span',{text:'citations vérifiées'})), el('div',{class:'stat'},el('b',{text:asia}),el('span',{text:'voix asiatiques'}))));
   const pu=PUB[state.public];

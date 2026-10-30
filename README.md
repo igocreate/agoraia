@@ -1,6 +1,6 @@
 # Agora IA
 
-Une carte des débats sur les enjeux sociétaux, scientifiques et politiques de l'IA, à explorer seul ou à utiliser pour animer un groupe, quel que soit son horizon. Le site a d'abord servi de support à une séance entre ingénieurs logiciel (novembre 2026).
+Un outil pour débattre de l'IA, sources à l'appui : des sources qualifiées sur les enjeux sociétaux, scientifiques et politiques de l'IA, réparties en thématiques, à explorer seul ou à utiliser pour animer un groupe, quel que soit son horizon. Le site a d'abord servi de support à une séance entre ingénieurs logiciel (novembre 2026).
 
 **Site : https://igocreate.github.io/agoraia/**
 
