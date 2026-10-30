@@ -119,8 +119,9 @@ function showHome(){
   panel.append(el('div',{class:'eyebrow',text:'Outil de débat ouvert · sources publiées depuis sept. 2023'}));
   panel.append(el('h2',{text:'Débattre de l\'IA, sources à l\'appui'}));
   panel.append(el('p',{class:'lead',text:'Seul pour se faire une idée, ou en groupe pour animer un débat : cet outil rassemble des sources qualifiées sur les enjeux de l\'IA (travail, démocratie, santé, écologie, contrôle…), réparties en '+(D.planets.length-1)+' thématiques. Recherches, textes officiels, études et prises de position y sont présentés avec leurs meilleurs arguments et leurs critiques.'}));
-  const ns=D.sources.length, asia=D.sources.filter(s=>s.rg==='Asie').length;
-  panel.append(el('div',{class:'intro-grid'}, el('div',{class:'stat'},el('b',{text:ns}),el('span',{text:'sources'})), el('div',{class:'stat'},el('b',{text:nVer}),el('span',{text:'citations vérifiées'})), el('div',{class:'stat'},el('b',{text:asia}),el('span',{text:'voix asiatiques'}))));
+  // pays des auteurs et des locuteurs, hors codes collectifs (UE, international)
+  const ns=D.sources.length, nCountries=new Set(D.sources.flatMap(s=>[...s.a,...s.q.map(q=>q.speaker)]).map(id=>PE[id]&&PE[id].c).filter(c=>c&&c!=='EU'&&c!=='INT')).size;
+  panel.append(el('div',{class:'intro-grid'}, el('div',{class:'stat'},el('b',{text:ns}),el('span',{text:'sources venant de '+nCountries+' pays'})), el('div',{class:'stat'},el('b',{text:nVer}),el('span',{text:'citations vérifiées'}))));
   const pu=PUB[state.public];
   panel.append(el('p',{class:'hint'}, el('b',{text:'Public : '+pu.label+'. '}), pu.desc+' Les questions et les parcours s\'adaptent au public choisi en haut de page.'));
   const tabs=el('div',{class:'tabs',role:'tablist','aria-label':'Accueil'});
