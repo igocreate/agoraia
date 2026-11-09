@@ -823,7 +823,7 @@
         {
           "planet": "devs",
           "title": "Plus rapides, vraiment ?",
-          "text": "En 2025, l'essai randomisé de METR trouvait des développeurs open source expérimentés 19 % plus lents avec l'IA, alors qu'ils se croyaient 20 % plus rapides. Début 2026, METR les juge probablement accélérés, sans pouvoir dire de combien. Sur plus de 500 000 développeurs GitHub, une étude du NBER trouve que les agents font exploser les commits, mais que les versions publiées n'augmentent que de 30 %. En entreprise, une étude de Harvard portant sur 718 sociétés observe le même décalage : avec les agents, 30 % de code en plus, mais pas de hausse mesurable du travail livré, car la revue devient le goulot (délai des pull requests allongé de 49 %). Le rapport DORA voit l'IA comme un amplificateur, associé à moins de stabilité des livraisons.",
+          "text": "En 2025, l'essai randomisé de METR trouvait des développeurs open source expérimentés 19 % plus lents avec l'IA, alors qu'ils se croyaient 20 % plus rapides. Début 2026, METR les juge probablement accélérés, sans pouvoir dire de combien. Sur plus de 500 000 développeurs GitHub, une étude du NBER trouve que les agents font exploser les commits, mais que les versions publiées n'augmentent que de 30 %. En entreprise, une étude de Harvard portant sur 655 sociétés observe le même décalage : avec les agents, 44 % de lignes de code en plus, mais seulement 14 % de tickets résolus en plus, car la revue devient le goulot (délai d'approbation des pull requests allongé de 56 %). Le rapport DORA voit l'IA comme un amplificateur, associé à moins de stabilité des livraisons.",
           "quotes": [
             [
               "src-metr-dev-productivity",

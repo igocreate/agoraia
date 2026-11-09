@@ -161,6 +161,8 @@ blockquote .ctx{font-family:var(--serif);font-size:12.5px;color:var(--muted);mar
 .person b{font-family:var(--display);font-weight:600;font-size:13.5px}
 .person span{font-size:13px;color:var(--ink-2)}
 .link-out{display:inline-flex;gap:6px;align-items:center;font-family:var(--display);font-size:13px;margin-top:6px}
+.links-out{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:center}
+.links-out .badge{margin-top:6px}
 details{margin-top:14px;font-size:13.5px;color:var(--ink-2)}
 summary{cursor:pointer;font-family:var(--display);font-size:12.5px;color:var(--muted)}
 .foot{margin-top:14px;font-family:var(--display);font-size:12.5px;color:var(--muted)}

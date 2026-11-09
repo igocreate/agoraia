@@ -98,7 +98,8 @@ function goHome(tab){ if(tab) homeTab=tab; if(mobile() && tourI>=0) endTour(); s
 function openList(back){ if(!mobile()){ setView('vlist'); return; } if(!back) hist.push(here()); stage.classList.add('m-list'); if(tourI>=0) tourEl.classList.add('away'); }
 $('#lvBack').onclick=goBack;
 function panelHead(){ return el('div',{class:'phead'}, hist.length?el('button',{class:'btn back',onclick:goBack},'← Retour'):null, el('button',{class:'close','aria-label':'Revenir à l\'accueil',title:'Accueil',onclick:()=>goHome()},'×')); }
-function srcItem(s){ return el('li',{},el('button',{onclick:()=>select({type:'source',id:s.id})}, el('span',{class:'t',text:(s.k==='outil'?'Outil · ':'')+s.t}), el('span',{class:'m',text:`${authorsOf(s)} · ${fmtDate(s.d)} · ${s.rg}`}))); }
+const ACCESS={payant:['accès payant','Le site de la source réserve ce texte à ses abonnés.'], limite:['accès limité','Lecture gratuite limitée : compteur d\'articles ou quota de téléchargements.']};
+function srcItem(s){ return el('li',{},el('button',{onclick:()=>select({type:'source',id:s.id})}, el('span',{class:'t',text:(s.k==='outil'?'Outil · ':'')+s.t}), el('span',{class:'m',text:`${authorsOf(s)} · ${fmtDate(s.d)} · ${s.rg}${s.ac&&!s.ou?' · '+ACCESS[s.ac][0]:''}`}))); }
 function quoteBlock(q,src){
   const sp=PE[q.speaker]; const bq=el('blockquote',{});
   bq.append(el('p',{class:'qt',lang:(src&&src.l)||null,text:`« ${q.text} »`}));
@@ -145,8 +146,15 @@ function showHome(){
     pane.append(el('h4',{text:'Parcours guidés'}));
     pane.append(el('ul',{class:'list'}, ...visibleTours().map(t=>el('li',{},el('button',{onclick:()=>startTour(t.id,0)}, el('span',{class:'t',text:'▸ '+t.title}), el('span',{class:'m',text:`Parcours guidé · ${t.steps.length} étapes`}))))));
   } else {
+    pane.append(el('h4',{text:'D\'où vient cet outil'}));
+    pane.append(el('p',{text:'Agora IA est né dans un groupe d\'échange sur l\'IA : des personnes issues de l\'ingénierie logicielle qui se retrouvent tous les deux mois environ, depuis 2025, pour présenter des sujets, souvent liés au développement, et suivre les avancées de l\'IA. Pour la séance de début novembre 2026, le groupe a voulu sortir du code et débattre, de façon informelle, des enjeux plus larges : éthique, travail, jeunesse, recherche, écologie, politique.'}),
+      el('p',{text:'Il fallait une introduction qui présente les grands courants de pensée sans en privilégier aucun, et un support pour circuler entre les thématiques pendant la discussion. D\'où l\'idée d\'une carte en trois dimensions, un « univers » de thématiques et de sources. L\'outil a ensuite été ouvert à d\'autres publics : citoyens, scolaires, entreprises, élus.'}));
+    pane.append(el('h4',{text:'Conçu avec Claude'}));
+    pane.append(el('p',{text:'Le projet est parti d\'une demande à Claude, l\'assistant d\'Anthropic : explorer le sujet, chercher des sources sérieuses (chercheurs, philosophes, institutions), proposer un plan d\'action, puis produire un site navigable avec des citations évocatrices et sourcées. Claude a recherché et lu les sources, proposé le découpage en thématiques et en courants, rédigé les fiches et écrit le code. Le corpus, les parcours et le site se sont construits ensuite par itérations, en conversation.'}),
+      el('p',{text:'Les décisions restent humaines : le choix des thématiques et de la question centrale, les règles éditoriales (sources récentes et primaires, citations au mot près, statut de vérification affiché), l\'arbitrage des cas douteux et la relecture des parcours. Quand un site bloque les outils automatiques, on ne le contourne pas : on cherche une autre source primaire, ou la page est relue à la main.'}),
+      el('p',{text:'Anthropic, qui développe Claude, figure aussi parmi les acteurs de la carte. Ce biais possible appelle la vigilance : le code et les données sont publics, et toute erreur ou omission peut être signalée ci-dessous.'}));
     pane.append(el('h4',{text:'Méthode et limites'}));
-    pane.append(el('p',{text:'Corpus constitué le 25 septembre 2026 : uniquement des sources publiées depuis septembre 2023. Chaque citation marquée « vérifiée » a été confirmée mot pour mot par deux lectures indépendantes de la page source, puis un échantillon a été contre-vérifié. Les citations « à vérifier » viennent de pages que nos outils ne pouvaient pas lire directement ; les citations « transcription vidéo » sont tirées de transcriptions automatiques, nettoyées de leurs coquilles. Le classement des sources en courants et le positionnement des courants sont des choix éditoriaux, discutables par nature. Corpus produit avec Claude (Anthropic), acteur cité dans la carte.'}));
+    pane.append(el('p',{text:'Corpus constitué le 25 septembre 2026 : uniquement des sources publiées depuis septembre 2023. Chaque fiche renvoie à la source primaire (l\'étude, le rapport, l\'entretien d\'origine) plutôt qu\'à un article qui la commente ; beaucoup sont donc en anglais, et leurs citations sont traduites en français. Chaque citation marquée « vérifiée » a été confirmée mot pour mot par deux lectures indépendantes de la page source, puis un échantillon a été contre-vérifié. Les citations « à vérifier » viennent de pages que nos outils ne pouvaient pas lire directement ; les citations « transcription vidéo » sont tirées de transcriptions automatiques, nettoyées de leurs coquilles. Le classement des sources en courants et le positionnement des courants sont des choix éditoriaux, discutables par nature.'}));
     pane.append(el('h4',{text:'Contribuer'}));
     pane.append(el('p',{text:'Une source manque, une citation est inexacte ? Chaque proposition passe par un formulaire GitHub pré-rempli, relu avant publication.'}));
     pane.append(el('div',{class:'tags'}, el('button',{class:'btn',onclick:()=>openContrib('source')},'Proposer une source'), el('button',{class:'btn',onclick:()=>openContrib('erreur')},'Signaler une erreur'), el('a',{class:'btn',href:REPO,target:'_blank',rel:'noopener'},'Code et données sur GitHub ↗')));
@@ -238,7 +246,10 @@ function showSource(id){
   if(s.q.length){ panel.append(el('h4',{text:s.q.length>1?'Citations':'Citation'})); s.q.forEach(q=>panel.append(quoteBlock(q,s))); }
   if(s.kf.length){ panel.append(el('h4',{text:s.k==='outil'?'Ce qu\'il mesure, et ce qu\'il ne mesure pas':'Faits clés'})); const ul=el('ul',{class:'facts'}); s.kf.forEach(f=>ul.append(el('li',{text:f}))); panel.append(ul); }
   const rl=relList([s.id, ...s.a]); if(rl){ panel.append(el('h4',{text:'Dialogue avec d\'autres voix'})); panel.append(rl); }
-  if(s.u) panel.append(el('a',{class:'link-out',href:s.u,target:'_blank',rel:'noopener'},s.k==='outil'?'Ouvrir l\'outil ↗':'Lire la source ↗'));
+  if(s.u){ const lk=el('div',{class:'links-out'}, el('a',{class:'link-out',href:s.u,target:'_blank',rel:'noopener'},s.k==='outil'?'Ouvrir l\'outil ↗':'Lire la source ↗'));
+    if(s.ac) lk.append(el('span',{class:'badge warn',title:ACCESS[s.ac][1],text:ACCESS[s.ac][0]}));
+    if(s.ou) lk.append(el('a',{class:'link-out',href:s.ou,target:'_blank',rel:'noopener'},'Version en libre accès ↗'));
+    panel.append(lk); }
   if(s.n) panel.append(el('details',{},el('summary',{text:'Notes et limites'}),el('p',{text:s.n})));
   panel.append(el('p',{class:'foot'}, el('button',{class:'linklike',onclick:()=>openContrib('erreur',{element:`${s.id} — ${s.t}`})},'Signaler une erreur sur cette source')));
 }

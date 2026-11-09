@@ -86,6 +86,8 @@ QUOTE_STATUS = {"verifiee", "a_verifier", "transcription"}
 # « fiction » s'affiche comme un miroir, pas comme une preuve ; « outil » a sa propre carte et un octaèdre en 3D.
 SOURCE_KINDS = {"article", "rapport", "étude", "déclaration", "entretien", "essai", "loi", "discours",
                 "livre", "vidéo", "podcast", "fiction", "outil"}
+# Accès à l'URL principale ; absent = libre. « limite » : compteur d'articles, quota de téléchargements.
+SOURCE_ACCESS = {"payant", "limite"}
 
 
 def load(path: Path):
@@ -191,6 +193,13 @@ def validate(corpus, layout, tours, thread, publics, stops, r: Report) -> Report
             r.warn(f"{sid}: type « {s.get('kind')} » non répertorié dans SOURCE_KINDS")
         if not str(s.get("url", "")).startswith("http"):
             r.err(f"{sid}: URL manquante")
+        if "access" in s and s["access"] not in SOURCE_ACCESS:
+            r.err(f"{sid}: accès invalide « {s['access']} » (attendu : {', '.join(sorted(SOURCE_ACCESS))})")
+        if "open_url" in s:
+            if not str(s["open_url"]).startswith("https://"):
+                r.err(f"{sid}: open_url doit commencer par https://")
+            if "access" not in s:
+                r.warn(f"{sid}: open_url sans access (la source principale est-elle payante ?)")
         for i, q in enumerate(s.get("quotes", [])):
             if q.get("status") not in QUOTE_STATUS:
                 r.err(f"{sid}#{i}: statut de citation invalide « {q.get('status')} »")
@@ -309,6 +318,10 @@ def compact(corpus, layout, tours, thread, publics, stops, built: str) -> dict:
             "rel": s.get("reliability", ""), "n": s.get("notes", ""),
             "rg": region(s.get("authors", []), people), "seed": seed(s["id"]),
         }
+        if s.get("access"):
+            o["ac"] = s["access"]
+        if s.get("open_url"):
+            o["ou"] = s["open_url"]
         sources.append(o)
 
     planets = []

@@ -578,6 +578,7 @@
    "publisher": "Arrêt sur images (chronique « Clic gauche »)",
    "date": "2026-09-16",
    "url": "https://www.arretsurimages.net/chroniques/clic-gauche/lia-va-tous-nous-tuer-anatomie-dune-faillite-journalistique",
+   "access": "payant",
    "lang": "fr",
    "kind": "article",
    "planets": [
@@ -1004,6 +1005,7 @@
    "publisher": "MIT Technology Review",
    "date": "2026-01-22",
    "url": "https://www.technologyreview.com/2026/01/22/1131661/yann-lecuns-new-venture-ami-labs/",
+   "access": "limite",
    "lang": "en",
    "kind": "entretien",
    "planets": [
@@ -1694,7 +1696,7 @@
      "checked_at": "https://www.ladn.eu/tech-a-suivre/asma-mhalla-sortir-sideration-big-tech/"
     },
     {
-     "text": "Il faut que chaque individu ait le droit de dire non : non je ne suis pas réductible à mes datas, non je ne suis pas réductible à un algorithme.",
+     "text": "Il faudrait que chaque individu ait le droit de dire non : non je ne suis pas réductible à mes datas, non je ne suis pas réductible à un algorithme.",
      "speaker": "p-mhalla",
      "status": "verifiee",
      "checked_at": "https://www.ladn.eu/tech-a-suivre/asma-mhalla-sortir-sideration-big-tech/"
@@ -1818,6 +1820,8 @@
    "publisher": "NBER (Working Paper 32487)",
    "date": "2024-05",
    "url": "https://www.nber.org/papers/w32487",
+   "access": "limite",
+   "open_url": "https://economics.mit.edu/sites/default/files/2024-05/The%20Simple%20Macroeconomics%20of%20AI.pdf",
    "lang": "en",
    "kind": "étude",
    "planets": [
@@ -1848,7 +1852,7 @@
     }
    ],
    "reliability": "primaire",
-   "notes": "Abstract NBER daté du 27/05/2024 selon la page NBER ; publication ultérieure dans Economic Policy à vérifier. Acemoglu (Nobel 2024 avec Johnson et Robinson) a développé la thèse plus large dans « Power and Progress » (avec Simon Johnson, 2023) : le progrès technique ne profite aux travailleurs que si le rapport de force l'impose. Estimations antérieures à l'essor des agents (2025-2026).",
+   "notes": "Abstract NBER daté du 27/05/2024 selon la page NBER ; publication ultérieure dans Economic Policy à vérifier. Acemoglu (Nobel 2024 avec Johnson et Robinson) a développé la thèse plus large dans « Power and Progress » (avec Simon Johnson, 2023) : le progrès technique ne profite aux travailleurs que si le rapport de force l'impose. Estimations antérieures à l'essor des agents (2025-2026). Version libre : PDF du 12 mai 2024 sur le site du département d'économie du MIT, même texte que la version NBER de mai 2024.",
    "lot": "C"
   },
   {
@@ -2021,14 +2025,14 @@
      "checked_at": "https://legrandcontinent.eu/fr/2025/10/21/ia-face-au-nouveau-taylorisme-une-strategie-du-renouveau-luddite-conversation-avec-juan-sebastian-carbonell/"
     },
     {
-     "text": "une technologie pensée comme un outil de domination ne peut pas être réemployée à des fins émancipatrices.",
+     "text": "une technologie pensée comme un outil de domination ne peut pas être réemployée à des fins émancipatrices",
      "speaker": "p-carbonell",
      "status": "verifiee",
      "checked_at": "https://legrandcontinent.eu/fr/2025/10/21/ia-face-au-nouveau-taylorisme-une-strategie-du-renouveau-luddite-conversation-avec-juan-sebastian-carbonell/"
     }
    ],
    "reliability": "primaire",
-   "notes": "Entretien mené par Ulysse Lojkine. Le titre affiché dans les résultats de recherche est « Juan Sebastián Carbonell : face à l'IA, un renouveau luddite » ; titre de la page à confirmer. Affiliation universitaire de l'auteur non vérifiée.",
+   "notes": "Entretien mené par Ulysse Lojkine. Le titre affiché dans les résultats de recherche est « Juan Sebastián Carbonell : face à l'IA, un renouveau luddite » ; titre de la page à confirmer. Affiliation universitaire de l'auteur non vérifiée. Citation 3 : début de phrase ; la suite reconnaît que cette position peut passer pour conservatrice.",
    "lot": "C"
   },
   {
@@ -2141,6 +2145,8 @@
    "publisher": "NBER (Working Paper 35275)",
    "date": "2026-05",
    "url": "https://www.nber.org/papers/w35275",
+   "access": "limite",
+   "open_url": "https://www.mertdemirer.com/Papers/Demirer_Writing_vs_shipping_code.pdf",
    "lang": "en",
    "kind": "étude",
    "planets": [
@@ -2174,7 +2180,7 @@
     }
    ],
    "reliability": "primaire",
-   "notes": "Étude observationnelle (event study apparié : chaque adoptant est comparé à un utilisateur aussi actif, la même semaine un an plus tôt), pas un essai randomisé. Working paper non relu par les pairs (mai 2026, révisé en septembre 2026). Mert Demirer et Leon Musolff sont consultants rémunérés de Microsoft, qui fournit la télémétrie (GitHub Copilot, Claude, Codex). Porte sur l'open source ; les auteurs citent Chen et Stratton (2026) pour un résultat voisin en entreprise. Citations tirées du résumé, attribuées au premier auteur.",
+   "notes": "Étude observationnelle (event study apparié : chaque adoptant est comparé à un utilisateur aussi actif, la même semaine un an plus tôt), pas un essai randomisé. Working paper non relu par les pairs (mai 2026, révisé en septembre 2026). Mert Demirer et Leon Musolff sont consultants rémunérés de Microsoft, qui fournit la télémétrie (GitHub Copilot, Claude, Codex). Porte sur l'open source ; les auteurs citent Chen et Stratton (2026) pour un résultat voisin en entreprise. Citations tirées du résumé, attribuées au premier auteur. Version libre : PDF sur le site de Mert Demirer, même texte que la révision NBER de septembre 2026.",
    "branch": "mesure"
   },
   {
@@ -2185,7 +2191,7 @@
     "p-stratton"
    ],
    "publisher": "Harvard University (job market paper)",
-   "date": "2026-08-04",
+   "date": "2026-11-08",
    "url": "https://fion.ac/jellyfish.pdf",
    "lang": "en",
    "kind": "étude",
@@ -2196,25 +2202,26 @@
     "economistes",
     "techno-normale"
    ],
-   "thesis": "À partir des données de la plateforme d'analyse Jellyfish (300 millions d'événements de travail dans 718 entreprises : GitHub, Jira, agendas), l'étude compare les entreprises selon la date à laquelle elles adoptent assistants et agents de code. Les agents augmentent nettement la production de code, mais pas le travail effectivement livré ni l'emploi. Les auteurs l'expliquent par un goulot dans la revue de code : plus de code à relire, de moins bonne qualité, qui ralentit l'ensemble de la chaîne.",
+   "thesis": "À partir des données de la plateforme d'analyse Jellyfish (445 millions d'événements de travail de 720 542 salariés dans 655 entreprises : GitHub, Jira, agendas), l'étude compare les entreprises selon la date à laquelle elles adoptent assistants et agents de code. L'IA augmente nettement la production de code, beaucoup moins le logiciel livré, et sans effet détectable sur l'emploi. Les auteurs l'expliquent par un goulot dans la revue de code : plus de code à relire, de moins bonne qualité, qui ralentit l'ensemble de la chaîne.",
    "key_facts": [
-    "Avec les agents : +30 % de lignes de code, +20 % de commits, +23 % de pull requests. Avec les assistants, les effets sont faibles et seul celui sur les commits est significatif.",
-    "Aucun effet significatif sur les tickets et les epics Jira résolus : l'estimation exclut, pour les agents, une hausse du travail livré supérieure à 12 %.",
-    "Le délai de revue d'une pull request augmente de 49 %, la part des pull requests à reprendre double presque, les commentaires par pull request augmentent de 35 %, la part des salariés qui font de la revue de 14 %.",
-    "Les ingénieurs ne passent que 30 à 40 % de leur temps à écrire du code. Le goulot persiste après l'adoption d'outils d'IA pour la revue.",
-    "Pas d'effet mesurable sur l'emploi : pour les agents, une baisse de l'emploi total supérieure à 2,9 % est exclue."
+    "Douze mois après l'adoption, les assistants augmentent les lignes de code de 30,4 %, les commits de 16,8 % et les pull requests de 20,9 % ; les agents y ajoutent encore 44,0 %, 36,0 % et 35,7 %.",
+    "Logiciel livré (tickets et epics Jira résolus) : effet quasi nul avec les assistants (−1,5 % et +3,4 %), +13,7 % et +18,0 % avec les agents, l'effet sur les tickets étant tout juste significatif.",
+    "Après l'adoption des agents, le délai entre la soumission d'une pull request et son approbation augmente de 56,1 % ; le nombre de commentaires par modification augmente de 38,6 %.",
+    "Les ingénieurs ne passent que 30 à 40 % de leur temps à écrire du code. 79,1 % des entreprises ont adopté des outils d'IA pour la revue, mais les revues restent très majoritairement humaines et le goulot persiste.",
+    "Pas d'effet significatif mesuré sur l'emploi, avec des estimations imprécises : pour les agents, −2,6 %, une baisse supérieure à 15,6 % étant exclue.",
+    "Simulation à 2031 : si la productivité de la revue ne progresse pas, la production augmente de 57,8 % et l'emploi baisse de 10,3 % ; si elle suit celle du code, +341,4 % de production et −76,2 % d'emploi."
    ],
    "quotes": [
     {
-     "text": "For AI agents, this incomplete pass-through reflects a bottleneck from code review: review times increase, a larger share of code updates require revisions, and reviews involve more comments.",
-     "fr": "Pour les agents d'IA, cette transmission incomplète des gains s'explique par un goulot d'étranglement dans la revue de code : les délais de revue s'allongent, une plus grande part des modifications de code doit être reprise, et les revues comportent davantage de commentaires.",
+     "text": "Code review becomes the bottleneck. Code waits longer to reach a reviewer, spends longer in active review, and receives more requested changes.",
+     "fr": "La revue de code devient le goulot d'étranglement. Le code attend plus longtemps avant d'arriver à un relecteur, reste plus longtemps en revue active et fait l'objet de davantage de demandes de modification.",
      "speaker": "p-chen-fiona",
      "status": "verifiee",
      "checked_at": "https://fion.ac/jellyfish.pdf"
     }
    ],
    "reliability": "primaire",
-   "notes": "Étude observationnelle (doubles différences échelonnées), pas un essai randomisé. Document de travail non relu par les pairs (première version le 7 janvier 2026, version citée du 4 août 2026), hébergé sur le site de Fiona Chen. Données de Jellyfish, entreprises clientes ayant accepté l'usage pour la recherche ; Jellyfish a relu le texte uniquement pour vérifier l'absence d'informations confidentielles. Financements : Stripe Economics of AI Fellowship, Schmidt Sciences, Harvard Kennedy School. Les données s'arrêtent en mars 2026 et ne couvrent donc pas les modèles sortis ensuite. Certains comptes rendus de presse donnent +53 % de commentaires par pull request ; le papier indique +35 %. Citation tirée du résumé, attribuée à la première autrice.",
+   "notes": "Étude observationnelle (doubles différences échelonnées), pas un essai randomisé. Document de travail non relu par les pairs (première version le 7 janvier 2026, version citée du 8 novembre 2026), hébergé sur le site de Fiona Chen. Données de Jellyfish, entreprises clientes ayant accepté l'usage pour la recherche ; Jellyfish a relu le texte uniquement pour vérifier l'absence d'informations confidentielles. Financements : Stripe Economics of AI Fellowship, Schmidt Sciences, Harvard Kennedy School. Les données couvrent janvier 2021 à août 2026. Certains comptes rendus de presse donnent +53 % de commentaires par pull request ; le papier indique +38,6 % de commentaires par modification de code. Citation tirée du résumé, attribuée à la première autrice. Le PDF en ligne est remplacé à chaque révision : la version du 4 août 2026, utilisée auparavant, portait sur 300 millions d'événements dans 718 entreprises et donnait un délai de revue de +49 % et +35 % de commentaires ; elle n'est plus disponible.",
    "branch": "mesure"
   },
   {
@@ -3537,7 +3544,7 @@
      "context": "Texte de présentation de l'éditeur, qui résume la thèse de Sadin."
     },
     {
-     "text": "Un ouragan va s'abattre sur les métiers de services et de la culture.",
+     "text": "un ouragan va s’abattre sur les métiers de services et de la culture.",
      "speaker": "p-lechappee",
      "status": "verifiee",
      "checked_at": "https://www.lechappee.org/collections/pour-en-finir-avec/le-desert-de-nous-memes",
@@ -3552,7 +3559,7 @@
     }
    ],
    "reliability": "primaire",
-   "notes": "Les citations proviennent du texte de présentation de l'éditeur (4e de couverture, non signé) : elles résument la thèse de Sadin mais ne sont pas nécessairement de sa plume. Pour une citation de l'auteur lui-même, vérifier dans le livre.",
+   "notes": "Les citations proviennent du texte de présentation de l'éditeur (4e de couverture, non signé) : elles résument la thèse de Sadin mais ne sont pas nécessairement de sa plume. Pour une citation de l'auteur lui-même, vérifier dans le livre. Citation 2 : la phrase commence par « De ce fait, ».",
    "lot": "E"
   },
   {
@@ -3876,8 +3883,8 @@
      "checked_at": "https://hub.baai.ac.cn/view/42544"
     },
     {
-     "text": "真实的 gap 是原创和模仿之差。如果这个不改变，中国永远只能是追随者。",
-     "fr": "Le véritable écart est celui qui sépare l'original de l'imitation. Si cela ne change pas, la Chine ne sera jamais qu'une suiveuse.",
+     "text": "真实的 gap 是原创和模仿之差。如果这个不改变，中国永远只能是追随者……",
+     "fr": "Le véritable écart est celui qui sépare l'original de l'imitation. Si cela ne change pas, la Chine ne sera jamais qu'une suiveuse…",
      "speaker": "p-liang-wenfeng",
      "status": "verifiee",
      "checked_at": "https://hub.baai.ac.cn/view/42544"
@@ -4273,6 +4280,8 @@
    "publisher": "South China Morning Post (Hong Kong), article de Cao Li",
    "date": "2025-09-11",
    "url": "https://www.scmp.com/business/china-business/article/3325164/ai-agents-poised-replace-humans-basic-unit-company-lee-kai-fu-says",
+   "access": "limite",
+   "open_url": "https://finance.yahoo.com/news/ai-agents-poised-replace-humans-093000261.html",
    "lang": "en",
    "kind": "article",
    "planets": [
@@ -4304,7 +4313,7 @@
     }
    ],
    "reliability": "secondaire",
-   "notes": "Propos rapportés par la presse (SCMP, propriété d'Alibaba). L'article ne cite pas Lee sur les conséquences sociales pour les salariés. La réorientation de 01.AI vers les agents d'entreprise est un élément de contexte non vérifié dans cet article. Lee avait prédit dès 2017 le remplacement de la moitié des emplois ; cette source récente est préférée.",
+   "notes": "Propos rapportés par la presse (SCMP, propriété d'Alibaba). L'article ne cite pas Lee sur les conséquences sociales pour les salariés. La réorientation de 01.AI vers les agents d'entreprise est un élément de contexte non vérifié dans cet article. Lee avait prédit dès 2017 le remplacement de la moitié des emplois ; cette source récente est préférée. Version libre : reprise de l'article du SCMP sur Yahoo Finance, même texte.",
    "lot": "F"
   },
   {
@@ -4728,6 +4737,7 @@
    "publisher": "Business Standard",
    "date": "2025-04-11",
    "url": "https://www.business-standard.com/industry/news/mass-adoption-of-ai-in-india-to-outpace-rest-of-world-nandan-nilekani-125041100918_1.html",
+   "access": "limite",
    "lang": "en",
    "kind": "article",
    "planets": [
@@ -4861,6 +4871,8 @@
    "publisher": "Nature Human Behaviour, vol. 9, n° 10, p. 2153-2168",
    "date": "2025-07-21",
    "url": "https://www.nature.com/articles/s41562-025-02259-6",
+   "access": "payant",
+   "open_url": "https://par.nsf.gov/servlets/purl/10636509",
    "lang": "en",
    "kind": "étude",
    "branch": "travailler_moins",
@@ -4886,7 +4898,7 @@
     }
    ],
    "reliability": "primaire",
-   "notes": "Les entreprises ont choisi de participer (essais coordonnés, semble-t-il, par l'association 4 Day Week Global, à vérifier) : biais de sélection possible. Les mesures de bien-être sont déclaratives. Le résumé ne donne aucun résultat sur la productivité ou le chiffre d'affaires. Juliet Schor est à la fois chercheuse et figure du mouvement pour la semaine de 4 jours.",
+   "notes": "Les entreprises ont choisi de participer (essais coordonnés, semble-t-il, par l'association 4 Day Week Global, à vérifier) : biais de sélection possible. Les mesures de bien-être sont déclaratives. Le résumé ne donne aucun résultat sur la productivité ou le chiffre d'affaires. Juliet Schor est à la fois chercheuse et figure du mouvement pour la semaine de 4 jours. Version libre : manuscrit accepté, déposé dans le dépôt public de la NSF (NSF PAR).",
    "lot": "H"
   },
   {
@@ -4987,6 +4999,8 @@
    "publisher": "Bloomberg (entretien sur Bloomberg TV)",
    "date": "2023-10-02",
    "url": "https://www.bloomberg.com/news/articles/2023-10-02/dimon-sees-ai-giving-a-3-1-2-day-workweek-to-the-next-generation",
+   "access": "payant",
+   "open_url": "https://www.wealthmanagement.com/industry/jpmorgan-s-dimon-predicts-35-day-work-week-next-generation",
    "lang": "en",
    "kind": "entretien",
    "branch": "promesse",
@@ -5003,15 +5017,15 @@
    ],
    "quotes": [
     {
-     "text": "Your children are going to live to 100 and not have cancer because of technology, and literally they'll probably be working three-and-a-half days a week.",
+     "text": "Your children are going to live to 100 and not have cancer because of technology, […] And literally they'll probably be working three-and-a-half days a week.",
      "fr": "Vos enfants vivront jusqu'à 100 ans et n'auront pas de cancer grâce à la technologie. Et ils travailleront sans doute, littéralement, trois jours et demi par semaine.",
      "speaker": "p-dimon",
      "status": "verifiee",
-     "checked_at": "https://www.bloomberg.com/news/articles/2023-10-02/dimon-sees-ai-giving-a-3-1-2-day-workweek-to-the-next-generation"
+     "checked_at": "https://www.wealthmanagement.com/industry/jpmorgan-s-dimon-predicts-35-day-work-week-next-generation"
     }
    ],
    "reliability": "secondaire",
-   "notes": "Article sous paywall, seul un extrait a été lu. Le chiffre s'écrit différemment selon les médias (« 3½ » chez CNBC, « 3 and a half » chez Fortune) ; le texte retenu est celui de Bloomberg. Selon Fortune (avril 2026), Dimon a redit sur CBS News « 30 years from now, your kids are probably working three and a half days a week ».",
+   "notes": "Article de Bloomberg payant ; texte lu dans la reprise de la dépêche (Daniel Taub et Hannah Levitt) sur WealthManagement.com. Les deux phrases sont séparées dans l'article par l'incise « Dimon said in an interview on Bloomberg TV Monday ». Le chiffre s'écrit différemment selon les médias (« 3½ » chez CNBC, « 3 and a half » chez Fortune) ; le texte retenu est celui de Bloomberg. Selon Fortune (avril 2026), Dimon a redit sur CBS News « 30 years from now, your kids are probably working three and a half days a week ».",
    "lot": "H"
   },
   {
@@ -5022,7 +5036,9 @@
    ],
    "publisher": "Fortune",
    "date": "2025-09-15",
-   "url": "https://fortune.com/2025/09/15/zoom-ceo-eric-yuan-three-day-workweek-ai-automation-human-jobs-replaced-future-of-work",
+   "url": "https://fortune.com/article/zoom-ceo-eric-yuan-agrees-with-bill-gates-jensen-huang-jamie-dimon-3-day-workweek-coming-soon/",
+   "access": "payant",
+   "open_url": "https://finance.yahoo.com/news/zoom-ceo-agrees-bill-gates-145801987.html",
    "lang": "en",
    "kind": "article",
    "branch": "promesse",
@@ -5043,7 +5059,7 @@
      "fr": "Toutes les entreprises passeront à trois ou quatre jours par semaine. Je pense qu'au final cela libérera le temps de chacun.",
      "speaker": "p-yuan-eric",
      "status": "verifiee",
-     "checked_at": "https://fortune.com/2025/09/15/zoom-ceo-eric-yuan-three-day-workweek-ai-automation-human-jobs-replaced-future-of-work"
+     "checked_at": "https://finance.yahoo.com/news/zoom-ceo-agrees-bill-gates-145801987.html"
     },
     {
      "text": "If you eventually get a society where you only have to work three days a week, that's probably OK",
@@ -5054,7 +5070,7 @@
     }
    ],
    "reliability": "secondaire",
-   "notes": "Source de seconde main, sans verbatim original. Fortune (mars 2025 et septembre 2025) attribue à Gates la phrase « Should we just work like 2 or 3 days a week? » au Tonight Show de Jimmy Fallon, mais une phrase voisine (« the purpose of life is not just to do jobs ») venait déjà du podcast de Trevor Noah en 2023 : lieu et date de la formule « 2 jours » à vérifier. La citation de Yuan « why do we need to work for five days a week? » est écrite « AI » ou « A.I. » selon les pages, donc non retenue. Les propos de Jensen Huang (CNN) ne sont pas vérifiés à la source.",
+   "notes": "Source de seconde main, sans verbatim original. Fortune (mars 2025 et septembre 2025) attribue à Gates la phrase « Should we just work like 2 or 3 days a week? » au Tonight Show de Jimmy Fallon, mais une phrase voisine (« the purpose of life is not just to do jobs ») venait déjà du podcast de Trevor Noah en 2023 : lieu et date de la formule « 2 jours » à vérifier. La citation de Yuan « why do we need to work for five days a week? » est écrite « AI » ou « A.I. » selon les pages, donc non retenue. Les propos de Jensen Huang (CNN) ne sont pas vérifiés à la source. Version libre : reprise de l'article de Fortune sur Yahoo Finance, même texte.",
    "lot": "H"
   },
   {
@@ -5853,6 +5869,8 @@
    "publisher": "NBER (Working Paper 33777) / Université de Chicago, Becker Friedman Institute",
    "date": "2025-05",
    "url": "https://www.nber.org/papers/w33777",
+   "access": "limite",
+   "open_url": "https://www.rfberlin.com/wp-content/uploads/2026/03/26078.pdf",
    "lang": "en",
    "kind": "étude",
    "branch": "mesure",
@@ -5875,7 +5893,7 @@
      "fr": "Les chatbots d'IA n'ont eu aucun effet significatif sur les revenus ou les heures déclarées, quel que soit le métier, les intervalles de confiance excluant des effets supérieurs à 1 %.",
      "speaker": "p-humlum",
      "status": "verifiee",
-     "checked_at": "https://www.nber.org/system/files/working_papers/w33777/revisions/w33777.rev0.pdf"
+     "checked_at": "https://bfi.uchicago.edu/wp-content/uploads/2025/04/BFI_WP_2025-56-3.pdf"
     },
     {
      "text": "Technological change reshapes work well before it surfaces in earnings or hours.",
@@ -5886,7 +5904,7 @@
     }
    ],
    "reliability": "primaire",
-   "notes": "Document de travail non publié dans une revue à ce stade. Deux versions : la première (mai 2025) porte le titre retenu ici ; la page NBER affiche désormais la révision de mars 2026 sous un nouveau titre, avec un résumé reformulé. Citer la version utilisée. Données danoises (marché du travail très régulé, conventions collectives) : la transposition à la France est à discuter. Heures « déclarées » dans les registres, pas le temps effectivement travaillé.",
+   "notes": "Document de travail non publié dans une revue à ce stade. Deux versions : la première (mai 2025) porte le titre retenu ici ; la page NBER affiche désormais la révision de mars 2026 sous un nouveau titre, avec un résumé reformulé. Citer la version utilisée. Données danoises (marché du travail très régulé, conventions collectives) : la transposition à la France est à discuter. Heures « déclarées » dans les registres, pas le temps effectivement travaillé. Versions libres : la révision de mars 2026 (RFBerlin, Discussion Paper 078/26, lien « version libre », citation 2) et la version de mai 2025 (BFI, Université de Chicago, WP 2025-56, citation 1).",
    "lot": "K"
   },
   {
@@ -5942,6 +5960,7 @@
    "publisher": "Harvard Business Review",
    "date": "2026-02-09",
    "url": "https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it",
+   "access": "limite",
    "lang": "en",
    "kind": "étude",
    "branch": "produire_plus",
@@ -6732,6 +6751,8 @@
    "publisher": "Fortune",
    "date": "2025-08-26",
    "url": "https://www.fortune.com/2025/08/26/openai-president-greg-brockman-andreessen-horowitz-super-pac-ai-pro-innovation",
+   "access": "payant",
+   "open_url": "https://finance.yahoo.com/news/openai-president-andreessen-horowitz-helping-170043048.html",
    "lang": "en",
    "kind": "article",
    "planets": [
@@ -6764,7 +6785,7 @@
     }
    ],
    "reliability": "secondaire",
-   "notes": "Les deux citations viennent d'une déclaration conjointe de Josh Vlasto et Zac Moffatt au Wall Street Journal (paywall), reprise par Fortune. Troisième fait tiré de Transformer (https://www.transformernews.ai/p/alex-bores-defeat-micah-lasher-ai-leading-the-future-public-first), média proche des milieux de la sûreté de l'IA : résultat à 87 % des votes, à confirmer sur les résultats officiels. Le rattachement du RAISE Act à Bores est un fait public mais n'a pas été revérifié ici. Wikipédia (article « Leading the Future ») indique plus de 140 M$ levés en 2025 et de nouveaux dons en 2026 (50 M$ de Marc Andreessen et Ben Horowitz, 25 M$ de Greg et Anna Brockman) : chiffres à vérifier sur les déclarations FEC. Nuance à garder pour le débat : dans cette primaire, le camp pro-régulation a dépensé davantage que l'industrie, et a perdu ; l'argent de la tech n'est pas le seul facteur. Non traité faute de vérification : le super PAC californien de Meta (2025).",
+   "notes": "Les deux citations viennent d'une déclaration conjointe de Josh Vlasto et Zac Moffatt au Wall Street Journal (paywall), reprise par Fortune. Troisième fait tiré de Transformer (https://www.transformernews.ai/p/alex-bores-defeat-micah-lasher-ai-leading-the-future-public-first), média proche des milieux de la sûreté de l'IA : résultat à 87 % des votes, à confirmer sur les résultats officiels. Le rattachement du RAISE Act à Bores est un fait public mais n'a pas été revérifié ici. Wikipédia (article « Leading the Future ») indique plus de 140 M$ levés en 2025 et de nouveaux dons en 2026 (50 M$ de Marc Andreessen et Ben Horowitz, 25 M$ de Greg et Anna Brockman) : chiffres à vérifier sur les déclarations FEC. Nuance à garder pour le débat : dans cette primaire, le camp pro-régulation a dépensé davantage que l'industrie, et a perdu ; l'argent de la tech n'est pas le seul facteur. Non traité faute de vérification : le super PAC californien de Meta (2025). Version libre : reprise de l'article de Fortune sur Yahoo Finance, même texte.",
    "lot": "M"
   },
   {
@@ -6859,6 +6880,7 @@
    "publisher": "Gallimard (collection Blanche)",
    "date": "2026-10-01",
    "url": "https://www.livreshebdo.fr/article/giuliano-da-empoli-le-fondateur-gallimard",
+   "access": "payant",
    "lang": "fr",
    "kind": "fiction",
    "planets": [
@@ -6868,14 +6890,14 @@
    "currents": [
     "ethique-critique"
    ],
-   "thesis": "Roman : G., conseiller politique, est recruté par Alexander Zimmer, fondateur de Panoptik, entreprise de surveillance fondée sur l'IA. Selon la critique de Livres Hebdo, le livre se lit à la fois comme une fiction et comme un essai sur la façon dont la technologie concentre le pouvoir plutôt que de le distribuer. En entretien, l'auteur décrit des fondateurs qui voient loin, veulent vivre pour toujours, dirigent des entreprises plus puissantes que les États et tiennent les dirigeants politiques pour des acteurs de passage.",
+   "thesis": "Roman : G., conseiller politique, est recruté par Alexander Zimmer, fondateur de Panoptik, une société de surveillance tentaculaire. Selon la critique de Livres Hebdo, le livre se lit à la fois comme une fiction et comme un essai sur la façon dont la technologie concentre le pouvoir plutôt que de le distribuer. En entretien, l'auteur décrit des fondateurs qui voient loin, veulent vivre pour toujours, dirigent des entreprises plus puissantes que les États et tiennent les dirigeants politiques pour des acteurs de passage.",
    "key_facts": [
     "Parution le 1er octobre 2026 chez Gallimard (288 pages, 21,50 €), quatre ans après « Le Mage du Kremlin » (2022) et après l'essai « L'heure des prédateurs » (2025).",
     "Dans le roman, le fondateur appelle les dirigeants politiques des « mouches à fruits » (entretien de l'auteur à L'Express, septembre 2026)."
    ],
    "quotes": [
     {
-     "text": "Conseiller politique, G. est enrôlé par Alexander Zimmer, le fondateur de Panoptik, une société de surveillance qui a pour but de venir à bout des humains par l'intelligence artificielle.",
+     "text": "Conseiller politique déchu, G. est enrôlé à sa grande surprise par Alexander Zimmer, le fondateur d'une société de surveillance tentaculaire, à l'oeuvre derrière chaque pandémie, chaque guerre, chaque crise mondiale.",
      "speaker": "p-gallimard",
      "status": "verifiee",
      "checked_at": "https://www.librest.com/livres/le-fondateur-giuliano-da-empoli_0-16175583_9782073170651.html"
@@ -6906,7 +6928,7 @@
     }
    ],
    "reliability": "secondaire",
-   "notes": "Œuvre de fiction, utilisée comme miroir pour le débat et non comme preuve. Le roman n'est pas encore paru au 28 septembre 2026 : la fiche repose sur la 4e de couverture (librairie Librest), la critique de Livres Hebdo (Laëtitia Favro, 18 septembre 2026) et un entretien de l'auteur mené par Anne Rosencher (L'Express, repris par Orange Actualités ; publié le 27 septembre 2026, propos datés du 22 septembre). Les deux phrases de l'auteur sont tirées de cet entretien, pas du roman. La phrase sur les « mouches à fruits » reste à vérifier (guillemets typographiques incertains). L'Éclaireur Fnac annonce une parution au 15 octobre 2026 : incohérence à lever (Livres Hebdo et Librest donnent le 1er octobre). La phrase « Seuls les naïfs croyaient que la technologie distribue le pouvoir... » citée par Livres Hebdo n'a pas été retenue : on ne sait pas si elle vient de la 4e de couverture ou du texte du roman.",
+   "notes": "Œuvre de fiction, utilisée comme miroir pour le débat et non comme preuve. Le roman n'est pas encore paru au 28 septembre 2026 : la fiche repose sur la 4e de couverture (librairie Librest), la critique de Livres Hebdo (Laëtitia Favro, 18 septembre 2026) et un entretien de l'auteur mené par Anne Rosencher (L'Express, repris par Orange Actualités ; publié le 27 septembre 2026, propos datés du 22 septembre). Les deux phrases de l'auteur sont tirées de cet entretien, pas du roman. La phrase sur les « mouches à fruits » reste à vérifier (guillemets typographiques incertains). L'Éclaireur Fnac annonce une parution au 15 octobre 2026 : incohérence à lever (Livres Hebdo et Librest donnent le 1er octobre). La phrase « Seuls les naïfs croyaient que la technologie distribue le pouvoir... » citée par Livres Hebdo n'a pas été retenue : on ne sait pas si elle vient de la 4e de couverture ou du texte du roman. La 4e de couverture ne mentionne pas l'intelligence artificielle : le lien avec l'IA vient de la critique et de l'entretien de l'auteur.",
    "lot": "M"
   },
   {
@@ -8051,6 +8073,7 @@
    "publisher": "Le Monde (entretien par Pascal Riché)",
    "date": "2026-07-05",
    "url": "https://www.lemonde.fr/idees/article/2026/07/05/andre-gorz-a-pressenti-comment-le-capitalisme-allait-s-emparer-de-l-ia-entretien-avec-l-economiste-christophe-fourel-et-le-mathematicien-cedric-villani_6720828_3232.html",
+   "access": "payant",
    "lang": "fr",
    "kind": "entretien",
    "planets": [
@@ -8094,6 +8117,7 @@
    "publisher": "Le Monde (entretien par Pascal Riché)",
    "date": "2026-03-01",
    "url": "https://www.lemonde.fr/idees/article/2026/03/01/axelle-arquie-economiste-une-catastrophe-sociale-causee-par-l-ia-fait-partie-des-scenarios-possibles_6668758_3232.html",
+   "access": "payant",
    "lang": "fr",
    "kind": "entretien",
    "planets": [
@@ -8442,6 +8466,8 @@
    "publisher": "Science (AAAS)",
    "date": "2024-09-13",
    "url": "https://www.science.org/doi/10.1126/science.adq1814",
+   "access": "payant",
+   "open_url": "https://osf.io/xcwdn/download",
    "lang": "en",
    "kind": "étude",
    "planets": [
@@ -8473,7 +8499,7 @@
     }
    ],
    "reliability": "primaire",
-   "notes": "La page de Science n'est pas lisible par nos outils (protection anti-robots), et PubMed non plus. Les citations ont été relues mot pour mot, deux fois, dans la version auteur déposée sur OSF « by permission of the AAAS » (lien checked_at) : elles restent « à vérifier » tant qu'elles n'ont pas été confrontées à la version publiée. Échantillon américain en ligne. Citations attribuées au premier auteur par convention (texte collectif). David Rand a reçu par ailleurs des financements de Google et Meta, selon la déclaration d'intérêts de Lin et al. (Nature, 2025)."
+   "notes": "La page de Science n'est pas lisible par nos outils (protection anti-robots), et PubMed non plus. Les citations ont été relues mot pour mot, deux fois, dans la version auteur déposée sur OSF « by permission of the AAAS » (lien checked_at) : elles restent « à vérifier » tant qu'elles n'ont pas été confrontées à la version publiée. Échantillon américain en ligne. Citations attribuées au premier auteur par convention (texte collectif). David Rand a reçu par ailleurs des financements de Google et Meta, selon la déclaration d'intérêts de Lin et al. (Nature, 2025). Version libre : manuscrit accepté déposé par les auteurs sur OSF, avec l'autorisation de l'AAAS."
   },
   {
    "id": "src-hackenburg-persuasion-2025",
@@ -8592,6 +8618,8 @@
    "publisher": "Nature",
    "date": "2025-12-04",
    "url": "https://www.nature.com/articles/s41586-025-09771-9",
+   "access": "payant",
+   "open_url": "https://berinsky.mit.edu/files/2026/01/persuadingvoters_2025.pdf",
    "lang": "en",
    "kind": "étude",
    "planets": [
@@ -8622,7 +8650,7 @@
     }
    ],
    "reliability": "primaire",
-   "notes": "Citations relues dans le résumé publié sur nature.com ; le corps de l'article n'est pas en accès libre. Même groupe de recherche que Costello et al. (Rand, Pennycook) ; déclaration d'intérêts : financements de Google et Meta pour David Rand. Citations attribuées au premier auteur par convention."
+   "notes": "Citations relues dans le résumé publié sur nature.com ; le corps de l'article n'est pas en accès libre. Même groupe de recherche que Costello et al. (Rand, Pennycook) ; déclaration d'intérêts : financements de Google et Meta pour David Rand. Citations attribuées au premier auteur par convention. Version libre : PDF de l'article hébergé par le co-auteur Adam Berinsky sur son site du MIT."
   },
   {
    "id": "src-an-ia-ingerences-2025",
@@ -11554,6 +11582,8 @@
    "publisher": "National Bureau of Economic Research",
    "date": "2024-02-12",
    "url": "https://www.nber.org/papers/w32140",
+   "access": "limite",
+   "open_url": "https://www.noemamag.com/how-ai-could-help-rebuild-the-middle-class/",
    "lang": "en",
    "kind": "essai",
    "planets": [
@@ -11586,7 +11616,7 @@
     }
    ],
    "reliability": "primaire",
-   "notes": "Essai normatif, sans données nouvelles, qui porte sur l'IA en général et sur le marché du travail américain. L'auteur remercie Google, parmi d'autres financeurs (Hewlett, NOMIS, Smith Richardson). Thèse de rupture de nature entre informatique et IA, à opposer aux lectures de continuité (Narayanan et Kapoor, Farrell et al.)."
+   "notes": "Essai normatif, sans données nouvelles, qui porte sur l'IA en général et sur le marché du travail américain. L'auteur remercie Google, parmi d'autres financeurs (Hewlett, NOMIS, Smith Richardson). Thèse de rupture de nature entre informatique et IA, à opposer aux lectures de continuité (Narayanan et Kapoor, Farrell et al.). Version libre : l'essai publié par Noema (12 février 2024), pour qui le texte a été écrit ; mise en forme légèrement différente du document NBER, citations identiques."
   },
   {
    "id": "src-farrell-gopnik-cultural-technologies-2025",

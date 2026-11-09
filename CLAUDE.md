@@ -57,7 +57,7 @@ Il n'y a ni npm ni bundler. Ne pas en introduire sans en discuter.
 
 `build.py` charge le corpus et les fichiers `data/site/`, valide l'ensemble puis produit un objet compact exposé en `window.AGORA_DATA` :
 
-- Sources : `id, t (titre), a (auteurs), pub, d (date), u (url), l (langue), k (type), pl (planètes), cu (courants), th (thèse), kf (faits clés), q (citations), rel (fiabilité), n (notes), rg (région calculée), seed (md5 de l'id, pour un placement 3D stable)`.
+- Sources : `id, t (titre), a (auteurs), pub, d (date), u (url), ac (accès), ou (version libre), l (langue), k (type), pl (planètes), cu (courants), th (thèse), kf (faits clés), q (citations), rel (fiabilité), n (notes), rg (région calculée), seed (md5 de l'id, pour un placement 3D stable)`.
 - Personnes : `id, n, r, c (pays ISO-2), cu`.
 - Relations : `f, t, ty, w`. Les clés `cpos` et `rels` correspondent à `current_pos` et `relations` dans le corpus.
 - Le champ `branch` d'une source l'ajoute automatiquement à la branche du même id dans le fil Productivité.
@@ -73,7 +73,7 @@ Les erreurs bloquent le build : id inconnu, planète sans position, citation de 
 {
   "id": "src-auteur-sujet-annee",
   "title": "…", "authors": ["p-…"], "publisher": "…", "date": "2026-05-12",
-  "url": "https://…", "lang": "fr", "kind": "article",
+  "url": "https://…", "access": "payant", "open_url": "https://…", "lang": "fr", "kind": "article",
   "planets": ["travail"], "currents": ["economistes-travail"],
   "thesis": "2 à 4 phrases neutres.", "key_facts": ["…"],
   "quotes": [{ "text": "verbatim, langue originale", "fr": "traduction si besoin",
@@ -83,6 +83,7 @@ Les erreurs bloquent le build : id inconnu, planète sans position, citation de 
 ```
 
 - `kind` : article, rapport, étude, déclaration, entretien, essai, loi, discours, livre, vidéo, podcast, fiction, outil. Une `fiction` s'affiche comme un miroir, pas comme une preuve ; ses citations d'entretiens réels portent `"real": true`. Un `outil` a une carte dédiée « Outils pour agir » et un octaèdre doré en 3D.
+- `access` (facultatif, absent = libre) : `payant` (réservé aux abonnés) ou `limite` (compteur d'articles, quota de téléchargements comme NBER). Affiché en badge sur la fiche et dans les listes. `open_url` (facultatif) : version en libre accès officielle du même texte (site de l'auteur ou de son institution, dépôt public, preprint, reprise sous licence comme Yahoo Finance pour Fortune ou le SCMP), jamais une archive ni un cache. L'`url` reste la source primaire ; décrire la version libre dans `notes`.
 - `status` : `verifiee` (texte relu mot pour mot dans la source primaire), `a_verifier`, `transcription` (transcription automatique nettoyée).
 - Tout auteur ou locuteur doit exister dans `people[]` (`id` en `p-…`, `country` en ISO-2).
 - Les citations des parcours se référencent par `[id_source, index_citation]`. Insérer une citation au milieu d'une liste décale les index : ajouter en fin de liste, ou mettre à jour `tours.json`.
