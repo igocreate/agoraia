@@ -504,6 +504,177 @@
       ]
     },
     {
+      "id": "gestion",
+      "title": "De l'algorithme à l'agent : qui gère encore ?",
+      "steps": [
+        {
+          "planet": "services",
+          "title": "Avant l'IA, des algorithmes décidaient déjà",
+          "text": "Confier la gestion à des machines n'a pas commencé avec les agents. Les commissions de Parcoursup pré-classent les dossiers avec des tableurs, la Cnaf cible ses contrôles avec un modèle statistique, et Démarches simplifiées a dématérialisé des dizaines de milliers de procédures. La plateforme teste désormais l'IA, avec l'idée de remplacer à terme le formulaire par une conversation. Le comité d'éthique de Parcoursup juge que la transparence des critères de refus « tarde à venir ».",
+          "quotes": [
+            [
+              "src-cespm-parcoursup-2025",
+              0
+            ],
+            [
+              "src-localtis-demarches-simplifiees-2025",
+              0
+            ]
+          ],
+          "question": "Une décision préparée par un tableur ou une règle fixe était-elle plus juste qu'une décision préparée par une IA, ou seulement plus facile à contester ?"
+        },
+        {
+          "planet": "regulation",
+          "title": "Un humain qui valide tout ne contrôle plus rien",
+          "text": "Le droit européen exige qu'un humain garde la main. En 2023, la Cour de justice de l'UE a jugé qu'un score de crédit dont dépend, en pratique, le refus d'un prêt relève déjà de la décision automatisée. L'AI Act demande que les personnes chargées du contrôle restent conscientes du biais d'automatisation. Le Défenseur des droits en tire la conséquence : quand un agent approuve toutes les propositions de l'algorithme, son intervention devient douteuse.",
+          "quotes": [
+            [
+              "src-defenseur-algorithmes-2024",
+              1
+            ],
+            [
+              "src-ue-ai-act-article14-2024",
+              0
+            ]
+          ],
+          "question": "Si la personne qui valide n'a ni le temps ni les moyens de contredire la machine, qui est vraiment responsable de la décision ?"
+        },
+        {
+          "planet": "services",
+          "title": "De l'arbre de décision à l'IA générative : l'exemple de France Travail",
+          "text": "France Travail cible une partie de ses contrôles de recherche d'emploi avec un arbre de décision : un modèle statistique classique, pas un modèle de langage, selon ses documents internes. En 2026, l'opérateur expérimente une IA générative qui prépare l'analyse des dossiers, et sa trajectoire interne vise une systématisation des contrôles d'ici 2030. Pour La Quadrature du Net, c'est une rupture : des opérations complexes, jusqu'ici humaines, sont automatisées. France Travail répond que la décision reste humaine.",
+          "quotes": [
+            [
+              "src-quadrature-france-travail-ia-generative-2026",
+              0
+            ],
+            [
+              "src-quadrature-france-travail-profilage-2026",
+              0
+            ]
+          ],
+          "question": "Un contrôle préparé par une IA mais signé par un conseiller est-il encore un contrôle humain ?"
+        },
+        {
+          "planet": "devs",
+          "title": "Des agents à la place des écrans de saisie",
+          "text": "Les éditeurs de logiciels de gestion promettent que l'agent remplira lui-même les écrans que les salariés remplissaient. Le chinois Yonyou décrit le passage d'une ère où l'humain exécute avec l'aide de l'IA à une ère où il autorise l'IA à exécuter. Sur le terrain, c'est moins net : selon une enquête de Berkeley et de Stanford, 92,5 % des agents en production servent des humains, et la plupart exécutent au plus dix étapes avant qu'un humain intervienne.",
+          "quotes": [
+            [
+              "src-yonyou-agents-logiciel-2026",
+              0
+            ],
+            [
+              "src-pan-map-agents-production-2025",
+              0
+            ]
+          ],
+          "question": "Si l'agent remplit les écrans à ta place, que reste-t-il du métier : décider, vérifier, ou signer ?"
+        },
+        {
+          "planet": "pouvoir",
+          "title": "Faire payer un logiciel que plus personne n'ouvre",
+          "text": "Les logiciels de gestion se vendent surtout par licence, à l'utilisateur. Si des agents font le travail, qui paie ? Début 2026, selon Reuters, les valeurs du logiciel ont perdu environ 830 milliards de dollars en six séances après la sortie d'un plug-in juridique d'Anthropic. Salesforce permet déjà de basculer des licences d'utilisateurs vers du « digital labor ». Le patron du brésilien Totvs relativise : l'ERP coûte peu, ce sont les salaires de ceux qui l'utilisent que les agents visent.",
+          "quotes": [
+            [
+              "src-reuters-saas-selloff-2026",
+              0
+            ],
+            [
+              "src-totvs-herszkowicz-erp-2026",
+              0
+            ]
+          ],
+          "question": "Si un agent fait le travail de plusieurs salariés, faut-il le facturer à l'utilisateur, au travail accompli, ou taxer autrement ce gain de productivité ?"
+        },
+        {
+          "planet": "devs",
+          "title": "Quand l'agent devient le client : que reste-t-il à construire ?",
+          "text": "Une grande partie de l'industrie du logiciel fabrique des interfaces pour des humains : écrans de saisie, paramétrage, tableaux de bord, circuits de validation. Pour Satya Nadella, les applications métier pourraient s'effacer derrière les agents. Si l'utilisateur devient un agent, c'est une partie de ce qu'on code qui perd sa raison d'être. Hypothèse à débattre : l'interface ne disparaît pas, elle se déplace. Vers l'agent, qui a besoin de données de référence, de règles et d'API faites pour lui (MCP, A2A) ; Bain décrit une pile en trois couches, des systèmes de référence aux interfaces de résultat. Vers l'humain qui supervise : chez Anthropic, piloter et surveiller ses agents occupe déjà 22 % des sessions. Aucune étude ne mesure encore ce déplacement dans l'industrie.",
+          "quotes": [
+            [
+              "src-yang-swe-agent-aci-2024",
+              0
+            ],
+            [
+              "src-anthropic-employment-2026",
+              0
+            ]
+          ],
+          "question": "Si les agents deviennent les principaux utilisateurs des logiciels de gestion, qu'est-ce que les devs, intégrateurs et éditeurs construisent encore, et pour qui ?"
+        },
+        {
+          "planet": "devs",
+          "title": "Qui décide du besoin réel ?",
+          "text": "Quand les agents écrivent vite le logiciel, le goulot se déplace : pour Andrew Ng, décider quoi construire devient la nouvelle contrainte. En France, le marché des ESN recule de 1,8 % en 2025 pendant que celui des éditeurs progresse ; en Inde, Nasscom veut que le secteur passe de l'exécution à la définition des solutions. Reste à savoir qui exprime le besoin final : l'utilisateur, le client, l'éditeur, ou l'agent lui-même ? Comme le rappelle un ingénieur d'Anthropic, on peut déléguer le travail, pas la responsabilité.",
+          "quotes": [
+            [
+              "src-ng-product-management-bottleneck-2025",
+              0
+            ],
+            [
+              "src-osmani-esprit-critique-agents-2026",
+              2
+            ]
+          ],
+          "question": "Si les machines savent construire vite, qui doit garantir que ce qu'on construit répond à un besoin humain réel ?",
+          "variants": {
+            "tech": {
+              "question": "Si les machines savent construire vite, qui doit garantir que ce qu'on construit répond à un besoin humain réel ? Garantir la cohérence entre les besoins et les solutions, est-ce désormais notre rôle de devs, d'intégrateurs et d'ESN ?"
+            }
+          }
+        },
+        {
+          "planet": "travail",
+          "title": "Les emplois de bureau reculaient déjà",
+          "text": "Aux États-Unis, le Bureau of Labor Statistics prévoit 752 100 emplois de moins dans le soutien administratif et de bureau d'ici 2035. Au Japon, le METI anticipe un excédent d'environ 4,4 millions d'employés de bureau en 2040. Mais le recul des offres dans les métiers exposés a commencé avant ChatGPT, selon la Fed de New York, et pour la Banque de Corée, l'IA accélère des changements déjà à l'œuvre. Le signal le plus net touche l'entrée dans la carrière : les entreprises qui adoptent l'IA embauchent moins de débutants.",
+          "quotes": [
+            [
+              "src-bok-emploi-jeunes-ia-2026",
+              0
+            ],
+            [
+              "src-fedny-annonces-ia-2026",
+              1
+            ]
+          ],
+          "question": "Si l'IA ne fait qu'accélérer une tendance ancienne, ses effets sont-ils plus acceptables, ou plus urgents à traiter ?"
+        },
+        {
+          "planet": "travail",
+          "title": "Annoncer l'IA, supprimer autrement",
+          "text": "Les annonces ne disent pas toujours ce qui se passe. Amazon supprime 14 000 postes en vantant l'IA, puis son PDG affirme que la décision tient d'abord à la culture, pas encore à l'IA. Salesforce réduit son support client de 9 000 à environ 5 000 personnes sans remplacer les départs. La Commonwealth Bank of Australia rétablit 45 postes qu'elle pensait confier à un robot vocal, en reconnaissant une erreur. Microsoft propose des départs volontaires à environ 60 000 salariés sans les relier à l'IA. À l'automne 2026, les entreprises invoquent de nouveau surtout la conjoncture.",
+          "quotes": [
+            [
+              "src-amazon-galetti-14000-2025",
+              1
+            ],
+            [
+              "src-challenger-ia-suppressions-2026",
+              1
+            ]
+          ],
+          "question": "Quand une entreprise invoque l'IA pour supprimer des postes, ou évite de le faire, qu'est-ce que cela change pour les salariés et pour le débat public ?"
+        },
+        {
+          "planet": "centre",
+          "title": "Continuité ou rupture : qui garde la main ?",
+          "text": "Pour l'économiste David Autor, l'IA est l'inverse de l'informatique : celle-ci exécutait des procédures, l'IA s'attaque au savoir tacite, et pourrait autant reconstruire des emplois intermédiaires que les détruire. Pour Farrell, Gopnik, Shalizi et Evans, les grands modèles sont une technologie culturelle et sociale, comme les marchés et les bureaucraties qui ont déjà déplacé employés de bureau et dactylos. Reste une ironie, rappelée par Simkute et ses coauteurs : plus un système automatisé est avancé, plus l'opérateur humain peut compter.",
+          "quotes": [
+            [
+              "src-autor-middle-class-2024",
+              0
+            ],
+            [
+              "src-farrell-gopnik-cultural-technologies-2025",
+              0
+            ]
+          ],
+          "question": "L'IA prolonge-t-elle la vieille histoire de l'automatisation des bureaux, ou change-t-elle qui décide ? Dans ton organisation, qui garde la main ?"
+        }
+      ]
+    },
+    {
       "id": "limites",
       "title": "Qui tient les limites ?",
       "steps": [
@@ -728,6 +899,18 @@
             ]
           ],
           "question": "Refuser, résister, réclamer, réimaginer : laquelle de ces postures est tenable pour un dev dont le client exige de l'IA partout ?"
+        },
+        {
+          "from": [
+            "gestion",
+            5
+          ]
+        },
+        {
+          "from": [
+            "gestion",
+            6
+          ]
         },
         {
           "planet": "devs",

@@ -10633,7 +10633,7 @@
    "id": "src-ce-health-data-hub-2026",
    "title": "« Health Data Hub » : le traitement automatisé des données de santé autorisé par la CNIL est conforme au RGPD",
    "authors": [
-    "p-conseil-etat"
+    "p-conseil-etat-fr"
    ],
    "publisher": "Conseil d'État",
    "date": "2026-03-20",
@@ -10655,7 +10655,7 @@
    "quotes": [
     {
      "text": "si le risque que les autorités américaines, sur le fondement de leur propre législation, demandent à la société Microsoft d’accéder à des données personnelles de santé ne peut être totalement exclu, le Conseil d’Etat juge que l’autorisation contesté est assortie de garanties permettant d’assurer la sécurité de ces données, notamment leur pseudonymisation et la limitation de leur durée de conservation",
-     "speaker": "p-conseil-etat",
+     "speaker": "p-conseil-etat-fr",
      "status": "verifiee",
      "checked_at": "https://www.conseil-etat.fr/actualites/health-data-hub-le-traitement-automatise-des-donnees-de-sante-autorise-par-la-cnil-est-conforme-au-rgpd"
     },
@@ -11123,6 +11123,1859 @@
    ],
    "reliability": "primaire",
    "notes": "Intervention de 15 minutes. Source consultée : la transcription automatique publiée sur le site de la conférence ; la vidéo (YouTube) n'a pas été consultée. La transcription contient des erreurs manifestes : « limited token » là où le sens et The Register donnent « unlimited tokens », « 8.500 billion parameters » pour la taille de GLM ; ces passages ne sont pas cités. Chiffres internes de l'entreprise, non audités, que l'orateur présente comme propres à son déploiement : ni le périmètre de l'échantillon ni la méthode de mesure ne sont détaillés, et les gains attribués à GLM coïncident avec la fin des plafonds de dépense. Revolut est une banque, pas un acteur de l'IA, mais l'orateur promeut une pratique qu'il dirige. GLM est une famille de modèles à poids ouverts de Z.ai (ex-Zhipu AI, Pékin) ; les poids de GLM-5.3 ont été publiés fin août 2026. Paradoxe à relever : une banque européenne qui invoque la protection des données place des poids chinois sur une infrastructure américaine. Reprise de presse : The Register, Tobias Mann, 3 novembre 2026 (https://www.theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345), qui ajoute des précisions techniques absentes de la transcription (paramètres, mémoire GPU) non vérifiées ici."
+  },
+  {
+   "id": "src-cespm-parcoursup-2025",
+   "title": "7e rapport annuel au Parlement du Comité éthique et scientifique de Parcoursup et Mon Master",
+   "authors": [
+    "p-cespm"
+   ],
+   "publisher": "Ministère de l'Enseignement supérieur et de la Recherche",
+   "date": "2025-03",
+   "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2025-03/7e-rapport-du-comit-thique-et-scientifique-parcoursup-et-mon-master-36400.pdf",
+   "lang": "fr",
+   "kind": "rapport",
+   "planets": [
+    "services"
+   ],
+   "currents": [
+    "gouvernance"
+   ],
+   "thesis": "Le comité distingue l'algorithme national d'appariement, qui gère les vœux, les quotas et l'ordre d'appel sans classer les candidats, du classement fait par chaque formation. Ce classement relève de commissions d'examen qui fixent leurs critères et s'aident de tableurs ou de l'outil d'aide à la décision facultatif pour un préclassement. Pour le comité, le débat porte donc sur la transparence des critères locaux plutôt que sur « l'algorithme ».",
+   "key_facts": [
+    "Selon le rapport, les tableurs et l'outil d'aide à la décision permettent « un préclassement des dossiers », que les commissions finalisent « par un examen personnalisé de certains dossiers ».",
+    "Le comité rappelle que le formatage de l'outil d'aide à la décision « défavorise a priori les candidats atypiques » et recommande, pour Mon Master, des commissions d'examen d'au moins trois personnes.",
+    "Dans son 8e rapport (avril 2026), le comité juge la transparence « totale concernant l'algorithme » mais écrit que la « transparence minimale » des critères de classement et surtout de refus « tarde à venir », alors qu'il renouvelle ses recommandations sur ce sujet depuis huit ans.",
+    "Selon ce 8e rapport, Parcoursup compte plus d'un million de candidats en 2025, dont 381 000 qui ne sont pas lycéens (réorientation, reprise d'études, scolarité à l'étranger)."
+   ],
+   "quotes": [
+    {
+     "text": "Dès l’apparition de ces commissions d’examen des dossiers, les tableurs ont été utilisés pour gérer le classement de longues listes de candidats à la place du crayon et de la machine à calculer qui servaient autrefois pour le classement de l’écrit des concours et pour les reçus aux examens.",
+     "speaker": "p-cespm",
+     "status": "verifiee",
+     "checked_at": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2025-03/7e-rapport-du-comit-thique-et-scientifique-parcoursup-et-mon-master-36400.pdf",
+     "context": "Partie 1.2, « Les classements des candidats par les formations : les « algorithmes locaux » et la transparence des critères »."
+    },
+    {
+     "text": "Est-ce que des algorithmes classent les candidats à la place des commissions d’examen des dossiers ? Non. Ce sont les commissions d’examen des dossiers qui définissent les critères et qui fonctionnent comme un jury.",
+     "speaker": "p-cespm",
+     "status": "verifiee",
+     "checked_at": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2025-03/7e-rapport-du-comit-thique-et-scientifique-parcoursup-et-mon-master-36400.pdf"
+    },
+    {
+     "text": "Une telle « transparence minimale » des critères de classement et surtout de refus tarde à venir ; le Comité renouvelle des recommandations sur ce sujet depuis huit ans.",
+     "speaker": "p-cespm",
+     "status": "verifiee",
+     "checked_at": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-04/8e-rapport-du-comit-thique-et-scientifique-de-parcoursup-et-mon-master-39958.pdf",
+     "context": "8e rapport annuel au Parlement (avril 2026), partie 1.4."
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Le PDF porte « Mars 2025 » (fichier créé le 10 mars 2025) ; les pages HTML du ministère renvoient une page de protection (403) et n'ont pas été lues, d'où une date au mois. La troisième citation et les deux derniers faits viennent du 8e rapport (https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-04/8e-rapport-du-comit-thique-et-scientifique-de-parcoursup-et-mon-master-39958.pdf, PDF du 17 avril 2026). Le comité est placé auprès du ministère et défend la distinction entre algorithme national et classements locaux ; le Défenseur des droits (rapport de 2024, déjà au corpus) et des syndicats contestent que le préclassement au tableur reste une simple aide. La formule du « crayon » et de la « machine à calculer » sert d'argument de continuité dans le débat continuité ou rupture."
+  },
+  {
+   "id": "src-localtis-demarches-simplifiees-2025",
+   "title": "Démarches simplifiées fête ses dix ans et teste l'intégration de l'IA",
+   "authors": [
+    "p-devillers"
+   ],
+   "publisher": "Localtis (Banque des Territoires, Caisse des dépôts)",
+   "date": "2025-11-03",
+   "url": "https://www.banquedesterritoires.fr/demarches-simplifiees-fete-ses-dix-ans-et-teste-lintegration-de-lia",
+   "lang": "fr",
+   "kind": "article",
+   "planets": [
+    "services"
+   ],
+   "currents": [
+    "gouvernance"
+   ],
+   "thesis": "Compte rendu d'un webinaire de la DINUM sur la plateforme de formulaires en ligne de l'État, conçue pour le « dites-le-nous une fois ». La plateforme mise sur des connecteurs d'API pour éviter les ressaisies et commence à intégrer l'IA avec le projet LIAne. La DINUM envisage d'aller jusqu'à l'aide à l'analyse d'éligibilité pour les instructeurs et de remplacer, à terme, le formulaire par une interaction conversationnelle.",
+   "key_facts": [
+    "Selon l'article, la plateforme a permis depuis son ouverture de créer 40 000 démarches et de traiter 25 millions de dossiers, avec 140 000 agents utilisateurs dans 2 000 organismes publics, pour 10 millions d'euros d'investissement.",
+    "Le projet LIAne, présenté à l'incubateur ALLiaNCE, calcule un « simpliscore » sur 10 des formulaires, détecte les champs redondants, valide la conformité des pièces jointes et en extrait les informations.",
+    "Selon l'article, 30 % des formulaires concernent des personnes morales."
+   ],
+   "quotes": [
+    {
+     "text": "La Dinum prévoit cependant d'aller plus loin : aide à l'analyse d'éligibilité pour les instructeurs, assistance à la complétude pour les usagers, et à terme, elle envisage un remplacement de la saisie par formulaire par une interaction conversationnelle.",
+     "speaker": "p-devillers",
+     "status": "verifiee",
+     "checked_at": "https://www.banquedesterritoires.fr/demarches-simplifiees-fete-ses-dix-ans-et-teste-lintegration-de-lia",
+     "context": "Phrase du journaliste qui résume les projets présentés par la DINUM."
+    },
+    {
+     "text": "À l'époque, il y avait très peu d'outils permettant de faire à la fois de la dématérialisation, de la connexion aux API et de l'instruction des dossiers",
+     "speaker": "p-dinum",
+     "status": "a_verifier",
+     "checked_at": "https://www.banquedesterritoires.fr/demarches-simplifiees-fete-ses-dix-ans-et-teste-lintegration-de-lia",
+     "context": "Philippe Vrignaud, chef du pôle « relations usagers-agents » à la DINUM, à propos du lancement de la plateforme il y a dix ans."
+    }
+   ],
+   "reliability": "secondaire",
+   "notes": "Propos de Philippe Vrignaud rapportés par Localtis à partir d'un webinaire du mois de l'innovation publique (enregistrement non consulté) : la citation reste à vérifier. Les fonctions d'aide à l'éligibilité et l'interaction conversationnelle sont des projets, pas des fonctionnalités en production. La plateforme a depuis changé de nom (demarche.numerique.gouv.fr) ; sa page de statistiques donnait, le 6 novembre 2026, 60 544 démarches dématérialisées et 22 900 903 dossiers déposés au total, un chiffre inférieur aux 25 millions de dossiers « traités » de l'article : périmètres (autres instances, comme celle de l'Adullact) ou définitions différents, ne pas juxtaposer les deux sans le dire. Aucune part d'instruction automatisée n'est publiée."
+  },
+  {
+   "id": "src-ue-ai-act-article14-2024",
+   "title": "Règlement (UE) 2024/1689 sur l'intelligence artificielle (AI Act), article 14 : contrôle humain",
+   "authors": [
+    "p-ue-legislateur"
+   ],
+   "publisher": "Journal officiel de l'Union européenne (texte lu sur artificialintelligenceact.eu, Future of Life Institute)",
+   "date": "2024-07-12",
+   "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+   "lang": "en",
+   "kind": "loi",
+   "planets": [
+    "regulation",
+    "services"
+   ],
+   "currents": [
+    "gouvernance"
+   ],
+   "thesis": "L'article 14 impose que les systèmes d'IA à haut risque puissent être effectivement contrôlés par des personnes physiques pendant leur utilisation, avec des mesures proportionnées aux risques, au niveau d'autonomie et au contexte. Les personnes chargées du contrôle doivent pouvoir comprendre le système, rester conscientes du biais d'automatisation, interpréter ses résultats, décider de ne pas les suivre et interrompre le système.",
+   "key_facts": [
+    "Règlement (UE) 2024/1689 du 13 juin 2024, publié au Journal officiel de l'UE le 12 juillet 2024.",
+    "Le paragraphe 4, point b), nomme explicitement le « biais d'automatisation » (automation bias), en particulier pour les systèmes qui fournissent des informations ou des recommandations pour des décisions prises par des personnes.",
+    "Pour l'identification biométrique à distance (annexe III, point 1 a), le paragraphe 5 exige une vérification séparée par au moins deux personnes, sauf en matière répressive, migratoire, de contrôle aux frontières ou d'asile si le droit le juge disproportionné.",
+    "La page consultée indique une application de l'article au 2 décembre 2027 pour les systèmes de l'annexe III et au 2 août 2028 pour ceux de l'annexe I, dates issues du report décidé dans l'omnibus numérique (voir src-eu-ai-act-omnibus)."
+   ],
+   "quotes": [
+    {
+     "text": "to remain aware of the possible tendency of automatically relying or over-relying on the output produced by a high-risk AI system (automation bias), in particular for high-risk AI systems used to provide information or recommendations for decisions to be taken by natural persons;",
+     "fr": "rester conscientes de la tendance possible à se fier automatiquement ou excessivement aux résultats produits par un système d'IA à haut risque (biais d'automatisation), en particulier pour les systèmes d'IA à haut risque utilisés pour fournir des informations ou des recommandations en vue de décisions à prendre par des personnes physiques ;",
+     "speaker": "p-ue-legislateur",
+     "status": "verifiee",
+     "checked_at": "https://artificialintelligenceact.eu/article/14/",
+     "context": "Article 14, paragraphe 4, point b) : ce que les personnes chargées du contrôle humain doivent être en mesure de faire."
+    },
+    {
+     "text": "to decide, in any particular situation, not to use the high-risk AI system or to otherwise disregard, override or reverse the output of the high-risk AI system;",
+     "fr": "décider, dans toute situation particulière, de ne pas utiliser le système d'IA à haut risque ou d'ignorer, de passer outre ou d'inverser de toute autre manière le résultat du système d'IA à haut risque ;",
+     "speaker": "p-ue-legislateur",
+     "status": "verifiee",
+     "checked_at": "https://artificialintelligenceact.eu/article/14/",
+     "context": "Article 14, paragraphe 4, point d)."
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Conformément à la décision du 6 novembre 2026, le texte anglais a été lu sur artificialintelligenceact.eu (site de reproduction du Future of Life Institute, pas le JOUE ; EUR-Lex n'était pas accessible à l'outil) ; l'url pointe vers EUR-Lex. Les traductions « fr » sont des traductions de travail, pas la version française officielle, qui n'a pas été relue. Omnibus : on n'a pas pu vérifier sur un texte officiel si le règlement (UE) 2026/1744 modifie la rédaction de l'article 14 ; la page consultée le 6 novembre 2026 affiche le texte ci-dessus avec les nouvelles dates d'application, sans signaler de modification de l'article. Un ERP ou un CRM n'est pas à haut risque en soi : c'est la finalité (annexe III) qui compte."
+  },
+  {
+   "id": "src-cjue-schufa-2023",
+   "title": "Arrêt de la Cour (première chambre) du 7 décembre 2023, SCHUFA Holding (Scoring), C-634/21",
+   "authors": [
+    "p-cjue"
+   ],
+   "publisher": "Cour de justice de l'Union européenne (Curia)",
+   "date": "2023-12-07",
+   "url": "https://juris.curia.europa.eu/juris/document/document.jsf?docid=280426&doclang=FR",
+   "lang": "fr",
+   "kind": "loi",
+   "planets": [
+    "regulation",
+    "services"
+   ],
+   "currents": [
+    "gouvernance"
+   ],
+   "thesis": "Saisie à titre préjudiciel par le tribunal administratif de Wiesbaden, la Cour juge qu'un score de solvabilité calculé automatiquement par une société d'information commerciale est lui-même une « décision individuelle automatisée » au sens de l'article 22 du RGPD, dès lors que le tiers qui le reçoit en dépend de manière déterminante pour contracter. Une lecture restrictive, qui ne verrait dans le score qu'un acte préparatoire, ouvrirait selon elle une lacune dans la protection.",
+   "key_facts": [
+    "Selon les constatations de la juridiction de renvoi reprises au point 48, une valeur de probabilité insuffisante entraîne « dans presque tous les cas » le refus du prêt par la banque.",
+    "La Cour écarte l'idée que le score ne serait qu'un « acte préparatoire » (points 61 et 62) : dans un montage à trois acteurs, cela permettrait de contourner l'article 22.",
+    "La question de la validité d'une exception prévue par le droit allemand (BDSG) est renvoyée à la juridiction nationale ; la Cour ne tranche pas le litige au fond."
+   ],
+   "quotes": [
+    {
+     "text": "l’établissement automatisé, par une société fournissant des informations commerciales, d’une valeur de probabilité fondée sur des données à caractère personnel relatives à une personne et concernant la capacité de celle-ci à honorer des engagements de paiement à l’avenir constitue une « décision individuelle automatisée », au sens de cette disposition, lorsque dépend de manière déterminante de cette valeur de probabilité le fait qu’une tierce partie, à laquelle ladite valeur de probabilité est communiquée, établisse, exécute ou mette fin à une relation contractuelle avec cette personne.",
+     "speaker": "p-cjue",
+     "status": "verifiee",
+     "checked_at": "https://juris.curia.europa.eu/juris/document/document.jsf?docid=280426&doclang=FR",
+     "context": "Dispositif de l'arrêt (repris au point 73)."
+    },
+    {
+     "text": "dans des circonstances telles que celles en cause au principal, dans lesquelles trois acteurs sont impliqués, il existerait un risque de contournement de l’article 22 du RGPD et, par suite, une lacune dans la protection juridique si une interprétation restrictive de cette disposition était retenue",
+     "speaker": "p-cjue",
+     "status": "verifiee",
+     "checked_at": "https://juris.curia.europa.eu/juris/document/document.jsf?docid=280426&doclang=FR",
+     "context": "Point 61."
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Langue de procédure : l'allemand ; citations tirées de la version française publiée par la Cour (juris.curia.europa.eu, site officiel ; curia.europa.eu redirige désormais vers une application). La version anglaise du dispositif dit « draws strongly on that probability value » (https://juris.curia.europa.eu/juris/document/document.jsf?docid=280426&doclang=EN). La formule « s'appuie fortement », qui circule en français, ne figure pas dans l'arrêt : ne pas la mettre entre guillemets. L'arrêt porte sur le crédit privé ; son raisonnement (préparer la décision peut valoir décision) est transposable à tout score qui prépare une décision, mais c'est une extrapolation."
+  },
+  {
+   "id": "src-simkute-ironies-genai-2024",
+   "title": "Ironies of Generative AI: Understanding and mitigating productivity loss in human-AI interactions",
+   "authors": [
+    "p-simkute",
+    "p-tankelevitch",
+    "p-sellen"
+   ],
+   "publisher": "arXiv (prépublication), puis International Journal of Human–Computer Interaction",
+   "date": "2024-02-17",
+   "url": "https://arxiv.org/abs/2402.11364",
+   "lang": "en",
+   "kind": "étude",
+   "planets": [
+    "travail",
+    "devs"
+   ],
+   "currents": [
+    "techno-normale"
+   ],
+   "thesis": "Les auteurs relisent les études d'usage de l'IA générative à la lumière de trente ans de recherche en facteurs humains sur l'automatisation (aviation, conduite, renseignement). Ils identifient quatre causes de pertes de productivité : le passage de la production à l'évaluation, la restructuration des flux de travail, les interruptions et la « polarisation de la complexité des tâches ». Ils en tirent des pistes de conception (retour continu, personnalisation, répartition claire des tâches).",
+   "key_facts": [
+    "Prépublication arXiv 2402.11364 du 17 février 2024 ; version publiée dans l'International Journal of Human–Computer Interaction le 15 octobre 2024 (DOI 10.1080/10447318.2024.2405782).",
+    "Le texte prolonge les « ironies de l'automatisation » de Lisanne Bainbridge (Automatica, 1983), source antérieure à la date limite du corpus et relayée ici.",
+    "C'est une synthèse de la littérature, sans données nouvelles ; elle cite notamment une étude où les utilisateurs de Copilot échouaient plus souvent à terminer leur tâche que ceux d'une autocomplétion classique."
+   ],
+   "quotes": [
+    {
+     "text": "the more advanced an automated system is, the more important the human operator may be",
+     "fr": "plus un système automatisé est avancé, plus l'opérateur humain peut devenir important",
+     "speaker": "p-simkute",
+     "status": "verifiee",
+     "checked_at": "https://arxiv.org/pdf/2402.11364",
+     "context": "Les auteurs résument ainsi les « ironies de l'automatisation » de Bainbridge (1983)."
+    },
+    {
+     "text": "One explanation is that easy tasks are easier to automate, and so the more difficult tasks tend to remain under manual control, albeit alongside the additional task of monitoring automation, and within a now more fragmented workflow",
+     "fr": "Une explication est que les tâches faciles sont plus faciles à automatiser, si bien que les tâches les plus difficiles tendent à rester sous contrôle manuel, avec en plus la tâche de surveiller l'automatisation, et dans un flux de travail désormais plus fragmenté",
+     "speaker": "p-simkute",
+     "status": "verifiee",
+     "checked_at": "https://arxiv.org/pdf/2402.11364",
+     "context": "Section 2.4, « Task-complexity polarization »."
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Auteurs : Auste Simkute (université d'Édimbourg), Lev Tankelevitch, Viktor Kewenig, Ava Elizabeth Scott, Abigail Sellen, Sean Rintel ; trois sont fichés et les citations, issues d'un texte collectif, sont attribuées à la première autrice. Dans la version arXiv, trois des six auteurs (Tankelevitch, Sellen, Rintel) sont chez Microsoft Research, éditeur de Copilot. Citations vérifiées sur le PDF arXiv v1 ; la version publiée dans la revue n'a pas été lue et peut différer légèrement."
+  },
+  {
+   "id": "src-quadrature-france-travail-profilage-2026",
+   "title": "France Travail déploie un outil de profilage algorithmique à des fins de contrôle",
+   "authors": [
+    "p-quadrature"
+   ],
+   "publisher": "La Quadrature du Net (avec le document interne « Ciblage du Contrôle de la Recherche d'emploi (CRE) » de France Travail)",
+   "date": "2026-07-20",
+   "url": "https://www.laquadrature.net/2026/07/20/france-travail-deploie-un-outil-de-profilage-algorithmique-a-des-fins-de-controle/",
+   "lang": "fr",
+   "kind": "article",
+   "planets": [
+    "services"
+   ],
+   "currents": [
+    "technocritique-fr",
+    "ethique-critique"
+   ],
+   "thesis": "La Quadrature du Net publie, avec la cellule investigation de Radio France, un document interne présenté au comité d'éthique IA de France Travail. Il décrit un arbre de décision qui sélectionne les dossiers de demandeurs d'emploi à contrôler en priorité, testé sur les ruptures conventionnelles et que l'opérateur veut étendre. L'association y voit une dépolitisation et une massification du contrôle social, et demande l'abandon de l'outil.",
+   "key_facts": [
+    "Selon le document (PDF image, lu visuellement), le modèle repose sur 26 variables et a été testé sur 60 000 anciens dossiers : 79 % des dossiers ciblés avaient donné lieu à un examen complémentaire, contre 53 % pour les dossiers tirés au hasard ; 64 % avaient conduit à une redynamisation ou à une sanction.",
+    "Le même document fixe le volume prévisionnel de 2025 à 730 000 contrôles et une cible 2026 de 1,25 million « sous réserve de validation par le CA », dont 500 000 contrôles ciblés (40 %).",
+    "Selon La Quadrature du Net, les contrôles sont passés de 200 000 en 2017 à 730 000 en 2025, avec un objectif gouvernemental de 1,5 million en 2027 ; deux campagnes d'environ 7 000 tests chacune ont visé des personnes en rupture conventionnelle."
+   ],
+   "quotes": [
+    {
+     "text": "Ce qui se dessine, c’est la volonté d’automatiser l’ensemble de la chaîne de contrôle afin de répondre aux objectifs gouvernementaux de massification des contrôles",
+     "speaker": "p-quadrature",
+     "status": "verifiee",
+     "checked_at": "https://www.laquadrature.net/2026/07/20/france-travail-deploie-un-outil-de-profilage-algorithmique-a-des-fins-de-controle/"
+    },
+    {
+     "text": "Le modèle utilisé est un arbre de décision, c’est-à-dire un modèle statistique classique fondé sur des règles et des critères objectifs. Il ne s’agit pas d’un modèle de type LLM : aucune génération de texte ou d’apprentissage (type Chat GPT), uniquement de la prédiction structurée à partir des données.",
+     "speaker": "p-france-travail",
+     "status": "a_verifier",
+     "checked_at": "https://www.laquadrature.net/wp-content/uploads/sites/8/2026/07/CEIA-2025-12-12-algo_CRE.pdf",
+     "context": "Encadré « A NOTER » de la diapositive « Apprentissage du modèle » du document de France Travail."
+    },
+    {
+     "text": "Le modèle repose exclusivement sur des données objectives et quantifiables. Il ne se substitue ni à l’analyse humaine ni au travail d’investigation des contrôleurs.",
+     "speaker": "p-france-travail",
+     "status": "a_verifier",
+     "checked_at": "https://www.laquadrature.net/wp-content/uploads/sites/8/2026/07/CEIA-2025-12-12-algo_CRE.pdf",
+     "context": "Diapositive « Analyse des premiers résultats obtenus sur la base de test du modèle »."
+    }
+   ],
+   "reliability": "secondaire",
+   "notes": "Article publié le 20 juillet 2026, mis à jour le 17 août 2026. Le document de France Travail (https://www.laquadrature.net/wp-content/uploads/sites/8/2026/07/CEIA-2025-12-12-algo_CRE.pdf) est un PDF image sans couche texte : ses citations ont été transcrites par OCR et lecture visuelle, sans seconde lecture indépendante mot pour mot, d'où le statut à vérifier. C'est une fuite publiée par une partie au débat ; aucune réponse officielle de France Travail n'a été lue en source primaire. Écarts entre l'article et le document : (1) l'article écrit que l'algorithme a été « entraîné sur la base de 60 000 contrôles passés », le document qu'il a été « testé sur un échantillon de 60 000 anciens dossiers » ; (2) l'article date la présentation au comité d'éthique du 10 décembre 2025, le nom du fichier porte 2025-12-12 ; (3) l'article rattache les 500 000 contrôles ciblés à 2025, le document les rattache à la cible 2026 (en 2025, le bloc des contrôles sur requêtes ou signalements représente « près de 400 000 contrôles »). Les 730 000 contrôles de 2025 sont, dans le document, un volume prévisionnel. L'opposition entre « critères objectifs » et LLM est la formulation de France Travail. L'outil était en test, pas déployé partout."
+  },
+  {
+   "id": "src-quadrature-france-travail-ia-generative-2026",
+   "title": "France Travail expérimente une IA générative de contrôle",
+   "authors": [
+    "p-quadrature"
+   ],
+   "publisher": "La Quadrature du Net (avec le document du comité consultatif d'éthique IA de France Travail, session n° 20 du 30 juin 2026)",
+   "date": "2026-10-23",
+   "url": "https://www.laquadrature.net/2026/10/23/france-travail-experimente-une-ia-generative-de-controle/",
+   "lang": "fr",
+   "kind": "article",
+   "planets": [
+    "services"
+   ],
+   "currents": [
+    "technocritique-fr",
+    "ethique-critique"
+   ],
+   "thesis": "La Quadrature du Net publie un document présenté au comité d'éthique IA de France Travail le 30 juin 2026 : une IA générative synthétiserait, pour les contrôleurs, le dossier du demandeur d'emploi, l'entretien et l'examen des pièces, afin de préparer les conclusions du contrôle. Le document fixe une trajectoire 2027-2030 vers la « systématisation des contrôles ». L'association y voit une rupture : des contrôles complexes, jusqu'ici réservés à des humains, deviennent automatisables, et le biais d'automatisation relativise la supervision humaine.",
+   "key_facts": [
+    "Selon le document (PDF image, lu visuellement), le schéma est « Trois sources, une restitution, une décision humaine » ; le datamart du contrôle « suggère des motifs de clôture » qui restent à la main du conseiller.",
+    "Trajectoire 2027-2030 du document : « Cible de contrôles 2027 atteinte à effectifs constants », « Systématisation des contrôles à horizon 2030 », extension au « suivi de parcours » et à la « détection de signaux faibles », généralisation si le pilote est concluant.",
+    "Parmi les vigilances listées par France Travail : « Risque de dérive si les conclusions de l'IA ne sont pas vérifiées » et « Gouvernance : qui valide et audite les recommandations de l'IA ? ».",
+    "La Quadrature du Net chiffre l'objectif 2027 à 1,5 million de contrôles, soit 400 000 de plus qu'en 2026 (+36 %) ; selon elle, les chiffres de 2026 viennent de documents internes."
+   ],
+   "quotes": [
+    {
+     "text": "L’IA générative représente une rupture dans le sens où ce sont des opérations de contrôle « complexes », nécessitant l’analyse de données multiples, la prise en compte de contextes variés et l’échange avec les personnes contrôlées qui sont désormais automatisables.",
+     "speaker": "p-quadrature",
+     "status": "verifiee",
+     "checked_at": "https://www.laquadrature.net/2026/10/23/france-travail-experimente-une-ia-generative-de-controle/"
+    },
+    {
+     "text": "Systématisation des contrôles à horizon 2030",
+     "speaker": "p-france-travail",
+     "status": "a_verifier",
+     "checked_at": "https://www.laquadrature.net/wp-content/uploads/sites/8/2026/10/CCEIA_LLM.pdf",
+     "context": "Diapositive « Ambitions du dispositif », rubrique « Trajectoire 2027 – 2030 »."
+    },
+    {
+     "text": "Risque de dérive si les conclusions de l'IA ne sont pas vérifiées",
+     "speaker": "p-france-travail",
+     "status": "a_verifier",
+     "checked_at": "https://www.laquadrature.net/wp-content/uploads/sites/8/2026/10/CCEIA_LLM.pdf",
+     "context": "Diapositive « Difficultés & freins à anticiper », rubrique « Facteur humain »."
+    }
+   ],
+   "reliability": "secondaire",
+   "notes": "Le document de France Travail (https://www.laquadrature.net/wp-content/uploads/sites/8/2026/10/CCEIA_LLM.pdf) est un PDF image : ses formules ont été lues visuellement et par OCR, sans seconde lecture indépendante mot pour mot, d'où le statut à vérifier. C'est un projet pilote : le scénario où l'IA choisit, interroge et clôt elle-même les contrôles est une extrapolation de La Quadrature du Net, pas un contenu du document. L'article cite la « cible de [1,5 millions de] contrôles 2027 à effectifs constants » : le chiffre entre crochets est un ajout de l'association, et le document dit « Cible de contrôles 2027 atteinte à effectifs constants ». Le chiffre de plus de 27 millions de contrôles automatisés de la CAF sur 28,7 millions, cité par l'article, n'a pas été recoupé (src-cnaf-dmde-2026 donne 31,5 millions de contrôles en 2024, périmètre différent). Aucune réponse officielle de France Travail n'a été lue en source primaire."
+  },
+  {
+   "id": "src-conseil-etat-anef-2026",
+   "title": "Conseil d'État, Assemblée du contentieux, 5 mai 2026, Fédération des acteurs de la solidarité et autres, n° 502860 (ANEF)",
+   "authors": [
+    "p-conseil-etat-fr"
+   ],
+   "publisher": "Conseil d'État (ArianeWeb)",
+   "date": "2026-05-05",
+   "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2026-05-05/502860",
+   "lang": "fr",
+   "kind": "loi",
+   "planets": [
+    "services",
+    "regulation"
+   ],
+   "currents": [
+    "gouvernance"
+   ],
+   "thesis": "Saisi par dix associations, le Conseil d'État juge que l'administration qui impose un téléservice doit garantir un accompagnement et une solution de substitution quand l'outil, par sa conception, empêche certains usagers d'exercer leurs droits. Il annule le refus du ministre de l'Intérieur de corriger plusieurs défauts de l'administration numérique des étrangers en France (ANEF) et lui enjoint d'y remédier.",
+   "key_facts": [
+    "Décision d'Assemblée publiée au Lebon (ECLI:FR:CEASS:2026:502860.20260505) ; le refus est annulé pour les mesures des points 12, 13, 15, 16, 31, 38 et 40, avec injonction d'agir sous six mois, et sous douze mois pour le point 12 (impossibilité technique de déposer une demande sur un autre fondement).",
+    "Point 13 : des renouvellements sont refusés au motif erroné que l'ancien titre n'a pas été remis, parce que l'agent a omis d'enregistrer cette remise dans le système d'information.",
+    "Point 43 : le centre de contact citoyens compte 162 téléconseillers ; il a reçu 980 000 appels et 2,8 millions de courriels en 2024 et, au premier semestre 2025, signalé 1 546 cas de blocage, dont 171 résolus dans le téléservice.",
+    "Question écrite AN n° 15973 (publiée le 16 juin 2026, réponse du 20 octobre 2026) : interrogé sur l'expérimentation d'IA dans le traitement des titres de séjour en cinq préfectures, le ministère de l'Intérieur répond qu'elle « ne vise pas à automatiser les décisions » et que l'outil « ne prend aucune décision administrative »."
+   ],
+   "quotes": [
+    {
+     "text": "Il lui incombe, en outre, pour les mêmes motifs, de garantir la possibilité de recourir à une solution de substitution, pour le cas où certains demandeurs se heurteraient, malgré cet accompagnement, à l'impossibilité de recourir au téléservice pour des raisons tenant à la conception de cet outil ou à son mode de fonctionnement.",
+     "speaker": "p-conseil-etat-fr",
+     "status": "verifiee",
+     "checked_at": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2026-05-05/502860",
+     "context": "Point 9 : obligations du pouvoir réglementaire qui impose un téléservice pour les titres de séjour."
+    },
+    {
+     "text": "il est constant que celle-ci, en raison de contraintes liées à la conception technique du système d'information, ne permet pas à l'étranger qui demande un titre de séjour de présenter simultanément ou successivement une autre demande, pour un titre relevant d'une autre catégorie, tant que l'administration n'a pas statué sur sa première demande.",
+     "speaker": "p-conseil-etat-fr",
+     "status": "verifiee",
+     "checked_at": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2026-05-05/502860",
+     "context": "Point 12, à propos de l'ANEF."
+    },
+    {
+     "text": "Le pouvoir réglementaire ne saurait rendre obligatoire le recours à un téléservice pour accomplir une démarche administrative, et notamment pour demander la délivrance d'une autorisation, qu'à la condition de permettre l'accès normal des usagers au service public et de garantir aux personnes concernées l'exercice effectif de leurs droits.",
+     "speaker": "p-conseil-etat-fr",
+     "status": "verifiee",
+     "checked_at": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2026-05-05/502860",
+     "context": "Point 8 : principe général."
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Le Conseil d'État rejette une partie des moyens, faute de caractère systémique ou de méconnaissance établie à l'échelle nationale (notamment points 14, 19 et 46). L'exécution des injonctions, qui court à partir de la notification, n'a pas été vérifiée. Le dernier fait vient de la question écrite n° 15973 de Guillaume Gouffier Valente et de la réponse du ministère de l'Intérieur (https://www.assemblee-nationale.fr/dyn/17/questions/QANR5L17QE15973), relues sur la page et le PDF de l'Assemblée ; ce sont des affirmations du ministère, sans évaluation publiée ni description technique. L'annonce de février 2026 par le Premier ministre n'a pas été lue en source primaire."
+  },
+  {
+   "id": "src-cour-des-comptes-france-travail-ia-2026",
+   "title": "France Travail et l'intelligence artificielle (observations définitives S2025-1558)",
+   "authors": [
+    "p-cour-des-comptes"
+   ],
+   "publisher": "Cour des comptes",
+   "date": "2026-01-08",
+   "url": "https://www.ccomptes.fr/sites/default/files/2026-01/20260108-S2025-1558-France-Travail-et-intelligence-artificielle_0.pdf",
+   "lang": "fr",
+   "kind": "rapport",
+   "planets": [
+    "services",
+    "travail"
+   ],
+   "currents": [
+    "gouvernance",
+    "economistes"
+   ],
+   "thesis": "Premier rapport de la Cour consacré à l'usage de l'IA par un grand opérateur de l'État. Elle constate que près de dix ans d'IA à France Travail ont produit des gains d'efficience pour les conseillers sans réduction nette des effectifs, mais des « redéploiements intra-postes ». L'IA devient pourtant un levier central du plan d'efficience 2025-2027, dont l'objectif de redéploiement a été révisé plusieurs fois, et la Cour demande un meilleur suivi des coûts et des cas d'usage.",
+   "key_facts": [
+    "Plan d'efficience : l'objectif de gain passe de 2 900 ETP d'ici 2027 à 3 700 ETP (juillet 2025), puis à 3 192 ETP (septembre 2025) ; l'IA y contribue pour 779 ETP selon la dernière estimation, après 730 puis 822 ETP.",
+    "Coûts et gains : 93 M€ consacrés à l'IA entre 2017 et 2024 et 15 M€ prévus en 2025, pour des gains estimés à 120 M€ sur 2017-2025, « sous des hypothèses favorables ».",
+    "En mars 2025, 56 % des agents interrogés par l'opérateur déclarent utiliser l'IA, dont 9 % chaque jour ; 17 cas d'usage ont été abandonnés ou n'ont qu'une faible utilité."
+   ],
+   "quotes": [
+    {
+     "text": "Ainsi, les gains réalisés ne se sont pas traduits par une réduction nette des effectifs de l’opérateur, mais par des « redéploiements intra-postes ».",
+     "speaker": "p-cour-des-comptes",
+     "status": "verifiee",
+     "checked_at": "https://www.ccomptes.fr/sites/default/files/2026-01/20260108-S2025-1558-France-Travail-et-intelligence-artificielle_0.pdf",
+     "context": "Synthèse du rapport."
+    },
+    {
+     "text": "Les outils d'IA déployés ont permis des gains d'efficience pour les conseillers, ainsi qu’une réduction des coûts grâce à une meilleure performance des solutions numériques ou l'abandon de solutions technologiques devenues inutiles.",
+     "speaker": "p-cour-des-comptes",
+     "status": "verifiee",
+     "checked_at": "https://www.ccomptes.fr/sites/default/files/2026-01/20260108-S2025-1558-France-Travail-et-intelligence-artificielle_0.pdf"
+    }
+   ],
+   "reliability": "primaire",
+   "branch": "employer_moins",
+   "notes": "Date de publication lue sur la page de la Cour (https://www.ccomptes.fr/fr/publications/france-travail-et-lintelligence-artificielle, 08.01.2026). Distinguer « ETP redéployables » et suppressions de postes : les 779 ETP sont du temps libéré à redéployer, pas des départs. La baisse de 515 ETPT du plafond d'emplois prévue au PLF 2026 (avis n° 2063 de l'Assemblée nationale) relève d'une autre source, non intégrée ici, et a un motif budgétaire. Les gains de 120 M€ sont une estimation haute de l'opérateur."
+  },
+  {
+   "id": "src-autor-middle-class-2024",
+   "title": "Applying AI to Rebuild Middle Class Jobs (NBER Working Paper 32140)",
+   "authors": [
+    "p-autor"
+   ],
+   "publisher": "National Bureau of Economic Research",
+   "date": "2024-02-12",
+   "url": "https://www.nber.org/papers/w32140",
+   "lang": "en",
+   "kind": "essai",
+   "planets": [
+    "travail",
+    "centre"
+   ],
+   "currents": [
+    "economistes"
+   ],
+   "thesis": "L'informatique a automatisé les tâches routinières, codifiables en règles, et vidé une grande partie des emplois intermédiaires de bureau et de production, en concentrant la décision chez les experts diplômés. Pour Autor, l'IA est l'inverse de l'informatique : peu fiable sur les règles, elle excelle à acquérir des savoirs tacites. Elle pourrait donc étendre l'expertise à des travailleurs moins diplômés, si on l'oriente en ce sens : c'est un argument sur le possible, pas une prévision.",
+   "key_facts": [
+    "Working paper du NBER publié en février 2024 (date de la notice : 12 février 2024), écrit pour NOEMA (« How AI Could Help Rebuild The Middle Class ») ; non relu par les pairs.",
+    "Le cadre est le paradoxe de Polanyi (1966) : « We can know more than we can tell ».",
+    "Selon Autor, l'informatisation a fait disparaître une strate d'emplois intermédiaires dans le support administratif, les métiers de bureau et la production, et poussé les 60 % d'adultes sans licence vers des services peu payés."
+   ],
+   "quotes": [
+    {
+     "text": "Pre-AI, computing’s core capability was its faultless and nearly costless execution of routine, procedural tasks. Its Achilles’ heel was its inability to master non-routine tasks requiring tacit knowledge. Artificial Intelligence’s capabilities are precisely the inverse.",
+     "fr": "Avant l'IA, la capacité centrale de l'informatique était l'exécution sans faute et presque sans coût de tâches routinières et procédurales. Son talon d'Achille était son incapacité à maîtriser les tâches non routinières qui exigent un savoir tacite. Les capacités de l'intelligence artificielle sont exactement l'inverse.",
+     "speaker": "p-autor",
+     "status": "verifiee",
+     "checked_at": "https://www.nber.org/system/files/working_papers/w32140/w32140.pdf"
+    },
+    {
+     "text": "My thesis is not a forecast but a claim about what is attainable. AI will not decide how AI is used, and its constructive and destructive applications are boundless.",
+     "fr": "Ma thèse n'est pas une prévision mais une affirmation sur ce qui est atteignable. Ce n'est pas l'IA qui décidera de l'usage de l'IA, et ses applications constructives comme destructrices sont sans limites.",
+     "speaker": "p-autor",
+     "status": "verifiee",
+     "checked_at": "https://www.nber.org/system/files/working_papers/w32140/w32140.pdf"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Essai normatif, sans données nouvelles, qui porte sur l'IA en général et sur le marché du travail américain. L'auteur remercie Google, parmi d'autres financeurs (Hewlett, NOMIS, Smith Richardson). Thèse de rupture de nature entre informatique et IA, à opposer aux lectures de continuité (Narayanan et Kapoor, Farrell et al.)."
+  },
+  {
+   "id": "src-farrell-gopnik-cultural-technologies-2025",
+   "title": "Large AI models are cultural and social technologies",
+   "authors": [
+    "p-farrell",
+    "p-gopnik",
+    "p-shalizi",
+    "p-evans-james"
+   ],
+   "publisher": "Science (vol. 387, n° 6739), version auteur publiée sur henryfarrell.net",
+   "date": "2025-03-13",
+   "url": "https://henryfarrell.net/large-ai-models-are-cultural-and-social-technologies/",
+   "lang": "en",
+   "kind": "essai",
+   "planets": [
+    "centre"
+   ],
+   "currents": [
+    "techno-normale"
+   ],
+   "thesis": "Les auteurs soutiennent que les grands modèles ne sont pas avant tout des agents intelligents, mais une nouvelle technologie culturelle et sociale, comparable à l'écriture, à l'imprimerie, aux marchés et aux bureaucraties. Comme elles, ils produisent des représentations « avec perte » qui permettent de coordonner à grande échelle. Comme pour ces technologies passées, il faudra de nouvelles institutions pour en tempérer les effets.",
+   "key_facts": [
+    "Article de perspective publié dans Science le 13 mars 2025 (DOI 10.1126/science.adt9819).",
+    "Le cadre reprend Herbert Simon (« artificial systems of human society »), James Scott sur la bureaucratie et Hayek sur les prix.",
+    "Les auteurs rappellent que l'essor des médias, des marchés et des bureaucraties a déplacé des catégories entières de travailleurs, des employés de bureau et dactylos aux « calculateurs » humains, et que des institutions (éditeurs, relecture par les pairs, droit électoral, régulateurs financiers) sont apparues pour en tempérer les effets."
+   ],
+   "quotes": [
+    {
+     "text": "Large Models should not be viewed primarily as intelligent agents, but as a new kind of cultural and social technology, allowing humans to take advantage of information other humans have accumulated.",
+     "fr": "Les grands modèles ne doivent pas être vus avant tout comme des agents intelligents, mais comme un nouveau type de technologie culturelle et sociale, qui permet aux humains de tirer parti des informations que d'autres humains ont accumulées.",
+     "speaker": "p-farrell",
+     "status": "verifiee",
+     "checked_at": "https://henryfarrell.net/large-ai-models-are-cultural-and-social-technologies/"
+    },
+    {
+     "text": "Markets, democracies, and bureaucracies have relied on mechanisms that generate lossy (i.e., incomplete, selective, and uninvertible) but useful representations well before the computer.",
+     "fr": "Les marchés, les démocraties et les bureaucraties s'appuient, bien avant l'ordinateur, sur des mécanismes qui produisent des représentations avec perte (c'est-à-dire incomplètes, sélectives et non inversibles) mais utiles.",
+     "speaker": "p-farrell",
+     "status": "verifiee",
+     "checked_at": "https://henryfarrell.net/large-ai-models-are-cultural-and-social-technologies/"
+    },
+    {
+     "text": "As media, markets, and bureaucratic technologies expanded in the nineteenth and 20th centuries, they generated economic losers and winners, displacing whole categories of workers, from clerks and typists to human “computers”.",
+     "fr": "En se développant aux XIXe et XXe siècles, les médias, les marchés et les technologies bureaucratiques ont fait des gagnants et des perdants économiques, en déplaçant des catégories entières de travailleurs, des employés de bureau et dactylos aux « calculateurs » humains.",
+     "speaker": "p-farrell",
+     "status": "verifiee",
+     "checked_at": "https://henryfarrell.net/large-ai-models-are-cultural-and-social-technologies/"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Citations vérifiées sur la version auteur, publiée par Henry Farrell avec l'autorisation de l'AAAS ; la version définitive de Science (payante) n'a pas été consultée et peut différer légèrement. Texte collectif : citations attribuées au premier auteur. Le texte conteste justement le vocabulaire de l'« agent », utile pour discuter les agents d'IA dans l'administration. Thèse de continuité, à opposer à Autor (src-autor-middle-class-2024)."
+  },
+  {
+   "id": "src-bls-projections-2025-35",
+   "title": "Employment Projections: 2025-2035 Summary",
+   "authors": [
+    "p-bls"
+   ],
+   "publisher": "U.S. Bureau of Labor Statistics, communiqué USDL-26-1422",
+   "date": "2026-08-27",
+   "url": "https://www.bls.gov/news.release/ecopro.nr0.htm",
+   "lang": "en",
+   "kind": "rapport",
+   "branch": "employer_moins",
+   "planets": [
+    "travail"
+   ],
+   "currents": [
+    "economistes"
+   ],
+   "thesis": "Le BLS publie ses projections décennales d'emploi pour 2025-2035 et fait explicitement de l'adoption de l'IA l'un des facteurs de l'évolution de la demande par métier. Il attend une hausse de l'emploi dans les métiers liés à l'IA et à ses infrastructures (centres de données, électricité), et un recul des métiers de bureau et de soutien administratif, où les gains de productivité réduiraient les besoins. Il s'agit d'une projection, pas d'une mesure, et le BLS ne chiffre pas la part de ce recul imputable à l'IA.",
+   "key_facts": [
+    "Sur 2025-2035, le soutien administratif et de bureau est le grand groupe de métiers qui recule le plus vite et perd le plus d'emplois : −4,0 %, soit −752 100 emplois."
+   ],
+   "quotes": [
+    {
+     "text": "Although the growing adoption of AI is expected to support demand for some occupations, associated productivity gains may dampen employment demand for others.",
+     "fr": "Si l'adoption croissante de l'IA devrait soutenir la demande pour certains métiers, les gains de productivité qui l'accompagnent pourraient freiner la demande de main-d'œuvre pour d'autres.",
+     "speaker": "p-bls",
+     "status": "a_verifier",
+     "checked_at": "https://www.bls.gov/news.release/ecopro.nr0.htm"
+    },
+    {
+     "text": "Similarly, the continued integration of automation tools, including those powered by AI, into workflows is likely to reduce demand for several office and administrative support occupations.",
+     "fr": "De même, l'intégration continue d'outils d'automatisation, y compris ceux fondés sur l'IA, dans les processus de travail devrait réduire la demande pour plusieurs métiers de bureau et de soutien administratif.",
+     "speaker": "p-bls",
+     "status": "a_verifier",
+     "checked_at": "https://www.bls.gov/news.release/ecopro.nr0.htm"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "bls.gov refuse l'accès aux programmes automatisés (« Access Denied », erreur 403 à curl) ; ce blocage n'a pas été contourné. Le communiqué n'a été lu que par un outil de lecture web, qui ne permet pas de vérifier un verbatim : les deux citations restent a_verifier. Le chiffre de −752 100 emplois est recoupé par une reprise de presse. L'URL ecopro.nr0.htm pointe vers le dernier communiqué et changera à la prochaine édition annuelle. Projection : le recul des emplois de bureau est structurel depuis des décennies (numérisation). Les projections 2024-2034 détaillées par métier (TED du 16 juillet 2026 : conseillers clientèle −5,5 %, secrétaires juridiques −5,8 %…) n'ont pas été relues. Les autres chiffres du communiqué (emploi total, groupes en croissance) n'ont pas pu être relus sur le texte brut et ne sont pas repris."
+  },
+  {
+   "id": "src-meti-emploi-2040-2026",
+   "title": "2040年の就業構造推計（改訂版）について (Estimation de la structure de l'emploi en 2040, version révisée)",
+   "authors": [
+    "p-meti"
+   ],
+   "publisher": "経済産業省 経済産業政策局 (ministère japonais de l'Économie, du Commerce et de l'Industrie), document repris par le ministère de la Santé, du Travail et des Affaires sociales (MHLW)",
+   "date": "2026-03",
+   "url": "https://www.mhlw.go.jp/content/12602000/001670956.pdf",
+   "lang": "ja",
+   "kind": "rapport",
+   "branch": "employer_moins",
+   "planets": [
+    "travail"
+   ],
+   "currents": [
+    "gouvernance"
+   ],
+   "thesis": "Le METI projette l'offre et la demande de travail au Japon en 2040, dans un scénario où l'investissement intérieur et la transformation industrielle réussissent. Le nombre d'actifs occupés baisserait avec la population, sans pénurie globale grâce à l'IA, aux robots et à la requalification. Mais les déséquilibres entre métiers seraient massifs : excédent d'employés de bureau, pénurie de personnes capables de mettre en œuvre l'IA et les robots et de travailleurs de terrain. C'est un scénario de politique industrielle, pas une prévision.",
+   "key_facts": [
+    "Actifs occupés : 67,06 millions en 2022, 63,03 millions projetés en 2040.",
+    "Employés de bureau (事務職) en 2040 : demande de 10,39 millions pour une offre de 14,76 millions, soit un excédent de 4,37 millions ; ils étaient 14,55 millions en 2022.",
+    "Pénuries projetées en 2040 : 3,39 millions de personnes pour mettre en œuvre l'IA et les robots, 2,60 millions de travailleurs de terrain.",
+    "Variante où l'IA générative progresse plus vite : la demande d'employés de bureau (事務従事者) tomberait à 6,8 millions en 2040, contre 10,4 millions dans le scénario central et 15,3 millions sans IA générative."
+   ],
+   "quotes": [
+    {
+     "text": "AI・ロボット等利活用による省力化に伴い、事務職は約440万人の余剰が生じる可能性。",
+     "fr": "Avec les économies de main-d'œuvre liées à l'usage de l'IA et des robots, un excédent d'environ 4,4 millions d'employés de bureau pourrait apparaître.",
+     "speaker": "p-meti",
+     "status": "verifiee",
+     "checked_at": "https://www.mhlw.go.jp/content/12602000/001670956.pdf"
+    },
+    {
+     "text": "多くの産業において、AI・ロボット等利活用人材(約340万人)や現場人材(約260万人)が不足。",
+     "fr": "Dans de nombreux secteurs, il manquera des personnes pour mettre en œuvre l'IA et les robots (environ 3,4 millions) et des travailleurs de terrain (environ 2,6 millions).",
+     "speaker": "p-meti",
+     "status": "verifiee",
+     "checked_at": "https://www.mhlw.go.jp/content/12602000/001670956.pdf"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Document du METI (direction de la politique économique et industrielle, mars 2026) lu dans sa reprise officielle sur le site du MHLW (« 資料５ » d'une réunion), acceptée comme document officiel ; l'URL d'origine sur meti.go.jp n'a pas été retrouvée. Scénario normatif : il suppose 200 000 milliards de yens d'investissement intérieur en 2040 et une croissance nominale de 3,1 % par an jusqu'en 2040. Les taux de substitution par l'IA et les robots s'inspirent du RIETI Technical Paper 25-T-001 (Fukao et al., 2025). Les résumés arrondissent les chiffres (約440万人 pour 437万人). Révision de l'estimation publiée en juin 2025 dans la 4e synthèse intermédiaire du comité « 新機軸 » du Conseil de la structure industrielle."
+  },
+  {
+   "id": "src-bok-emploi-jeunes-ia-2026",
+   "title": "청년고용 위축, AI탓인가? 변화하는 경력 사다리와 대응 과제 (Recul de l'emploi des jeunes : la faute à l'IA ? L'échelle des carrières en mutation et les réponses à apporter)",
+   "authors": [
+    "p-bok"
+   ],
+   "publisher": "Banque de Corée (한국은행), équipe de recherche sur l'emploi, BOK 이슈노트 n° 2026-19",
+   "date": "2026-08-18",
+   "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=11063845&menuNo=200433",
+   "lang": "ko",
+   "kind": "étude",
+   "branch": "employer_moins",
+   "planets": [
+    "travail",
+    "jeunesse"
+   ],
+   "currents": [
+    "economistes"
+   ],
+   "thesis": "La note de la Banque de Corée mesure l'effet de la diffusion de l'IA sur l'emploi des jeunes à partir des fichiers de la caisse nationale de retraite et de l'enquête sur la population active. Le recul de l'emploi des jeunes se concentre dans les secteurs très exposés à l'IA, où l'emploi des quinquagénaires continue de progresser, et il est plus marqué là où l'IA sert à automatiser plutôt qu'à assister. La banque centrale refuse pourtant d'y voir un effet direct de la seule IA, et recommande de repenser l'échelle des carrières plutôt que de préserver les postes d'entrée.",
+   "key_facts": [
+    "En quatre ans, l'emploi des jeunes a reculé de 285 000 postes, dont 268 000 (94 %) dans les secteurs très exposés à l'IA.",
+    "Baisse de l'emploi des jeunes dans les services d'information (−31,4 %), l'édition (−27,4 %), la programmation informatique (−16,6 %) et les services professionnels (−11,6 %).",
+    "Depuis novembre 2022, le taux de chômage moyen des jeunes diplômés de l'université est de 7,0 %, contre 5,4 % pour les jeunes diplômés d'un cycle court ou moins diplômés.",
+    "Le recul combine moins d'embauches et davantage de départs de jeunes déjà en poste."
+   ],
+   "quotes": [
+    {
+     "text": "따라서 현재의 변화는 AI만의 직접적인 효과라기보다 기존의 채용·업무방식 변화를 AI가 가속화한 결과로 보는 것이 적절하다.",
+     "fr": "Il est donc plus juste de voir dans les changements actuels non un effet direct de la seule IA, mais l'accélération par l'IA de changements déjà à l'œuvre dans les recrutements et l'organisation du travail.",
+     "speaker": "p-bok",
+     "status": "verifiee",
+     "checked_at": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=11063845&menuNo=200433"
+    },
+    {
+     "text": "지난 4년간 청년층 일자리는 28.5만개 감소하였으며, 이 가운데 26.8만개(기여율 94%)가 AI 고노출 업종이다.",
+     "fr": "En quatre ans, l'emploi des jeunes a diminué de 285 000 postes, dont 268 000 (94 % de la baisse) dans des secteurs très exposés à l'IA.",
+     "speaker": "p-bok",
+     "status": "verifiee",
+     "checked_at": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=11063845&menuNo=200433"
+    },
+    {
+     "text": "따라서 정책은 기존 초급 일자리를 보전하기보다, 청년이 AI와 함께 경험과 암묵지를 축적할 수 있도록 경력 사다리를 재설계하는 데 초점을 맞춰야 한다.",
+     "fr": "La politique publique doit donc moins chercher à préserver les postes de débutants existants qu'à repenser l'échelle des carrières, pour que les jeunes puissent accumuler expérience et savoir tacite en travaillant avec l'IA.",
+     "speaker": "p-bok",
+     "status": "verifiee",
+     "checked_at": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=11063845&menuNo=200433"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Seul le résumé officiel publié sur la page de la note a été lu ; le PDF complet (lien en JavaScript) ne l'a pas été. Analyse par secteurs d'activité, pas par métiers. Le lien causal n'est pas établi, et la note cite d'autres facteurs : normalisation des recrutements excessifs d'après la pandémie, préférence pour les candidats expérimentés, affaiblissement de la formation en entreprise, télétravail. Elle prolonge l'hypothèse d'un « changement technologique biaisé en faveur de l'ancienneté » (Han Jin-soo et Oh Sam-il, 2025). Notes liées non lues : n° 2026-25 (IA et marchés du travail régionaux, 15 septembre 2026) et n° 2026-27 (emploi des jeunes, 26 octobre 2026)."
+  },
+  {
+   "id": "src-fedny-entreprises-ia-2026",
+   "title": "Businesses Are Using AI to Transform Work, Not Cut Jobs",
+   "authors": [
+    "p-fed-ny"
+   ],
+   "publisher": "Federal Reserve Bank of New York, Liberty Street Economics",
+   "date": "2026-09-01",
+   "url": "https://libertystreeteconomics.newyorkfed.org/2026/09/businesses-are-using-ai-to-transform-work-not-cut-jobs/",
+   "lang": "en",
+   "kind": "étude",
+   "branch": "employer_moins",
+   "planets": [
+    "travail"
+   ],
+   "currents": [
+    "economistes"
+   ],
+   "thesis": "Les enquêtes de la Fed de New York auprès des entreprises de New York et du nord du New Jersey montrent qu'en trois ans l'usage de l'IA est devenu courant, mais que les investissements restent modestes et que l'outil n'est utilisé que par une petite part des salariés. Les licenciements dus à l'IA restent rares ; certaines entreprises embauchent moins, d'autres davantage, et la formation des salariés reste la première réponse. Les auteurs préviennent que ces tendances peuvent changer à mesure que les usages mûrissent.",
+   "key_facts": [
+    "Part des entreprises de services qui utilisent l'IA : 25 % en 2024, 40 % en 2025, 61 % en 2026 ; dans l'industrie : 16 %, 26 % puis 51 %.",
+    "Sur les six mois précédant l'enquête d'août 2026, 4 % des entreprises de services déclarent avoir licencié à cause de l'IA (1 % un an plus tôt) et aucune dans l'industrie ; 15 % ont moins embauché (12 % en 2025) et environ 13 % ont embauché davantage.",
+    "Dans les entreprises de services qui utilisent l'IA, la part médiane de salariés qui s'en servent est de 17 % (7 % dans l'industrie) ; un peu plus d'un tiers de ces entreprises ont formé des salariés en réponse à l'IA."
+   ],
+   "quotes": [
+    {
+     "text": "Only 4 percent of service firms reported laying off workers in response to AI over the past six months, compared to just 1 percent in last year’s survey, while no manufacturers reported layoffs this year or last year.",
+     "fr": "Seules 4 % des entreprises de services déclarent avoir licencié des salariés à cause de l'IA au cours des six derniers mois, contre 1 % seulement dans l'enquête de l'an dernier, et aucune entreprise industrielle n'a fait état de licenciements, ni cette année ni l'an dernier.",
+     "speaker": "p-fed-ny",
+     "status": "verifiee",
+     "checked_at": "https://libertystreeteconomics.newyorkfed.org/2026/09/businesses-are-using-ai-to-transform-work-not-cut-jobs/"
+    },
+    {
+     "text": "Evidence from our surveys so far confirms what many studies are showing: that AI has been more likely to augment workers than replace them.",
+     "fr": "Les résultats de nos enquêtes confirment jusqu'ici ce que montrent de nombreuses études : l'IA a plus souvent renforcé les travailleurs qu'elle ne les a remplacés.",
+     "speaker": "p-fed-ny",
+     "status": "verifiee",
+     "checked_at": "https://libertystreeteconomics.newyorkfed.org/2026/09/businesses-are-using-ai-to-transform-work-not-cut-jobs/"
+    },
+    {
+     "text": "That said, AI technology and its applications are still evolving rapidly, and these patterns could shift as adoption matures.",
+     "fr": "Cela dit, la technologie de l'IA et ses applications évoluent encore rapidement, et ces tendances pourraient changer à mesure que l'adoption mûrit.",
+     "speaker": "p-fed-ny",
+     "status": "verifiee",
+     "checked_at": "https://libertystreeteconomics.newyorkfed.org/2026/09/businesses-are-using-ai-to-transform-work-not-cut-jobs/"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Auteurs : Jaison R. Abel, Richard Deitz, Natalia Emanuel et Nick Montalbano (Fed de New York, groupe Recherche et statistiques) ; les billets de Liberty Street Economics n'engagent que leurs auteurs. Enquête régionale (New York et nord du New Jersey) et déclarative, menée en août 2026 sur les six mois précédents. Les entreprises qui n'utilisent l'IA que comme moteur de recherche ne sont pas comptées comme utilisatrices. Remplace le billet de septembre 2025 (1 % de licenciements). La première citation conserve l'espace insécable du texte source entre « 4 » et « percent ». DOI 10.59576/lse.20260901. Voir aussi le billet du 14 mai 2026 sur les offres d'emploi (src-fedny-annonces-ia-2026), qui repose sur d'autres données."
+  },
+  {
+   "id": "src-fedny-annonces-ia-2026",
+   "title": "Do Job Postings Show Early Labor-Market Effects of AI?",
+   "authors": [
+    "p-fed-ny"
+   ],
+   "publisher": "Federal Reserve Bank of New York, Liberty Street Economics",
+   "date": "2026-05-14",
+   "url": "https://libertystreeteconomics.newyorkfed.org/2026/05/do-job-postings-show-early-labor-market-effects-of-ai/",
+   "lang": "en",
+   "kind": "étude",
+   "branch": "employer_moins",
+   "planets": [
+    "travail",
+    "jeunesse"
+   ],
+   "currents": [
+    "economistes"
+   ],
+   "thesis": "Trois économistes de la Fed de New York croisent une mesure de l'exposition des métiers à l'IA avec les offres d'emploi américaines (Lightcast). Les offres reculent bien davantage dans les métiers exposés, mais ce décrochage a commencé avant la sortie de ChatGPT et se stabilise après 2023. Au sein des métiers exposés, les postes juniors ne reculent pas plus que les postes seniors : selon les auteurs, l'IA n'est pas le moteur principal du ralentissement des embauches.",
+   "key_facts": [
+    "Moins de 10 % des travailleurs et des offres d'emploi relèvent de métiers dont l'exposition à l'IA atteint au moins 0,4 sur une échelle de 0 à 1 ; 40 % des travailleurs occupent des métiers dont l'exposition mesurée est nulle.",
+    "Le recul relatif des offres dans les métiers exposés (exposition d'au moins 0,2) commence avant 2022, sans rupture supplémentaire nette après la sortie de ChatGPT fin 2022, et l'écart se stabilise après 2023.",
+    "Au sein des métiers très exposés, l'écart entre offres juniors et offres seniors fluctue sans tendance après 2022."
+   ],
+   "quotes": [
+    {
+     "text": "These patterns make it difficult to attribute the recent slowdown in entry-level hiring to AI alone.",
+     "fr": "Ces tendances rendent difficile d'attribuer à la seule IA le récent ralentissement des embauches de débutants.",
+     "speaker": "p-fed-ny",
+     "status": "verifiee",
+     "checked_at": "https://libertystreeteconomics.newyorkfed.org/2026/05/do-job-postings-show-early-labor-market-effects-of-ai/"
+    },
+    {
+     "text": "While the chart shows a relative decline in postings for occupations with higher AI exposure, the event study indicates that this trend predates the release of ChatGPT.",
+     "fr": "Si le graphique montre un recul relatif des offres pour les métiers les plus exposés à l'IA, l'étude d'événement indique que cette tendance est antérieure à la sortie de ChatGPT.",
+     "speaker": "p-fed-ny",
+     "status": "verifiee",
+     "checked_at": "https://libertystreeteconomics.newyorkfed.org/2026/05/do-job-postings-show-early-labor-market-effects-of-ai/"
+    },
+    {
+     "text": "The evidence from job postings suggests that while AI may be contributing to recent labor market developments, it is not the main driver of the slowdown in hiring.",
+     "fr": "Les offres d'emploi suggèrent que, si l'IA contribue peut-être aux évolutions récentes du marché du travail, elle n'est pas le moteur principal du ralentissement des embauches.",
+     "speaker": "p-fed-ny",
+     "status": "verifiee",
+     "checked_at": "https://libertystreeteconomics.newyorkfed.org/2026/05/do-job-postings-show-early-labor-market-effects-of-ai/"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Auteurs : Richard Audoly, Miles Guerin et Giorgio Topa (Fed de New York) ; les billets de Liberty Street Economics n'engagent que leurs auteurs. La mesure d'exposition utilisée est celle d'Anthropic (exposition observée à partir des usages de Claude), acteur par ailleurs cartographié dans le corpus. Il s'agit d'offres d'emploi, pas d'emploi effectif. Contredit en partie Hosseini et Lichtinger (src-hosseini-lichtinger-seniorite-2026), qui trouvent un recul de l'emploi junior dans les entreprises adoptantes. DOI 10.59576/lse.20260514."
+  },
+  {
+   "id": "src-igf-igas-iga-ia-administrations-2026",
+   "title": "Le déploiement de l'intelligence artificielle dans les administrations publiques : analyse comparée, enjeux et conditions de réussite (synthèse et propositions)",
+   "authors": [
+    "p-igf",
+    "p-igas",
+    "p-iga"
+   ],
+   "publisher": "Inspection générale des finances, Inspection générale des affaires sociales et Inspection générale de l'administration (IGF n° 2025-E-081-03, IGAS n° 2025-089R, IGA n° 26008R)",
+   "date": "2026-07",
+   "url": "https://www.igas.gouv.fr/sites/igas/files/2026-07/Rapport%20IGF-IGAS-IGA%20D%C3%A9ploiement%20IA%20dans%20AP%20%28synth%C3%A8se%20et%20recommandations%29_0.pdf",
+   "lang": "fr",
+   "kind": "rapport",
+   "branch": "employer_moins",
+   "planets": [
+    "services",
+    "travail"
+   ],
+   "currents": [
+    "gouvernance"
+   ],
+   "thesis": "Les trois inspections décrivent une adoption de l'IA récente, foisonnante et peu coordonnée dans les administrations françaises, avec un usage non encadré qui pourrait concerner jusqu'à 40 % des agents. En appliquant la méthode de l'OIT, elles estiment qu'un agent public sur cinq est sensiblement exposé à l'IA, surtout dans les fonctions administratives et de support, tout en soulignant que l'exposition ne préjuge pas des gains de productivité. Elles recommandent des outils sécurisés pour tous les agents, la mutualisation, le dialogue social et une gestion prévisionnelle des emplois ciblée sur les métiers exposés.",
+   "key_facts": [
+    "Selon la méthode de l'OIT appliquée aux agents publics : un sur cinq est, en théorie, sensiblement exposé à l'IA ; un sur sept l'est significativement ; un sur quatre est faiblement exposé ; un sur deux très peu.",
+    "La direction des achats de l'État anticipe plus de 60 % de gain de temps des acheteurs publics pour la recherche de fournisseurs ; la direction des affaires juridiques des ministères économiques et financiers a divisé par deux le temps de recherche documentaire.",
+    "Entre 2023 et 2025, la DINUM a engagé 8,7 M€ sur l'IA, les ministères 26,2 M€ et France Travail 18,7 M€.",
+    "Avec des outils d'IA documentaires, le délai de réponse de « Services publics + » est passé de 19 à 3 jours en moyenne."
+   ],
+   "quotes": [
+    {
+     "text": "un agent public sur cinq est, en théorie, sensiblement exposé à l'IA, au sens des catégories OIT",
+     "speaker": "p-igf",
+     "status": "verifiee",
+     "checked_at": "https://www.igas.gouv.fr/sites/igas/files/2026-07/Rapport%20IGF-IGAS-IGA%20D%C3%A9ploiement%20IA%20dans%20AP%20%28synth%C3%A8se%20et%20recommandations%29_0.pdf"
+    },
+    {
+     "text": "Cette exposition des métiers évaluée par ce modèle de tâches ne préjuge pas des gains de productivité effectifs",
+     "speaker": "p-igf",
+     "status": "verifiee",
+     "checked_at": "https://www.igas.gouv.fr/sites/igas/files/2026-07/Rapport%20IGF-IGAS-IGA%20D%C3%A9ploiement%20IA%20dans%20AP%20%28synth%C3%A8se%20et%20recommandations%29_0.pdf"
+    },
+    {
+     "text": "Définir et mettre en œuvre une stratégie de gestion prévisionnelle des emplois et des compétences (GPEC) intégrant les enjeux de l’IA, en ciblant en priorité les compétences nécessaires et les métiers les plus exposés.",
+     "speaker": "p-igf",
+     "status": "verifiee",
+     "checked_at": "https://www.igas.gouv.fr/sites/igas/files/2026-07/Rapport%20IGF-IGAS-IGA%20D%C3%A9ploiement%20IA%20dans%20AP%20%28synth%C3%A8se%20et%20recommandations%29_0.pdf",
+     "context": "Proposition n° 12, adressée à la DGAFP."
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Rapport daté d'avril 2026 et diffusé début juillet 2026 (fichier déposé en juillet 2026 sur igas.gouv.fr ; la presse indique le 2 juillet). Seules la synthèse et la liste des propositions (6 pages) ont été lues. Auteurs : Pierre Cunéo, François Charlottin, Arturo Garcia-Gonzalez et Mouad El Issami (IGF) ; Fabienne Bartoli, Louis-Charles Viossat et Nadège Grataloup (IGAS) ; Jérôme Letier et Arnaud Mercier (IGA). Citations attribuées à p-igf par convention (rapport conjoint des trois inspections). Il s'agit d'une exposition théorique au sens de l'OIT, pas d'une prévision de suppressions de postes. Le chiffre de 40 % d'usage clandestin vient d'une enquête du SNDGCT (septembre 2025) sur les collectivités. Le chiffre de « 700 000 agents » relayé par la presse ne figure pas dans la synthèse. Une version anglaise de la synthèse existe sur igas.gouv.fr."
+  },
+  {
+   "id": "src-hosseini-lichtinger-seniorite-2026",
+   "title": "Generative AI as Seniority-Biased Technological Change: Evidence from U.S. Résumé and Job Posting Data",
+   "authors": [
+    "p-hosseini",
+    "p-lichtinger"
+   ],
+   "publisher": "Document de travail, Harvard University (SSRN 5425555)",
+   "date": "2026-05-06",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5425555",
+   "lang": "en",
+   "kind": "étude",
+   "branch": "employer_moins",
+   "planets": [
+    "travail",
+    "jeunesse"
+   ],
+   "currents": [
+    "economistes"
+   ],
+   "thesis": "À partir des CV de 65 millions de travailleurs et des offres d'emploi américaines, les auteurs repèrent les entreprises qui recrutent des « intégrateurs d'IA générative » et comparent l'évolution de leurs effectifs à celle des autres. Après l'adoption, l'emploi junior baisse nettement dans ces entreprises, alors que l'emploi senior suit sa tendance. La baisse se concentre dans les métiers les plus exposés et passe par un ralentissement des embauches plutôt que par des départs.",
+   "key_facts": [
+    "Données : CV de 65 millions de travailleurs dans plus de 280 000 entreprises américaines (2015-2025) ; 10 433 entreprises adoptantes en mars 2025, soit 3,7 % des entreprises mais 16 % de l'emploi de l'échantillon.",
+    "Environ deux trimestres après l'adoption, l'emploi junior des entreprises adoptantes commence à baisser par rapport aux non-adoptantes, jusqu'à −8 % après huit trimestres.",
+    "Entre le 4e trimestre 2022 et le 1er trimestre 2025, l'emploi junior des métiers très exposés recule d'environ 7 % par rapport aux métiers peu exposés, alors que l'emploi senior correspondant continue de croître."
+   ],
+   "quotes": [
+    {
+     "text": "The decline is driven primarily by slower hiring rather than increased separations.",
+     "fr": "La baisse s'explique principalement par un ralentissement des embauches plutôt que par une hausse des départs.",
+     "speaker": "p-hosseini",
+     "status": "verifiee",
+     "checked_at": "https://raw.githubusercontent.com/s-mahdihosseini/Website/b99fa2962dcc4c165bbc3c41dd283afa99c5ccfb/GenAI_SenBTC_May_2026.pdf"
+    },
+    {
+     "text": "We find that junior employment in high-exposure occupations contracts by roughly 7 percent relative to low-exposure occupations between 2022Q4 and 2025Q1, while the corresponding senior series continues to rise throughout the same period.",
+     "fr": "Nous constatons qu'entre le 4e trimestre 2022 et le 1er trimestre 2025, l'emploi junior des métiers très exposés recule d'environ 7 % par rapport aux métiers peu exposés, tandis que la série correspondante pour les seniors continue de progresser sur toute la période.",
+     "speaker": "p-hosseini",
+     "status": "verifiee",
+     "checked_at": "https://raw.githubusercontent.com/s-mahdihosseini/Website/b99fa2962dcc4c165bbc3c41dd283afa99c5ccfb/GenAI_SenBTC_May_2026.pdf"
+    },
+    {
+     "text": "Roughly two quarters after adoption, junior employment in adopting firms begins to decline, reaching an 8 percent reduction after eight quarters.",
+     "fr": "Environ deux trimestres après l'adoption, l'emploi junior commence à baisser dans les entreprises adoptantes, pour atteindre une réduction de 8 % au bout de huit trimestres.",
+     "speaker": "p-lichtinger",
+     "status": "verifiee",
+     "checked_at": "https://raw.githubusercontent.com/s-mahdihosseini/Website/b99fa2962dcc4c165bbc3c41dd283afa99c5ccfb/GenAI_SenBTC_May_2026.pdf"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Version du 6 mai 2026 (première version : 31 août 2025), lue en intégralité (105 pages) sur le dépôt GitHub de l'auteur : preprint d'auteur, accepté. La version de référence est sur SSRN, qui n'a pas été relu. Document de travail, non publié dans une revue. Citations du texte cosigné, attribuées aux deux auteurs par alternance. Données : CV issus de LinkedIn fournis par Revelio Labs, d'où un biais vers le travail qualifié de bureau. L'adoption est repérée par les offres d'« intégrateur d'IA générative », indicateur indirect de l'usage. Contredit en partie par l'analyse des offres d'emploi de la Fed de New York (src-fedny-annonces-ia-2026). Pays des auteurs : celui de leur affiliation (Harvard)."
+  },
+  {
+   "id": "src-brookings-capacite-adaptation-2026",
+   "title": "Measuring US workers’ capacity to adapt to AI-driven job displacement",
+   "authors": [
+    "p-govai",
+    "p-brookings"
+   ],
+   "publisher": "Brookings Institution (Brookings Metro)",
+   "date": "2026-01-21",
+   "url": "https://www.brookings.edu/articles/measuring-us-workers-capacity-to-adapt-to-ai-driven-job-displacement/",
+   "lang": "en",
+   "kind": "étude",
+   "branch": "employer_moins",
+   "planets": [
+    "travail"
+   ],
+   "currents": [
+    "economistes"
+   ],
+   "thesis": "L'article croise l'exposition des métiers aux modèles de langage avec un indice de « capacité d'adaptation » à une perte d'emploi, construit à partir de l'épargne liquide, de l'âge, de la densité du marché du travail local et de la transférabilité des compétences. La plupart des travailleurs très exposés, souvent cadres et bien payés, seraient les mieux armés pour rebondir. Une minorité cumule forte exposition et faible capacité d'adaptation : surtout des emplois de bureau et administratifs, très majoritairement occupés par des femmes. Il s'agit d'une vulnérabilité potentielle, pas de pertes d'emploi observées.",
+   "key_facts": [
+    "Sur 37,1 millions de travailleurs américains du quartile le plus exposé aux modèles de langage, 26,5 millions ont une capacité d'adaptation supérieure à la médiane.",
+    "6,1 millions de travailleurs (4,2 % de l'échantillon) cumulent forte exposition et faible capacité d'adaptation ; environ 86 % sont des femmes.",
+    "Parmi les métiers concernés les plus nombreux : employés de bureau (2,5 millions), secrétaires et assistants administratifs (1,7 million), réceptionnistes (965 000), secrétaires médicaux (831 000).",
+    "La part de ces travailleurs vulnérables va de 2,4 % à 6,9 % de l'emploi selon les aires métropolitaines (3,9 % en moyenne) ; elle est plus élevée dans les villes universitaires et les petites métropoles des Rocheuses et du Midwest."
+   ],
+   "quotes": [
+    {
+     "text": "However, the analysis also documents that some 6.1 million workers (4.2% of the workforce in the sample) will likely contend with both high AI exposure and low adaptive capacity.",
+     "fr": "L'analyse montre cependant que quelque 6,1 millions de travailleurs (4,2 % des actifs de l'échantillon) devront probablement faire face à la fois à une forte exposition à l'IA et à une faible capacité d'adaptation.",
+     "speaker": "p-brookings",
+     "status": "verifiee",
+     "checked_at": "https://www.brookings.edu/articles/measuring-us-workers-capacity-to-adapt-to-ai-driven-job-displacement/"
+    },
+    {
+     "text": "These workers tend to be concentrated in clerical and administrative roles, and about 86% are women",
+     "fr": "Ces travailleurs se concentrent dans les emplois de bureau et administratifs, et environ 86 % sont des femmes",
+     "speaker": "p-brookings",
+     "status": "verifiee",
+     "checked_at": "https://www.brookings.edu/articles/measuring-us-workers-capacity-to-adapt-to-ai-driven-job-displacement/"
+    },
+    {
+     "text": "That is, the most exposed workers may have the most resilience if AI automation or another cause leads to job loss.",
+     "fr": "Autrement dit, les travailleurs les plus exposés pourraient être les plus résilients si l'automatisation par l'IA ou une autre cause entraîne une perte d'emploi.",
+     "speaker": "p-brookings",
+     "status": "verifiee",
+     "checked_at": "https://www.brookings.edu/articles/measuring-us-workers-capacity-to-adapt-to-ai-driven-job-displacement/"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Coécrit par Sam Manning et Tomás Aguirre (Centre for the Governance of AI, GovAI) avec Mark Muro et Shriya Methkupally (Brookings Metro) ; l'article présente un document de travail de Manning et Aguirre pour le NBER, qui n'a pas été lu. Citations attribuées à p-brookings par convention (texte cosigné publié par Brookings). GovAI est un centre de recherche sur la gouvernance de l'IA et ses risques, sans intérêt commercial. L'exposition est mesurée par Eloundou et al. (2024), dont plusieurs auteurs sont chercheurs chez OpenAI. Indice calculé par métier, pas par individu ; part des femmes calculée avec les données Lightcast. Page mise à jour le 12 février 2026."
+  },
+  {
+   "id": "src-yale-budget-lab-tracker-2026",
+   "title": "Tracking the Impact of AI on the Labor Market",
+   "authors": [
+    "p-yale-budget-lab"
+   ],
+   "publisher": "The Budget Lab at Yale (AI Labor Market Tracker, mise à jour du 14 octobre 2026)",
+   "date": "2026-10-14",
+   "url": "https://budgetlab.yale.edu/research/tracking-impact-ai-labor-market",
+   "lang": "en",
+   "kind": "étude",
+   "branch": "employer_moins",
+   "planets": [
+    "travail"
+   ],
+   "currents": [
+    "economistes"
+   ],
+   "thesis": "Le Budget Lab de Yale suit chaque mois l'empreinte de l'IA sur le marché du travail américain à partir des microdonnées de l'enquête emploi (CPS), par trois approches : l'évolution de la composition des métiers, les indicateurs d'exposition et d'usage de l'IA, et la comparaison entre travailleurs exposés et non exposés par différences de différences synthétiques. La mise à jour d'octobre 2026 ne trouve pas de signe clair de perturbation liée à l'IA. Elle relève toutefois que le chômage des travailleurs exposés progresse plus vite que celui de travailleurs comparables non exposés depuis fin 2022, une estimation jugée volatile.",
+   "key_facts": [
+    "Suivi publié le 16 juillet 2026, mis à jour le 15 septembre (données CPS d'août) puis le 14 octobre 2026 (données CPS de septembre).",
+    "Mise à jour de septembre 2026 : la rotation entre métiers, l'exposition des chômeurs à l'IA et les données d'usage restent stables, dans leurs fourchettes historiques ou sur leurs tendances d'avant l'IA.",
+    "Mise à jour d'octobre 2026 : la rotation entre métiers et les comparaisons d'emploi et de salaires entre travailleurs exposés et non exposés ne montrent pas de perturbation à grande échelle ; le chômage des travailleurs exposés progresse cependant plus vite que celui des non-exposés comparables depuis fin 2022, y compris au 3e trimestre 2026."
+   ],
+   "quotes": [
+    {
+     "text": "The Budget Lab's labor market analysis, updated to incorporate September 2026 CPS microdata, does not provide clear evidence of labor market disruption associated with AI.",
+     "fr": "L'analyse du marché du travail du Budget Lab, mise à jour avec les microdonnées CPS de septembre 2026, n'apporte pas de preuve claire d'une perturbation du marché du travail liée à l'IA.",
+     "speaker": "p-yale-budget-lab",
+     "status": "verifiee",
+     "checked_at": "https://interactives.budgetlab.yale.edu/tools/ai-labor-market-tracker/data/manifest.json"
+    },
+    {
+     "text": "However, the growth in unemployment of AI-exposed workers has tended to be elevated relative to growth for comparable unexposed workers since late 2022, and this is the case in the third quarter of 2026.",
+     "fr": "Cependant, le chômage des travailleurs exposés à l'IA a eu tendance à progresser plus vite que celui de travailleurs comparables non exposés depuis fin 2022, et c'est encore le cas au troisième trimestre 2026.",
+     "speaker": "p-yale-budget-lab",
+     "status": "verifiee",
+     "checked_at": "https://interactives.budgetlab.yale.edu/tools/ai-labor-market-tracker/data/manifest.json"
+    },
+    {
+     "text": "These estimates are volatile and should be interpreted cautiously, particularly as they are not accompanied by other indications of labor market impacts.",
+     "fr": "Ces estimations sont volatiles et doivent être interprétées avec prudence, d'autant qu'elles ne s'accompagnent d'aucun autre signe d'effet sur le marché du travail.",
+     "speaker": "p-yale-budget-lab",
+     "status": "verifiee",
+     "checked_at": "https://interactives.budgetlab.yale.edu/tools/ai-labor-market-tracker/data/manifest.json"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Le texte de la mise à jour du 14 octobre 2026 est chargé par l'outil interactif intégré à la page du suivi ; il a été lu dans le fichier de données de cet outil, servi par le Budget Lab lui-même (interactives.budgetlab.yale.edu). La mise à jour du 15 septembre a été lue dans l'export PDF de la page. La page ne nomme pas d'auteurs ; la méthode renvoie à Gimbel et al. (2025), Gimbel, Kendall et Kulsakdinun (2026) et Gimbel, Kendall et Nunn (2026). Une partie des données d'usage vient d'Anthropic (Massenkoff et al., 2026), acteur cartographié dans le corpus. Mesures par métier sur l'ensemble des actifs : un effet limité aux débutants peut leur échapper. Complément du même centre : Ryan Nunn, « AI Is Probably Not (Yet) the Reason for Labor Market Weakening » (7 mai 2026), qui estime un effet proche de zéro et non significatif sur l'emploi et les salaires réels des métiers exposés."
+  },
+  {
+   "id": "src-pan-map-agents-production-2025",
+   "title": "Measuring Agents in Production",
+   "authors": [
+    "p-pan-melissa",
+    "p-zaharia"
+   ],
+   "publisher": "arXiv (prépublication, version 4) ; article accepté à ICML 2026",
+   "date": "2025-12-02",
+   "url": "https://arxiv.org/abs/2512.04123",
+   "lang": "en",
+   "kind": "étude",
+   "planets": [
+    "devs",
+    "travail"
+   ],
+   "currents": [],
+   "thesis": "Première enquête systématique sur les agents fondés sur des LLM réellement déployés en entreprise : 20 études de cas par entretiens et un questionnaire sur 86 systèmes en production dans 26 domaines. Les agents qui fonctionnent sont simples et tenus de près : peu d'étapes avant une intervention humaine, des modèles du commerce pilotés par consignes, une évaluation surtout humaine. Ils servent très majoritairement des humains et, même face aux clients, assistent des experts plutôt qu'ils ne les remplacent.",
+   "key_facts": [
+    "92,5 % des agents déployés ont des humains pour utilisateurs principaux : salariés internes (52,2 %), clients externes (40,3 %) ; 7,5 % seulement servent d'autres logiciels.",
+    "68 % des agents exécutent au plus 10 étapes avant une intervention humaine ; 70 % reposent sur des modèles du commerce sans réentraînement ; 74 % sont évalués d'abord par des humains.",
+    "La réduction des heures de travail humain est la deuxième raison de déployer un agent (72,7 % des 66 répondants), après la hausse de la productivité (80,3 %)."
+   ],
+   "quotes": [
+    {
+     "text": "Even external-facing systems typically augment domain experts rather than replacing human workers, with humans serving as final verifiers of agent outputs.",
+     "fr": "Même les systèmes tournés vers l'extérieur assistent en général des experts du domaine plutôt qu'ils ne remplacent des travailleurs humains, les humains servant de vérificateurs finaux des productions de l'agent.",
+     "speaker": "p-pan-melissa",
+     "status": "verifiee",
+     "checked_at": "https://arxiv.org/pdf/2512.04123v4",
+     "context": "Section 4.3, « Users of Agents » ; texte collectif attribué à la première autrice."
+    },
+    {
+     "text": "The deployed agents surveyed primarily serve human users: 92.5% target humans rather than other software systems",
+     "fr": "Les agents déployés étudiés servent avant tout des utilisateurs humains : 92,5 % visent des humains plutôt que d'autres systèmes logiciels",
+     "speaker": "p-pan-melissa",
+     "status": "verifiee",
+     "checked_at": "https://arxiv.org/pdf/2512.04123v4"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Version 4 (4 juin 2026) relue ; première version déposée le 2 décembre 2025. 25 auteurs (UC Berkeley, Stanford, UIUC, IBM Research, Intesa Sanpaolo) ; citations attribuées à la première autrice, Melissa Z. Pan, Matei Zaharia est auteur correspondant. Données déclarées par des praticiens volontaires, sur des systèmes jugés en production : l'échantillon n'est pas représentatif et ne dit rien des projets abandonnés. Le texte donne 68 % d'agents à « au plus 10 étapes » dans le résumé et « moins de 10 étapes » dans le corps. Contrepoint empirique à l'idée que l'agent remplace l'utilisateur du logiciel."
+  },
+  {
+   "id": "src-yonyou-agents-logiciel-2026",
+   "title": "用友王文京：全球企业软件走向“AI+X”的智能体时代 (Wang Wenjing, de Yonyou : le logiciel d'entreprise mondial entre dans l'ère des agents « AI+X »)",
+   "authors": [
+    "p-xinhua"
+   ],
+   "publisher": "Xinhuanet (新华网), site de l'agence Xinhua",
+   "date": "2026-08-10",
+   "url": "https://www.news.cn/ci/20260810/67f72ce20be641fa99f30e6474638c92/c.html",
+   "lang": "zh",
+   "kind": "article",
+   "planets": [
+    "pouvoir",
+    "devs"
+   ],
+   "currents": [],
+   "thesis": "L'article rend compte du discours de Wang Wenjing, fondateur et PDG de Yonyou, premier éditeur chinois de logiciels de gestion, à la conférence GBIC 2026 (Nankin, 6-8 août 2026). Selon lui, l'IA ne tue pas le logiciel : elle en est la mise à niveau. Le logiciel d'entreprise passerait du copilote, où l'humain exécute avec l'aide de l'IA, à l'agent, où l'humain autorise l'IA à exécuter, puis à une IA qui dirige sous supervision humaine. Yonyou propose un « double mode » : logiciel de processus pour les tâches déterministes, agents pour les décisions incertaines.",
+   "key_facts": [
+    "Yonyou lance BIP 6 en août 2026, avec 63 agents sectoriels, 623 « skills » et plus de 26 000 interfaces d'applications et de services, selon l'entreprise.",
+    "Selon l'article, plus de 300 grandes et moyennes entreprises chinoises ont remplacé le système d'un éditeur international par celui de Yonyou, dans le cadre de la politique de substitution nationale (信创).",
+    "« Double mode » : logiciel d'exécution de processus pour les scénarios fondés sur des règles et le calcul exact ; agents pour la décision et l'exécution autonomes en situation incertaine."
+   ],
+   "quotes": [
+    {
+     "text": "企业服务产业正步入智能体时代，全球企业软件由此前的“X+AI”、人执行AI辅助的副驾驶时代，走向“AI+X” 、人授权AI执行的智能体时代，并将在未来走向AI主导人监督的AI原生时代。",
+     "fr": "L'industrie des services aux entreprises entre dans l'ère des agents : le logiciel d'entreprise mondial passe de l'ère du copilote « X+AI », où l'humain exécute avec l'aide de l'IA, à l'ère des agents « AI+X », où l'humain autorise l'IA à exécuter, avant d'entrer à l'avenir dans une ère native de l'IA, où l'IA dirige et l'humain supervise.",
+     "speaker": "p-xinhua",
+     "status": "verifiee",
+     "checked_at": "https://www.news.cn/ci/20260810/67f72ce20be641fa99f30e6474638c92/c.html",
+     "context": "Formulation de l'article, qui résume au discours indirect la thèse de Wang Wenjing."
+    },
+    {
+     "text": "王文京认为，AI是软件的新范式、新形态，不会吞噬或杀死软件，是软件的AI化升级换代。",
+     "fr": "Wang Wenjing estime que l'IA est un nouveau paradigme, une nouvelle forme du logiciel ; elle ne va ni dévorer ni tuer le logiciel, elle en est la mise à niveau par l'IA.",
+     "speaker": "p-xinhua",
+     "status": "verifiee",
+     "checked_at": "https://www.news.cn/ci/20260810/67f72ce20be641fa99f30e6474638c92/c.html",
+     "context": "Discours indirect : ce n'est pas une citation directe de Wang Wenjing."
+    },
+    {
+     "text": "AI是计算机诞生后全球最大的革命性技术浪潮。",
+     "fr": "L'IA est la plus grande vague technologique révolutionnaire au monde depuis la naissance de l'ordinateur.",
+     "speaker": "p-wang-wenjing",
+     "status": "a_verifier",
+     "checked_at": "https://www.news.cn/ci/20260810/67f72ce20be641fa99f30e6474638c92/c.html",
+     "context": "Seule phrase de Wang Wenjing entre guillemets dans l'article ; discours du 6 août 2026 non lu en primaire."
+    }
+   ],
+   "reliability": "secondaire",
+   "notes": "Texte au ton promotionnel, repris presque mot pour mot par d'autres médias (Sina Finance d'après le Times Business Research Institute, 09/08/2026) : il s'appuie probablement sur la communication de Yonyou. Les deux premières citations sont le texte de l'article (discours indirect), attribuées à Xinhua ; la phrase directe de Wang Wenjing reste a_verifier, faute de texte primaire du discours (non trouvé sur le site de Yonyou). Yonyou vend les agents dont il parle. Voix chinoise à mettre en regard de Totvs (Brésil) et de Salesforce (États-Unis)."
+  },
+  {
+   "id": "src-reuters-saas-selloff-2026",
+   "title": "Anthropic touts new AI tools weeks after legal plug-in spurred market rout",
+   "authors": [
+    "p-reuters"
+   ],
+   "publisher": "Reuters (dépêche reprise par RTÉ)",
+   "date": "2026-02-24",
+   "url": "https://www.rte.ie/news/business/2026/0224/1560188-artificial-intelligence-lab-anthropic-touts-new-ai-tools/",
+   "lang": "en",
+   "kind": "article",
+   "planets": [
+    "pouvoir"
+   ],
+   "currents": [],
+   "thesis": "La dépêche annonce dix nouveaux plug-ins de Claude pour des métiers de bureau : banque d'affaires, gestion de patrimoine, ressources humaines, capital-investissement, ingénierie. Elle rappelle que la sortie d'un plug-in juridique avait déclenché quelques semaines plus tôt une vente massive des actions de logiciels et de services, les investisseurs craignant que l'automatisation par l'IA ne prive ces éditeurs d'une large part de leurs revenus. Anthropic affirme fournir une infrastructure à ses partenaires plutôt que chercher à les remplacer.",
+   "key_facts": [
+    "Environ 830 Md$ de capitalisation perdus par les actions de logiciels et de services dans le monde en six séances, après la sortie d'un plug-in juridique d'Anthropic le mois précédent, selon Reuters.",
+    "Le 24/02/2026, Anthropic présente dix nouveaux usages de ses plug-ins, développés notamment avec LSEG et FactSet.",
+    "Thomson Reuters, propriétaire de l'agence Reuters et parmi les titres touchés, figure aussi parmi les entreprises qui utilisent des agents fondés sur Claude."
+   ],
+   "quotes": [
+    {
+     "text": "Last month, Anthropic's release of a legal plug-in ignited an $830 billion global selloff in software and services stocks - including some of the startup's partners - over six trading days as investors worried that AI-powered automation could undercut large chunks of those companies' revenue streams.",
+     "fr": "Le mois dernier, la sortie d'un plug-in juridique par Anthropic a déclenché une vente massive de 830 milliards de dollars sur les actions de logiciels et de services dans le monde, y compris chez certains partenaires de la start-up, en six séances : les investisseurs craignaient que l'automatisation par l'IA ne prive ces entreprises d'une large part de leurs revenus.",
+     "speaker": "p-reuters",
+     "status": "verifiee",
+     "checked_at": "https://www.rte.ie/news/business/2026/0224/1560188-artificial-intelligence-lab-anthropic-touts-new-ai-tools/"
+    },
+    {
+     "text": "It's not a product that's trying to own every workflow",
+     "fr": "Ce n'est pas un produit qui cherche à s'approprier tous les processus de travail",
+     "speaker": "p-scott-white",
+     "status": "a_verifier",
+     "checked_at": "https://www.rte.ie/news/business/2026/0224/1560188-artificial-intelligence-lab-anthropic-touts-new-ai-tools/",
+     "context": "Scott White, responsable produit entreprise d'Anthropic, dans un entretien avec Reuters."
+    }
+   ],
+   "reliability": "secondaire",
+   "notes": "Dépêche Reuters reprise par RTÉ (mention « Source: Reuters ») ; reuters.com non consulté, et la reprise Yahoo Finance a refusé l'accès (erreur 429). La reprise RTÉ ne porte pas de signature : selon une reprise Yahoo non relue, la dépêche est signée Jeffrey Dastin et Deepa Seetharaman. Le chiffre de 830 Md$ porte sur six séances et sur le monde entier ; ne pas le confondre avec les 285 Md$ perdus le seul 3 février (Bloomberg, payant, non lu) ni avec les 300 Md$ avancés par Fortune (non relu). Conflits d'intérêts : Thomson Reuters est à la fois touché, client d'Anthropic et propriétaire de l'agence ; le corpus d'Agora IA est lui-même constitué avec Claude. Propos de Scott White tenus en entretien, rapportés par la dépêche : a_verifier."
+  },
+  {
+   "id": "src-salesforce-support-agentforce-2025",
+   "title": "Salesforce CEO confirms 4,000 job cuts ‘because I need less heads' with AI",
+   "authors": [
+    "p-budman"
+   ],
+   "publisher": "NBC Bay Area (repris par CNBC)",
+   "date": "2025-09-02",
+   "url": "https://www.nbcbayarea.com/news/local/salesforce-layoffs-artificial-intelligence/3941975/",
+   "lang": "en",
+   "kind": "article",
+   "planets": [
+    "travail",
+    "pouvoir"
+   ],
+   "currents": [],
+   "thesis": "Marc Benioff déclare avoir ramené le support client de Salesforce de 9 000 à environ 5 000 personnes grâce à ses agents Agentforce. L'entreprise précise qu'elle ne remplace plus les ingénieurs du support qui partent, car le nombre de demandes à traiter a baissé. Salesforce, qui vend ces agents, fait en parallèle évoluer sa tarification : des agents facturés à l'action, et des licences par utilisateur convertibles en crédits pour des agents.",
+   "key_facts": [
+    "Support client : de 9 000 à environ 5 000 personnes selon Marc Benioff (podcast The Logan Bartlett Show, fin août 2025) ; le chiffre de 4 000 suppressions est une soustraction faite par la presse, pas un plan social publié.",
+    "Le 15/05/2025, Salesforce lance les Flex Credits (0,10 $ par action d'agent) et un accord qui permet de convertir des licences par utilisateur en crédits pour des agents, et inversement."
+   ],
+   "quotes": [
+    {
+     "text": "I’ve reduced it from 9,000 heads to about 5,000, because I need less heads",
+     "fr": "Je l'ai fait passer de 9 000 têtes à environ 5 000, parce qu'il me faut moins de têtes",
+     "speaker": "p-benioff",
+     "status": "a_verifier",
+     "checked_at": "https://www.nbcbayarea.com/news/local/salesforce-layoffs-artificial-intelligence/3941975/",
+     "context": "À propos du support client ; propos tenus dans le podcast The Logan Bartlett Show, hébergé sur YouTube, non consulté."
+    },
+    {
+     "text": "Because of the benefits and efficiencies of Agentforce, we've seen the number of support cases we handle decline and we no longer need to actively backfill support engineer roles",
+     "fr": "Grâce aux avantages et aux gains d'efficacité d'Agentforce, nous avons vu baisser le nombre de demandes de support que nous traitons, et nous n'avons plus besoin de remplacer activement les ingénieurs du support qui partent",
+     "speaker": "p-salesforce",
+     "status": "a_verifier",
+     "checked_at": "https://www.nbcbayarea.com/news/local/salesforce-layoffs-artificial-intelligence/3941975/",
+     "context": "Déclaration de Salesforce à NBC Bay Area."
+    },
+    {
+     "text": "Salesforce’s new Flex Agreement allows organizations to manage both human and digital labor and strategically shift their investments between user licenses or digital labor as their business priorities demand.",
+     "fr": "Le nouveau Flex Agreement de Salesforce permet aux organisations de gérer à la fois le travail humain et le travail numérique, et de déplacer stratégiquement leurs investissements entre licences utilisateurs et travail numérique selon leurs priorités.",
+     "speaker": "p-salesforce",
+     "status": "verifiee",
+     "checked_at": "https://www.salesforce.com/news/press-releases/2025/05/15/agentforce-flexible-pricing-news/",
+     "context": "Communiqué de Salesforce du 15/05/2025 sur la nouvelle tarification d'Agentforce."
+    }
+   ],
+   "reliability": "secondaire",
+   "notes": "Propos de Benioff rapportés par NBC Bay Area d'après un podcast hébergé sur YouTube (site bloqué) : a_verifier. La déclaration de l'entreprise est elle aussi rapportée par l'article : a_verifier. La troisième citation vient du communiqué primaire de Salesforce (relu sur salesforce.com). Salesforce vend Agentforce : il a un intérêt commercial direct à présenter ses agents comme cause de la baisse. L'entreprise décrit un non-remplacement des départs et des redéploiements, pas des licenciements secs ; ses effectifs totaux restent élevés.",
+   "branch": "employer_moins"
+  },
+  {
+   "id": "src-totvs-herszkowicz-erp-2026",
+   "title": "A IA generativa vai matar o software? \"Isso é uma bobagem\", diz o CEO da Totvs",
+   "authors": [
+    "p-drska"
+   ],
+   "publisher": "NeoFeed",
+   "date": "2026-03-06",
+   "url": "https://neofeed.com.br/negocios/a-ia-generativa-vai-matar-o-software-isso-e-uma-bobagem-diz-o-ceo-da-totvs/",
+   "lang": "pt",
+   "kind": "entretien",
+   "planets": [
+    "pouvoir",
+    "travail"
+   ],
+   "currents": [],
+   "thesis": "Dennis Herszkowicz, PDG de Totvs, premier éditeur brésilien de logiciels de gestion (ERP), juge « complètement erronée » la lecture boursière selon laquelle l'IA générative tuerait le logiciel. Pour lui, l'ERP reste protégé par sa criticité, ses données et sa base de clients. Il voit dans les agents un marché bien plus vaste que la licence : la dépense consacrée aux personnes qui utilisent le logiciel, que des agents pourraient prendre en charge sous supervision humaine.",
+   "key_facts": [
+    "Le 11/02/2026, Totvs annonce le plus grand programme de rachat d'actions de son histoire (jusqu'à 20 millions d'actions), après une baisse de plus de 10 % de son titre dans la vente massive des valeurs du logiciel.",
+    "Le 12/02/2026, Totvs lance Lynn, une infrastructure d'IA pour ses clients (construction, orchestration et gouvernance d'agents), avec 300 millions de reais d'investissement sur quatre ans (Brazil Journal).",
+    "Selon Herszkowicz, une entreprise de 1 milliard de reais de chiffre d'affaires dépense au plus 2 millions par an en ERP, mais 15 à 20 fois plus pour les personnes qui l'utilisent."
+   ],
+   "quotes": [
+    {
+     "text": "Então, uma empresa que fatura R$ 1 bilhão vai gastar, se muito, R$ 2 milhões por ano nesse software que controla tudo nela. Só que ela gasta 15, 20 vezes mais com os usuários para desempenhar as tarefas. O que a IA traz para nós - e essa é a grande jogada - é essa habilidade, por meio da construção de agentes.",
+     "fr": "Une entreprise qui réalise 1 milliard de reais de chiffre d'affaires dépensera, au plus, 2 millions par an pour ce logiciel qui pilote tout chez elle. Mais elle dépense 15 à 20 fois plus pour les utilisateurs qui accomplissent les tâches. Ce que l'IA nous apporte, et c'est là le grand coup à jouer, c'est cette capacité, grâce à la construction d'agents.",
+     "speaker": "p-herszkowicz",
+     "status": "verifiee",
+     "checked_at": "https://neofeed.com.br/negocios/a-ia-generativa-vai-matar-o-software-isso-e-uma-bobagem-diz-o-ceo-da-totvs/"
+    },
+    {
+     "text": "O ERP vai até o ponto de organizar o sistema de dados e estruturar processos e os agentes executam tarefas dentro desse sistema. É inteligência humana supervisionando e inteligência artificial executando.",
+     "fr": "L'ERP va jusqu'à organiser le système de données et structurer les processus, et les agents exécutent des tâches à l'intérieur de ce système. C'est l'intelligence humaine qui supervise et l'intelligence artificielle qui exécute.",
+     "speaker": "p-herszkowicz",
+     "status": "verifiee",
+     "checked_at": "https://braziljournal.com/totvs-lanca-vertical-de-ai-morte-do-software-e-maluquice-de-investidores-diz-ceo",
+     "context": "Entretien avec Brazil Journal (André Jankavski), 12/02/2026, en réponse à la question de savoir si les agents remplaceront l'ERP."
+    },
+    {
+     "text": "O impacto no mercado de ERP é zero e, na minha opinião, continuará sendo zero por um bom tempo.",
+     "fr": "L'impact sur le marché de l'ERP est nul et, à mon avis, il restera nul pendant un bon moment.",
+     "speaker": "p-herszkowicz",
+     "status": "verifiee",
+     "checked_at": "https://braziljournal.com/totvs-lanca-vertical-de-ai-morte-do-software-e-maluquice-de-investidores-diz-ceo",
+     "context": "Entretien avec Brazil Journal, 12/02/2026, à propos de la « Saaspocalypse »."
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Entretien publié sous forme de questions-réponses par NeoFeed (Moacir Drska) ; deux citations viennent d'un autre entretien, publié par Brazil Journal le 12/02/2026 (url dans checked_at). Le résumé en tête de l'article NeoFeed est généré par IA : il n'a pas été utilisé. Herszkowicz parle en dirigeant d'une société cotée qui rachète ses propres actions et vend des agents : discours intéressé. Voix latino-américaine à mettre en regard de Yonyou (Chine) et de Salesforce (États-Unis)."
+  },
+  {
+   "id": "src-amazon-galetti-14000-2025",
+   "title": "Staying nimble and continuing to strengthen our organizations",
+   "authors": [
+    "p-galetti"
+   ],
+   "publisher": "Amazon (About Amazon), mémo interne publié",
+   "date": "2025-10-28",
+   "url": "https://www.aboutamazon.com/news/company-news/amazon-workforce-reduction",
+   "lang": "en",
+   "kind": "déclaration",
+   "planets": [
+    "travail"
+   ],
+   "currents": [],
+   "thesis": "Dans un mémo adressé aux salariés et publié par l'entreprise, la directrice des ressources humaines d'Amazon annonce la suppression d'environ 14 000 postes de bureau. Elle invoque la réduction des échelons hiérarchiques et de la bureaucratie, et présente l'IA comme la raison d'aller plus vite. Deux jours plus tard, le PDG Andy Jassy affirme que ces suppressions ne sont « pas vraiment » motivées par l'IA, mais par la culture de l'entreprise : le motif affiché varie selon l'interlocuteur.",
+   "key_facts": [
+    "28/10/2025 : environ 14 000 postes « corporate » supprimés ; la plupart des salariés concernés disposent de 90 jours pour chercher un poste en interne.",
+    "17/06/2025 : Andy Jassy écrit que l'IA réduira les effectifs « corporate » d'Amazon dans les années à venir, sans avancer de chiffre.",
+    "30/10/2025 : lors de la conférence de résultats, Jassy déclare que ces suppressions ne sont « pas vraiment » liées à l'IA « pour l'instant », mais à la culture.",
+    "28/01/2026 : une nouvelle vague touche environ 16 000 postes ; le mémo qui l'annonce ne mentionne pas l'IA."
+   ],
+   "quotes": [
+    {
+     "text": "This generation of AI is the most transformative technology we’ve seen since the Internet, and it's enabling companies to innovate much faster than ever before",
+     "fr": "Cette génération d'IA est la technologie la plus transformatrice que nous ayons vue depuis Internet, et elle permet aux entreprises d'innover bien plus vite que jamais",
+     "speaker": "p-galetti",
+     "status": "verifiee",
+     "checked_at": "https://www.aboutamazon.com/news/company-news/amazon-workforce-reduction",
+     "context": "Pour justifier des suppressions alors que l'entreprise se porte bien."
+    },
+    {
+     "text": "in the next few years, we expect that this will reduce our total corporate workforce as we get efficiency gains from using AI extensively across the company.",
+     "fr": "dans les prochaines années, nous prévoyons que cela réduira l'ensemble de nos effectifs de bureau, grâce aux gains d'efficacité tirés d'un usage intensif de l'IA dans toute l'entreprise.",
+     "speaker": "p-jassy",
+     "status": "verifiee",
+     "checked_at": "https://www.aboutamazon.com/news/company-news/amazon-ceo-andy-jassy-on-generative-ai",
+     "context": "Mémo d'Andy Jassy aux salariés, « Some thoughts on Generative AI », 17/06/2025."
+    },
+    {
+     "text": "not really financially driven, and it’s not even really AI driven, not right now. It’s culture",
+     "fr": "pas vraiment motivée par des raisons financières, et même pas vraiment par l'IA, pas pour l'instant. C'est la culture",
+     "speaker": "p-jassy",
+     "status": "a_verifier",
+     "checked_at": "https://edition.cnn.com/2025/10/30/tech/amazon-layoffs-andy-jassy-ai-culture",
+     "context": "Conférence de résultats du 30/10/2025, à propos des 14 000 suppressions annoncées deux jours plus tôt."
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Mémo primaire publié par Amazon. Les chiffres sont des postes « impactés » : une partie des salariés est reclassée en interne. La phrase de Jassy du 30/10/2025 est rapportée par CNN ; Amazon ne publie pas de transcription de ses conférences de résultats, et les médias en donnent des versions légèrement différentes (Fortune : « AI-driven, not right now at least ») : a_verifier. Cas d'école de l'écart entre le récit adressé aux investisseurs, celui adressé aux salariés et le motif déclaré.",
+   "branch": "employer_moins"
+  },
+  {
+   "id": "src-klarna-f1-effectifs-2025",
+   "title": "Klarna Group plc, Form F-1/A (Amendment No. 3) : prospectus d'introduction en Bourse",
+   "authors": [
+    "p-klarna"
+   ],
+   "publisher": "Klarna Group plc, dépôt auprès de la SEC (EDGAR)",
+   "date": "2025-09-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/2003292/000200329225000024/klarnagroupplcf-1a3.htm",
+   "lang": "en",
+   "kind": "rapport",
+   "planets": [
+    "travail"
+   ],
+   "currents": [],
+   "thesis": "Dans le prospectus de son introduction en Bourse, Klarna attribue explicitement à l'IA la baisse de ses effectifs, passés de 5 527 salariés à temps plein fin 2022 à environ 3 098 au 30 juin 2025, et prévoit que cette baisse se poursuive. Son assistant IA ferait le travail de plus de 700 agents à temps plein. Le même document indique que tous les clients gardent la possibilité de parler à un humain, dans une approche « à double voie ».",
+   "key_facts": [
+    "Effectifs à temps plein : 5 527 (fin 2022), 4 352 (fin 2023), 3 422 (fin 2024), environ 3 098 (30/06/2025).",
+    "Selon Klarna, son assistant IA, lancé en février 2024 avec OpenAI, a traité 69 % des conversations du service client sur les douze mois au 30/06/2025, l'équivalent de plus de 700 agents à temps plein, et permis environ 39 M$ d'économies en 2024.",
+    "Les comparaisons de satisfaction entre l'IA et les conseillers humains reposent sur les enquêtes internes de l'entreprise."
+   ],
+   "quotes": [
+    {
+     "text": "The reduction in the number of full-time employees resulted from our strategic decision to reduce our overall headcount and drive operational efficiency by leveraging AI in our business and focusing on what really matters to our mission.",
+     "fr": "La baisse du nombre de salariés à temps plein résulte de notre décision stratégique de réduire nos effectifs globaux et d'améliorer notre efficacité opérationnelle en tirant parti de l'IA dans nos activités et en nous concentrant sur ce qui compte vraiment pour notre mission.",
+     "speaker": "p-klarna",
+     "status": "a_verifier",
+     "checked_at": "https://www.sec.gov/Archives/edgar/data/2003292/000200329225000024/klarnagroupplcf-1a3.htm"
+    },
+    {
+     "text": "This reflects our dual-track approach of combining broad and continuing implementation of scalable AI in our customer service with high-quality human support.",
+     "fr": "Cela reflète notre approche à double voie, qui combine le déploiement large et continu d'une IA évolutive dans notre service client avec un support humain de qualité.",
+     "speaker": "p-klarna",
+     "status": "a_verifier",
+     "checked_at": "https://www.sec.gov/Archives/edgar/data/2003292/000200329225000024/klarnagroupplcf-1a3.htm",
+     "context": "Juste après : Klarna continue d'offrir à tous ses clients l'option d'un échange avec un humain."
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Document réglementaire (texte de l'entreprise, sans auteur nommé). La baisse tient aussi au gel des embauches et aux départs naturels, que le prospectus ne distingue pas de l'effet de l'IA. Les chiffres de satisfaction et d'équivalents temps plein sont des estimations de l'entreprise, qui avait intérêt à mettre en avant l'IA devant les investisseurs. Le retour à des conseillers humains annoncé en mai 2025 par Sebastian Siemiatkowski n'est connu que par la presse (Bloomberg, payant, non lu). Le serveur EDGAR de la SEC refuse les outils automatisés qui ne déclarent pas d'identité ; le fichier relu avait été téléchargé avec un identifiant de navigateur, ce qui ne respecte pas cette règle. Les citations restent donc à vérifier par une lecture directe du prospectus.",
+   "branch": "employer_moins"
+  },
+  {
+   "id": "src-itnews-cba-voicebot-2025",
+   "title": "CBA to keep roles it had reviewed after installing AI bot",
+   "authors": [
+    "p-crozier"
+   ],
+   "publisher": "iTnews (Digital Nation)",
+   "date": "2025-08-21",
+   "url": "https://www.itnews.com.au/news/cba-to-keep-roles-it-had-reviewed-after-installing-ai-bot-619751",
+   "lang": "en",
+   "kind": "article",
+   "planets": [
+    "travail",
+    "services"
+   ],
+   "currents": [],
+   "thesis": "La Commonwealth Bank of Australia, première banque du pays, avait mis en réexamen 45 postes de son service client après avoir déployé un « voice bot » qui trie les appels entrants. Trois semaines plus tard, après la contestation du syndicat Finance Sector Union, elle conserve ces postes, reconnaît une « erreur » d'évaluation et présente des excuses. Le syndicat parle d'une victoire, tout en prévenant que le remplacement d'emplois stables par des machines n'est pas terminé.",
+   "key_facts": [
+    "Fin juillet 2025 : 45 postes du service « Customer Service Direct » mis en réexamen après l'arrivée du robot vocal.",
+    "21/08/2025 : la banque revient sur sa décision ; les salariés concernés peuvent garder leur poste, être redéployés ou partir."
+   ],
+   "quotes": [
+    {
+     "text": "CBA’s initial assessment that the 45 roles … were not required did not adequately consider all relevant business considerations, and this error meant the roles were not redundant",
+     "fr": "L'évaluation initiale de la CBA, selon laquelle les 45 postes […] n'étaient pas nécessaires, n'a pas suffisamment pris en compte l'ensemble des considérations pertinentes pour l'activité, et cette erreur signifie que les postes n'étaient pas surnuméraires",
+     "speaker": "p-cba",
+     "status": "a_verifier",
+     "checked_at": "https://www.itnews.com.au/news/cba-to-keep-roles-it-had-reviewed-after-installing-ai-bot-619751",
+     "context": "Déclaration d'un porte-parole de la banque à Digital Nation (iTnews)."
+    },
+    {
+     "text": "the fight to stop … replacing people in secure jobs with machines is far from over.",
+     "fr": "le combat pour empêcher […] le remplacement de personnes occupant des emplois stables par des machines est loin d'être terminé.",
+     "speaker": "p-fsu",
+     "status": "a_verifier",
+     "checked_at": "https://www.itnews.com.au/news/cba-to-keep-roles-it-had-reviewed-after-installing-ai-bot-619751",
+     "context": "Le syndicat qualifie aussi le revirement de « massive win for workers »."
+    }
+   ],
+   "reliability": "secondaire",
+   "notes": "Les deux citations sont rapportées par l'article (déclaration à la presse et communiqué syndical) : a_verifier. Le communiqué de la Finance Sector Union (fsunion.org.au) a refusé l'accès (403) : non contourné. Le chiffre de 90 postes avancé par le syndicat dans d'autres médias n'est pas confirmé. Un des rares revirements documentés après une suppression de postes attribuée à l'IA.",
+   "branch": "employer_moins"
+  },
+  {
+   "id": "src-challenger-ia-suppressions-2026",
+   "title": "Challenger Report October 2026",
+   "authors": [
+    "p-challenger-gray"
+   ],
+   "publisher": "Challenger, Gray & Christmas",
+   "date": "2026-11-05",
+   "url": "https://www.challengergray.com/wp-content/uploads/2026/11/Challenger-Report-October-2026.pdf",
+   "lang": "en",
+   "kind": "rapport",
+   "planets": [
+    "travail"
+   ],
+   "currents": [],
+   "thesis": "Le cabinet d'outplacement recense chaque mois les suppressions de postes annoncées par les employeurs américains et le motif qu'ils invoquent. Sur les dix premiers mois de 2026, l'IA est citée pour environ un cinquième des suppressions annoncées. À l'automne, les employeurs mettent de nouveau en avant la demande et la conjoncture, motif qui repasse devant l'IA sur l'année.",
+   "key_facts": [
+    "121 401 suppressions annoncées citent l'IA entre janvier et octobre 2026, soit environ 20 % des 617 189 suppressions annoncées sur la période.",
+    "Octobre 2026 : 1 265 suppressions citent l'IA, le plus bas mensuel de l'année ; avec 130 531 suppressions depuis janvier, les conditions économiques et de marché dépassent l'IA comme premier motif de 2026.",
+    "193 226 suppressions citent l'IA depuis 2023, année où le cabinet a commencé à suivre ce motif."
+   ],
+   "quotes": [
+    {
+     "text": "AI has been cited in 121,401 job cut announcements so far in 2026, approximately 20% of all cuts.",
+     "fr": "L'IA a été citée dans 121 401 annonces de suppressions de postes depuis le début de 2026, soit environ 20 % de l'ensemble.",
+     "speaker": "p-challenger-gray",
+     "status": "verifiee",
+     "checked_at": "https://www.challengergray.com/wp-content/uploads/2026/11/Challenger-Report-October-2026.pdf"
+    },
+    {
+     "text": "AI dominated layoff announcements through the spring and summer, but this fall companies are pointing to demand and economic conditions.",
+     "fr": "L'IA a dominé les annonces de licenciements au printemps et en été, mais cet automne les entreprises mettent en avant la demande et la conjoncture économique.",
+     "speaker": "p-andy-challenger",
+     "status": "verifiee",
+     "checked_at": "https://www.challengergray.com/wp-content/uploads/2026/11/Challenger-Report-October-2026.pdf"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Décompte d'annonces, pas de suppressions réalisées ; le motif est celui que donne l'employeur, sans contrôle, et peut servir à rassurer les investisseurs. Données limitées aux employeurs basés aux États-Unis. PDF daté du 4 novembre 2026, sous embargo jusqu'au 5 novembre.",
+   "branch": "employer_moins"
+  },
+  {
+   "id": "src-lmi-microsoft-veo-2026",
+   "title": "Microsoft propose des départs volontaires à 60 000 salariés",
+   "authors": [
+    "p-costa-louise"
+   ],
+   "publisher": "Le Monde Informatique",
+   "date": "2026-10-28",
+   "url": "https://www.lemondeinformatique.fr/actualites/lire-microsoft-propose-des-departs-volontaires-a-60-000-salaries-100878.html",
+   "lang": "fr",
+   "kind": "article",
+   "planets": [
+    "travail"
+   ],
+   "currents": [],
+   "thesis": "Microsoft ouvre un programme de départs volontaires dans quatre pays. La presse le relie à ses dépenses d'infrastructure d'IA ; l'entreprise n'établit pas ce lien et précise que l'offre ne signifie pas qu'elle a besoin de moins de salariés.",
+   "key_facts": [
+    "Offre annoncée le 26/10/2026 par Amy Coleman : États-Unis, Canada, Royaume-Uni, Inde",
+    "Environ 60 000 salariés éligibles selon TechCrunch, plus du quart des quelque 223 000 employés à temps plein",
+    "Environ 4 800 suppressions de postes en juillet 2026 ; retraite volontaire proposée à environ 8 750 salariés américains"
+   ],
+   "quotes": [
+    {
+     "text": "La réduction des coûts constitue ainsi un enjeu pour Microsoft, même si l’entreprise n’établit pas nécessairement de lien direct entre ces investissements et son programme de départs volontaires.",
+     "speaker": "p-costa-louise",
+     "status": "verifiee",
+     "checked_at": "https://www.lemondeinformatique.fr/actualites/lire-microsoft-propose-des-departs-volontaires-a-60-000-salaries-100878.html",
+     "context": "À propos des investissements de Microsoft dans les centres de données et le calcul pour l'IA."
+    }
+   ],
+   "reliability": "secondaire",
+   "notes": "Billet officiel de Microsoft inaccessible (403). L'article ne contient pas de citation directe de Microsoft ; le chiffre de 60 000 vient de TechCrunch. Microsoft est à la fois employeur et vendeur d'IA.",
+   "branch": "employer_moins"
+  },
+  {
+   "id": "src-bain-agentic-saas-2025",
+   "title": "Will Agentic AI Disrupt SaaS?",
+   "authors": [
+    "p-crawford-david",
+    "p-mclaughlin-chris",
+    "p-doddapaneni-purna",
+    "p-fiore-greg"
+   ],
+   "publisher": "Bain & Company (Technology Report 2025)",
+   "date": "2025-09-23",
+   "url": "https://www.bain.com/insights/will-agentic-ai-disrupt-saas-technology-report-2025/",
+   "lang": "en",
+   "kind": "rapport",
+   "planets": [
+    "devs",
+    "pouvoir"
+   ],
+   "currents": [],
+   "thesis": "Quatre associés de Bain estiment que l'IA générative et agentique bouscule le logiciel en ligne (SaaS) : d'ici trois ans, toute tâche numérique routinière pourrait passer de « l'humain plus l'application » à « l'agent plus l'API ». Ils décrivent une pile en trois couches : les systèmes de référence (données, droits d'accès, règles), les systèmes d'exploitation d'agents qui orchestrent le travail, et les interfaces de résultat qui traduisent une demande en langage courant en actions. Le goulot se déplace vers la communication entre couches : les protocoles MCP et A2A normalisent les échanges, mais pas le vocabulaire métier commun. Le texte conseille aux éditeurs de garder la main sur leurs données et leurs règles, et de facturer au résultat plutôt qu'à la connexion.",
+   "key_facts": [
+    "Publié le 23 septembre 2025 dans le Technology Report 2025 de Bain, signé par quatre associés : David Crawford, Chris McLaughlin, Purna Doddapaneni et Greg Fiore.",
+    "Le texte distingue cinq scénarios pour un flux de travail SaaS : pas d'IA, l'IA améliore le SaaS, les dépenses se compriment, l'IA surpasse le SaaS, l'IA cannibalise le SaaS.",
+    "Il cite le Model Context Protocol (Anthropic) et Agent2Agent (Google) comme normes d'échange entre couches, et prédit qu'une future norme sémantique commune suivra la même dynamique où le premier arrivé rafle l'essentiel.",
+    "Exemples cités d'éditeurs qui passent d'une facturation au poste à une facturation au résultat : Intercom et Salesforce."
+   ],
+   "quotes": [
+    {
+     "text": "Agentic AI is now rebundling control on a three-layer stack (bottom to top): systems of record, agent operating systems, and outcome interfaces.",
+     "fr": "L'IA agentique regroupe désormais le contrôle sur une pile à trois couches (de bas en haut) : les systèmes de référence, les systèmes d'exploitation d'agents et les interfaces de résultat.",
+     "speaker": "p-crawford-david",
+     "status": "verifiee",
+     "checked_at": "https://www.bain.com/insights/will-agentic-ai-disrupt-saas-technology-report-2025/",
+     "context": "Article cosigné par quatre associés de Bain."
+    },
+    {
+     "text": "But they don’t provide a shared vocabulary (that would define terms such as invoice), policy, or work order—nor do they show how those concepts map to APIs, tables, and approval gates.",
+     "fr": "Mais ils ne fournissent pas de vocabulaire commun (qui définirait des termes comme « facture »), « police » ou « ordre de travail », et ne montrent pas non plus comment ces notions correspondent aux API, aux tables et aux étapes d'approbation.",
+     "speaker": "p-crawford-david",
+     "status": "verifiee",
+     "checked_at": "https://www.bain.com/insights/will-agentic-ai-disrupt-saas-technology-report-2025/",
+     "context": "« Ils » désigne les protocoles MCP (Anthropic) et A2A (Google)."
+    },
+    {
+     "text": "Any external agent should have to validate through your system of record.",
+     "fr": "Tout agent externe devrait être obligé de passer par votre système de référence pour valider.",
+     "speaker": "p-crawford-david",
+     "status": "verifiee",
+     "checked_at": "https://www.bain.com/insights/will-agentic-ai-disrupt-saas-technology-report-2025/",
+     "context": "Conseil aux éditeurs : inscrire circuits d'approbation, transitions d'état et règles de conformité dans leur modèle de données."
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Conflit d'intérêts : Bain vend du conseil en stratégie et en IA, notamment aux éditeurs de logiciels auxquels le texte s'adresse (« In our work with clients »), et a annoncé le 21 février 2023 une alliance de services avec OpenAI (communiqué de Bain). Scénarios et figures reposent sur une « Bain analysis » non détaillée ; la projection à trois ans est une hypothèse des auteurs, pas une mesure. Le texte nomme la couche du milieu « agent operating systems » (systèmes d'exploitation d'agents) ; « systems of record » est traduit par « systèmes de référence ». Dans la citation 1, la parenthèse fermée après « invoice » figure dans l'original (le mot y est en italique) ; « policy » est traduit par « police », au sens probable d'un contrat d'assurance (le texte cite Guidewire), le sens de « règle » restant possible. Bain a publié une suite dans son Technology Report 2026 sur le travail humain qui relie les systèmes entre eux ; non lue ici."
+  },
+  {
+   "id": "src-ng-product-management-bottleneck-2025",
+   "title": "How to Get Through the Product Management Bottleneck",
+   "authors": [
+    "p-ng"
+   ],
+   "publisher": "The Batch (DeepLearning.AI), lettre d'Andrew Ng, numéro 310",
+   "date": "2025-07-16",
+   "url": "https://www.deeplearning.ai/the-batch/how-to-get-through-the-product-management-bottleneck",
+   "lang": "en",
+   "kind": "essai",
+   "planets": [
+    "devs",
+    "travail"
+   ],
+   "currents": [],
+   "thesis": "Andrew Ng soutient que les assistants de code agentiques accélèrent tant l'écriture d'un logiciel, une fois la spécification donnée, que le goulot se déplace vers la décision de ce qu'il faut construire : il l'appelle « Product Management Bottleneck ». Il valorise des responsables produit dotés d'une forte empathie pour les utilisateurs et capables de décider vite. Plutôt que de suivre mécaniquement une enquête, il recommande d'affiner un modèle mental des utilisateurs, tout en reconnaissant que cette méthode ne vaut pas pour les systèmes qui prennent un très grand nombre de décisions, comme la publicité en ligne.",
+   "key_facts": [
+    "Lettre publiée le 16 juillet 2025 dans The Batch (numéro 310), la lettre d'information de DeepLearning.AI.",
+    "Exemple donné : son équipe a interrogé environ 1 000 utilisateurs sur 4 fonctionnalités possibles, et le résultat a contredit son intuition initiale.",
+    "Dans une lettre du 17 avril 2026 (The Batch, numéro 349), Ng écrit que certaines équipes ramènent le ratio ingénieurs/responsables produit de 8 pour 1 à 1 pour 1, et que d'autres goulots apparaissent : design, marketing, conformité juridique."
+   ],
+   "quotes": [
+    {
+     "text": "Product management is the art and science of deciding what to build. Because highly agentic coding accelerates the writing of software to a given product specification, deciding what to build is the new bottleneck, especially in early-stage projects.",
+     "fr": "La gestion de produit est l'art et la science de décider quoi construire. Parce que le code fortement agentique accélère l'écriture d'un logiciel à partir d'une spécification donnée, décider quoi construire devient le nouveau goulot d'étranglement, surtout dans les projets à leurs débuts.",
+     "speaker": "p-ng",
+     "status": "verifiee",
+     "checked_at": "https://www.deeplearning.ai/the-batch/how-to-get-through-the-product-management-bottleneck"
+    },
+    {
+     "text": "When a system needs to make a huge number of decisions, such as what ads to show (or products to recommend) on a huge number of pages, PM review and human intuition do not scale.",
+     "fr": "Quand un système doit prendre un très grand nombre de décisions, par exemple quelles publicités afficher (ou quels produits recommander) sur un très grand nombre de pages, la revue par un responsable produit et l'intuition humaine ne passent pas à l'échelle.",
+     "speaker": "p-ng",
+     "status": "verifiee",
+     "checked_at": "https://www.deeplearning.ai/the-batch/how-to-get-through-the-product-management-bottleneck"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Lettre d'opinion fondée sur l'expérience de l'auteur, pas une étude. Conflit d'intérêts : Andrew Ng dirige DeepLearning.AI (formations à l'IA) et AI Fund (création et financement de start-up d'IA) ; il a intérêt à la diffusion des outils agentiques. Le propos vise d'abord les projets en phase de démarrage. Des reprises de presse (Business Insider, août 2025) attribuent une idée voisine à un podcast, non lu ici. La lettre est signée « Andrew » ; The Batch publie chaque semaine une lettre d'Andrew Ng."
+  },
+  {
+   "id": "src-yang-swe-agent-aci-2024",
+   "title": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering",
+   "authors": [
+    "p-yang-john",
+    "p-jimenez-carlos",
+    "p-press-ofir"
+   ],
+   "publisher": "NeurIPS 2024 (Advances in Neural Information Processing Systems 37) ; prépublication arXiv:2405.15793, Princeton University",
+   "date": "2024-05-06",
+   "url": "https://arxiv.org/abs/2405.15793",
+   "lang": "en",
+   "kind": "étude",
+   "planets": [
+    "devs",
+    "recherche"
+   ],
+   "currents": [],
+   "thesis": "Les auteurs posent que les agents fondés sur des modèles de langage forment une nouvelle catégorie d'utilisateurs finaux, avec leurs propres besoins, et qu'ils gagnent à disposer d'interfaces conçues pour eux. Ils forgent la notion d'interface agent-ordinateur (ACI) : un petit jeu d'actions simples, des garde-fous contre les erreurs courantes et un retour concis à chaque étape. Leur agent SWE-agent, doté d'une telle interface, résout nettement plus de tâches de génie logiciel qu'un agent qui passe par le terminal Linux, conçu pour des humains.",
+   "key_facts": [
+    "Avec GPT-4 Turbo, SWE-agent résout 12,47 % des 2 294 tâches de SWE-bench, contre 3,8 % pour le meilleur système non interactif antérieur.",
+    "Sur SWE-bench Lite (300 tâches), l'interface dédiée résout 10,7 points de plus que l'agent de référence limité au terminal Linux.",
+    "Prépublication du 6 mai 2024 (version 3 du 11 novembre 2024), publiée à NeurIPS 2024 ; le code est ouvert."
+   ],
+   "quotes": [
+    {
+     "text": "we posit that LM agents represent a new category of end users with their own needs and abilities, and would benefit from specially-built interfaces to the software they use.",
+     "fr": "nous posons que les agents fondés sur des modèles de langage représentent une nouvelle catégorie d'utilisateurs finaux, avec leurs propres besoins et capacités, et qu'ils gagneraient à disposer d'interfaces spécialement conçues pour les logiciels qu'ils utilisent.",
+     "speaker": "p-yang-john",
+     "status": "verifiee",
+     "checked_at": "https://arxiv.org/abs/2405.15793",
+     "context": "Résumé de l'article."
+    },
+    {
+     "text": "We show that ACIs tailored specifically for LMs outperform existing user interfaces (UIs) designed for human users, such as the Linux shell.",
+     "fr": "Nous montrons que des interfaces agent-ordinateur conçues spécifiquement pour les modèles de langage font mieux que les interfaces existantes conçues pour des utilisateurs humains, comme le terminal Linux.",
+     "speaker": "p-yang-john",
+     "status": "verifiee",
+     "checked_at": "https://arxiv.org/pdf/2405.15793v3"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Sept auteurs : John Yang et Carlos E. Jimenez (premiers auteurs à égalité), Alexander Wettig, Kilian Lieret, Shunyu Yao, Karthik Narasimhan, Ofir Press, tous à Princeton lors de la publication. Texte lu : prépublication arXiv (version 3) ; la page des actes NeurIPS (papers.neurips.cc) n'a pas répondu au téléchargement, la publication à NeurIPS 2024 est reprise de l'index des actes. Les scores datent de 2024 et ont été largement dépassés depuis : l'intérêt de la source est la notion d'interface conçue pour un agent, pas le chiffre. Étude limitée au génie logiciel."
+  },
+  {
+   "id": "src-mitchell-agents-autonomes-2025",
+   "title": "Fully Autonomous AI Agents Should Not be Developed",
+   "authors": [
+    "p-mitchell-margaret",
+    "p-ghosh-avijit",
+    "p-luccioni",
+    "p-pistilli"
+   ],
+   "publisher": "arXiv (prise de position, Hugging Face), arXiv:2502.02649, version 3",
+   "date": "2025-02-04",
+   "url": "https://arxiv.org/abs/2502.02649",
+   "lang": "en",
+   "kind": "essai",
+   "planets": [
+    "ethique",
+    "devs"
+   ],
+   "currents": [
+    "ethique-critique"
+   ],
+   "thesis": "Quatre chercheurs de Hugging Face soutiennent qu'il ne faut pas développer d'agents d'IA entièrement autonomes, en particulier ceux qui écrivent et exécutent leur propre code au-delà de contraintes prédéfinies. En croisant littérature scientifique et discours commerciaux, ils classent les agents par niveaux d'autonomie et concluent que les risques pour les personnes croissent à mesure que l'utilisateur cède le contrôle. Ils défendent des systèmes semi-autonomes, avec des mécanismes de contrôle humain : dispositifs fiables pour reprendre la main et limites claires à l'action des agents.",
+   "key_facts": [
+    "Première version le 4 février 2025, version 3 révisée le 20 octobre 2025.",
+    "Les risques jugés les plus préoccupants touchent la sécurité des personnes, la vie privée et la sécurité informatique, aggravés par une confiance mal placée que nourrit notamment le biais d'automatisation.",
+    "Les auteurs disent ne trouver aucun bénéfice clair à des agents entièrement autonomes capables d'agir hors des contraintes fixées par des humains."
+   ],
+   "quotes": [
+    {
+     "text": "The more control a user cedes to an AI agent, the more risks to people arise.",
+     "fr": "Plus un utilisateur cède de contrôle à un agent d'IA, plus les risques pour les personnes augmentent.",
+     "speaker": "p-mitchell-margaret",
+     "status": "verifiee",
+     "checked_at": "https://arxiv.org/abs/2502.02649",
+     "context": "Résumé de l'article."
+    },
+    {
+     "text": "This includes creating reliable override systems and establishing clear boundaries for agent operation.",
+     "fr": "Cela suppose de créer des dispositifs fiables pour reprendre la main et de fixer des limites claires au fonctionnement des agents.",
+     "speaker": "p-mitchell-margaret",
+     "status": "verifiee",
+     "checked_at": "https://arxiv.org/pdf/2502.02649v3",
+     "context": "À propos des « mécanismes de contrôle humain », l'une des pistes de la conclusion."
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Prise de position (position paper), pas une étude empirique ; statut de publication en conférence non vérifié. Les auteurs travaillaient chez Hugging Face, plateforme de modèles ouverts qui propose aussi des outils pour construire des agents. La conclusion illustre le risque par une fausse alerte nucléaire datée de 1980 dans le texte et de 1979 dans la note qui la source : date non reprise ici."
+  },
+  {
+   "id": "src-nasscom-strategic-review-2026",
+   "title": "India’s tech industry continues to redefine AI-led transformation, efficiency and skilling: Nasscom Annual Strategic Review 2026",
+   "authors": [
+    "p-nasscom"
+   ],
+   "publisher": "Nasscom (communiqué de presse)",
+   "date": "2026-02-24",
+   "url": "https://d3r3sr3o54kk15.cloudfront.net/s3fs-public/media_pdf/India%E2%80%99s%20tech%20industry%20continues%20to%20redefine%20AI-led%20transformation%2C%20efficiency%20and%20skilling--%20Nasscom%20Annual%20Strategic%20Review%202026.pdf",
+   "lang": "en",
+   "kind": "déclaration",
+   "planets": [
+    "travail",
+    "devs"
+   ],
+   "currents": [],
+   "thesis": "Nasscom, l'organisation professionnelle de l'industrie technologique indienne, présente l'exercice 2026 comme celui où l'IA est passée de l'expérimentation à des déploiements par fonction. Le secteur resterait créateur net d'emplois, avec des équipes « Human + AI » comme mode de production dominant. Nasscom décrit un déplacement des prestataires : de la prestation de services vers des solutions qui intègrent leur propre propriété intellectuelle, des sociétés de BPM qui dépassent l'automatisation robotisée des processus (RPA) pour aller vers l'aide à la décision, et une industrie qui veut aider à définir les solutions de bout en bout, plus seulement les exécuter.",
+   "key_facts": [
+    "Chiffre d'affaires estimé du secteur pour l'exercice 2026 : 315 milliards de dollars (+6,1 %), dont 149 milliards pour les services informatiques et 59 milliards pour le BPM ; 246 milliards à l'export.",
+    "Effectifs : croissance nette d'environ 2,3 % ; plus de 2 millions de professionnels formés à l'IA, dont 200 000 à 300 000 en IA avancée.",
+    "Revenus liés à l'IA estimés à plus de 10 à 12 milliards de dollars pour l'exercice 2026.",
+    "Selon l'enquête de Nasscom auprès de dirigeants d'entreprises clientes, 90 % prévoient d'augmenter la part de l'IA dans leurs budgets numériques en 2026."
+   ],
+   "quotes": [
+    {
+     "text": "as the industry enters its next chapter, it is evolving beyond just executing to becoming a trusted co-creation partner that helps define digital solutions end-to-end.",
+     "fr": "à l'heure où elle ouvre un nouveau chapitre, l'industrie ne se contente plus d'exécuter : elle devient un partenaire de confiance, qui co-crée et aide à définir les solutions numériques de bout en bout.",
+     "speaker": "p-nasscom",
+     "status": "verifiee",
+     "checked_at": "https://d3r3sr3o54kk15.cloudfront.net/s3fs-public/media_pdf/India%E2%80%99s%20tech%20industry%20continues%20to%20redefine%20AI-led%20transformation%2C%20efficiency%20and%20skilling--%20Nasscom%20Annual%20Strategic%20Review%202026.pdf"
+    },
+    {
+     "text": "BPM firms are reinventing themselves by combining AI and data to move beyond RPA, from automating tasks to enabling decision-making.",
+     "fr": "les sociétés de BPM se réinventent en combinant IA et données pour aller au-delà de la RPA, de l'automatisation de tâches à l'aide à la décision.",
+     "speaker": "p-nasscom",
+     "status": "verifiee",
+     "checked_at": "https://d3r3sr3o54kk15.cloudfront.net/s3fs-public/media_pdf/India%E2%80%99s%20tech%20industry%20continues%20to%20redefine%20AI-led%20transformation%2C%20efficiency%20and%20skilling--%20Nasscom%20Annual%20Strategic%20Review%202026.pdf"
+    },
+    {
+     "text": "As AI gets embedded across functions, we will see roles redesigned around outcomes, deeper specialisation, and significantly higher AI fluency.",
+     "fr": "À mesure que l'IA s'intègre dans toutes les fonctions, nous verrons des rôles redessinés autour des résultats, une spécialisation plus poussée et une maîtrise de l'IA bien plus grande.",
+     "speaker": "p-gangadharan",
+     "status": "verifiee",
+     "checked_at": "https://d3r3sr3o54kk15.cloudfront.net/s3fs-public/media_pdf/India%E2%80%99s%20tech%20industry%20continues%20to%20redefine%20AI-led%20transformation%2C%20efficiency%20and%20skilling--%20Nasscom%20Annual%20Strategic%20Review%202026.pdf",
+     "context": "Sindhu Gangadharan, présidente de Nasscom."
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Source patronale : Nasscom fédère plus de 3 500 entreprises, dont les grandes sociétés de services informatiques indiennes, et défend leur image auprès des clients et des pouvoirs publics. Les chiffres de l'exercice 2026 sont des estimations (E). La présidente citée, Sindhu Gangadharan, dirigeait SAP Labs India lors de sa nomination à la tête de Nasscom (août 2024, selon la presse indienne) : SAP édite des systèmes de référence (ERP) directement concernés par le déplacement décrit. La présidence de Nasscom a changé depuis. Dans le PDF, un encadré « Key Highlights » est mis en page à côté du texte ; les citations viennent du corps du communiqué. Voix indienne retenue de préférence à la conférence de presse d'Infosys du 28/10/2026, dont la transcription n'est lisible que sur EDGAR (le site d'Infosys refuse l'accès)."
+  },
+  {
+   "id": "src-numeum-marche-2025",
+   "title": "Marché du numérique en France : bilan 2025 et perspectives pour 2026",
+   "authors": [
+    "p-numeum"
+   ],
+   "publisher": "Numeum (communiqué de presse)",
+   "date": "2025-12-18",
+   "url": "https://numeum.fr/wp-content/uploads/2025/12/Numeum_Communique-de-presse-S2-2025-2026.pdf",
+   "lang": "fr",
+   "kind": "déclaration",
+   "planets": [
+    "travail",
+    "devs"
+   ],
+   "currents": [],
+   "thesis": "Le syndicat patronal Numeum estime que le marché du numérique en France a crû de 2 % en 2025, avec de forts écarts : les éditeurs de logiciels et plateformes progressent nettement, tandis que les entreprises de services du numérique (ESN) reculent. Il attribue la croissance des éditeurs notamment à la migration vers le SaaS, et présente l'IA générative comme un levier de croissance et de marges. Il prévoit une accélération à +4,3 % en 2026, avec un retour des ESN à la croissance.",
+   "key_facts": [
+    "2025 : ESN −1,8 % (34,3 milliards d'euros), ingénierie et conseil en technologies (ICT) −2,5 % (7,7 milliards), éditeurs et plateformes +8,2 % (29,1 milliards).",
+    "77 % des nouveaux projets réalisés en SaaS au second semestre 2025, contre 53 % en 2021.",
+    "Les éditeurs déclarent des gains de productivité liés à l'IA générative de 12,5 % en moyenne en 2025 et en attendent 17 % en 2026 ; près de 40 % des acteurs du secteur constatent un effet positif de l'IA générative sur leurs marges et leur chiffre d'affaires.",
+    "Prévisions 2026 (Numeum-PAC) : ESN +1,4 % (35 milliards d'euros), éditeurs et plateformes +8,4 % (31,6 milliards), ICT +1 %."
+   ],
+   "quotes": [
+    {
+     "text": "en 2025, le marché des ESN recule de -1,8 %, pour atteindre 34,3 milliards d’euros marquant une décroissance plus faible qu’attendue, tandis que les activités d’ICT enregistrent une baisse plus marquée de -2,5 %, à 7,7 milliards d’euros.",
+     "speaker": "p-numeum",
+     "status": "verifiee",
+     "checked_at": "https://numeum.fr/wp-content/uploads/2025/12/Numeum_Communique-de-presse-S2-2025-2026.pdf"
+    },
+    {
+     "text": "Une migration accélérée vers le SaaS, avec 77 % des nouveaux projets réalisés en SaaS au S2 2025, contre 53 % en 2021",
+     "speaker": "p-numeum",
+     "status": "verifiee",
+     "checked_at": "https://numeum.fr/wp-content/uploads/2025/12/Numeum_Communique-de-presse-S2-2025-2026.pdf",
+     "context": "Premier facteur cité de la croissance des éditeurs de logiciels et plateformes."
+    },
+    {
+     "text": "Les éditeurs constatent également des gains de productivité significatifs liés à l’IA générative, estimés en moyenne à 12,5 % en 2025, avec une progression attendue à 17 % en 2026",
+     "speaker": "p-numeum",
+     "status": "verifiee",
+     "checked_at": "https://numeum.fr/wp-content/uploads/2025/12/Numeum_Communique-de-presse-S2-2025-2026.pdf"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Source patronale : Numeum représente les ESN, éditeurs, plateformes et sociétés d'ICT ; il est membre de la fédération Syntec (MEDEF). Chiffres de marché issus de la modélisation du cabinet PAC et d'une enquête en ligne auprès de plus de 300 entreprises (octobre-novembre 2025). Les gains de productivité sont déclarés par les éditeurs, pas mesurés, et ne portent pas sur les ESN. Le communiqué ne relie pas le recul des ESN à l'IA ; il évoque l'IA et l'off-shorisation comme transformations à cycle long et souligne l'instabilité économique. Aucun chiffre d'emploi. Le PDF porte « Paris, le 18 décembre » sans année : l'année vient du chemin du fichier (2025/12) et du contenu (bilan 2025)."
+  },
+  {
+   "id": "src-anthropic-employment-2026",
+   "title": "How employment is changing at Anthropic",
+   "authors": [
+    "p-wilmers",
+    "p-massenkoff",
+    "p-mccrory"
+   ],
+   "publisher": "Anthropic (The Anthropic Institute, rapport technique)",
+   "date": "2026-10-16",
+   "url": "https://www.anthropic.com/research/employment-at-anthropic",
+   "lang": "en",
+   "kind": "rapport",
+   "planets": [
+    "devs",
+    "travail"
+   ],
+   "currents": [
+    "labos",
+    "economistes"
+   ],
+   "thesis": "À partir de ses données internes (effectifs, recrutements, télémétrie des agents, production, sondages, agendas, grilles d'entretien d'embauche) et de 17 entretiens, Anthropic décrit comment l'usage intensif d'agents transforme son propre travail. La part des postes techniques juniors recule pendant que la production par salarié augmente ; l'attention humaine devient le goulot d'étranglement, et les salariés consacrent une part croissante de leurs sessions au « méta-travail » de pilotage des agents. Les auteurs présentent l'actionnariat salarié, un système d'alerte sur les métiers exposés et la mobilité interne comme des réponses, tout en reconnaissant qu'elles ne règlent pas la baisse des embauches de juniors.",
+   "key_facts": [
+    "La part des juniors dans les recrutements techniques passe de 27 % à 9 %, et leur part dans les effectifs techniques de 21 % à 14 % depuis début 2025 ; les offres pour juniors chutent surtout depuis décembre 2025.",
+    "Le méta-travail (consignes pour d'autres agents, revues croisées, tableaux de bord et surveillance des chaînes d'agents) passe de 10 % des sessions Claude interactives à l'automne 2025 à 22 % au printemps 2026 ; les consignes permanentes écrites pour les agents passent de quelques centaines en juillet 2025 à 8 500 un an plus tard.",
+    "En août 2026, les heures de travail des agents pilotés par les salariés représentent six fois les heures humaines ; environ 80 % du temps des sessions interactives est passé à attendre une intervention humaine.",
+    "Le temps passé en réunion par le salarié médian augmente de 20 % en un an (16 % pour les contributeurs techniques individuels)."
+   ],
+   "quotes": [
+    {
+     "text": "This acceleration makes human attention the bottleneck for agent output. Even among non-technical employees, reading all the output of their Claude agents would take half their work week. In response, employees turn to “meta-work,” of building visibility tools and monitoring agent pipelines.",
+     "fr": "Cette accélération fait de l'attention humaine le goulot d'étranglement de la production des agents. Même chez les salariés non techniques, lire tout ce que produisent leurs agents Claude prendrait la moitié de leur semaine de travail. En réponse, les salariés se tournent vers le « méta-travail » : construire des outils de visibilité et surveiller les chaînes d'agents.",
+     "speaker": "p-wilmers",
+     "status": "verifiee",
+     "checked_at": "https://www.anthropic.com/research/employment-at-anthropic",
+     "context": "Résultats principaux du rapport ; texte collectif attribué au premier auteur."
+    },
+    {
+     "text": "the share of junior-level employees in technical departments at Anthropic slipped from 21% to 14% since early 2025. The proportion of junior technical hires fell even faster, from 27% to 9%.",
+     "fr": "la part des salariés de niveau junior dans les départements techniques d'Anthropic est passée de 21 % à 14 % depuis début 2025. La proportion de juniors dans les recrutements techniques a baissé encore plus vite, de 27 % à 9 %.",
+     "speaker": "p-wilmers",
+     "status": "verifiee",
+     "checked_at": "https://www.anthropic.com/research/employment-at-anthropic",
+     "context": "Section « Labor demand at the frontier », commentaire de la figure 1."
+    },
+    {
+     "text": "And indeed none directly address the slowdown in junior hires documented in this report. Employment protections for incumbents will not benefit those not hired to begin with.",
+     "fr": "Et de fait, aucune ne répond directement au ralentissement des embauches de juniors documenté dans ce rapport. Protéger l'emploi des salariés en place ne profitera pas à ceux qui ne sont pas recrutés.",
+     "speaker": "p-wilmers",
+     "status": "verifiee",
+     "checked_at": "https://www.anthropic.com/research/employment-at-anthropic",
+     "context": "Conclusion, à propos des mesures prises par Anthropic (actionnariat salarié, alerte précoce, mobilité interne)."
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Conflit d'intérêts : Anthropic, qui publie ce rapport sur ses propres salariés, est l'un des acteurs cartographiés et vend les agents dont il mesure les effets ; le corpus d'Agora IA a par ailleurs été constitué avec Claude. Données internes non publiées, impossibles à vérifier de l'extérieur ; population très atypique (entreprise à la pointe de l'adoption, en forte croissance). Les auteurs signalent eux-mêmes les limites de causalité (adoption des outils non aléatoire, croissance commerciale simultanée). Auteurs : Nathan Wilmers, Regina Catipon, Maxim Massenkoff, Peter McCrory ; citations attribuées au premier auteur (texte collectif). Une version PDF est publiée par Anthropic (www-cdn.anthropic.com). Prolonge src-anthropic-work-internal (02/12/2025), qui portait sur les ingénieurs et le « paradoxe de la supervision ».",
+   "branch": "employer_moins"
+  },
+  {
+   "id": "src-osmani-esprit-critique-agents-2026",
+   "title": "Critical thinking when agents do the work",
+   "authors": [
+    "p-osmani"
+   ],
+   "publisher": "X (article long publié sur le compte d'Addy Osmani)",
+   "date": "2026-11-03",
+   "url": "https://x.com/addyosmani/article/2117512471930167377",
+   "lang": "en",
+   "kind": "essai",
+   "planets": [
+    "devs",
+    "travail"
+   ],
+   "currents": [],
+   "thesis": "Ingénieur de l'équipe Claude Code d'Anthropic et utilisateur intensif d'agents, Addy Osmani ne plaide pas pour moins d'automatisation mais pour une vigilance délibérée. Il distingue trois degrés de délégation : la délégation dont on garde la responsabilité, la « déférence » où la réponse de l'IA cesse d'être une hypothèse, et la « capitulation cognitive » où on la fait sienne sans la contrôler. Plus les modèles s'améliorent, moins leurs erreurs sont visibles et plus on glisse vers la capitulation ; il propose des questions et des routines (hypothèse avant de demander, code écrit sans agent chaque semaine) pour garder les compétences et la responsabilité de ce qui est livré.",
+   "key_facts": [
+    "Article publié sur X le 3 novembre 2026, repris par Business Insider (5 novembre), TechRadar et Clubic (7 novembre 2026).",
+    "L'expression « cognitive surrender » est reprise de Steven Shaw et Gideon Nave (Wharton).",
+    "L'auteur recommande d'écrire du code sans agent une fois par semaine et de noter chaque mois ce qu'on a cessé de faire."
+   ],
+   "quotes": [
+    {
+     "text": "At the bottom: cognitive surrender - the AI's output quietly becomes your own, you feel no need to check it.",
+     "fr": "Tout en bas : la capitulation cognitive. La production de l'IA devient discrètement la vôtre, vous n'éprouvez plus le besoin de la vérifier.",
+     "speaker": "p-osmani",
+     "status": "verifiee",
+     "checked_at": "https://x.com/addyosmani/article/2117512471930167377",
+     "context": "Troisième et dernier degré de sa gradation : délégation, déférence, capitulation."
+    },
+    {
+     "text": "When you're producing more than you can stand behind, you're no longer reviewing. You're hoping.",
+     "fr": "Quand vous produisez plus que ce dont vous pouvez répondre, vous ne relisez plus. Vous espérez.",
+     "speaker": "p-osmani",
+     "status": "verifiee",
+     "checked_at": "https://x.com/addyosmani/article/2117512471930167377",
+     "context": "À propos de la « taxe d'orchestration » : l'écart entre ce que génèrent les agents et ce qu'on accepterait de signer."
+    },
+    {
+     "text": "You may offload the work and much of the auditing, but not the accountability.",
+     "fr": "Vous pouvez déléguer le travail et une bonne partie du contrôle, mais pas la responsabilité.",
+     "speaker": "p-osmani",
+     "status": "verifiee",
+     "checked_at": "https://x.com/addyosmani/article/2117512471930167377"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Source signalée par Clubic (Mélina Loupia, « Un ingénieur de Claude Code alerte sur les compétences qu'on risque de perdre en déléguant à l'IA », 07/11/2026, https://www.clubic.com/actualite-638209-un-ingenieur-de-claude-code-alerte-sur-les-competences-qu-on-risque-de-perdre-en-deleguant-a-l-ia.html), qui lie l'article au « paradoxe de la supervision » de src-anthropic-work-internal ; ce lien est fait par Clubic, pas par Osmani. Date : publication sur X le 3 novembre 2026 (métadonnée de la page, confirmée par Business Insider qui parle d'un essai publié « mardi »). L'appartenance à l'équipe Claude Code est attestée par Business Insider (05/11/2026). Témoignage d'un salarié d'Anthropic, qui écrit en promoteur assumé des agents ; ce n'est pas une étude."
+  },
+  {
+   "id": "src-nadella-bg2-saas-2024",
+   "title": "Satya Nadella | BG2 w/ Bill Gurley & Brad Gerstner",
+   "authors": [
+    "p-nadella"
+   ],
+   "publisher": "BG2Pod with Brad Gerstner and Bill Gurley (podcast) ; propos rapportés par Windows Central et OfficeChai",
+   "date": "2024-12-12",
+   "url": "https://podcasts.apple.com/us/podcast/satya-nadella-bg2-w-bill-gurley-brad-gerstner/id1727278168?i=1000680168104",
+   "lang": "en",
+   "kind": "podcast",
+   "planets": [
+    "devs",
+    "pouvoir"
+   ],
+   "currents": [
+    "labos"
+   ],
+   "thesis": "Interrogé sur l'avenir des applications SaaS, le PDG de Microsoft avance que les applications métier ne sont au fond que des bases de données assorties de logique métier, et que cette logique migrera vers une couche d'agents capables d'agir sur plusieurs bases à la fois. Une fois la logique passée dans la « couche IA », les clients remplaceraient les systèmes sous-jacents. Il présente ce mouvement comme une stratégie de Microsoft pour ses propres logiciels de gestion (Dynamics) et décrit Excel ou Word comme des « canevas » au service de Copilot.",
+   "key_facts": [
+    "Épisode publié le 12 décembre 2024 ; le passage se situe dans la séquence « The Future of AI Agents » (à partir de 28:07 selon les notes de l'épisode).",
+    "Microsoft vend lui-même des applications métier (Dynamics 365) et des agents (Copilot) : la prédiction porte sur un marché où il est concurrent.",
+    "En mai 2025, un analyste de Gartner cité par Computerworld jugeait qu'on était « loin » d'un remplacement du SaaS par les agents, les plateformes restant des systèmes de référence."
+   ],
+   "quotes": [
+    {
+     "text": "the notion that business applications exist, that’s probably where they’ll all collapse, right in the agent era, because if you think about it, right, they are essentially CRUD databases with a bunch of business logic.",
+     "fr": "l'idée même qu'il existe des applications métier, c'est probablement là que tout va s'effondrer à l'ère des agents, parce que, si on y réfléchit, ce sont essentiellement des bases de données CRUD avec beaucoup de logique métier.",
+     "speaker": "p-nadella",
+     "status": "a_verifier",
+     "checked_at": "https://www.windowscentral.com/microsoft/hey-why-do-i-need-excel-microsoft-ceo-satya-nadella-foresees-a-disruptive-agentic-ai-era-that-could-aggressively-collapse-saas-apps",
+     "context": "Réponse à une question sur l'avenir des applications SaaS ; CRUD : créer, lire, mettre à jour, supprimer."
+    },
+    {
+     "text": "The business logic is all going to these agents, and these agents are going to be multi repo CRUD, right? So they’re not going to discriminate between what the back end is. They’re going to update multiple databases, and all the logic will be in the AI tier, so to speak. And once the AI tier becomes the place where all the logic is, then people will start replacing the back ends, right?",
+     "fr": "Toute la logique métier va passer à ces agents, et ces agents feront du CRUD sur plusieurs dépôts. Ils ne feront pas de différence selon le système sous-jacent. Ils mettront à jour plusieurs bases de données, et toute la logique sera dans la couche IA, pour ainsi dire. Et une fois que toute la logique sera dans la couche IA, les gens commenceront à remplacer les systèmes sous-jacents.",
+     "speaker": "p-nadella",
+     "status": "a_verifier",
+     "checked_at": "https://www.windowscentral.com/microsoft/hey-why-do-i-need-excel-microsoft-ceo-satya-nadella-foresees-a-disruptive-agentic-ai-era-that-could-aggressively-collapse-saas-apps"
+    },
+    {
+     "text": "You can say the Excel is an agent to my Copilot, Word is an agent. It’s kind of specialized canvases",
+     "fr": "On peut dire qu'Excel est un agent de mon Copilot, que Word est un agent. Ce sont des sortes de canevas spécialisés.",
+     "speaker": "p-nadella",
+     "status": "a_verifier",
+     "checked_at": "https://officechai.com/stories/saas-applications-will-collapse-in-the-ai-agent-era-microsoft-ceo-satya-nadella/",
+     "context": "Nuance apportée dans la suite de la réponse : les applications deviennent des outils au service de l'assistant."
+    }
+   ],
+   "reliability": "secondaire",
+   "notes": "Propos tenus dans le podcast BG2 (audio et vidéo, sans transcription publiée par le podcast : ni bg2pod.com, ni les pages Apple Podcasts et Spotify n'en proposent). La vidéo YouTube n'a pas été consultée (site bloqué). Propos rapportés par Windows Central (Kevin Okemwa, 09/05/2025, citations 0 et 1) et OfficeChai (19/12/2024, citation 2) ; Computerworld (Andy Patrizio, 13/05/2025, https://www.computerworld.com/article/3981415/does-agentic-ai-spell-doom-for-saas.html) cite le même passage. La proposition « they are essentially CRUD databases with a bunch of business logic » est identique dans les trois articles, entre guillemets et attribuée à Nadella : c'est très probablement un verbatim, mais les mots qui l'entourent varient d'un article à l'autre (transcriptions non relues). Aucun des trois articles ne rapporte de nuance de Nadella sur les applications réglementées ou les systèmes de référence : la remarque sur les « systems of record » est celle de Tom Coshow (Gartner) dans Computerworld. Conflit d'intérêts : Microsoft vend à la fois des applications métier et des agents."
   }
  ],
  "people": [
@@ -14454,6 +16307,510 @@
     "open-source"
    ],
    "country": "GB"
+  },
+  {
+   "id": "p-cespm",
+   "name": "Comité éthique et scientifique de Parcoursup et Mon Master (CESPM)",
+   "role": "Comité placé auprès du ministère de l'Enseignement supérieur, présidé par Gilles Roussel ; rapport annuel au Parlement (auteur collectif)",
+   "currents": [
+    "gouvernance"
+   ],
+   "country": "FR"
+  },
+  {
+   "id": "p-devillers",
+   "name": "Olivier Devillers",
+   "role": "Journaliste à Localtis (Banque des Territoires)",
+   "currents": [],
+   "country": "FR"
+  },
+  {
+   "id": "p-ue-legislateur",
+   "name": "Parlement européen et Conseil de l'Union européenne",
+   "role": "Colégislateurs de l'UE, auteurs des règlements dont l'AI Act (auteur collectif)",
+   "currents": [
+    "gouvernance"
+   ],
+   "country": "EU"
+  },
+  {
+   "id": "p-cjue",
+   "name": "Cour de justice de l'Union européenne (CJUE)",
+   "role": "Juridiction de l'UE (Luxembourg), qui interprète le droit de l'Union, dont le RGPD (auteur collectif)",
+   "currents": [
+    "gouvernance"
+   ],
+   "country": "EU"
+  },
+  {
+   "id": "p-simkute",
+   "name": "Auste Simkute",
+   "role": "Chercheuse en interaction humain-machine à l'université d'Édimbourg",
+   "currents": [],
+   "country": "GB"
+  },
+  {
+   "id": "p-tankelevitch",
+   "name": "Lev Tankelevitch",
+   "role": "Chercheur à Microsoft Research (Cambridge, Royaume-Uni)",
+   "currents": [],
+   "country": "GB"
+  },
+  {
+   "id": "p-sellen",
+   "name": "Abigail Sellen",
+   "role": "Chercheuse en interaction humain-machine à Microsoft Research (Cambridge, Royaume-Uni)",
+   "currents": [],
+   "country": "GB"
+  },
+  {
+   "id": "p-france-travail",
+   "name": "France Travail",
+   "role": "Opérateur public de l'emploi (ex-Pôle emploi) ; ses documents internes ont été publiés par La Quadrature du Net (auteur collectif)",
+   "currents": [
+    "gouvernance"
+   ],
+   "country": "FR"
+  },
+  {
+   "id": "p-conseil-etat-fr",
+   "name": "Conseil d'État (France)",
+   "role": "Plus haute juridiction administrative française et conseiller du gouvernement (auteur collectif)",
+   "currents": [
+    "gouvernance"
+   ],
+   "country": "FR"
+  },
+  {
+   "id": "p-cour-des-comptes",
+   "name": "Cour des comptes",
+   "role": "Juridiction financière française, chargée du contrôle des comptes publics et de l'évaluation des politiques publiques (auteur collectif)",
+   "currents": [
+    "gouvernance"
+   ],
+   "country": "FR"
+  },
+  {
+   "id": "p-autor",
+   "name": "David Autor",
+   "role": "Économiste du travail au MIT",
+   "currents": [
+    "economistes"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-farrell",
+   "name": "Henry Farrell",
+   "role": "Politiste à l'université Johns Hopkins",
+   "currents": [
+    "techno-normale"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-gopnik",
+   "name": "Alison Gopnik",
+   "role": "Psychologue du développement à l'université de Californie à Berkeley",
+   "currents": [
+    "techno-normale"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-shalizi",
+   "name": "Cosma Shalizi",
+   "role": "Statisticien à l'université Carnegie Mellon",
+   "currents": [
+    "techno-normale"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-evans-james",
+   "name": "James Evans",
+   "role": "Sociologue à l'université de Chicago",
+   "currents": [
+    "techno-normale"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-bls",
+   "name": "U.S. Bureau of Labor Statistics (BLS)",
+   "role": "Office statistique du département du Travail des États-Unis ; projections décennales d'emploi par métier",
+   "currents": [
+    "economistes"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-meti",
+   "name": "Ministère de l'Économie, du Commerce et de l'Industrie du Japon (METI, 経済産業省)",
+   "role": "Ministère japonais chargé de la politique industrielle ; projections de l'emploi à l'horizon 2040",
+   "currents": [
+    "gouvernance"
+   ],
+   "country": "JP"
+  },
+  {
+   "id": "p-bok",
+   "name": "Banque de Corée (한국은행)",
+   "role": "Banque centrale de la Corée du Sud ; notes de recherche BOK Issue Note",
+   "currents": [
+    "economistes"
+   ],
+   "country": "KR"
+  },
+  {
+   "id": "p-fed-ny",
+   "name": "Federal Reserve Bank of New York",
+   "role": "Banque de réserve fédérale régionale (États-Unis) ; enquêtes régionales auprès des entreprises et blog Liberty Street Economics",
+   "currents": [
+    "economistes"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-igf",
+   "name": "Inspection générale des finances (IGF)",
+   "role": "Corps d'inspection interministériel français rattaché aux ministères économiques et financiers",
+   "currents": [
+    "gouvernance"
+   ],
+   "country": "FR"
+  },
+  {
+   "id": "p-igas",
+   "name": "Inspection générale des affaires sociales (IGAS)",
+   "role": "Corps d'inspection français des politiques sociales, de santé et du travail",
+   "currents": [
+    "gouvernance"
+   ],
+   "country": "FR"
+  },
+  {
+   "id": "p-iga",
+   "name": "Inspection générale de l'administration (IGA)",
+   "role": "Corps d'inspection interministériel français rattaché au ministère de l'Intérieur",
+   "currents": [
+    "gouvernance"
+   ],
+   "country": "FR"
+  },
+  {
+   "id": "p-hosseini",
+   "name": "Seyed M. Hosseini",
+   "role": "Économiste, Université Harvard",
+   "currents": [
+    "economistes"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-lichtinger",
+   "name": "Guy Lichtinger",
+   "role": "Économiste, Université Harvard",
+   "currents": [
+    "economistes"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-brookings",
+   "name": "Brookings Institution (Brookings Metro)",
+   "role": "Centre de recherche américain sur les politiques publiques ; programme Brookings Metro (Mark Muro, Shriya Methkupally)",
+   "currents": [
+    "economistes"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-govai",
+   "name": "Centre for the Governance of AI (GovAI)",
+   "role": "Centre de recherche indépendant sur la gouvernance de l'IA et ses risques ; travaux économiques de Sam Manning sur l'IA et l'emploi",
+   "currents": [
+    "surete-institutionnelle",
+    "gouvernance"
+   ],
+   "country": "GB"
+  },
+  {
+   "id": "p-yale-budget-lab",
+   "name": "The Budget Lab at Yale",
+   "role": "Centre de recherche non partisan sur les politiques économiques, Université Yale ; suivi mensuel de l'effet de l'IA sur l'emploi",
+   "currents": [
+    "economistes"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-pan-melissa",
+   "name": "Melissa Z. Pan",
+   "role": "Chercheuse en systèmes informatiques à UC Berkeley, première autrice de l'étude « Measuring Agents in Production »",
+   "currents": [],
+   "country": "US"
+  },
+  {
+   "id": "p-zaharia",
+   "name": "Matei Zaharia",
+   "role": "Informaticien, professeur à UC Berkeley, cofondateur de Databricks",
+   "currents": [],
+   "country": "US"
+  },
+  {
+   "id": "p-xinhua",
+   "name": "Xinhua (新华社) / Xinhuanet (新华网)",
+   "role": "Agence de presse officielle de la République populaire de Chine et son site d'information (auteur collectif)",
+   "currents": [],
+   "country": "CN"
+  },
+  {
+   "id": "p-wang-wenjing",
+   "name": "Wang Wenjing (王文京)",
+   "role": "Fondateur, président et PDG de Yonyou (用友), éditeur chinois de logiciels de gestion",
+   "currents": [],
+   "country": "CN"
+  },
+  {
+   "id": "p-reuters",
+   "name": "Reuters",
+   "role": "Agence de presse internationale, propriété de Thomson Reuters (auteur collectif)",
+   "currents": [],
+   "country": "GB"
+  },
+  {
+   "id": "p-scott-white",
+   "name": "Scott White",
+   "role": "Responsable produit pour les entreprises chez Anthropic",
+   "currents": [
+    "labos"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-budman",
+   "name": "Scott Budman",
+   "role": "Journaliste, NBC Bay Area",
+   "currents": [],
+   "country": "US"
+  },
+  {
+   "id": "p-benioff",
+   "name": "Marc Benioff",
+   "role": "Cofondateur, président et PDG de Salesforce",
+   "currents": [
+    "accelerationnisme"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-salesforce",
+   "name": "Salesforce",
+   "role": "Éditeur américain de logiciels de gestion de la relation client (CRM) et d'agents (Agentforce) (auteur collectif)",
+   "currents": [],
+   "country": "US"
+  },
+  {
+   "id": "p-drska",
+   "name": "Moacir Drska",
+   "role": "Journaliste économique, NeoFeed",
+   "currents": [],
+   "country": "BR"
+  },
+  {
+   "id": "p-herszkowicz",
+   "name": "Dennis Herszkowicz",
+   "role": "PDG de Totvs, premier éditeur brésilien de logiciels de gestion (ERP)",
+   "currents": [],
+   "country": "BR"
+  },
+  {
+   "id": "p-galetti",
+   "name": "Beth Galetti",
+   "role": "Vice-présidente senior chargée des ressources humaines et de la technologie (People Experience and Technology) d'Amazon",
+   "currents": [],
+   "country": "US"
+  },
+  {
+   "id": "p-jassy",
+   "name": "Andy Jassy",
+   "role": "PDG d'Amazon",
+   "currents": [],
+   "country": "US"
+  },
+  {
+   "id": "p-klarna",
+   "name": "Klarna",
+   "role": "Fintech suédoise de paiement fractionné, cotée à New York depuis septembre 2025 (auteur collectif)",
+   "currents": [],
+   "country": "SE"
+  },
+  {
+   "id": "p-crozier",
+   "name": "Ry Crozier",
+   "role": "Journaliste, iTnews (Australie)",
+   "currents": [],
+   "country": "AU"
+  },
+  {
+   "id": "p-cba",
+   "name": "Commonwealth Bank of Australia (CBA)",
+   "role": "Première banque australienne (auteur collectif)",
+   "currents": [],
+   "country": "AU"
+  },
+  {
+   "id": "p-fsu",
+   "name": "Finance Sector Union (FSU)",
+   "role": "Syndicat australien des salariés de la banque et de la finance (auteur collectif)",
+   "currents": [],
+   "country": "AU"
+  },
+  {
+   "id": "p-challenger-gray",
+   "name": "Challenger, Gray & Christmas",
+   "role": "Cabinet américain d'outplacement, qui publie un décompte mensuel des suppressions de postes annoncées (auteur collectif)",
+   "currents": [],
+   "country": "US"
+  },
+  {
+   "id": "p-andy-challenger",
+   "name": "Andy Challenger",
+   "role": "Expert du marché du travail et directeur commercial de Challenger, Gray & Christmas",
+   "currents": [],
+   "country": "US"
+  },
+  {
+   "id": "p-costa-louise",
+   "name": "Louise Costa",
+   "role": "Journaliste, Le Monde Informatique",
+   "currents": [],
+   "country": "FR"
+  },
+  {
+   "id": "p-crawford-david",
+   "name": "David Crawford",
+   "role": "Associé de Bain & Company (pratique technologie)",
+   "currents": [],
+   "country": "US"
+  },
+  {
+   "id": "p-mclaughlin-chris",
+   "name": "Chris McLaughlin",
+   "role": "Associé de Bain & Company",
+   "currents": [],
+   "country": "US"
+  },
+  {
+   "id": "p-doddapaneni-purna",
+   "name": "Purna Doddapaneni",
+   "role": "Associé de Bain & Company",
+   "currents": [],
+   "country": "US"
+  },
+  {
+   "id": "p-fiore-greg",
+   "name": "Greg Fiore",
+   "role": "Associé de Bain & Company",
+   "currents": [],
+   "country": "US"
+  },
+  {
+   "id": "p-ng",
+   "name": "Andrew Ng",
+   "role": "Informaticien, fondateur de DeepLearning.AI et d'AI Fund, cofondateur de Coursera et de Google Brain, professeur adjoint (adjunct) à Stanford",
+   "currents": [
+    "open-source"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-yang-john",
+   "name": "John Yang",
+   "role": "Chercheur en IA, coauteur de SWE-bench et premier auteur de SWE-agent (Princeton lors de la publication)",
+   "currents": [],
+   "country": "US"
+  },
+  {
+   "id": "p-jimenez-carlos",
+   "name": "Carlos E. Jimenez",
+   "role": "Chercheur en IA, Princeton, coauteur de SWE-bench et SWE-agent",
+   "currents": [],
+   "country": "US"
+  },
+  {
+   "id": "p-press-ofir",
+   "name": "Ofir Press",
+   "role": "Chercheur en IA, Princeton (lors de la publication), coauteur de SWE-bench et SWE-agent",
+   "currents": [],
+   "country": "US"
+  },
+  {
+   "id": "p-mitchell-margaret",
+   "name": "Margaret Mitchell",
+   "role": "Chercheuse en éthique de l'IA, Hugging Face, ex-coresponsable de l'équipe Ethical AI de Google",
+   "currents": [
+    "ethique-critique"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-ghosh-avijit",
+   "name": "Avijit Ghosh",
+   "role": "Chercheur en politiques et éthique de l'IA, Hugging Face (pays à confirmer)",
+   "currents": [
+    "ethique-critique"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-pistilli",
+   "name": "Giada Pistilli",
+   "role": "Philosophe, responsable de l'éthique chez Hugging Face (pays à confirmer)",
+   "currents": [
+    "ethique-critique"
+   ],
+   "country": "FR"
+  },
+  {
+   "id": "p-nasscom",
+   "name": "Nasscom",
+   "role": "Organisation professionnelle de l'industrie technologique indienne, plus de 3 500 entreprises membres (auteur collectif)",
+   "currents": [],
+   "country": "IN"
+  },
+  {
+   "id": "p-gangadharan",
+   "name": "Sindhu Gangadharan",
+   "role": "Présidente de Nasscom (nommée en août 2024), directrice générale de SAP Labs India lors de sa nomination",
+   "currents": [],
+   "country": "IN"
+  },
+  {
+   "id": "p-numeum",
+   "name": "Numeum",
+   "role": "Syndicat patronal des entreprises du numérique en France (ESN, éditeurs, plateformes, ICT), membre de la fédération Syntec (auteur collectif)",
+   "currents": [],
+   "country": "FR"
+  },
+  {
+   "id": "p-wilmers",
+   "name": "Nathan Wilmers",
+   "role": "Sociologue du travail, premier auteur du rapport « How employment is changing at Anthropic » (The Anthropic Institute, 2026)",
+   "currents": [
+    "economistes"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-osmani",
+   "name": "Addy Osmani",
+   "role": "Ingénieur dans l'équipe Claude Code d'Anthropic, auparavant chez Google (Chrome)",
+   "currents": [
+    "labos"
+   ],
+   "country": "US"
   }
  ],
  "relations": [

@@ -2,7 +2,7 @@
 
 ## Le projet en bref
 
-Agora IA est un site statique, outil ouvert pour débattre, seul ou en groupe, des enjeux sociétaux, scientifiques et politiques de l'IA et de l'AGI. Il a d'abord servi de support à une séance entre ingénieurs logiciel (5 novembre 2026, tag git `seance-2026-11-05`) ; cette formulation reste disponible en choisissant le public « Ingénieurs et tech ». Le site présente un « univers » 3D : 15 thématiques (planètes) autour d'une question centrale, « Survie et contrôle : qui garde la main sur l'IA ? ». On y trouve aussi des courants de pensée, des sources primaires avec citations vérifiées, 6 publics (questions et parcours adaptés), 8 parcours guidés, des parcours « à la carte » composés par l'animateur, un fil transversal sur la productivité, une cartographie des métiers exposés et un module « Où te situes-tu ? ».
+Agora IA est un site statique, outil ouvert pour débattre, seul ou en groupe, des enjeux sociétaux, scientifiques et politiques de l'IA et de l'AGI. Il a d'abord servi de support à une séance entre ingénieurs logiciel (5 novembre 2026, tag git `seance-2026-11-05`) ; cette formulation reste disponible en choisissant le public « Ingénieurs et tech ». Le site présente un « univers » 3D : 15 thématiques (planètes) autour d'une question centrale, « Survie et contrôle : qui garde la main sur l'IA ? ». On y trouve aussi des courants de pensée, des sources primaires avec citations vérifiées, 6 publics (questions et parcours adaptés), 9 parcours guidés, des parcours « à la carte » composés par l'animateur, un fil transversal sur la productivité, une cartographie des métiers exposés et un module « Où te situes-tu ? ».
 
 Le projet s'appelait auparavant « Orbites de l'IA ». Ce nom peut encore apparaître dans de vieux documents.
 

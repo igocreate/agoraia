@@ -9,7 +9,7 @@ Le site présente un univers 3D : 15 thématiques en orbite autour d'une questio
 - des courants de pensée, présentés par leurs meilleurs arguments puis par leurs critiques, avec des voix d'Europe, d'Amérique du Nord, d'Asie, d'Afrique et d'Amérique latine ;
 - plus de 200 sources publiées depuis septembre 2023, avec des citations dans leur langue d'origine, traduites, et marquées « vérifiée », « à vérifier » ou « transcription » ;
 - 6 publics (tout public, grand public, élèves et étudiants, entreprises, élus, ingénieurs), qui adaptent les questions de débat et les parcours ;
-- 8 parcours guidés, dont une introduction de 15 minutes, et un outil pour composer une séance à partir des thématiques choisies, avec un lien à partager au groupe ;
+- 9 parcours guidés, dont une introduction de 15 minutes, et un outil pour composer une séance à partir des thématiques choisies, avec un lien à partager au groupe ;
 - un fil transversal « Productivité : pour qui, pour quoi ? » et une cartographie des métiers exposés ;
 - le module « Où te situes-tu ? », pour se positionner sur les lignes de fracture du débat.
 
