@@ -93,11 +93,11 @@ const panel=$('#panel'), stage=$('#stage');
 // Historique : chaque sélection empile l'écran précédent ; sur mobile, la liste et le parcours sont aussi des écrans.
 let hist=[];
 const here = () => !mobile() ? state.selected : (tourI>=0 && !tourEl.classList.contains('away')) ? {type:'tour'} : stage.classList.contains('m-list') ? {type:'list'} : state.selected;
-function goBack(){ const h=hist.pop(); if(h && h.type==='tour'){ if(tourI<0) return goBack(); tourEl.classList.remove('away'); return; } if(h && h.type==='list') return openList(true); select(h||null,true); }
+function goBack(){ const h=hist.pop(); if(h && h.type==='tour'){ if(tourI<0) return goBack(); tourEl.classList.remove('away'); setHash(tourHash()); return; } if(h && h.type==='list') return openList(true); select(h||null,true); }
 function goHome(tab){ if(tab) homeTab=tab; if(mobile() && tourI>=0) endTour(); select(null,true); }
 function openList(back){ if(!mobile()){ setView('vlist'); return; } if(!back) hist.push(here()); stage.classList.add('m-list'); if(tourI>=0) tourEl.classList.add('away'); }
 $('#lvBack').onclick=goBack;
-function panelHead(){ return el('div',{class:'phead'}, hist.length?el('button',{class:'btn back',onclick:goBack},'← Retour'):null, el('button',{class:'close','aria-label':'Revenir à l\'accueil',title:'Accueil',onclick:()=>goHome()},'×')); }
+function panelHead(){ return el('div',{class:'phead'}, hist.length?el('button',{class:'btn back',onclick:goBack},'← Retour'):null, el('button',{class:'btn share',title:'Copier le lien de cette page',onclick:e=>shareLink(selHash(state.selected),e.currentTarget)},'Partager'), el('button',{class:'close','aria-label':'Revenir à l\'accueil',title:'Accueil',onclick:()=>goHome()},'×')); }
 const ACCESS={payant:['accès payant','Le site de la source réserve ce texte à ses abonnés.'], limite:['accès limité','Lecture gratuite limitée : compteur d\'articles ou quota de téléchargements.']};
 function srcItem(s){ return el('li',{},el('button',{onclick:()=>select({type:'source',id:s.id})}, el('span',{class:'t',text:(s.k==='outil'?'Outil · ':'')+s.t}), el('span',{class:'m',text:`${authorsOf(s)} · ${fmtDate(s.d)} · ${s.rg}${s.ac&&!s.ou?' · '+ACCESS[s.ac][0]:''}`}))); }
 function quoteBlock(q,src){
@@ -273,13 +273,29 @@ function select(sel,back){
   if(!back){ const h=here(); if(JSON.stringify(h)!==JSON.stringify(sel)) hist.push(h); if(hist.length>50) hist.shift(); }
   if(mobile()){ stage.classList.remove('m-list'); if(tourI>=0) tourEl.classList.add('away'); }
   state.selected=sel; panel.scrollTop=0;
+  setHash(tourI>=0 && !mobile() && sel && sel.type==='planet' && sel.id===curSteps()[tourI].planet ? tourHash() : selHash(sel));
   if(!sel){ hist=[]; showHome(); state.focusPlanet=null; U.highlight(null); return; }
   if(sel.type==='planet'){ showPlanet(sel.id); state.focusPlanet=sel.id; U.focusPlanet(sel.id); }
   else if(sel.type==='source'){ showSource(sel.id); U.focusSource(sel.id); }
   else if(sel.type==='current'){ showCurrent(sel.id); U.highlight(null); }
   else if(sel.type==='thread'){ showThread(); state.focusPlanet=null; U.focusThread(); }
   else if(sel.type==='person'){ showPerson(sel.id); const ss=srcByPerson[sel.id]||[]; if(ss[0]) U.focusSource(ss[0], true); }
-  if(state.view==='vlist' && sel.type!=='source') {}
+}
+
+// ---------- permaliens ----------
+// L'URL suit l'écran affiché (replaceState, sans toucher à l'historique du navigateur) : il suffit de la copier pour partager.
+// #thematique=travail, #source=src-…, #courant=…, #voix=p-…, #fil=productivite, #parcours=intro:3 (étape 3), #seance=…:90:3.
+const HASH_KEYS={planet:'thematique',source:'source',current:'courant',person:'voix',thread:'fil'};
+const HASH_TYPES=Object.fromEntries(Object.entries(HASH_KEYS).map(([k,v])=>[v,k]));
+const exists=sel=>({planet:P,source:S,current:CU,person:PE}[sel.type]||{[D.thread.id]:1})[sel.id];
+function selHash(sel){ return sel ? '#'+HASH_KEYS[sel.type]+'='+encodeURIComponent(sel.id) : HOME_TABS.find(t=>t[0]===homeTab)[2]; }
+function tourHash(){ return tourId==='carte' ? seanceHash(...TOURS.carte.args, tourI+1) : '#parcours='+tourId+(tourI>0?':'+(tourI+1):''); }
+function setHash(h){ if(location.hash===h) return; try{ history.replaceState(null,'',h); }catch(e){} }
+function shareLink(hash,btn){
+  const url=location.href.split('#')[0]+hash, label=btn.textContent;
+  const done=t=>{ btn.textContent=t; setTimeout(()=>{ btn.textContent=label; },1800); };
+  if(mobile() && navigator.share){ navigator.share({title:document.title,url}).catch(()=>{}); return; }
+  try{ navigator.clipboard.writeText(url).then(()=>done('Lien copié'),()=>window.prompt('Copie ce lien :',url)); }catch(e){ window.prompt('Copie ce lien :',url); }
 }
 
 // ---------- vue liste ----------
@@ -444,10 +460,11 @@ const tourEl=$('#tour'); let tourI=-1; let tourId='intro';
 const TOURS=Object.fromEntries(D.tours.map(t=>[t.id,t])); const curSteps=()=>TOURS[tourId].steps;
 const visibleTours = () => D.tours.filter(forPublic);
 function startTour(id,i){ if(tourI<0) hist.push(here()); tourId=id||'intro'; tourI=i||0; closeTourMenu(); tourEl.hidden=false; tourEl.classList.remove('away'); $('#controls').hidden=true; $('#ctlShow').hidden=false; if(state.view!=='v3d' && !mobile()) setView('v3d'); renderTour(); }
-function endTour(){ tourI=-1; tourEl.hidden=true; tourEl.classList.remove('away'); if(ctlOpen()){ $('#controls').hidden=false; $('#ctlShow').hidden=true; } }
+function endTour(){ tourI=-1; tourEl.hidden=true; tourEl.classList.remove('away'); if(ctlOpen()){ $('#controls').hidden=false; $('#ctlShow').hidden=true; } setHash(selHash(state.selected)); }
 function renderTour(){
   const st=stepFor(curSteps()[tourI]); tourEl.textContent='';
-  tourEl.append(el('div',{class:'step',text:`${TOURS[tourId].title.toUpperCase()} · ÉTAPE ${tourI+1} / ${curSteps().length}`}));
+  tourEl.append(el('div',{class:'step'}, el('span',{text:`${TOURS[tourId].title.toUpperCase()} · ÉTAPE ${tourI+1} / ${curSteps().length}`}), el('button',{class:'linklike',title:'Copier le lien de cette étape',onclick:e=>shareLink(tourHash(),e.currentTarget)},'Partager l\'étape')));
+  setHash(tourHash());
   tourEl.append(el('h2',{text:st.title})); tourEl.append(el('p',{text:st.text}));
   const qb=el('div',{class:'tour-quotes'}); st.quotes.forEach(([sid,i])=>{ const q=S[sid].q[i]; const b=quoteBlock(q,S[sid]); b.style.cursor='pointer'; b.title='Ouvrir la source'; b.addEventListener('click',()=>select({type:'source',id:sid})); qb.append(b); }); tourEl.append(qb);
   tourEl.append(el('div',{class:'ask',text:st.question}));
@@ -518,17 +535,16 @@ $('#posBtn').onclick=openPos;
 const DURATIONS=[{id:'45',label:'45 min',more:0,hint:'une question par étape'},{id:'90',label:'1 h 30',more:1,hint:'deux questions par étape'},{id:'120',label:'2 h',more:2,hint:'trois questions par étape'}];
 const seanceModal=$('#seanceModal');
 let seance=store.get('seance',{planets:[],dur:'90'});
-function seanceHash(pub,pids,dur){ return `#seance=${pub}:${pids.join(',')}${dur&&dur!=='90'?':'+dur:''}`; }
+function seanceHash(pub,pids,dur,step){ dur=dur||'90'; return `#seance=${pub}:${pids.join(',')}${dur!=='90'||step>1?':'+dur:''}${step>1?':'+step:''}`; }
 function buildCarte(pub,pids,dur){
   const more=(DURATIONS.find(d=>d.id===dur)||DURATIONS[1]).more;
   const ids=['centre',...D.planets.map(p=>p.id).filter(id=>id!=='centre' && pids.includes(id))];
-  TOURS.carte={id:'carte',title:'Séance à la carte · '+PUB[pub].label,steps:ids.map(id=>Object.assign({},D.stops[id],{more}))};
+  TOURS.carte={id:'carte',title:'Séance à la carte · '+PUB[pub].label,steps:ids.map(id=>Object.assign({},D.stops[id],{more})),args:[pub,pids,dur]};
 }
-function launchCarte(pub,pids,dur){
+function launchCarte(pub,pids,dur,step){
   if(pub!==state.public) setPublic(pub);
   buildCarte(pub,pids,dur);
-  try{ history.replaceState(null,'',seanceHash(pub,pids,dur)); }catch(e){}
-  closeSeance(); startTour('carte',0);
+  closeSeance(); startTour('carte',Math.min(Math.max((step||1)-1,0),TOURS.carte.steps.length-1));
 }
 function openSeance(){ seanceModal.hidden=false; renderSeance(); setTimeout(()=>{ const f=seanceModal.querySelector('input'); f&&f.focus(); },30); }
 function closeSeance(){ seanceModal.hidden=true; }
@@ -643,8 +659,19 @@ pubModal.addEventListener('keydown',e=>{ if(e.key==='Escape') closePubChoice(sta
 // ---------- démarrage ----------
 buildControls(); updateHorizonHint(); showHome();
 if(mobile()) setView('vlist',true); else setView(U.ok?store.get('view','v3d'):'vlist');
-const hashSeance=location.hash.match(/^#seance=([\w-]+):([\w,-]+)(?::(\d+))?$/);
-if(location.hash==='#visite') startTour(PUB[state.public].intro,0); else if(location.hash==='#productivite') startTour('productivite',0); else if(location.hash==='#contribuer') openContrib('source');
-else if(hashSeance && PUB[hashSeance[1]]){ const pids=hashSeance[2].split(',').filter(id=>P[id]&&id!=='centre'); if(pids.length) launchCarte(hashSeance[1],pids,hashSeance[3]||'90'); }
-else if(store.get('public',null)===null && !hashPub) openPubChoice();
+// Renvoie true si l'ancre a ouvert un écran (on ne demande alors pas le public).
+function route(h,boot){
+  let m;
+  if(h==='#visite'){ startTour(PUB[state.public].intro,0); return true; }
+  if(h==='#productivite'){ startTour('productivite',0); return true; }
+  if(h==='#contribuer'){ openContrib('source'); return true; }
+  if((m=h.match(/^#seance=([\w-]+):([\w,-]+)(?::(\d+))?(?::(\d+))?$/)) && PUB[m[1]]){ const pids=m[2].split(',').filter(id=>P[id]&&id!=='centre'); if(pids.length){ launchCarte(m[1],pids,m[3]||'90',+m[4]||1); return true; } }
+  if((m=h.match(/^#parcours=([\w-]+)(?::(\d+))?$/)) && TOURS[m[1]] && m[1]!=='carte'){ startTour(m[1],Math.min(Math.max((+m[2]||1)-1,0),TOURS[m[1]].steps.length-1)); return true; }
+  if((m=h.match(/^#(\w+)=(.+)$/)) && HASH_TYPES[m[1]]){ let id; try{ id=decodeURIComponent(m[2]); }catch(e){ return false; } const sel={type:HASH_TYPES[m[1]],id}; if(exists(sel)){ select(sel); return true; } }
+  if(!boot){ const tab=HOME_TABS.find(t=>t[2]===h); if(tab) goHome(tab[0]); }
+  return false;
+}
+if(!route(location.hash,true) && store.get('public',null)===null && !hashPub) openPubChoice();
+// Ancre modifiée à la main ou lien interne : replaceState ne déclenche pas cet événement.
+window.addEventListener('hashchange',()=>route(location.hash));
 })();
