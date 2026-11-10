@@ -504,6 +504,148 @@
       ]
     },
     {
+      "id": "metier",
+      "title": "Les impacts de l'IA dans nos métiers",
+      "steps": [
+        {
+          "planet": "devs",
+          "title": "Ce qu'on aimait faire",
+          "text": "Dans une administration française, un logiciel repère désormais les erreurs dans les dossiers qu'une agente vérifiait sur tableur ; dans l'aéronautique, un outil présélectionne les défauts que les techniciens allaient chercher eux-mêmes. Le LaborIA (Inria) parle de « paradoxe de la facilitation » : l'effort fait aussi partie de la satisfaction, et simplifier une tâche peut retirer ce qui faisait l'intérêt du métier. Au Japon, 34,5 % des salariés qui utilisent l'IA estiment qu'elle dévalue une partie de leurs compétences.",
+          "quotes": [
+            [
+              "src-laboria-explorer-2024",
+              0
+            ],
+            [
+              "src-laboria-explorer-2024",
+              1
+            ]
+          ],
+          "question": "Quelle partie de ton travail te plaît le plus, et l'IA est-elle en train de la prendre ?"
+        },
+        {
+          "planet": "devs",
+          "title": "Mon champ s'élargit",
+          "text": "Chez Procter & Gamble, 776 professionnels ont travaillé sur de vrais projets, seuls ou en binôme, avec ou sans IA : seul avec l'IA, on atteint la qualité d'une équipe sans IA, et les salariés dont le développement produit n'est pas le métier rejoignent le niveau d'équipes qui comptent un spécialiste. En France, un responsable de maintenance voit ses techniciens intervenir hors de leur spécialité. Au Japon, 60,4 % des utilisateurs disent que l'IA complète leurs compétences.",
+          "quotes": [
+            [
+              "src-dellacqua-cybernetic-teammate-2025",
+              1
+            ],
+            [
+              "src-laboria-explorer-2024",
+              2
+            ],
+            [
+              "src-omb-iag-banque-2025",
+              1
+            ]
+          ],
+          "question": "Qu'as-tu appris à faire grâce à l'IA, et saurais-tu le refaire sans elle ?"
+        },
+        {
+          "planet": "devs",
+          "title": "Les débutants : accélérés ou privés d'apprentissage ?",
+          "text": "Au support client d'un éditeur de logiciels (5 172 agents), l'assistant d'IA fait gagner 15 % de productivité en moyenne et environ 30 % aux moins expérimentés ; en droit, les étudiants les plus faibles progressent le plus, les meilleurs peuvent reculer. Mais ce sont aussi les débutants qui se sentent déclassés : des traducteurs, chinois pour la plupart, se disent « porteurs de briques », et des professionnels brésiliens de la finance redoutent une génération d'« experts creux ».",
+          "quotes": [
+            [
+              "src-brynjolfsson-li-raymond-genai-work-2025",
+              0
+            ],
+            [
+              "src-mao-zheng-traducteurs-identite-2026",
+              0
+            ],
+            [
+              "src-oema-assurance-seuil-ia-2024",
+              1
+            ]
+          ],
+          "question": "Comment apprend-on un métier quand l'IA fait les tâches par lesquelles on l'apprenait ?"
+        },
+        {
+          "planet": "creation",
+          "title": "Faire ou superviser",
+          "text": "Traducteurs devenus « superviseurs » ou « chirurgiens des mots », professionnels de la finance passés de « créateurs d'analyses » à « curateurs de résultats », créatifs qui « créent autrement » : dans les métiers étudiés, le travail glisse de la production vers le cadrage, la sélection et la vérification. Pour les uns, c'est une montée en responsabilité ; pour les autres, la perte de ce qui faisait la fierté du métier. Et superviser suppose une expertise que la pratique construisait.",
+          "quotes": [
+            [
+              "src-mao-zheng-traducteurs-identite-2026",
+              2
+            ],
+            [
+              "src-areias-usp-hollow-experts-2026",
+              2
+            ],
+            [
+              "src-laboria-icc-2026",
+              0
+            ]
+          ],
+          "question": "Vérifier le travail d'une IA, est-ce encore faire ton métier ?"
+        },
+        {
+          "planet": "travail",
+          "title": "Le temps gagné, où va-t-il ?",
+          "text": "Dans le travail social, près de quatre professionnels sur dix parmi les 691 interrogés par le LaborIA utilisent l'IA générative, surtout pour les écrits. Le temps gagné existe, mais il est souvent absorbé par d'autres tâches administratives plutôt que rendu à l'accompagnement ; et rédiger un rapport est aussi un temps de réflexion. Les métiers créatifs décrivent le même « travail invisible » : relancer, reformuler, vérifier.",
+          "quotes": [
+            [
+              "src-laboria-dgcs-travail-social-2026",
+              0
+            ],
+            [
+              "src-laboria-dgcs-travail-social-2026",
+              1
+            ],
+            [
+              "src-laboria-icc-2026",
+              1
+            ]
+          ],
+          "question": "Si l'IA te fait gagner une heure, qui décide de ce que tu en fais ?"
+        },
+        {
+          "planet": "travail",
+          "title": "Plaisir et charge",
+          "text": "Le cabinet BCG parle d'un « paradoxe de la joie » : sur près de 12 000 répondants, plus des deux tiers des utilisateurs réguliers aiment davantage leur travail, mais 41 % ressentent une charge mentale accrue. Chez les traducteurs belges, l'IA inspire 67,5 % des répondants, mais la post-édition leur fait perdre du plaisir. Au Japon, parmi des salariés qui gagnent en efficacité, moins de la moitié voient grandir le sens de leur travail : ce qui fait la différence n'est pas l'inquiétude, mais le sentiment d'élargir son champ.",
+          "quotes": [
+            [
+              "src-bcg-ai-at-work-2026",
+              1
+            ],
+            [
+              "src-cbti-traducteurs-enquete-2025",
+              0
+            ],
+            [
+              "src-gptw-japon-yarigai-2026",
+              1
+            ]
+          ],
+          "question": "Depuis que tu utilises l'IA, ton travail te plaît-il plus ou moins ? Qu'est-ce qui a changé ?"
+        },
+        {
+          "planet": "devs",
+          "title": "Ce que les salariés veulent garder",
+          "text": "Plutôt que de mesurer ce que l'IA peut faire, une équipe de Stanford a demandé à 1 500 salariés de 104 métiers ce qu'ils voudraient lui confier : ils sont favorables à l'automatisation pour 46,1 % de leurs tâches, mais veulent garder plus la main que la technique ne l'exigerait. Or, selon l'enquête européenne d'Eurofound (36 644 entretiens), la part des salariés consultés sur l'organisation de leur travail est revenue en 2024 à son niveau de 2010. Aux États-Unis, 52 % des actifs se disent inquiets ; dans 48 pays, les salariés citent pourtant la conjoncture (57 %) avant l'IA (44 %) parmi les menaces pour leur emploi.",
+          "quotes": [
+            [
+              "src-stanford-workbank-2025",
+              0
+            ],
+            [
+              "src-stanford-workbank-2025",
+              1
+            ],
+            [
+              "src-eurofound-ewcs-2024",
+              2
+            ]
+          ],
+          "question": "Dans ton travail, que voudrais-tu confier à une IA, que refuserais-tu, et qui devrait en décider ?"
+        }
+      ]
+    },
+    {
       "id": "gestion",
       "title": "De l'algorithme à l'agent : qui gère encore ?",
       "steps": [

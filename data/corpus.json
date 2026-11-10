@@ -13006,6 +13006,947 @@
    ],
    "reliability": "secondaire",
    "notes": "Propos tenus dans le podcast BG2 (audio et vidéo, sans transcription publiée par le podcast : ni bg2pod.com, ni les pages Apple Podcasts et Spotify n'en proposent). La vidéo YouTube n'a pas été consultée (site bloqué). Propos rapportés par Windows Central (Kevin Okemwa, 09/05/2025, citations 0 et 1) et OfficeChai (19/12/2024, citation 2) ; Computerworld (Andy Patrizio, 13/05/2025, https://www.computerworld.com/article/3981415/does-agentic-ai-spell-doom-for-saas.html) cite le même passage. La proposition « they are essentially CRUD databases with a bunch of business logic » est identique dans les trois articles, entre guillemets et attribuée à Nadella : c'est très probablement un verbatim, mais les mots qui l'entourent varient d'un article à l'autre (transcriptions non relues). Aucun des trois articles ne rapporte de nuance de Nadella sur les applications réglementées ou les systèmes de référence : la remarque sur les « systems of record » est celle de Tom Coshow (Gartner) dans Computerworld. Conflit d'intérêts : Microsoft vend à la fois des applications métier et des agents."
+  },
+  {
+   "id": "src-pew-salaries-ia-2025",
+   "title": "U.S. Workers Are More Worried Than Hopeful About Future AI Use in the Workplace",
+   "authors": [
+    "p-pew-research"
+   ],
+   "publisher": "Pew Research Center",
+   "date": "2025-02-25",
+   "url": "https://www.pewresearch.org/social-trends/2025/02/25/u-s-workers-are-more-worried-than-hopeful-about-future-ai-use-in-the-workplace/",
+   "lang": "en",
+   "kind": "étude",
+   "planets": [
+    "travail",
+    "devs"
+   ],
+   "currents": [
+    "economistes"
+   ],
+   "thesis": "Enquête représentative auprès de 5 273 actifs américains (panel ATP, octobre 2024) sur leur ressenti face à l'IA au travail. L'inquiétude domine l'espoir, mais l'usage reste minoritaire : la plupart des salariés n'utilisent pas ou peu l'IA dans leur emploi. Les diplômés du supérieur sont à la fois plus inquiets et plus confiants, les plus aisés surtout plus confiants ; les secteurs de l'informatique et de la finance sont les plus nombreux à y voir des débouchés.",
+   "key_facts": [
+    "52 % des actifs se disent inquiets de l'usage futur de l'IA au travail, 36 % pleins d'espoir, 33 % dépassés, 29 % enthousiastes (déclaratif, 5 273 actifs, 7-13 octobre 2024, échantillon pondéré représentatif).",
+    "32 % pensent que l'IA réduira leurs perspectives d'emploi à long terme, 6 % qu'elle les augmentera, 31 % qu'elle ne changera pas grand-chose ; 17 % n'ont pas entendu parler de l'IA au travail.",
+    "16 % font au moins une partie de leur travail avec l'IA ; 63 % ne l'utilisent pas ou peu.",
+    "Parmi ceux qui ont utilisé un chatbot au travail, 40 % le jugent extrêmement ou très utile pour aller plus vite, 29 % pour améliorer la qualité de leur travail.",
+    "Les secteurs où l'on anticipe le plus de nouvelles opportunités : information et technologie (16 %), banque, finance, comptabilité, immobilier et assurance (11 %)."
+   ],
+   "quotes": [
+    {
+     "text": "About half of workers (52%) say they’re worried about the future impact of AI use in the workplace, and 32% think it will lead to fewer job opportunities for them in the long run",
+     "fr": "Environ la moitié des actifs (52 %) se disent inquiets de l'impact futur de l'usage de l'IA au travail, et 32 % pensent qu'elle réduira leurs perspectives d'emploi à long terme.",
+     "speaker": "p-pew-research",
+     "status": "verifiee",
+     "checked_at": "https://www.pewresearch.org/social-trends/2025/02/25/u-s-workers-are-more-worried-than-hopeful-about-future-ai-use-in-the-workplace/"
+    },
+    {
+     "text": "Workers who have used AI chatbots are more likely to find them helpful in speeding up their work than in improving its quality.",
+     "fr": "Les actifs qui ont utilisé des chatbots d'IA les jugent plus utiles pour accélérer leur travail que pour en améliorer la qualité.",
+     "speaker": "p-pew-research",
+     "status": "verifiee",
+     "checked_at": "https://www.pewresearch.org/social-trends/2025/02/25/u-s-workers-are-more-worried-than-hopeful-about-future-ai-use-in-the-workplace/"
+    },
+    {
+     "text": "Across industries, workers in information and technology and those working in banking, finance, accounting, real estate or insurance are among the most likely to say that the use of AI will lead to more job opportunities for them in the long run.",
+     "fr": "Selon les secteurs, les actifs de l'information et de la technologie, et ceux de la banque, de la finance, de la comptabilité, de l'immobilier ou de l'assurance, sont parmi les plus nombreux à dire que l'IA leur ouvrira davantage de perspectives d'emploi à long terme.",
+     "speaker": "p-pew-research",
+     "status": "verifiee",
+     "checked_at": "https://www.pewresearch.org/social-trends/2025/02/25/u-s-workers-are-more-worried-than-hopeful-about-future-ai-use-in-the-workplace/"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Rapport de Luona Lin et Kim Parker (Pew Research Center), également disponible en PDF : https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/ST_2025.2.25_AI-Workers_REPORT.pdf (la page de garde du PDF porte par erreur « February 25, 2024 » ; la citation recommandée et la page web datent bien du 25 février 2025). Enquête déclarative menée avant la diffusion des agents ; les 17 % qui n'avaient pas entendu parler de l'IA au travail n'ont pas répondu aux questions de ressenti mais sont comptés au dénominateur. Pas de ventilation fine par métier, seulement par grand secteur."
+  },
+  {
+   "id": "src-stanford-workbank-2025",
+   "title": "Future of Work with AI Agents: Auditing Automation and Augmentation Potential across the U.S. Workforce",
+   "authors": [
+    "p-shao-yijia",
+    "p-brynjolfsson",
+    "p-yang-diyi"
+   ],
+   "publisher": "Stanford University (SALT Lab et Digital Economy Lab), prépublication arXiv:2506.06576",
+   "date": "2025-06-06",
+   "url": "https://arxiv.org/abs/2506.06576",
+   "lang": "en",
+   "kind": "étude",
+   "planets": [
+    "travail",
+    "devs"
+   ],
+   "currents": [
+    "economistes"
+   ],
+   "thesis": "Plutôt que de mesurer ce que l'IA peut faire, l'étude demande à 1 500 travailleurs de 104 métiers quelles tâches ils voudraient voir automatisées ou seulement assistées par des agents d'IA, et confronte leurs réponses à l'avis de 52 experts. Les salariés souhaitent déléguer les tâches répétitives et à faible valeur, mais veulent en général garder davantage la main que ce que la technique rendrait nécessaire. Les métiers des arts, du design et des médias résistent le plus, et les compétences relationnelles et d'organisation semblent prendre de la valeur face au traitement de l'information.",
+   "key_facts": [
+    "Base WORKBank : 1 500 travailleurs de 104 métiers, 844 tâches issues d'O*NET, 52 experts en IA ; collecte de janvier à mai 2025 (déclaratif, avec mini-entretiens audio).",
+    "Pour 46,1 % des tâches, les salariés qui les exercent sont favorables à leur automatisation ; motif le plus cité : libérer du temps pour un travail à plus forte valeur (69,38 % des cas).",
+    "Arts, design et médias : seulement 17,1 % des tâches recueillent un avis favorable à l'automatisation.",
+    "28,0 % des participants expriment des craintes ; parmi eux, 45,0 % évoquent le manque de fiabilité de l'IA, 23,0 % la peur d'être remplacés, 16,3 % l'absence de qualités humaines.",
+    "Pour 45,2 % des métiers, le niveau d'implication humaine souhaité le plus fréquent est le partenariat à égalité (H3) ; seuls les « Editors » (métiers de l'édition) veulent majoritairement une implication humaine essentielle (H5)."
+   ],
+   "quotes": [
+    {
+     "text": "For 46.1% of tasks, workers express positive attitudes toward AI agent automation, even after reflecting on potential job loss concerns and work enjoyment.",
+     "fr": "Pour 46,1 % des tâches, les travailleurs se montrent favorables à leur automatisation par des agents d'IA, même après avoir réfléchi au risque de perdre leur emploi et au plaisir qu'ils prennent à leur travail.",
+     "speaker": "p-shao-yijia",
+     "status": "verifiee",
+     "checked_at": "https://arxiv.org/pdf/2506.06576v3"
+    },
+    {
+     "text": "However, workers generally prefer higher levels of human agency, potentially foreshadowing friction as AI capabilities advance.",
+     "fr": "Cependant, les travailleurs préfèrent en général garder un plus haut degré de maîtrise humaine, ce qui laisse présager des frictions à mesure que les capacités de l'IA progressent.",
+     "speaker": "p-shao-yijia",
+     "status": "verifiee",
+     "checked_at": "https://arxiv.org/pdf/2506.06576v3"
+    },
+    {
+     "text": "I would never use AI to like replace artists. I would be more for personal [project management] use, if anything",
+     "fr": "Je n'utiliserais jamais l'IA pour, genre, remplacer des artistes. Je serais plutôt pour un usage personnel [gestion de projet], à la rigueur.",
+     "speaker": "p-workbank-participant",
+     "status": "verifiee",
+     "checked_at": "https://arxiv.org/pdf/2506.06576v3"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Prépublication (v1 du 6 juin 2025, v3 révisée le 1er février 2026, citations relues dans la v3, PDF et version HTML https://arxiv.org/html/2506.06576v3). Auteurs : Yijia Shao et Humishka Zope (contribution égale), Yucheng Jiang, Jiaxin Pei, David Nguyen, Erik Brynjolfsson, Diyi Yang. Données et outil : futureofwork.saltlab.stanford.edu. Échantillon de travailleurs recrutés en ligne, limité à 104 métiers ; les auteurs reconnaissent que des participants peuvent taire leurs réserves par crainte pour leur emploi. La troisième citation est un propos de participant anonyme (secteur arts, design et médias) transcrit et publié par les auteurs ; le crochet est d'eux. L'étude compare aussi ses résultats à des données d'usage de Claude (Anthropic) pour noter qu'elles reflètent mal les souhaits des travailleurs."
+  },
+  {
+   "id": "src-bcg-ai-at-work-2026",
+   "title": "AI at Work: Why Strategy Matters More Than Tools",
+   "authors": [
+    "p-bcg"
+   ],
+   "publisher": "Boston Consulting Group (BCG)",
+   "date": "2026-06-03",
+   "url": "https://www.bcg.com/publications/2026/ai-at-work-why-strategy-matters-more-than-tools",
+   "lang": "en",
+   "kind": "étude",
+   "planets": [
+    "travail",
+    "devs"
+   ],
+   "currents": [
+    "economistes"
+   ],
+   "thesis": "Quatrième édition de l'enquête annuelle du BCG auprès de près de 12 000 salariés, managers et dirigeants. L'IA rend le travail à la fois plus satisfaisant et plus éprouvant : une majorité d'utilisateurs réguliers disent mieux aimer leur travail, mais une part importante ressent une charge mentale accrue, des exigences relevées et du temps passé à vérifier les productions de l'IA. Ce qui mine le plus le plaisir au travail tient à la difficulté de montrer sa valeur propre et au manque de formation.",
+   "key_facts": [
+    "Près de 12 000 répondants (salariés de terrain, managers, dirigeants) dans plus d'une douzaine de marchés ; enquête déclarative (2026).",
+    "74 % des salariés de terrain utilisent l'IA chaque jour ou plusieurs fois par semaine, 23 points de plus qu'en 2025 ; 42 % de ces utilisateurs réguliers disent gagner huit heures par semaine, mais 66 % reçoivent peu ou pas de consignes sur l'usage de ce temps.",
+    "67 % disent que l'IA a repris les tâches simples en leur laissant le travail plus complexe ; 60 % que la barre du travail jugé « suffisant » a monté ; 41 % que l'IA a accru leur temps de décision.",
+    "Plus des deux tiers des utilisateurs réguliers déclarent une satisfaction au travail accrue ; 41 % des répondants (48 % des dirigeants) une charge mentale accrue.",
+    "72 % disent que les compétences attendues d'eux ont changé, 36 % seulement s'estiment correctement formés ; 61 % pensent que des agents d'IA pourraient faire au moins la moitié de leur travail d'ici trois ans."
+   ],
+   "quotes": [
+    {
+     "text": "AI’s “joy paradox” means that it makes work both better and harder.",
+     "fr": "Le « paradoxe de la joie » de l'IA tient à ce qu'elle rend le travail à la fois meilleur et plus difficile.",
+     "speaker": "p-bcg",
+     "status": "verifiee",
+     "checked_at": "https://www.bcg.com/publications/2026/ai-at-work-why-strategy-matters-more-than-tools"
+    },
+    {
+     "text": "More than two-thirds of regular AI users report more job satisfaction since using the technology, particularly leaders. And 41% of all respondents—and 48% of leaders—report increased mental strain associated with using it.",
+     "fr": "Plus des deux tiers des utilisateurs réguliers de l'IA disent tirer plus de satisfaction de leur travail depuis qu'ils l'utilisent, surtout les dirigeants. Et 41 % de l'ensemble des répondants (48 % des dirigeants) font état d'une charge mentale accrue liée à son usage.",
+     "speaker": "p-bcg",
+     "status": "verifiee",
+     "checked_at": "https://www.bcg.com/publications/2026/ai-at-work-why-strategy-matters-more-than-tools"
+    },
+    {
+     "text": "The AI-related factors that drain job joy are the same regardless of people’s level of experience using the technology: difficulty showing the unique value someone brings to their role and inadequate training.",
+     "fr": "Les facteurs liés à l'IA qui sapent le plaisir au travail sont les mêmes quel que soit le niveau d'expérience des personnes avec cette technologie : la difficulté à montrer la valeur propre que l'on apporte à son poste et une formation insuffisante.",
+     "speaker": "p-bcg",
+     "status": "verifiee",
+     "checked_at": "https://www.bcg.com/publications/2026/ai-at-work-why-strategy-matters-more-than-tools"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Page de synthèse signée Vinciane Beauchene, Sylvain Duranton, David Martin, Vanessa Lyon et Jeff Walters ; les résultats détaillés sont dans un diaporama intégré à la page, non consulté. Le BCG vend des missions de transformation par l'IA : l'enquête sert aussi son discours commercial (la « clarté stratégique » comme remède). Échantillon de salariés de bureau (« white-collar ») dans les éditions précédentes ; la liste des marchés et la méthode de pondération ne sont pas précisées sur la page. Prolonge l'édition 2025 (« AI at Work 2025: Momentum Builds, but Gaps Remain », 26 juin 2025, 10 600 répondants, 11 pays), qui notait que les salariés des entreprises en refonte profonde s'inquiètent davantage pour leur emploi (46 % contre 34 %). Distincte de l'étude « brain fry » du BCG déjà au corpus (src-bcg-brain-fry-2026).",
+   "branch": "mesure"
+  },
+  {
+   "id": "src-pwc-hopes-fears-2026",
+   "title": "Global Workforce Hopes and Fears Survey 2026",
+   "authors": [
+    "p-pwc"
+   ],
+   "publisher": "PwC",
+   "date": "2026-09-29",
+   "url": "https://www.pwc.com/gx/en/issues/workforce/hopes-and-fears.html",
+   "lang": "en",
+   "kind": "étude",
+   "planets": [
+    "travail"
+   ],
+   "currents": [
+    "economistes"
+   ],
+   "thesis": "Enquête mondiale auprès de 49 364 travailleurs de 48 pays et 29 secteurs. Elle décrit une main-d'oeuvre qui se divise : une minorité « en avance », qui tire de l'IA qualité, créativité et valeur et se dit confiante, face à une majorité (« la salle des machines ») moins exposée à l'IA, moins formée, inquiète pour ses finances et méfiante envers ses dirigeants. Les salariés citent davantage la conjoncture économique que l'IA comme menace pour leur emploi, et un groupe d'experts de métier « indispensables » reste à l'écart de l'IA.",
+   "key_facts": [
+    "49 364 travailleurs, 48 pays et territoires, 29 secteurs, mai-juin 2026 ; résultats pondérés par âge et sexe dans chaque pays (déclaratif).",
+    "64 % ont utilisé l'IA au travail au cours des 12 derniers mois (+10 points), 22 % utilisent l'IA générative chaque jour (contre 14 %).",
+    "Quatre profils : « front-runners » (14 %), « engine room » (56 %), « AI insurgents » et « indispensables » (expertise de métier recherchée, faible usage de l'IA).",
+    "Risques pour l'emploi : 57 % citent la volatilité économique, 44 % la reprise de tâches par l'IA ; deux fois plus de salariés estiment que leur pouvoir de négociation a baissé en trois ans plutôt qu'augmenté.",
+    "Malgré tout, deux tiers de la « salle des machines » disent tirer de la fierté de leur travail ; la confiance envers la direction a reculé de 7 points en un an."
+   ],
+   "quotes": [
+    {
+     "text": "When considering the biggest risks to job security, more workers cite economic volatility (57%) than AI taking on more tasks (44%), with Gen Z more anxious across all these metrics compared to other generations.",
+     "fr": "Parmi les plus grands risques pour la sécurité de leur emploi, les travailleurs citent plus souvent la volatilité économique (57 %) que la prise en charge de davantage de tâches par l'IA (44 %), la génération Z se montrant plus inquiète que les autres sur tous ces indicateurs.",
+     "speaker": "p-pwc",
+     "status": "verifiee",
+     "checked_at": "https://www.pwc.com/gx/en/issues/workforce/hopes-and-fears.html"
+    },
+    {
+     "text": "Between these two extremes are ‘AI insurgents,’ who bring ambition and energy, and ‘the indispensables,’ who bring valued, field-specific expertise but low engagement with AI.",
+     "fr": "Entre ces deux extrêmes se trouvent les « insurgés de l'IA », qui apportent ambition et énergie, et les « indispensables », qui apportent une expertise de métier recherchée mais s'engagent peu dans l'IA.",
+     "speaker": "p-pwc",
+     "status": "verifiee",
+     "checked_at": "https://www.pwc.com/gx/en/issues/workforce/hopes-and-fears.html"
+    },
+    {
+     "text": "Their experience drives a striking overall finding of this year’s survey: twice as many workers think their bargaining power has fallen over the last three years than think it has risen.",
+     "fr": "Leur expérience explique un résultat frappant de l'enquête de cette année : deux fois plus de travailleurs pensent que leur pouvoir de négociation a baissé au cours des trois dernières années que l'inverse.",
+     "speaker": "p-pwc",
+     "status": "verifiee",
+     "checked_at": "https://www.pwc.com/gx/en/issues/workforce/hopes-and-fears.html"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Page de synthèse de PwC (cabinet d'audit et de conseil qui vend des services de transformation par l'IA). Les profils sont construits par PwC à partir de deux indices (tension sur le marché du travail, « avantage IA » déclaré) ; leur définition reste en partie opaque. Recrutement en ligne, pas de ventilation par métier sur la page. Les chiffres de prime salariale cités par la page (62 %) viennent d'une autre publication de PwC (AI Jobs Barometer) et ne sont pas repris ici. L'édition 2025 (49 843 travailleurs, juillet-août 2025) montrait déjà un écart d'optimisme entre utilisateurs quotidiens et non-utilisateurs."
+  },
+  {
+   "id": "src-gptw-japon-yarigai-2026",
+   "title": "生成AIで業務効率化しても「仕事のやりがい」が高まった人は半数未満（生成AI活用後の仕事体験とやりがいの変化に関する実態調査）",
+   "authors": [
+    "p-gptw-japon"
+   ],
+   "publisher": "Great Place To Work Institute Japan (働きがいのある会社研究所), communiqué diffusé par Kyodo News PR Wire",
+   "date": "2026-11-05",
+   "url": "https://kyodonewsprwire.jp/release/202611059472",
+   "lang": "ja",
+   "kind": "étude",
+   "planets": [
+    "travail"
+   ],
+   "currents": [
+    "economistes"
+   ],
+   "thesis": "Enquête japonaise auprès de salariés qui utilisent déjà l'IA générative chaque semaine pour des tâches non routinières et disent y gagner en efficacité. Moins de la moitié déclarent que le sens qu'ils trouvent à leur travail (« yarigai ») a augmenté, et presque aucun qu'il a baissé. Ce qui distingue ceux dont le sens du travail progresse n'est pas une moindre inquiétude, mais le sentiment que l'IA élargit l'éventail de ce qu'ils savent faire, l'entretien des échanges avec collègues et supérieurs et une politique d'entreprise explicite sur l'IA.",
+   "key_facts": [
+    "642 salariés de 20 à 59 ans, utilisateurs hebdomadaires d'IA générative pour des tâches non routinières et déclarant des gains d'efficacité ; enquête en ligne du 12 au 14 septembre 2026 (déclaratif).",
+    "Sens du travail depuis l'usage de l'IA : en hausse pour 46,4 %, inchangé pour 50,0 %, en baisse pour 3,6 %.",
+    "40,5 % disent avoir plus d'occasions d'apprendre de nouvelles connaissances ou compétences ; mais les occasions de consulter ou de collaborer avec supérieurs et collègues ont plus souvent diminué (16,4 %) qu'augmenté (10,0 %).",
+    "« L'IA élargit l'éventail de ce que je peux faire » : 58,1 % chez ceux dont le sens du travail a progressé, 35,2 % chez les autres ; la peur de perdre son poste (16,8 % contre 17,2 %) et le sentiment que ses compétences se dévaluent (12,1 % contre 15,7 %) varient peu entre les deux groupes.",
+    "Une politique d'usage de l'IA explicite et activement portée est citée par 45,3 % des salariés dont le sens du travail a progressé, contre 32,6 % des autres."
+   ],
+   "quotes": [
+    {
+     "text": "生成AIで業務効率化を実感していても、仕事全体のやりがいが高まった人は半数に満たないことが明らかになりました。",
+     "fr": "Il apparaît que, même chez ceux qui constatent des gains d'efficacité grâce à l'IA générative, moins de la moitié voient grandir le sens qu'ils trouvent à leur travail dans son ensemble.",
+     "speaker": "p-gptw-japon",
+     "status": "verifiee",
+     "checked_at": "https://kyodonewsprwire.jp/release/202611059472"
+    },
+    {
+     "text": "この結果から、両群の違いは、生成AIへの不安の大きさではなく、仕事の幅が広がっているという前向きな実感を持てているかどうかに表れていることがわかりました。",
+     "fr": "Ces résultats montrent que la différence entre les deux groupes ne tient pas à l'ampleur de leur inquiétude face à l'IA générative, mais au fait d'avoir ou non le sentiment positif que l'éventail de leur travail s'élargit.",
+     "speaker": "p-gptw-japon",
+     "status": "verifiee",
+     "checked_at": "https://kyodonewsprwire.jp/release/202611059472"
+    },
+    {
+     "text": "これらの結果が示しているのは、AIを単なる効率化ツールとして個人で利用するだけでは、やりがいの向上につながりにくいということです。",
+     "fr": "Ces résultats montrent qu'utiliser l'IA individuellement, comme un simple outil d'efficacité, contribue difficilement à donner plus de sens au travail.",
+     "speaker": "p-gptw-japon",
+     "status": "verifiee",
+     "checked_at": "https://kyodonewsprwire.jp/release/202611059472"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Communiqué rédigé par GPTW Japan et publié tel quel par Kyodo News PR Wire (la page le précise) ; aucune version sur le site hatarakigai.info n'a été trouvée. « やりがい » (yarigai) désigne le sentiment que son travail vaut la peine, entre sens et gratification. Échantillon restreint et sélectionné (uniquement des salariés qui disent déjà gagner en efficacité), panel en ligne (RC Research Data) ; les écarts entre groupes sont descriptifs, sans causalité établie. GPTW vend des certifications et du conseil en engagement des salariés, ce qui oriente la conclusion vers le rôle du management."
+  },
+  {
+   "id": "src-dellacqua-cybernetic-teammate-2025",
+   "title": "The Cybernetic Teammate: A Field Experiment on Generative AI Reshaping Teamwork and Expertise",
+   "authors": [
+    "p-dellacqua"
+   ],
+   "publisher": "NBER Working Paper 33641 (Harvard Business School, Wharton, Procter & Gamble)",
+   "date": "2025-04",
+   "url": "https://www.nber.org/papers/w33641",
+   "access": "limite",
+   "lang": "en",
+   "kind": "étude",
+   "planets": [
+    "devs",
+    "travail"
+   ],
+   "currents": [
+    "economistes"
+   ],
+   "thesis": "Expérience de terrain préenregistrée menée chez Procter & Gamble : des professionnels du marketing et de la R&D travaillent sur de vrais défis d'innovation produit, seuls ou en binôme, avec ou sans IA générative. Une personne seule avec l'IA atteint la qualité d'une équipe sans IA, et les salariés dont le développement produit n'est pas le métier atteignent avec l'IA le niveau d'équipes comprenant un spécialiste. Les participants qui utilisent l'IA déclarent plus d'émotions positives et moins d'anxiété ou de frustration.",
+   "key_facts": [
+    "776 professionnels de P&G (fonctions commerciales et R&D) répartis au hasard entre 4 conditions lors d'ateliers virtuels d'une journée, de mai à juillet 2024 (GPT-4, puis GPT-4o en juillet) ; qualité notée à l'aveugle par des évaluateurs experts.",
+    "Qualité des solutions : +0,37 écart-type pour une personne seule avec IA, +0,39 pour une équipe avec IA, contre +0,24 pour une équipe sans IA (par rapport à une personne seule sans IA).",
+    "Temps passé : -16,4 % pour les personnes seules avec IA, -12,7 % pour les équipes avec IA.",
+    "Sans IA, les profils R&D proposent des solutions plus techniques et les profils commerciaux des solutions plus commerciales ; avec IA, les propositions sont équilibrées quel que soit le métier.",
+    "Émotions déclarées avant et après la tâche : +0,457 écart-type d'émotions positives (enthousiasme, énergie, excitation) pour les personnes seules avec IA, +0,635 pour les équipes avec IA ; -0,23 écart-type d'émotions négatives (anxiété, frustration, détresse)."
+   ],
+   "quotes": [
+    {
+     "text": "Professionals using AI produced balanced solutions, regardless of their professional background.",
+     "fr": "Les professionnels qui utilisaient l'IA ont produit des solutions équilibrées, quel que soit leur métier d'origine.",
+     "speaker": "p-dellacqua",
+     "status": "verifiee",
+     "checked_at": "https://www.nber.org/system/files/working_papers/w33641/w33641.pdf"
+    },
+    {
+     "text": "AI allows less experienced employees to achieve performance levels that previously required either direct collaboration or supervision by colleagues with more task-related experience.",
+     "fr": "L'IA permet à des salariés moins expérimentés d'atteindre des niveaux de performance qui exigeaient auparavant une collaboration directe ou la supervision de collègues plus expérimentés dans la tâche.",
+     "speaker": "p-dellacqua",
+     "status": "verifiee",
+     "checked_at": "https://www.nber.org/system/files/working_papers/w33641/w33641.pdf"
+    },
+    {
+     "text": "Contrary to fears about AI creating negative workplace experiences, we found consistently positive emotional responses to AI use, including increased excitement and enthusiasm, as well as reduced anxiety and frustration.",
+     "fr": "Contrairement aux craintes de voir l'IA dégrader l'expérience de travail, nous avons observé des réactions émotionnelles systématiquement positives à son usage : davantage d'excitation et d'enthousiasme, moins d'anxiété et de frustration.",
+     "speaker": "p-dellacqua",
+     "status": "verifiee",
+     "checked_at": "https://www.nber.org/system/files/working_papers/w33641/w33641.pdf"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Document de travail NBER (avril 2025), non évalué par les pairs dans cette version ; diffusé d'abord comme document de travail HBS 25-043 (SSRN, mars 2025). La page NBER signale une version publiée dans Organization Science (en ligne en juin 2026, DOI 10.1287/orsc.2025.20702) sous un titre légèrement différent, non relue ici. Onze auteurs (Dell'Acqua, Ayoubi, Lifshitz, Sadun, E. Mollick, L. Mollick, Han, Goldman, Nair, Taub, Lakhani) ; citations attribuées au premier auteur. Liens d'intérêts déclarés dans le texte : P&G a financé le Digital Data Design Institute de Harvard par des dons (2023-2025) et Karim Lakhani a été consultant rémunéré de P&G (2021-2022). Limites reconnues par les auteurs : exercice d'une seule journée, qui ne reflète pas les itérations et la coordination réelles, et binômes interfonctionnels uniquement. Les émotions sont déclarées juste après une tâche nouvelle, ce qui peut refléter un effet de nouveauté ; l'étude ne mesure ni l'effet durable sur l'identité professionnelle ni la valeur future des spécialistes que l'IA « remplace » dans l'équipe. Citation 1 : résumé ; citation 2 : section 5.2 ; citation 3 : discussion."
+  },
+  {
+   "id": "src-brynjolfsson-li-raymond-genai-work-2025",
+   "title": "Generative AI at Work",
+   "authors": [
+    "p-brynjolfsson",
+    "p-li-danielle",
+    "p-raymond-lindsey"
+   ],
+   "publisher": "The Quarterly Journal of Economics, vol. 140, n° 2, p. 889-942",
+   "date": "2025-05",
+   "url": "https://doi.org/10.1093/qje/qjae044",
+   "access": "payant",
+   "open_url": "https://arxiv.org/abs/2304.11771",
+   "lang": "en",
+   "kind": "étude",
+   "planets": [
+    "devs",
+    "travail"
+   ],
+   "currents": [
+    "economistes"
+   ],
+   "thesis": "Première étude du déploiement à grande échelle d'un assistant d'IA générative en entreprise, auprès d'agents de support client d'un éditeur de logiciels. La productivité augmente en moyenne, surtout pour les agents débutants ou les moins performants, qui progressent en vitesse comme en qualité ; les plus expérimentés gagnent peu en vitesse et perdent un peu en qualité. Les auteurs y voient la diffusion, par l'outil, du savoir-faire tacite des meilleurs agents, et posent la question de leur rémunération pour ce savoir.",
+   "key_facts": [
+    "Données de 5 172 agents de support client d'une entreprise du Fortune 500 (logiciels de gestion), déploiement échelonné de l'outil (observation, différence de différences) ; la majorité des agents travaillent aux Philippines.",
+    "+15 % de problèmes résolus par heure en moyenne ; environ +30 % pour les agents les moins qualifiés et les moins expérimentés (version arXiv de novembre 2024).",
+    "Avec l'outil, des agents de 2 mois d'ancienneté font aussi bien que des agents de plus de 6 mois sans l'outil ; effet nul pour les agents de plus d'un an d'ancienneté.",
+    "Les clients sont plus polis et demandent moins souvent un responsable ; le départ des agents de moins de 6 mois d'ancienneté baisse d'environ 10 points (-40 %), résultat que les auteurs jugent moins robuste."
+   ],
+   "quotes": [
+    {
+     "text": "Access to AI assistance increases worker productivity, as measured by issues resolved per hour, by 15% on average, with substantial heterogeneity across workers.",
+     "fr": "L'accès à l'assistance de l'IA augmente la productivité des salariés, mesurée en problèmes résolus par heure, de 15 % en moyenne, avec une forte hétérogénéité entre salariés.",
+     "speaker": "p-brynjolfsson",
+     "status": "verifiee",
+     "checked_at": "https://arxiv.org/pdf/2304.11771v2"
+    },
+    {
+     "text": "the most experienced and highest-skilled workers see small gains in speed and small declines in quality.",
+     "fr": "les salariés les plus expérimentés et les plus qualifiés voient de petits gains de vitesse et de légères baisses de qualité.",
+     "speaker": "p-brynjolfsson",
+     "status": "verifiee",
+     "checked_at": "https://arxiv.org/pdf/2304.11771v2"
+    },
+    {
+     "text": "We also find evidence that AI assistance facilitates worker learning and improves English fluency, particularly among international agents.",
+     "fr": "Nous trouvons aussi des signes que l'assistance de l'IA facilite l'apprentissage des salariés et améliore leur aisance en anglais, en particulier chez les agents établis hors des États-Unis.",
+     "speaker": "p-brynjolfsson",
+     "status": "verifiee",
+     "checked_at": "https://arxiv.org/pdf/2304.11771v2"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Version publiée au QJE (2025), réservée aux abonnés et inaccessible aux outils (page de contrôle anti-robot). Version libre : arXiv 2304.11771 v2 du 7 novembre 2024, postérieure à la date limite (les versions de 2023 et le document NBER 31161 d'avril 2023 sont antérieurs). Les trois citations viennent du résumé : elles figurent mot pour mot dans la v2 et dans le résumé de la version publiée reproduit sur RePEc/EconPapers ; les chiffres tirés du corps du texte (30 %, ancienneté, départs) viennent de la v2 et peuvent différer légèrement dans la version publiée. Citations attribuées au premier auteur. Passage utile pour le débat, non cité : les meilleurs agents suivent de plus en plus les recommandations de l'IA alors que celles-ci dégradent légèrement leur travail, ce qui pose « whether and how workers should be compensated for the data they provide for training AI systems » (v2, introduction). Réserves : une seule entreprise et un métier très scripté ; l'étude n'observe ni les salaires ni les embauches ; outil conçu à partir des conversations des meilleurs agents."
+  },
+  {
+   "id": "src-jilpt-ia-competences-2025",
+   "title": "ＡＩの職場導入による働き方への影響等に関する調査（労働者Webアンケート）結果（調査シリーズNo.256）",
+   "authors": [
+    "p-jilpt"
+   ],
+   "publisher": "労働政策研究・研修機構 (JILPT, Japon), à la demande du ministère japonais de la Santé, du Travail et des Affaires sociales",
+   "date": "2025-05-23",
+   "url": "https://www.jil.go.jp/institute/research/2025/256.html",
+   "lang": "ja",
+   "kind": "rapport",
+   "planets": [
+    "devs",
+    "travail"
+   ],
+   "currents": [
+    "economistes",
+    "gouvernance"
+   ],
+   "thesis": "Enquête auprès de 22 000 salariés japonais, construite pour être comparable aux enquêtes de l'OCDE sur l'IA au travail. Parmi les salariés qui utilisent l'IA, une majorité juge qu'elle complète leurs compétences, mais un tiers estime aussi qu'elle en dévalue une partie, et un quart pense les deux à la fois. L'inquiétude de perdre son emploi augmente chez un tiers des utilisateurs, et chez plus de 60 % de ceux qui connaissent des personnes ayant perdu ou quitté leur emploi à cause de l'IA.",
+   "key_facts": [
+    "Enquête en ligne auprès de 22 000 salariés (quotas par métier, statut, sexe, âge et région calés sur le recensement de 2020), menée du 27 mai au 27 juin 2024 ; 1 854 utilisent eux-mêmes l'IA (8,4 %), dont 1 401 l'IA générative (déclaratif).",
+    "Parmi les utilisateurs : 60,4 % disent que l'IA complète leurs compétences (9,0 % pas d'accord), 34,5 % qu'elle dévalue une partie de leurs compétences (29,9 % pas d'accord), 26,4 % les deux à la fois.",
+    "Sentiment de dévaluation plus fréquent dans la construction (50,0 %), la santé et l'action sociale (41,9 %) et la fonction publique (38,9 %) ; plus faible dans la finance et l'assurance (27,7 %) et le commerce (26,5 %).",
+    "L'inquiétude que l'IA leur prenne leur emploi a augmenté pour 32,6 % des utilisateurs et diminué pour 17,9 % ; 58,6 % disent que l'IA a automatisé une de leurs tâches, 42,1 % qu'elle en a créé de nouvelles.",
+    "Les effets positifs sur la qualité du travail (performance, engagement) sont nettement plus forts quand l'employeur a consulté les salariés et financé la formation."
+   ],
+   "quotes": [
+    {
+     "text": "総じてみると、AIによって労働者のスキルの一部が陳腐化している様子もうかがえたがAIが労働者のスキルを補完している側面の方が優勢であった。",
+     "fr": "Dans l'ensemble, on observe que l'IA rend obsolète une partie des compétences des salariés, mais c'est son rôle de complément de leurs compétences qui l'emporte.",
+     "speaker": "p-jilpt",
+     "status": "verifiee",
+     "checked_at": "https://www.jil.go.jp/institute/research/2025/documents/0256_01.pdf"
+    },
+    {
+     "text": "「AI利用者」（n=1,854人）のうち、AIが「自身のスキルの一部の価値を下げている」に「同意する」割合は計34.5％、「同意しない」割合は計29.9％となり、同意が不同意を上回った。",
+     "fr": "Parmi les « utilisateurs d'IA » (n = 1 854), 34,5 % au total sont « d'accord » pour dire que l'IA « dévalue une partie de leurs compétences », contre 29,9 % « pas d'accord » : l'accord l'emporte sur le désaccord.",
+     "speaker": "p-jilpt",
+     "status": "verifiee",
+     "checked_at": "https://www.jil.go.jp/institute/research/2025/documents/0256_01.pdf"
+    },
+    {
+     "text": "「AIが自身の仕事を奪う不安感」が「高まった／増加した」割合は、全体では約３人に一人となったが､自身の企業や自身の産業分野の他企業における失職者や転職者を知っている場合は6割超と顕著に高くなった。",
+     "fr": "La part de ceux dont « l'inquiétude de voir l'IA leur prendre leur emploi » a « augmenté » est d'environ un sur trois dans l'ensemble, mais elle dépasse nettement les 60 % chez ceux qui connaissent des personnes ayant perdu ou quitté leur emploi dans leur entreprise ou dans d'autres entreprises de leur secteur.",
+     "speaker": "p-jilpt",
+     "status": "verifiee",
+     "checked_at": "https://www.jil.go.jp/institute/research/2025/documents/0256_01.pdf"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Rapport public (série d'enquêtes n° 256) ; la page de présentation résume les résultats, le texte cité est dans le volume « 本文 » (0256_01.pdf, résumé du chapitre 2, points 7 et 9) et dans le rapport complet (0256.pdf), où les trois citations ont été retrouvées à l'identique. Les blancs que l'extraction PDF insère entre caractères japonais et latins ont été supprimés ; la virgule demi-chasse « ､ » de la citation 3 est celle du texte. Réserves : panel en ligne d'un institut de sondage, réponses déclaratives ; faible part d'utilisateurs de l'IA à la date de l'enquête (8,4 %), effectifs par secteur parfois petits (ex. 130 dans la finance) ; les auteurs signalent que les salariés connaissent mal l'usage de l'IA dans leur entreprise et que les pertes d'emploi rapportées peuvent venir de tiers. Questionnaire aligné sur celui de l'OCDE (Lane et al., 2023), ce qui permet la comparaison internationale."
+  },
+  {
+   "id": "src-areias-usp-hollow-experts-2026",
+   "title": "Harder, Better, Faster, Stronger: How to find human value in decision-making in an AI culture?",
+   "authors": [
+    "p-areias"
+   ],
+   "publisher": "26th USP International Conference in Accounting (FIPECAFI, Universidade de São Paulo)",
+   "date": "2026-07-22",
+   "url": "https://congressousp.fipecafi.org/Arquivos/45/Anais/5838%20.pdf",
+   "lang": "en",
+   "kind": "étude",
+   "planets": [
+    "devs",
+    "travail"
+   ],
+   "currents": [
+    "techno-normale"
+   ],
+   "thesis": "Étude qualitative brésilienne sur la façon dont des professionnels de la finance et de la comptabilité redéfinissent leur valeur face à l'IA. Leur rôle glisse de l'exécution de calculs vers l'interprétation, la gouvernance et la responsabilité, l'IA étendant ce qu'ils peuvent analyser sans porter de jugement moral. Les auteurs décrivent un « paradoxe du junior » : en automatisant les tâches d'entrée de carrière qui formaient l'intuition, les organisations risquent de produire des « experts creux ».",
+   "key_facts": [
+    "12 entretiens semi-directifs menés de septembre à novembre 2025 au Brésil (analyse phénoménographique) : dirigeants (directeur financier, directeur technique), professionnels de la finance, de l'actuariat, de la banque et de l'assurance, enseignants.",
+    "Élargissement : une actuaire utilise l'IA pour calibrer des scénarios de catastrophe « 1 in 20-year » dans des simulations de Monte-Carlo, à un niveau de détail hors de portée du travail manuel, en validant elle-même les paramètres.",
+    "Dévaluation : le rôle passe de « créateur d'analyses » à « curateur de résultats » ; plusieurs enquêtés redoutent une « atrophie du sens critique » et une génération incapable de résoudre seule les problèmes.",
+    "Sans connaissances comptables préalables, un utilisateur ne distingue plus le vrai d'une fabrication plausible : l'expertise antérieure devient la condition pour superviser l'IA."
+   ],
+   "quotes": [
+    {
+     "text": "This phenomenon risks producing a generation of \"hollow experts\" who possess explicit machine-generated answers but lack the internalized logic, critical intuition, and \"feeling\" required to rigorously supervise algorithmic processes.",
+     "fr": "Ce phénomène risque de produire une génération d'« experts creux », qui disposent de réponses explicites générées par la machine mais n'ont ni la logique intériorisée, ni l'intuition critique, ni le « ressenti » nécessaires pour superviser rigoureusement des processus algorithmiques.",
+     "speaker": "p-areias",
+     "status": "verifiee",
+     "checked_at": "https://congressousp.fipecafi.org/Arquivos/45/Anais/5838%20.pdf"
+    },
+    {
+     "text": "the core of professional value is shifting from just computational execution and routine tasks to include strategic sensemaking, governance, ethical stewardship, and ontological grounding.",
+     "fr": "le cœur de la valeur professionnelle se déplace de la seule exécution de calculs et de tâches routinières pour inclure la construction de sens stratégique, la gouvernance, la responsabilité éthique et l'ancrage ontologique.",
+     "speaker": "p-areias",
+     "status": "verifiee",
+     "checked_at": "https://congressousp.fipecafi.org/Arquivos/45/Anais/5838%20.pdf"
+    },
+    {
+     "text": "The shift in the professional’s role from a “creator of analysis” to a “curator of outputs” introduces a subtle danger of algorithmic induction.",
+     "fr": "Le passage du rôle de professionnel de « créateur d'analyses » à « curateur de résultats » introduit un danger subtil d'induction algorithmique.",
+     "speaker": "p-areias",
+     "status": "verifiee",
+     "checked_at": "https://congressousp.fipecafi.org/Arquivos/45/Anais/5838%20.pdf"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Communication acceptée au 26e congrès international de comptabilité de l'USP (São Paulo, 22-24 juillet 2026), publiée dans les actes en ligne (ISSN 2676-0061) ; date retenue : ouverture du congrès. Quatre auteurs de l'Universidade de São Paulo (Areias, Moreira, Eler, Fonseca) ; citations attribuées au premier auteur. Réserves : échantillon très petit et hétérogène (12 personnes, dont un directeur technique et deux enseignants, très peu de comptables en poste), propos rapportés par les auteurs sous pseudonymes, pas de mesure ; la notion d'« experts creux » est une conceptualisation des auteurs, non un constat chiffré. Voix latino-américaine utile pour le contrôle de gestion et la finance. Citations 1 et 2 : résumé ; citation 3 : section 5.1."
+  },
+  {
+   "id": "src-mao-zheng-traducteurs-identite-2026",
+   "title": "Does GenAI reliance undermine translators' roles and identities? GenAI literacy and translation competence matter",
+   "authors": [
+    "p-mao-junyi",
+    "p-zheng-binghan"
+   ],
+   "publisher": "The Journal of Specialised Translation, n° 46, p. 21-46",
+   "date": "2026-07-31",
+   "url": "https://doi.org/10.26034/cm.jostrans.2026.8258",
+   "lang": "en",
+   "kind": "étude",
+   "planets": [
+    "devs",
+    "creation"
+   ],
+   "currents": [
+    "techno-normale"
+   ],
+   "thesis": "Étude mixte, entretiens et questionnaire, sur la façon dont l'IA générative transforme le rôle et l'identité de traducteurs professionnels, en majorité chinois. Pour la plupart, l'identité reste stable, et certains disent travailler « avec des ailes » ; un quart vit une érosion de leur fierté et de leur reconnaissance, plus marquée chez les débutants, qui se décrivent en « porteurs de briques ». La maîtrise de l'IA réduit l'insatisfaction et le sentiment de déclassement, même quand elle sert aux tâches complexes.",
+   "key_facts": [
+    "41 entretiens (39 traducteurs chinois, 2 britanniques ; 2 à 30 ans d'expérience) en mars-avril 2025, puis questionnaire d'avril à juin 2025 : 268 réponses exploitables sur 358, à 74,4 % en anglais-chinois (déclaratif, modèle d'équations structurelles PLS-SEM).",
+    "Entretiens : 63,4 % ne rapportent qu'une perturbation minime de leur identité, 24,3 % une érosion, 12,2 % une redéfinition ; 10 % décrivent une image d'eux-mêmes renforcée.",
+    "51,2 % constatent une baisse des tarifs, des délais plus serrés ou moins de volume ; une entreprise d'Internet a supprimé son service de traduction et une entreprise publique a réaffecté ses traducteurs à du secrétariat.",
+    "Questionnaire : la maîtrise de l'IA réduit directement l'insatisfaction au travail (β = -0,20) et le sentiment de déclassement (β = -0,14) ; les traducteurs expérimentés se sentent moins menacés par les gains de volume, mais davantage quand l'IA prend en charge la valeur du travail."
+   ],
+   "quotes": [
+    {
+     "text": "Conversely, novices more frequently felt marginalised, describing themselves as “brick carriers”, “scapegoats”, “MT users”, or “word babysitters”, suggesting that skill underutilisation disproportionately erodes early-stage professional identity.",
+     "fr": "À l'inverse, les débutants se sentaient plus souvent marginalisés et se décrivaient comme des « porteurs de briques », des « boucs émissaires », des « utilisateurs de traduction automatique » ou des « baby-sitters de mots », ce qui suggère que la sous-utilisation des compétences érode de façon disproportionnée l'identité professionnelle en début de carrière.",
+     "speaker": "p-mao-junyi",
+     "status": "verifiee",
+     "checked_at": "https://www.jostrans.org/article/download/8258/10783/30021"
+    },
+    {
+     "text": "They perceived GenAI’s fluent and idiomatic output as undermining skill application, self-efficacy, professional pride, and social recognition.",
+     "fr": "Ils percevaient la production fluide et idiomatique de l'IA générative comme une atteinte à la mise en œuvre de leurs compétences, à leur sentiment d'efficacité, à leur fierté professionnelle et à leur reconnaissance sociale.",
+     "speaker": "p-mao-junyi",
+     "status": "verifiee",
+     "checked_at": "https://www.jostrans.org/article/download/8258/10783/30021"
+    },
+    {
+     "text": "Translators repositioned themselves as “supervisors”, “gatekeepers”, “language engineers”, or “word surgeons”, reflecting a shift from mechanical roles toward more intricate, value-added responsibilities.",
+     "fr": "Les traducteurs se sont repositionnés en « superviseurs », « gardiens », « ingénieurs de la langue » ou « chirurgiens des mots », signe d'un passage de rôles mécaniques vers des responsabilités plus fines et à plus forte valeur ajoutée.",
+     "speaker": "p-mao-junyi",
+     "status": "verifiee",
+     "checked_at": "https://www.jostrans.org/article/download/8258/10783/30021"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Article évalué par les pairs, en libre accès (CC BY 4.0), auteurs de l'université de Durham. Citations relues dans le PDF et dans la version HTML de l'article. Pays des auteurs : celui de l'affiliation (GB), alors que l'échantillon est très majoritairement chinois : c'est surtout une voix de traducteurs chinois. Réserves reconnues par les auteurs : recrutement de convenance (LinkedIn, associations), échantillon modeste, données transversales et déclaratives ; les 84 non-utilisateurs de l'IA ont été exclus du questionnaire, ce qui peut sous-estimer les vécus les plus négatifs. Le seuil de signification retenu (p < 0,10) est peu exigeant. Contrepoint utile à Brynjolfsson et al. : ici, les débutants sont ceux dont l'identité souffre le plus."
+  },
+  {
+   "id": "src-cbti-traducteurs-enquete-2025",
+   "title": "Enquête sur l'impact des nouvelles technologies sur les métiers de la traduction : un tableau nuancé",
+   "authors": [
+    "p-cbti"
+   ],
+   "publisher": "Chambre belge des traducteurs et interprètes (CBTI), communiqué de presse",
+   "date": "2025-10-13",
+   "url": "https://www.cbti-bkvt.org/wp-content/uploads/Enquete-impact-IA-sur-les-metiers-de-la-traduction-FR.pdf",
+   "lang": "fr",
+   "kind": "déclaration",
+   "planets": [
+    "devs",
+    "creation"
+   ],
+   "currents": [
+    "techno-normale"
+   ],
+   "thesis": "Communiqué présentant une enquête de l'association professionnelle belge auprès de ses membres traducteurs et interprètes. L'activité est stable, en hausse ou en baisse pour environ un tiers des répondants chacun, et l'IA n'est qu'une des causes des baisses. Presque tous utilisent DeepL ou ChatGPT, souvent comme source d'inspiration, mais la multiplication des missions de post-édition leur fait perdre du plaisir au travail, et ils anticipent un recul de la demande de traduction humaine.",
+   "key_facts": [
+    "114 membres de la CBTI ont répondu, peu avant l'été 2025 (déclaratif).",
+    "Chiffre d'affaires 2024 par rapport à 2023 : stable pour 31,6 % des répondants, en hausse pour un peu moins d'un tiers, en baisse pour un peu plus d'un tiers ; parmi ceux qui ont vu leur chiffre d'affaires baisser, un tiers l'attribue directement à l'IA, et près de 20 % des répondants disent qu'elle n'y est pour rien.",
+    "85 % utilisent DeepL ou des systèmes comme ChatGPT ; 40,4 % citent un gain d'efficacité, 67,5 % voient l'IA comme une source d'inspiration.",
+    "Environ la moitié acceptent des missions de post-édition de traduction automatique (MTPE), l'autre moitié les refusent catégoriquement."
+   ],
+   "quotes": [
+    {
+     "text": "Revers de la médaille : les traducteur·rices éprouvent moins de plaisir dans leur travail à cause de l’IA, principalement en raison des missions de MTPE sans cesse croissantes.",
+     "speaker": "p-cbti",
+     "status": "verifiee",
+     "checked_at": "https://www.cbti-bkvt.org/wp-content/uploads/Enquete-impact-IA-sur-les-metiers-de-la-traduction-FR.pdf"
+    },
+    {
+     "text": "Fait intéressant : l’IA est considérée comme une source d’inspiration pour 67,5 % des répondant·es.",
+     "speaker": "p-cbti",
+     "status": "verifiee",
+     "checked_at": "https://www.cbti-bkvt.org/wp-content/uploads/Enquete-impact-IA-sur-les-metiers-de-la-traduction-FR.pdf"
+    },
+    {
+     "text": "Parmi les professionnel·les ayant observé une diminution de leur chiffre d’affaires, un tiers l’attribue directement à l’IA.",
+     "speaker": "p-cbti",
+     "status": "verifiee",
+     "checked_at": "https://www.cbti-bkvt.org/wp-content/uploads/Enquete-impact-IA-sur-les-metiers-de-la-traduction-FR.pdf"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Communiqué de deux pages ; l'enquête complète et le questionnaire ne sont pas publiés, et le communiqué ne précise pas la part de répondants dont le chiffre d'affaires a baissé (« un peu plus d'un tiers »). Petit échantillon de membres d'une association, sans redressement ; l'association défend la valeur du travail humain, ce qui oriente la présentation. Contrepoint chiffré : l'enquête de la Society of Authors (janvier 2024, 787 répondants dont 78 traducteurs) indiquait que 36 % des traducteurs avaient déjà perdu du travail à cause de l'IA générative ; non retenue ici, car sa page primaire n'a pas été relue."
+  },
+  {
+   "id": "src-schwarcz-ai-powered-lawyering-2025",
+   "title": "AI-Powered Lawyering: AI Reasoning Models, Retrieval Augmented Generation, and the Future of Legal Practice",
+   "authors": [
+    "p-schwarcz"
+   ],
+   "publisher": "Document de travail (University of Minnesota Law School, University of Michigan Law School)",
+   "date": "2025-03",
+   "url": "https://www.law.berkeley.edu/wp-content/uploads/archive/2025/12/AI-Powered-Lawyering.pdf",
+   "lang": "en",
+   "kind": "étude",
+   "planets": [
+    "devs",
+    "services"
+   ],
+   "currents": [
+    "techno-normale"
+   ],
+   "thesis": "Premier essai randomisé sur deux types d'outils juridiques récents : un modèle de raisonnement (o1-preview) et un outil juridique adossé à une base documentaire (Vincent AI). Des étudiants en droit de fin de cursus réalisent six tâches juridiques réalistes, avec ou sans IA. Les deux outils améliorent la qualité et la productivité ; le gain de qualité est plus fort pour les moins bons, et l'IA peut faire baisser la qualité du travail des meilleurs.",
+   "key_facts": [
+    "127 étudiants en droit des universités du Minnesota et du Michigan, 6 tâches conçues avec des avocats en exercice (2 sans IA, 2 avec o1-preview, 2 avec Vincent AI, attribution aléatoire, expérience).",
+    "Productivité en hausse dans 5 tâches sur 6 : de +38 % à +115 % avec Vincent AI, de +34 % à +140 % avec o1-preview.",
+    "Hallucinations relevées : 11 avec o1-preview, 3 avec Vincent AI, 4 sans IA.",
+    "Le gain de qualité apporté par o1-preview diminue quand le niveau de départ (moyenne universitaire) augmente ; mesuré par les notes obtenues sans IA, l'outil fait baisser la qualité pour une partie des meilleurs."
+   ],
+   "quotes": [
+    {
+     "text": "o1-preview provides a greater boost in quality for participants with lower baseline skill levels compared to those with higher baseline skills.",
+     "fr": "o1-preview apporte un gain de qualité plus important aux participants dont le niveau de départ est plus faible qu'à ceux dont le niveau de départ est plus élevé.",
+     "speaker": "p-schwarcz",
+     "status": "verifiee",
+     "checked_at": "https://www.law.berkeley.edu/wp-content/uploads/archive/2025/12/AI-Powered-Lawyering.pdf"
+    },
+    {
+     "text": "for those with the highest baseline skill levels (as measured by performance on tasks completed without AI), access to the AI tool can actually reduce overall performance quality.",
+     "fr": "pour ceux qui ont le niveau de départ le plus élevé (mesuré par leurs résultats aux tâches faites sans IA), l'accès à l'outil d'IA peut en réalité réduire la qualité globale du travail.",
+     "speaker": "p-schwarcz",
+     "status": "verifiee",
+     "checked_at": "https://www.law.berkeley.edu/wp-content/uploads/archive/2025/12/AI-Powered-Lawyering.pdf"
+    },
+    {
+     "text": "Our findings show that AI assistance significantly boosts productivity in five out of six tested legal tasks",
+     "fr": "Nos résultats montrent que l'assistance de l'IA augmente nettement la productivité dans cinq des six tâches juridiques testées",
+     "speaker": "p-schwarcz",
+     "status": "verifiee",
+     "checked_at": "https://www.law.berkeley.edu/wp-content/uploads/archive/2025/12/AI-Powered-Lawyering.pdf"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Version de mars 2025 du document de travail, hébergée sur le site de Berkeley Law ; également diffusée dans la série Public Law & Legal Theory Working Papers de l'université du Michigan (n° 772, https://repository.law.umich.edu/pub_law_archive/772), dont le résumé, plus récent, est formulé un peu différemment. Une publication au Journal of Law & Empirical Analysis est mentionnée par des tiers, non vérifiée. Six auteurs (Schwarcz et Manning premiers coauteurs, Barry, Cleveland, Prescott, Rich) ; citations attribuées à Schwarcz. Citation 1 : section sur la variation entre participants ; citation 2 : même section, à cheval sur deux pages (en-têtes et numéro de page retirés pour la vérification) ; citation 3 : résumé. Réserves : des étudiants et non des avocats en exercice, des tâches courtes ; OpenAI et VLex ont fourni gratuitement l'accès aux outils (sans financement). L'étude précédente des mêmes auteurs (Choi, Monahan et Schwarcz, 2023-2024, GPT-4) trouvait déjà que les étudiants les plus faibles gagnaient le plus et que les meilleurs reculaient ; non retenue car le texte de la Minnesota Law Review a refusé l'accès aux outils."
+  },
+  {
+   "id": "src-laboria-explorer-2024",
+   "title": "Étude des impacts de l'IA sur le travail. Rapport d'enquête LaborIA Explorer",
+   "authors": [
+    "p-borel",
+    "p-laboria"
+   ],
+   "publisher": "LaborIA (ministère du Travail et Inria), étude réalisée par Matrice ; licence CC BY 4.0",
+   "date": "2024-05-17",
+   "url": "https://www.laboria.ai/wp-content/uploads/2024/05/Rapport-denquete-LaborIA-Explorer.pdf",
+   "lang": "fr",
+   "kind": "étude",
+   "planets": [
+    "devs",
+    "travail",
+    "services"
+   ],
+   "currents": [
+    "ethique-critique",
+    "economistes"
+   ],
+   "thesis": "Enquête de terrain du LaborIA sur des systèmes d'IA déjà déployés dans des entreprises et des administrations françaises (aéronautique, administration, maintenance, santé, industrie). Le rapport montre des effets ambivalents : selon la manière dont l'outil est conçu et introduit, l'IA peut soutenir le travail (configurations « capacitantes ») ou le fragiliser (configurations « aliénantes »). Il décrit notamment un « paradoxe de la facilitation » : simplifier une tâche peut retirer au salarié ce qui faisait l'intérêt et la reconnaissance de son métier, alors qu'ailleurs l'IA permet à des techniciens d'intervenir hors de leur spécialité.",
+   "key_facts": [
+    "Trois volets : un questionnaire auprès de 250 décideurs d'entreprises de plus de 50 salariés (septembre 2022, par téléphone), une étude longitudinale de 10 projets d'IA (3 vagues d'entretiens sur 6 à 9 mois) et 6 terrains d'observation (premier semestre 2023).",
+    "Hors questionnaire, les résultats reposent sur plus de 1000 heures d'entretiens avec des travailleurs, décideurs et ingénieurs d'une vingtaine d'entreprises ou d'administrations.",
+    "Terrains : détection de défauts sur moteurs d'avion, détection d'anomalies dans des dossiers administratifs, priorisation des messages et vérification de documents dans des établissements publics, chatbot RH, estimation des temps de production dans une PME de charpente métallique.",
+    "Effets positifs décrits : soulagement de la « mauvaise fatigue », techniciens de maintenance qui deviennent « généralistes », alertes vécues comme un « cran de sécurité ». Effets négatifs : surcroît de travail de vérification, perte de savoir-faire chez les novices, ennui d'une agente dont le logiciel trouve désormais les erreurs à sa place.",
+    "Rapport signé par Simon Borel (Matrice), sous la direction scientifique de Yann Ferguson (Inria), Jean Condé et Simon Borel ; publié le 17 mai 2024 sur laboria.ai."
+   ],
+   "quotes": [
+    {
+     "text": "On nous donne toutes les informations d'un coup, c'est dommage, j'aimais bien rechercher les erreurs, c'était ça qui m'amusait",
+     "speaker": "p-laboria",
+     "status": "verifiee",
+     "checked_at": "https://www.laboria.ai/wp-content/uploads/2024/05/Rapport-denquete-LaborIA-Explorer.pdf",
+     "context": "Propos d'une agente publique (catégorie C, vérification de dossiers sur tableur Excel, administration publique) recueilli par l'enquête LaborIA Explorer, après l'arrivée d'un logiciel de détection des anomalies (p. 29)."
+    },
+    {
+     "text": "Ça prémâche le travail sur la recherche de défauts sur la documentation. Nous c'est notre boulot d'aller chercher sur la documentation et d'aller statuer un défaut.",
+     "speaker": "p-laboria",
+     "status": "verifiee",
+     "checked_at": "https://www.laboria.ai/wp-content/uploads/2024/05/Rapport-denquete-LaborIA-Explorer.pdf",
+     "context": "Propos d'un technicien (inspection de moteurs, grande entreprise du secteur aérien) recueilli par l'enquête LaborIA Explorer (p. 39)."
+    },
+    {
+     "text": "maintenant le système lui permet, s'il n'est pas fort dans le domaine de la clim, d'avoir des solutions et des pistes à aller voir… les points faibles ne deviennent plus des points faibles.",
+     "speaker": "p-laboria",
+     "status": "verifiee",
+     "checked_at": "https://www.laboria.ai/wp-content/uploads/2024/05/Rapport-denquete-LaborIA-Explorer.pdf",
+     "context": "Propos d'un responsable maintenance (entreprise de maintenance des bâtiments, IA de maintenance prédictive) recueilli par l'enquête LaborIA Explorer, à propos d'un électricien amené à intervenir sur une climatisation (p. 53)."
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Étude qualitative publiée en 2024, mais dont les terrains datent de 2022-2023 : elle porte surtout sur des IA « classiques » (détection, prédiction, chatbot), pas sur l'IA générative. Les verbatims sont anonymisés par l'étude et attribués ici au LaborIA (locuteur collectif). La même enquête existe en synthèse : https://www.laboria.ai/wp-content/uploads/2024/05/Synthese_generale_LaborIA_Explorer.pdf. Le rapport n'est pas daté en couverture (« © 2024 ») : la date retenue est celle de la mise en ligne sur laboria.ai (17 mai 2024)."
+  },
+  {
+   "id": "src-laboria-dgcs-travail-social-2026",
+   "title": "Intelligence artificielle et travail social (convention professionnelle, panorama des usages, implications pour la formation)",
+   "authors": [
+    "p-laboria",
+    "p-maillot",
+    "p-hemairia-clerc",
+    "p-torres-cierpe"
+   ],
+   "publisher": "LaborIA (Inria, ministère du Travail), étude commandée par la Direction générale de la cohésion sociale (DGCS)",
+   "date": "2026-09-18",
+   "url": "https://www.laboria.ai/wp-content/uploads/2026/09/LaborIA-DGCS-Rapport-IA-et-Travail-Social.pdf",
+   "lang": "fr",
+   "kind": "rapport",
+   "planets": [
+    "devs",
+    "services",
+    "travail"
+   ],
+   "currents": [
+    "ethique-critique",
+    "gouvernance"
+   ],
+   "thesis": "Le LaborIA a étudié l'arrivée de l'IA dans un métier de la relation : le travail social. Les professionnels qui utilisent l'IA générative le font surtout de leur propre initiative, pour les écrits et les tâches administratives ; le temps gagné existe, mais il est souvent absorbé par d'autres tâches plutôt que rendu à l'accompagnement. Le rapport refuse d'opposer le « cœur relationnel » du métier aux écrits : rédiger un rapport social est aussi un temps de réflexion, que la délégation à l'IA pourrait appauvrir.",
+   "key_facts": [
+    "Questionnaire en ligne (juillet à décembre 2025) auprès de 691 professionnels, non représentatif : 39 % (268) utilisent l'IA générative dans leur activité, 29 % (198) envisagent de le faire, 32 % (225) n'y recourent pas et ne le souhaitent pas.",
+    "Échantillon à 88 % féminin, à 74,5 % dans la fonction publique ; les assistants de service social en forment 40 %.",
+    "Parmi les 268 utilisateurs, 60 % (148) disent s'en servir au moins plusieurs fois par semaine. Les refus invoquent surtout la confidentialité, le secret professionnel, la déshumanisation et le manque de formation.",
+    "Volet qualitatif : 30 entretiens semi-directifs avec des professionnels déjà utilisateurs ; seuls trois disent recourir à l'IA en cours d'entretien avec une personne accompagnée.",
+    "Le rapport comprend aussi une « convention professionnelle » coconstruite avec des travailleurs sociaux et une étude d'un chatbot d'accueil dans deux Maisons départementales des solidarités."
+   ],
+   "quotes": [
+    {
+     "text": "Et aujourd'hui, la solution pour moi a été l'IA, pour gagner du temps sur des tâches administratives […] Concrètement, je ne le réalloue pas à passer plus de temps avec la personne.",
+     "speaker": "p-laboria",
+     "status": "verifiee",
+     "checked_at": "https://www.laboria.ai/wp-content/uploads/2026/09/LaborIA-DGCS-Rapport-IA-et-Travail-Social.pdf",
+     "context": "Propos d'un travailleur social (entretien 10) recueilli par le LaborIA, livret 2 du rapport (p. 92 du PDF). Coupure [...] de l'étude."
+    },
+    {
+     "text": "Pour moi rédiger un rapport social, au-delà de faire un écrit, c'est aussi un travail de prise de recul par rapport à une situation qui est complexe.",
+     "speaker": "p-laboria",
+     "status": "verifiee",
+     "checked_at": "https://www.laboria.ai/wp-content/uploads/2026/09/LaborIA-DGCS-Rapport-IA-et-Travail-Social.pdf",
+     "context": "Propos d'un travailleur social (entretien 13) recueilli par le LaborIA, livret 2 du rapport (p. 94 du PDF)."
+    },
+    {
+     "text": "Par ailleurs, dans certains cas, ce temps retrouvé permet d'améliorer la qualité du travail produit — en approfondissant la veille professionnelle ou en affinant certaines productions.",
+     "speaker": "p-laboria",
+     "status": "verifiee",
+     "checked_at": "https://www.laboria.ai/wp-content/uploads/2026/09/LaborIA-DGCS-Rapport-IA-et-Travail-Social.pdf",
+     "context": "Analyse des auteures du LaborIA, livret 2 du rapport (p. 92 du PDF)."
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Rapport de 169 pages en trois livrets, daté « 2026 » en couverture, mis en ligne sur laboria.ai le 18 septembre 2026 (date retenue). Auteures : Anne-Sophie Maillot, Stéphanie Hemairia-Clerc et Juana Torres-Cierpe (LaborIA, Inria). Le PDF porte en pied de page la coquille « Repport » et « travaille social ». L'échantillon du questionnaire n'est pas représentatif (appel à participation). Synthèse : https://www.laboria.ai/wp-content/uploads/2026/09/LaborIA-Synthese-IA-et-Travail-Social.pdf.",
+   "branch": "produire_plus"
+  },
+  {
+   "id": "src-omb-iag-banque-2025",
+   "title": "Étude interbranche sur les impacts de l'intelligence artificielle générative au sein du secteur bancaire",
+   "authors": [
+    "p-omb"
+   ],
+   "publisher": "Observatoires paritaires des métiers de la banque (branche AFB) et du groupe BPCE, étude réalisée par Roland Berger et Diot-Siaci, financée par l'Opco Atlas",
+   "date": "2025-03",
+   "url": "https://fbf.fr/uploads/2025/04/20250324_ATLAS_Rapport_OMB-Version-Finale.pdf",
+   "lang": "fr",
+   "kind": "étude",
+   "planets": [
+    "devs",
+    "travail"
+   ],
+   "currents": [
+    "economistes"
+   ],
+   "thesis": "Étude commandée par les observatoires paritaires de la banque sur neuf familles de métiers, de la relation client au contrôle et à la comptabilité-finance. Elle conclut que l'IA générative transforme les métiers bancaires sans les remplacer, et que les collaborateurs interrogés y voient surtout l'occasion de se délester des tâches répétitives. Elle relève aussi des craintes : substitution de certains postes, perte d'autonomie, surcharge cognitive pour les moins à l'aise avec le numérique, intensification du travail.",
+   "key_facts": [
+    "Rapport daté de mars 2025 (244 pages), présenté par la Fédération bancaire française le 15 avril 2025.",
+    "Méthode : revue documentaire, analyse d'exposition par la classification internationale des professions (CITP), puis « une quarantaine d'interviews et 9 ateliers de travail » avec des collaborateurs et des décideurs.",
+    "Neuf familles de métiers étudiées : relation client, services bancaires, juridique, marketing, comptabilité et finance (dont contrôle de gestion), contrôle et conformité, ressources humaines, management, production de l'IA.",
+    "Le volet qualité de vie au travail décrit à la fois des gains (moins de tâches répétitives, agences « vidées des flux courants ») et des inquiétudes (substitution, perte de maîtrise, surcharge cognitive, intensification)."
+   ],
+   "quotes": [
+    {
+     "text": "L'IAG permet de traiter la pile de choses qui n'est jamais faite et de le faire mieux",
+     "speaker": "p-omb",
+     "status": "verifiee",
+     "checked_at": "https://fbf.fr/uploads/2025/04/20250324_ATLAS_Rapport_OMB-Version-Finale.pdf",
+     "context": "Propos recueilli en entretien par l'étude (« Entretien collaborateur - métiers de la comptabilité et de la finance »), p. 112 du PDF."
+    },
+    {
+     "text": "Finalement, l'Intelligence Artificielle Générative permet un nivellement par le haut et est très positif. C'est aussi pour ça que de nombreux collaborateurs l'adoptent avec plaisir et intérêt, car cela valorise au fond ce qu'ils produisent.",
+     "speaker": "p-omb",
+     "status": "verifiee",
+     "checked_at": "https://fbf.fr/uploads/2025/04/20250324_ATLAS_Rapport_OMB-Version-Finale.pdf",
+     "context": "Propos recueilli en entretien par l'étude (« Entretiens collaborateur »), chapitre sur la qualité de vie et les conditions de travail, p. 211 du PDF. La fonction de la personne n'est pas précisée."
+    },
+    {
+     "text": "Les craintes sont notamment exprimées par rapport à la mise en cause de certains emplois (exemple : assistante), or on se rend compte que l'on a toujours besoin de personnes pour relire et vérifier les informations.",
+     "speaker": "p-omb",
+     "status": "verifiee",
+     "checked_at": "https://fbf.fr/uploads/2025/04/20250324_ATLAS_Rapport_OMB-Version-Finale.pdf",
+     "context": "Propos recueilli en entretien par l'étude (« Entretiens collaborateur »), p. 213 du PDF. La fonction de la personne n'est pas précisée."
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Étude paritaire (employeurs et syndicats siègent dans les observatoires), mais réalisée par des cabinets de conseil et présentée par la Fédération bancaire française : le ton est nettement optimiste (« curiosité plutôt qu'anxiété »). Les « entretiens collaborateur » mêlent salariés, managers et responsables RH : plusieurs verbatims viennent visiblement de décideurs. Le rapport complet est hébergé par la FBF ; la synthèse de 12 pages est sur le site de l'observatoire : https://www.observatoire-metiers-banque.fr/wp-content/uploads/2025/06/OMB-Limpact-de-lIA-Generative-Synthese.pdf. Cette synthèse pose aussi la question des « tâches formatrices » des juniors, absente sous cette forme du rapport complet. Communiqué FBF du 15 avril 2025 : https://fbf.fr/uploads/2025/04/Communique-de-presse-IAG.pdf. Les verbatims écrivent tous « Intelligence Artificielle Générative » en toutes lettres et avec majuscules, comme le reste du rapport : ils ont probablement été retranscrits et harmonisés par les cabinets ; la citation reste celle publiée."
+  },
+  {
+   "id": "src-oema-assurance-seuil-ia-2024",
+   "title": "Les métiers de l'assurance au seuil de l'intelligence artificielle",
+   "authors": [
+    "p-oema"
+   ],
+   "publisher": "Observatoire de l'évolution des métiers de l'assurance (OEMA), avec le soutien de l'Opco Atlas et de France Assureurs",
+   "date": "2024-12-16",
+   "url": "https://www.metiers-assurance.org/wp-content/uploads/2024/12/OEMA-Au-seuil-de-lIA-Web.pdf",
+   "lang": "fr",
+   "kind": "étude",
+   "planets": [
+    "devs",
+    "travail"
+   ],
+   "currents": [
+    "economistes"
+   ],
+   "thesis": "L'observatoire paritaire de la branche assurance a réuni des professionnels de dix domaines de métiers pour recenser les IA susceptibles d'équiper leurs postes et en anticiper les effets. Les salariés y voient l'occasion de confier à la machine les travaux fastidieux pour se concentrer sur le plus motivant. L'étude met en garde : ces tâches simples offrent aussi des pauses cognitives et servent à fabriquer l'expertise, et leur suppression peut densifier le travail.",
+   "key_facts": [
+    "Matériau : 10 ateliers réunissant plus de 140 professionnels de l'assurance au premier semestre 2024, couvrant près de 85 % des effectifs salariés de la branche, puis un groupe de travail RH et des entretiens avec des représentants syndicaux.",
+    "Étude présentée lors d'une conférence publique le 16 décembre 2024, en présence d'une DRH de Groupama et du président de la Fédération Assurance CFE-CGC.",
+    "Démarche prospective (horizon 2030-2035) : elle porte sur les usages anticipés autant que sur les usages actuels, décrits comme une IA « déjà là et pas encore ».",
+    "L'OEMA a publié ensuite une étude sur les métiers de la vente en 2030 (décembre 2025)."
+   ],
+   "quotes": [
+    {
+     "text": "Les salariés voient dans l'intelligence artificielle l'opportunité de transférer à la machine les travaux qu'ils considèrent de faible intérêt, pour mieux se concentrer sur les composantes les plus motivantes de leur métier.",
+     "speaker": "p-oema",
+     "status": "verifiee",
+     "checked_at": "https://www.metiers-assurance.org/wp-content/uploads/2024/12/OEMA-Au-seuil-de-lIA-Web.pdf"
+    },
+    {
+     "text": "Que serait aujourd'hui l'expertise d'un actuaire de 40 ans si une intelligence artificielle lui avait 'épargné' la confrontation avec les tâches que l'IA prend aujourd'hui en charge ?",
+     "speaker": "p-oema",
+     "status": "verifiee",
+     "checked_at": "https://www.metiers-assurance.org/wp-content/uploads/2024/12/OEMA-Au-seuil-de-lIA-Web.pdf",
+     "context": "Question d'un professionnel lors de l'atelier consacré aux métiers de la conception et de l'adaptation de l'offre, rapportée par l'OEMA."
+    },
+    {
+     "text": "Pour faire un parallèle, que deviendrait la santé des coureurs du tour de France si toutes les étapes de plat étaient remplacées par des étapes de montagne ?",
+     "speaker": "p-oema",
+     "status": "verifiee",
+     "checked_at": "https://www.metiers-assurance.org/wp-content/uploads/2024/12/OEMA-Au-seuil-de-lIA-Web.pdf"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "L'OEMA est une association paritaire créée par France Assureurs. Étude surtout prospective : elle rapporte des anticipations de professionnels plus que des usages observés. Une copie du même texte circule sur lassuranceenmouvement.com ; l'URL retenue est celle du site de l'observatoire (metiers-assurance.org). Communiqué : https://www.metiers-assurance.org/wp-content/uploads/2024/12/Communique-de-presse-Etude-IA-2024.pdf."
+  },
+  {
+   "id": "src-laboria-icc-2026",
+   "title": "Industries culturelles et créatives × IA générative : reconfiguration des métiers, stratification des filières, apprentissages inégaux, adoption contrastée",
+   "authors": [
+    "p-parise",
+    "p-laboria"
+   ],
+   "publisher": "LaborIA (ministère du Travail, Inria), en partenariat avec Managia et Polaria",
+   "date": "2026-03",
+   "url": "https://www.laboria.ai/wp-content/uploads/2026/09/LaborIA-ICC-Les-transformations-de-lIA-dans-les-ICC-Rapport.pdf",
+   "lang": "fr",
+   "kind": "rapport",
+   "planets": [
+    "creation",
+    "devs"
+   ],
+   "currents": [
+    "ethique-critique",
+    "economistes"
+   ],
+   "thesis": "Méta-analyse de quinze études françaises et européennes sur l'IA générative dans les industries culturelles et créatives. Elle conclut que l'IA ne remplace pas frontalement les créateurs mais déplace leur travail vers le cadrage, la sélection et la vérification, avec un « travail invisible » de supervision rarement reconnu. Les professionnels capables d'orchestrer les outils gagnent en centralité, tandis que les freelances, petites structures et jeunes entrants supportent davantage la pression tarifaire et la charge de prouver l'origine des contenus.",
+   "key_facts": [
+    "Synthèse de quinze études (CNC et BearingPoint, BearingPoint et CPNEF, Goldmedia pour la GEMA et la Sacem, PMP pour la CISAC…), datée de mars 2026, mise en ligne sur laboria.ai le 29 septembre 2026.",
+    "Chiffre repris d'une étude CNC et BearingPoint (avril 2024) : 18 professionnels sur 24 interrogés dans le cinéma, l'audiovisuel et le jeu vidéo déclarent au moins 30 % de gain sur des tâches répétitives, sans tableau de bord pour objectiver ces gains.",
+    "Cinq transformations : passage de la production à la supervision, stratification entre acteurs « outillés » et « contraints », apprentissages informels, adoption conditionnée à la transparence, question de la preuve.",
+    "Six leviers proposés, dont la reconnaissance du travail de supervision et la négociation de chartes « emploi-compétences-IA » dans les conventions collectives."
+   ],
+   "quotes": [
+    {
+     "text": "Dans la plupart des situations observées, les professionnels ne cessent pas de créer : ils créent autrement.",
+     "speaker": "p-parise",
+     "status": "verifiee",
+     "checked_at": "https://www.laboria.ai/wp-content/uploads/2026/09/LaborIA-ICC-Les-transformations-de-lIA-dans-les-ICC-Rapport.pdf"
+    },
+    {
+     "text": "Les minutes gagnées dans certaines tâches d'exécution sont souvent compensées par une série d'activités nouvelles : relancer des générations instables, reformuler des prompts, vérifier ligne à ligne des résultats, corriger des incohérences stylistiques ou documenter les conditions de production.",
+     "speaker": "p-parise",
+     "status": "verifiee",
+     "checked_at": "https://www.laboria.ai/wp-content/uploads/2026/09/LaborIA-ICC-Les-transformations-de-lIA-dans-les-ICC-Rapport.pdf"
+    },
+    {
+     "text": "la charge d'authentification tend à glisser vers les acteurs les moins dotés : freelances, petites structures ou jeunes entrants.",
+     "speaker": "p-parise",
+     "status": "verifiee",
+     "checked_at": "https://www.laboria.ai/wp-content/uploads/2026/09/LaborIA-ICC-Les-transformations-de-lIA-dans-les-ICC-Rapport.pdf"
+    }
+   ],
+   "reliability": "secondaire",
+   "notes": "Méta-analyse : les chiffres et verbatims de professionnels (par exemple un ancien rotoscopiste devenu « prompt-cleaner ») viennent des études sources (CNC et BearingPoint 2024, BearingPoint et CPNEF 2025…), pas d'un terrain propre ; ne pas les citer sans remonter à ces études. L'extraction du texte du PDF mélange certaines citations encadrées, d'où le choix de citer seulement le texte de l'autrice. Le LaborIA a publié en même temps une étude qualitative propre sur les écoles d'art (21 entretiens, octobre 2024 à février 2025) : https://www.laboria.ai/wp-content/uploads/2026/09/LaborIA-ICC-Les-enjeux-de-lIAG-pour-les-Etablissements-Artistiques-Rapport.pdf. Attention : CLAUDE.md classe « voix françaises des métiers créatifs » parmi les pistes non lancées ; cette fiche est une synthèse d'études, pas une voix de créateur."
+  },
+  {
+   "id": "src-eurofound-ewcs-2024",
+   "title": "European Working Conditions Survey 2024: Overview report",
+   "authors": [
+    "p-eurofound"
+   ],
+   "publisher": "Eurofound (Office des publications de l'Union européenne)",
+   "date": "2026-09-16",
+   "url": "https://www.eurofound.europa.eu/en/publications/all/european-working-conditions-survey-2024-overview-report",
+   "lang": "en",
+   "kind": "rapport",
+   "planets": [
+    "travail",
+    "devs"
+   ],
+   "currents": [
+    "gouvernance",
+    "economistes"
+   ],
+   "thesis": "Huitième édition de l'enquête européenne sur les conditions de travail, menée par Eurofound, agence tripartite de l'Union européenne. En 2024, 12 % des travailleurs de l'UE utilisent l'IA générative, davantage les hommes, les jeunes et les plus diplômés. La technologie crée plus de tâches qu'elle n'en supprime, et l'usage de l'IA générative va de pair avec moins de tâches monotones, ce que les auteurs rattachent au profil des métiers qui l'adoptent. Le rapport s'inquiète en revanche du recul de la capacité des salariés à peser sur l'organisation de leur travail.",
+   "key_facts": [
+    "36 644 entretiens en face à face d'environ 45 minutes, menés en 2024 dans 35 pays (27 États membres, Norvège, Suisse et Balkans occidentaux), sur un échantillon probabiliste (déclaratif).",
+    "12 % des travailleurs de l'UE utilisent des outils d'IA générative au travail : au moins un sur cinq au Luxembourg, en Suède, en Belgique et au Danemark, 5 % ou moins en Grèce, en Italie, au Portugal et en Roumanie. Chez les 16-29 ans, 15,2 % des hommes et 11,3 % des femmes.",
+    "Parmi les travailleurs qui utilisent des outils numériques, 31 % disent que la technologie a supprimé des tâches de leur poste et 43 % qu'elle en a créé (dans une large ou une certaine mesure) ; 48 % qu'elle a accru les échanges entre collègues.",
+    "Participation des salariés à l'organisation du travail revenue à son niveau de 2010 : 40 % sont consultés avant que leurs objectifs soient fixés (47 % en 2010), 41 % sont associés à l'amélioration de l'organisation (48 % en 2010).",
+    "26 % des répondants disent qu'un programme informatique décide de certains aspects de leur travail ; parmi eux, 57 % disposent d'une procédure claire pour contester ces décisions automatisées."
+   ],
+   "quotes": [
+    {
+     "text": "However, a preliminary descriptive analysis of the EWCS data suggests the opposite: the use of generative AI is associated with a lower level of monotonous tasks and a greater likelihood that workers will assess the quality of their own work as part of their job.",
+     "fr": "Pourtant, une analyse descriptive préliminaire des données de l'EWCS suggère l'inverse : l'usage de l'IA générative est associé à moins de tâches monotones et à une plus grande probabilité que les travailleurs évaluent eux-mêmes la qualité de leur travail.",
+     "speaker": "p-eurofound",
+     "status": "verifiee",
+     "checked_at": "https://doi.org/10.2806/8618665",
+     "context": "Le rapport vient d'évoquer le risque que l'IA générative rende le travail plus monotone en produisant de grands volumes de contenus à relire (p. 29)."
+    },
+    {
+     "text": "EWCS data show that technology is more likely to create new tasks than remove existing tasks.",
+     "fr": "Les données de l'EWCS montrent que la technologie crée plus souvent de nouvelles tâches qu'elle n'en supprime.",
+     "speaker": "p-eurofound",
+     "status": "verifiee",
+     "checked_at": "https://doi.org/10.2806/8618665"
+    },
+    {
+     "text": "While skills use, development opportunities and access to training have improved, there has been a decrease in workers’ ability to influence collective work processes and apply their own ideas, which is concerning.",
+     "fr": "Si l'usage des compétences, les possibilités de développement et l'accès à la formation ont progressé, la capacité des travailleurs à peser sur les processus de travail collectifs et à appliquer leurs propres idées a reculé, ce qui est préoccupant.",
+     "speaker": "p-eurofound",
+     "status": "verifiee",
+     "checked_at": "https://doi.org/10.2806/8618665"
+    }
+   ],
+   "reliability": "primaire",
+   "notes": "Citations relues dans le PDF officiel du rapport (doi:10.2806/8618665 ; résumé daté du 16 septembre 2026), le site eurofound.europa.eu refusant les outils automatiques. Auteurs : Agnès Parent-Thirion, Jorge Cabrita, Franz Ferdinand Eiffe, Sara Riso, Christopher White, Karel Fric et John Hurley. Le lien entre IA générative et moindre monotonie est descriptif : les auteurs l'attribuent en partie au profil des utilisateurs (cadres et professions intellectuelles, plus diplômés et plus autonomes). Les chiffres sur les tâches créées ou supprimées portent sur l'ensemble des technologies numériques, pas sur la seule IA."
   }
  ],
  "people": [
@@ -16841,6 +17782,229 @@
     "labos"
    ],
    "country": "US"
+  },
+  {
+   "id": "p-areias",
+   "name": "Caio Alexandrino Costa Areias",
+   "role": "Chercheur en comptabilité, Universidade de São Paulo, premier auteur de « Harder, Better, Faster, Stronger » (2026)",
+   "currents": [
+    "techno-normale"
+   ],
+   "country": "BR"
+  },
+  {
+   "id": "p-bcg",
+   "name": "Boston Consulting Group (BCG)",
+   "role": "Cabinet de conseil en stratégie ; enquête annuelle AI at Work auprès des salariés (auteur collectif)",
+   "currents": [
+    "economistes"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-borel",
+   "name": "Simon Borel",
+   "role": "Sociologue, responsable innovation SHS chez Matrice, auteur du rapport d'enquête LaborIA Explorer (2024)",
+   "currents": [
+    "ethique-critique"
+   ],
+   "country": "FR"
+  },
+  {
+   "id": "p-cbti",
+   "name": "Chambre belge des traducteurs et interprètes (CBTI)",
+   "role": "Organisation — association professionnelle des traducteurs et interprètes de Belgique, fondée en 1955, membre de la Fédération internationale des traducteurs (auteur collectif)",
+   "currents": [],
+   "country": "BE"
+  },
+  {
+   "id": "p-dellacqua",
+   "name": "Fabrizio Dell'Acqua",
+   "role": "Chercheur en stratégie à la Harvard Business School, premier auteur de « The Cybernetic Teammate » (2025) (pays de l'affiliation)",
+   "currents": [
+    "economistes"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-gptw-japon",
+   "name": "Great Place To Work Institute Japan (働きがいのある会社研究所)",
+   "role": "Société japonaise d'enquêtes et de conseil sur l'engagement au travail, licenciée de Great Place To Work (auteur collectif)",
+   "currents": [
+    "economistes"
+   ],
+   "country": "JP"
+  },
+  {
+   "id": "p-hemairia-clerc",
+   "name": "Stéphanie Hemairia-Clerc",
+   "role": "Docteure en sciences de gestion, LaborIA (Inria)",
+   "currents": [
+    "ethique-critique"
+   ],
+   "country": "FR"
+  },
+  {
+   "id": "p-jilpt",
+   "name": "Institut japonais de politique et de formation du travail (JILPT)",
+   "role": "Organisation — établissement public de recherche sur le travail, rattaché au ministère japonais de la Santé, du Travail et des Affaires sociales (auteur collectif)",
+   "currents": [
+    "economistes",
+    "gouvernance"
+   ],
+   "country": "JP"
+  },
+  {
+   "id": "p-laboria",
+   "name": "LaborIA",
+   "role": "Organisation — laboratoire de recherche sur l'IA et le travail créé en novembre 2021 par une convention entre Inria et le ministère du Travail (auteur collectif)",
+   "currents": [
+    "gouvernance"
+   ],
+   "country": "FR"
+  },
+  {
+   "id": "p-li-danielle",
+   "name": "Danielle Li",
+   "role": "Économiste, MIT Sloan School of Management",
+   "currents": [
+    "economistes"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-maillot",
+   "name": "Anne-Sophie Maillot",
+   "role": "Docteure en ergonomie et psychologie du travail, LaborIA (Inria)",
+   "currents": [
+    "ethique-critique"
+   ],
+   "country": "FR"
+  },
+  {
+   "id": "p-mao-junyi",
+   "name": "Junyi Mao",
+   "role": "Chercheur en traductologie, université de Durham (pays de l'affiliation)",
+   "currents": [
+    "techno-normale"
+   ],
+   "country": "GB"
+  },
+  {
+   "id": "p-oema",
+   "name": "Observatoire de l'évolution des métiers de l'assurance (OEMA)",
+   "role": "Organisation — association paritaire de la branche assurance, créée par France Assureurs (auteur collectif)",
+   "currents": [
+    "economistes"
+   ],
+   "country": "FR"
+  },
+  {
+   "id": "p-omb",
+   "name": "Observatoires des métiers de la banque (AFB et groupe BPCE)",
+   "role": "Organisation — observatoires paritaires de branche du secteur bancaire (auteur collectif)",
+   "currents": [
+    "economistes"
+   ],
+   "country": "FR"
+  },
+  {
+   "id": "p-parise",
+   "name": "Fanny Parise",
+   "role": "Codirectrice de Managia, autrice de la méta-analyse du LaborIA sur l'IA dans les industries culturelles et créatives (2026)",
+   "currents": [
+    "ethique-critique"
+   ],
+   "country": "FR"
+  },
+  {
+   "id": "p-pew-research",
+   "name": "Pew Research Center",
+   "role": "Centre de recherche non partisan (Washington), enquêtes d'opinion sur un panel représentatif, l'American Trends Panel (auteur collectif)",
+   "currents": [
+    "economistes"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-pwc",
+   "name": "PwC",
+   "role": "Réseau mondial d'audit et de conseil ; enquête annuelle Global Workforce Hopes and Fears (auteur collectif)",
+   "currents": [
+    "economistes"
+   ],
+   "country": "GB"
+  },
+  {
+   "id": "p-raymond-lindsey",
+   "name": "Lindsey Raymond",
+   "role": "Économiste, coautrice de « Generative AI at Work » (MIT au moment de l'étude)",
+   "currents": [
+    "economistes"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-schwarcz",
+   "name": "Daniel Schwarcz",
+   "role": "Professeur de droit, University of Minnesota Law School",
+   "currents": [
+    "techno-normale"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-shao-yijia",
+   "name": "Yijia Shao",
+   "role": "Recherche en informatique à l'université Stanford (SALT Lab) ; signe en premier l'étude WORKBank sur ce que les travailleurs veulent confier aux agents d'IA",
+   "currents": [
+    "economistes"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-torres-cierpe",
+   "name": "Juana Torres-Cierpe",
+   "role": "Sociologue du travail, docteure en sciences économiques et sociales, LaborIA (Inria)",
+   "currents": [
+    "ethique-critique"
+   ],
+   "country": "FR"
+  },
+  {
+   "id": "p-workbank-participant",
+   "name": "Participant anonyme à l'enquête WORKBank",
+   "role": "Travailleur du secteur arts, design et médias, interrogé dans l'enquête WORKBank de Stanford ; propos transcrits et publiés anonymement par les auteurs",
+   "currents": [],
+   "country": "US"
+  },
+  {
+   "id": "p-yang-diyi",
+   "name": "Diyi Yang",
+   "role": "Professeure assistante d'informatique à l'université Stanford, dirige le SALT Lab (Social and Language Technologies)",
+   "currents": [
+    "economistes"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "p-zheng-binghan",
+   "name": "Binghan Zheng",
+   "role": "Traductologue, université de Durham (pays de l'affiliation)",
+   "currents": [
+    "techno-normale"
+   ],
+   "country": "GB"
+  },
+  {
+   "id": "p-eurofound",
+   "name": "Eurofound",
+   "role": "Fondation européenne pour l'amélioration des conditions de vie et de travail, agence tripartite de l'UE (Dublin) ; enquête européenne sur les conditions de travail (auteur collectif)",
+   "currents": [
+    "gouvernance",
+    "economistes"
+   ],
+   "country": "IE"
   }
  ],
  "relations": [
